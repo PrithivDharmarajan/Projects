@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15">
+
+    <LinearLayout
+        android:id="@+id/dev_mode_change_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size10">
+
+        <TextView
+            style="@style/TextOpenSansSemiBold"
+            android:background="@color/violet"
+            android:paddingBottom="@dimen/size10"
+            android:paddingTop="@dimen/size10"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            style="@style/TextOpenSansSemiBold"
+            android:padding="@dimen/size10"
+            android:text="@string/select_options"
+            android:textSize="@dimen/text13" />
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/development_radio_btn"
+                style="@style/TextOpenSansSemiBold"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="true"
+                android:gravity="start|center"
+                android:text="@string/development"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/stage_radio_btn"
+                style="@style/TextOpenSansSemiBold"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="false"
+                android:gravity="start|center"
+                android:text="@string/stage"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/production_radio_btn"
+                style="@style/TextOpenSansSemiBold"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="false"
+                android:gravity="start|center"
+                android:text="@string/production"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

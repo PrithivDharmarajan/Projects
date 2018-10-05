@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/rounded_corners"
+            android:hint="@string/type_here"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textNoSuggestions"
+            android:paddingLeft="@dimen/margin10"
+            android:text=""
+            android:textSize="@dimen/text16" />
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="@dimen/margin20"
+            android:layout_height="@dimen/margin20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:contentDescription="@string/first_name"
+            android:src="@drawable/search_icon" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/curve_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin50">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin37"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/margin10"
+            android:contentDescription="@string/term_condterm_cond"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_bg_img" />
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/margin35"
+            android:padding="@dimen/padding1"
+            android:layout_height="@dimen/margin35"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/first_name"
+            android:src="@drawable/down_arrow_darkb_img" />
+    </RelativeLayout>
+
+</RelativeLayout>

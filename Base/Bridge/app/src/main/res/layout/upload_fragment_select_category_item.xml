@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin20"
+        android:id="@+id/top_txt"
+        android:textColor="@color/blue_gray"
+        android:text="@string/choose_category"
+        android:textSize="@dimen/text24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/academics"
+            android:layout_width="@dimen/height130"
+            android:layout_height="@dimen/height130"
+            android:paddingRight="@dimen/margin5"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/margin10"
+            android:background="@drawable/upload_red"
+            android:text="@string/academics"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+
+        <Button
+            android:id="@+id/apparel"
+            android:layout_width="@dimen/height130"
+            android:layout_height="@dimen/height130"
+            android:paddingRight="@dimen/margin5"
+            android:paddingLeft="@dimen/margin10"
+            android:layout_marginLeft="@dimen/size50"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@drawable/upload_green_bg"
+            android:text="@string/apparel"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/social"
+        android:layout_width="@dimen/height130"
+        android:layout_height="@dimen/height130"
+        android:paddingRight="@dimen/margin5"
+        android:textAllCaps="false"
+        android:paddingLeft="@dimen/margin10"
+        android:background="@drawable/upload_blue_two"
+        android:text="@string/ticket"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/electronics"
+            android:layout_width="@dimen/height130"
+            android:layout_height="@dimen/height130"
+            android:paddingLeft="@dimen/margin5"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:background="@drawable/upload_brown"
+            android:text="@string/electronics"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+
+        <Button
+            android:id="@+id/misc"
+            android:layout_width="@dimen/height130"
+            android:layout_height="@dimen/height130"
+            android:paddingRight="@dimen/margin5"
+            android:paddingLeft="@dimen/margin10"
+            android:background="@drawable/upload_purple"
+            android:text="@string/misc"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/size50"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </LinearLayout>
+</LinearLayout>

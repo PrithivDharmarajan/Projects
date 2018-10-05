@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BASE SCANNER</string>
+    <string name="app_ne">Base Scanner</string>
+
+
+    <!--Sign in Screen-->
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="or_signin">Or Sign In Using Facebook</string>
+    <string name="not_mem">Not a Member?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!--Sign In Screen Alert-->
+    <string name="enter_email">Please enter an email address</string>
+    <string name="enter_pwd">Please enter a password</string>
+
+
+    <!--Dialog box Alert-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="close">Close</string>
+    <string name="ok">Ok</string>
+
+    <string name="qr_code">QR Code</string>
+    <string name="sign_out">Are you sure you want to sign out?</string>
+    <string name="app_exit">Are you sure you want to exit?</string>
+
+    <!-- FB and Google API Key-->
+    <string name="facebook_app_id">1720833851473676</string>
+    <string name="google_app_id">1055147097721</string>
+
+    <!--Server Failed Message-->
+    <string name="connection_timeout"> Server is not responding properly. Please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+    <string name="two">2</string>
+    <string name="setting_permission">Go to settings and enable permissions</string>
+    <string name="camera_permission">Camera Permission required for this app.</string>
+
+</resources>

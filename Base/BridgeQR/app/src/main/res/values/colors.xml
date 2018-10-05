@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_green_color">#3d8301</color>
+    <color name="status_gray_color">#e6e6e6</color>
+    <color name="green">#4EA701</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_gray">#063644</color>
+    <color name="gray">#8D8D8D</color>
+    <color name="screen_bg">#F7F7F7</color>
+    <color name="blue_btn_bg">#17384B</color>
+    <color name="blue_bg">#04384C</color>
+
+
+</resources>

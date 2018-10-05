@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/rounded_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size15">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menu_logout" />
+
+    <TextView
+        style="@style/TextOpenSansSemiBold"
+        android:layout_marginTop="@dimen/size10"
+        android:text="@string/confirmation"
+        android:textSize="@dimen/text15" />
+    <TextView
+        style="@style/TextOpenSansSemiBold"
+        android:layout_marginTop="@dimen/size10"
+        android:text="@string/logout_msg"
+        android:textSize="@dimen/text15" />
+
+    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <Button
+            android:id="@+id/no_btn"
+            style="@style/ButtonOpenSansSemiBold"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="start|bottom"
+            android:text="@string/no"
+            android:textColor="@color/black"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/yes_btn"
+            style="@style/ButtonOpenSansSemiBold"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="end|bottom"
+            android:text="@string/yes"
+            android:textColor="@color/violet"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

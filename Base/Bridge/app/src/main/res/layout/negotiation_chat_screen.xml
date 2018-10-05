@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bridgellc.bridge.stickylistview.StickyListHeadersListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/header_lay"
+        android:background="@color/screen_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:stackFromBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin5"
+        android:paddingTop="@dimen/margin5"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_weight="7"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingStart="@dimen/margin10"
+            android:background="@drawable/chat_edt_box_bg"
+            android:maxHeight="@dimen/margin90"
+            android:minHeight="@dimen/margin50">
+
+            <TextView
+                android:id="@+id/doll_sym_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/dollar_sym"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/chat_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginRight="@dimen/margin5"
+                android:background="@null"
+                android:inputType="numberDecimal|textNoSuggestions"
+                android:layout_toRightOf="@+id/doll_sym_txt"
+                android:layout_toEndOf="@+id/doll_sym_txt"
+                android:gravity="start|center_vertical"
+                android:hint="@string/type_here"
+                android:maxHeight="@dimen/margin90"
+                android:minHeight="@dimen/margin50"
+                android:textSize="@dimen/text14" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+</RelativeLayout>

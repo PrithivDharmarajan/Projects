@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_file_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.NestedScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/media_file_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/media_file_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/media_file_header_msg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/media_file_header_lay"
+                    android:layout_marginBottom="@dimen/size18">
+
+                    <RelativeLayout
+                        style="@style/LayoutMatch"
+                        android:layout_above="@+id/media_file_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size8">
+
+                        <com.calix.calixgigamanage.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:contentDescription="@string/app_name"
+                            android:src="@color/violet_rounded_bg_one" />
+
+                        <com.calix.calixgigamanage.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size7"
+                            android:contentDescription="@string/app_name"
+                            android:src="@color/violet_rounded_bg_two" />
+
+                        <com.calix.calixgigamanage.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size14"
+                            android:contentDescription="@string/app_name"
+                            android:src="@color/violet" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/media_file_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:text="Media"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text18" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/media_file_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginTop="@dimen/size3" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

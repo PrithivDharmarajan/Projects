@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="violet">#44367D</color>
+    <color name="violet_light">#6B6ED1</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#525252</color>
+
+    <color name="violet_rounded_bg_one">#716FC1</color>
+    <color name="violet_rounded_bg_two">#7F7EC7</color>
+    <color name="orange">#E87A00</color>
+    <color name="red">#FF4747</color>
+    <color name="red_light">#FF5959</color>
+    <color name="light_gray">#ECECEC</color>
+    <color name="read_gray">#EEEEEE</color>
+
+    <color name="graph_downloaded_color">#00FE6C</color>
+    <color name="graph_uploaded_color">#E8CA00</color>
+
+    <color name="alexa_header">#00A5CF</color>
+    <color name="alexa_header_light">#005267</color>
+    <color name="alexa_txt_one">#5a6d6f</color>
+    <color name="alexa_txt_two">#879596</color>
+
+</resources>

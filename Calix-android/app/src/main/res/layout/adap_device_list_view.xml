@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginBottom="@dimen/size3"
+    android:layout_marginEnd="@dimen/size5"
+    android:layout_marginStart="@dimen/size5"
+    android:layout_marginTop="@dimen/size3"
+    app:cardCornerRadius="@dimen/size3">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/size2"
+        android:layout_marginTop="@dimen/size5"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/size5"
+        android:paddingStart="@dimen/size5">
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_toStartOf="@+id/adapter_device_connect_lay">
+
+                <ImageView
+                    android:id="@+id/device_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginStart="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size6"
+                    android:src="@drawable/phone_icon" />
+
+                <LinearLayout
+                    android:id="@+id/device_name_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_gravity="start|center"
+                    android:layout_marginEnd="@dimen/size5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/device_name_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size11" />
+
+                    <TextView
+                        android:id="@+id/device_sub_type_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size10" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/adapter_device_connect_lay"
+                style="@style/LayoutWrap"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/connection_status_img"
+                    android:layout_width="@dimen/size18"
+                    android:layout_height="@dimen/size18"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/connection_status_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/connected_to"
+                    android:textColor="@color/violet"
+                    android:textSize="@dimen/size9" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_toEndOf="@+id/adapter_device_connect_lay"
+                android:gravity="end"
+                android:padding="@dimen/size3"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <TextView
+                    android:id="@+id/connected_device_name_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size30"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/size40"
+                    android:gravity="end|center"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text9" />
+
+                <ImageView
+                    android:id="@+id/connected_device_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/wifi_pointer" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/device_details_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/signal_strength_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.25"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/signal_strength_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/wifi_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size7"
+                    android:src="@drawable/wifi_orange" />
+
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/wifi_img"
+                    android:layout_toStartOf="@+id/signal_strength_txt"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/signal_strength"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text10" />
+
+                <TextView
+                    android:id="@+id/signal_strength_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/violet"
+                    android:textSize="@dimen/text15" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.25"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/connect_disconnect_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size8" />
+
+                <TextView
+                    android:id="@+id/connect_disconnect_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/connect_disconnect_img"
+                    android:layout_toStartOf="@+id/connect_disconnect_switch_compat"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/disconnect_device"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text10" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/connect_disconnect_switch_compat"
+                    style="@style/LayoutWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:checked="true"
+                    android:padding="@dimen/size5"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    app:switchMinWidth="@dimen/size5" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.25"
+                android:visibility="gone"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_weight="1.2"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/download_upload" />
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:text="@string/data_usage"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/arrow_down_violet" />
+
+                    <TextView
+                        android:id="@+id/download_speed_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:textColor="@color/violet"
+                        android:textSize="@dimen/text12" />
+
+                    <TextView
+                        android:id="@+id/download_scale_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/size5"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:text="@string/mbps"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/text6" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size0.25"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/size3"
+                    android:layout_marginEnd="@dimen/size5"
+                    android:layout_marginStart="@dimen/size5"
+                    android:layout_marginTop="@dimen/size3"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size3"
+                        android:src="@drawable/top_arrow_orange" />
+
+                    <TextView
+                        android:id="@+id/upload_speed_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:textColor="@color/violet"
+                        android:textSize="@dimen/text12" />
+
+                    <TextView
+                        android:id="@+id/upload_scale_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/size5"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:text="@string/mbps"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/text6" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.25"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/visible_invisible_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/eye_visible" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

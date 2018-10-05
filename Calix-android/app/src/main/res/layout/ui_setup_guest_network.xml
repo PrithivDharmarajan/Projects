@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_guest_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <RelativeLayout
+        android:id="@+id/setup_guest_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_below="@+id/setup_guest_header_bg_lay">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginStart="@dimen/size5"
+                        android:layout_marginTop="@dimen/size5"
+                        android:paddingEnd="@dimen/size5"
+                        android:paddingStart="@dimen/size5"
+                        android:textColorHint="@color/gray">
+
+                        <EditText
+                            android:id="@+id/search_name_edit_txt"
+                            style="@style/EditTextOpenSansRegular"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:hint="@string/event_name"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size37" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size5"
+                        android:background="@color/gray" />
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:padding="@dimen/size5">
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/size5"
+                            android:layout_toStartOf="@+id/indefinite_switch_compat"
+                            android:gravity="start"
+                            android:text="@string/indefinite_network"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size13" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/indefinite_switch_compat"
+                            style="@style/LayoutWrap"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:button="@null"
+                            android:padding="@dimen/size5"
+                            app:switchMinWidth="@dimen/size5" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/setup_guest_indefinite_network_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size5"
+                android:layout_marginLeft="@dimen/size5"
+                android:layout_marginRight="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setup_time_duration_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:padding="@dimen/size4"
+                        android:text="@string/time_duration_cap"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size13" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_below="@+id/setup_time_duration_txt"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/size30"
+                        android:layout_marginStart="@dimen/size30"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/size10">
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="@dimen/size50"
+                                android:layout_height="@dimen/size50"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:paddingBottom="@dimen/size10"
+                                android:paddingEnd="@dimen/size10"
+                                android:paddingStart="0dp"
+                                android:paddingTop="@dimen/size10"
+                                android:src="@drawable/calender_icon" />
+
+                            <TextView
+                                style="@style/TextOpenSansSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="start"
+                                android:text="@string/date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text12" />
+                        </LinearLayout>
+
+                        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                            <LinearLayout
+                                android:id="@+id/setup_guest_start_date"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentStart="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/start_date_txt"
+                                    style="@style/TextOpenSansSemiBold"
+                                    android:layout_width="@dimen/size80"
+                                    android:background="@drawable/violet_bg"
+                                    android:padding="@dimen/size7"
+                                    android:text="@string/one_date"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <TextView
+                                    style="@style/TextOpenSansRegular"
+                                    android:gravity="start"
+                                    android:paddingTop="@dimen/size3"
+                                    android:text="@string/start"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextOpenSansRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/setup_guest_start_date"
+                                android:layout_toStartOf="@+id/setup_guest_end_date"
+                                android:text="@string/to"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/size13" />
+
+                            <LinearLayout
+                                android:id="@+id/setup_guest_end_date"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/end_date_txt"
+                                    style="@style/TextOpenSansSemiBold"
+                                    android:layout_width="@dimen/size80"
+                                    android:background="@drawable/violet_bg"
+                                    android:padding="@dimen/size7"
+                                    android:text="@string/one_date"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <TextView
+                                    style="@style/TextOpenSansRegular"
+                                    android:gravity="start"
+                                    android:paddingTop="@dimen/size3"
+                                    android:text="@string/end"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="@dimen/size50"
+                                android:layout_height="@dimen/size50"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:paddingBottom="@dimen/size8"
+                                android:paddingEnd="@dimen/size8"
+                                android:paddingStart="0dp"
+                                android:paddingTop="@dimen/size8"
+                                android:src="@drawable/guest_network_time" />
+
+                            <TextView
+                                style="@style/TextOpenSansSemiBold"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="start"
+                                android:text="@string/time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text12" />
+                        </LinearLayout>
+
+                        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                            <LinearLayout
+                                android:id="@+id/setup_guest_start_time"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentStart="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/start_time_txt"
+                                    style="@style/TextOpenSansSemiBold"
+                                    android:layout_width="@dimen/size80"
+                                    android:background="@drawable/violet_bg"
+                                    android:padding="@dimen/size7"
+                                    android:text="@string/seven_thiry"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <TextView
+                                    style="@style/TextOpenSansRegular"
+                                    android:gravity="start"
+                                    android:paddingTop="@dimen/size3"
+                                    android:text="@string/start"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextOpenSansRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/setup_guest_start_time"
+                                android:layout_toStartOf="@+id/setup_guest_end_time"
+                                android:text="@string/to"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/size13" />
+
+                            <LinearLayout
+                                android:id="@+id/setup_guest_end_time"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/end_time_txt"
+                                    style="@style/TextOpenSansSemiBold"
+                                    android:layout_width="@dimen/size80"
+                                    android:background="@drawable/violet_bg"
+                                    android:padding="@dimen/size7"
+                                    android:text="@string/nine_thirty"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <TextView
+                                    style="@style/TextOpenSansRegular"
+                                    android:gravity="start"
+                                    android:paddingTop="@dimen/size3"
+                                    android:text="@string/end"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size5"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size10">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:textColorHint="@color/gray">
+
+                        <EditText
+                            android:id="@+id/guest_network_name_edt"
+                            style="@style/EditTextOpenSansRegular"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:hint="@string/guest_network_name"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size37" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:background="@color/gray" />
+
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_marginTop="@dimen/size7"
+                        android:gravity="start"
+                        android:text="@string/auth_type"
+                        android:textColor="@color/violet"
+                        android:textSize="@dimen/text9" />
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size37">
+
+                        <Spinner
+                            android:id="@+id/auth_type_spinner"
+                            style="@style/LayoutMatch"
+                            android:layout_toStartOf="@+id/spinner_drop_down_img"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:padding="0dip"
+                            android:textAlignment="textStart" />
+
+                        <ImageView
+                            android:id="@+id/spinner_drop_down_img"
+                            style="@style/LayoutMatch"
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size10"
+                            android:src="@drawable/arrow_violet_full" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/pwd_confirm_pwd_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_marginTop="@dimen/size7"
+                            android:textColorHint="@color/gray"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/guest_network_pwd_edt"
+                                style="@style/EditTextOpenSansRegular"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:hint="@string/password"
+                                android:imeOptions="actionNext|flagNoExtractUi"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="@dimen/size37" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_height="@dimen/size0.5"
+                            android:background="@color/gray" />
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_marginTop="@dimen/size10"
+                            android:textColorHint="@color/gray">
+
+                            <EditText
+                                android:id="@+id/guest_network_confirm_pwd_edt"
+                                style="@style/EditTextOpenSansRegular"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/confirm_pwd"
+                                android:imeOptions="actionDone|flagNoExtractUi"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="@dimen/size37" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_height="@dimen/size0.5"
+                            android:background="@color/gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/cont_btn"
+                style="@style/ButtonOpenSansSemiBold"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/text15"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginTop="@dimen/size25"
+                android:text="@string/cont"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/ButtonOpenSansSemiBold"
+                android:layout_marginEnd="@dimen/text15"
+                android:layout_marginStart="@dimen/size15"
+                android:background="@drawable/red_btn"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

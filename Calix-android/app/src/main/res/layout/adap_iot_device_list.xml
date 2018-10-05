@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <android.support.v7.widget.CardView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size1"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_marginTop="@dimen/size5">
+
+        <RelativeLayout
+            android:id="@+id/adapter_add_device_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size70"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/device_img"
+                android:layout_width="@dimen/size55"
+                android:layout_height="@dimen/size55"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toEndOf="@+id/device_img"
+                android:layout_toStartOf="@+id/connect_disconnect_switch_compat"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/device_name_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/device_status_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text10" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/connect_disconnect_switch_compat"
+                style="@style/LayoutWrap"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:checked="true"
+                android:padding="@dimen/size10"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:switchMinWidth="@dimen/size5" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

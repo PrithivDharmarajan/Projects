@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/rounded_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size15">
+
+    <ImageView
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/edit_img" />
+
+    <TextView
+        style="@style/TextOpenSansSemiBold"
+        android:layout_marginTop="@dimen/size10"
+        android:text="@string/change_the_device_name"
+        android:textColor="@color/violet"
+        android:textSize="@dimen/text15" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size10"
+        android:textColorHint="@color/black">
+
+        <EditText
+            android:id="@+id/device_name_edt"
+            style="@style/EditTextOpenSansRegular"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/enter_device_name"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="textCapSentences"
+            android:minHeight="@dimen/size37"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:textColorHint="@color/black">
+
+        <EditText
+            android:id="@+id/device_loc_name_edt"
+            style="@style/EditTextOpenSansRegular"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start|bottom"
+            android:hint="@string/enter_device_loc"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="textCapSentences"
+            android:minHeight="@dimen/size37"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray" />
+
+    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <Button
+            android:id="@+id/negative_btn"
+            style="@style/ButtonOpenSansSemiBold"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="start|bottom"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            style="@style/ButtonOpenSansSemiBold"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="end|bottom"
+            android:text="@string/done"
+            android:textColor="@color/violet"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

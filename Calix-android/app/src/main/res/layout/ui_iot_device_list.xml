@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iot_device_list_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.NestedScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/iot_device_list_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/iot_device_list_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/iot_device_list_header_msg_lay"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/iot_device_list_header_lay">
+
+                    <LinearLayout
+                        style="@style/LayoutMatch"
+                        android:layout_above="@+id/iot_device_list_txt"
+                        android:gravity="center"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/iot_device_count_txt"
+                            style="@style/TextOpenSansRegular"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/round_violet_bg"
+                            android:padding="@dimen/size10"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size23" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size10"
+                            android:src="@drawable/iot_header" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/iot_device_list_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:paddingBottom="@dimen/size15"
+                        android:text="@string/iot_devices_connected"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <RelativeLayout
+                    android:id="@+id/add_device_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/size5"
+                    android:paddingStart="@dimen/size5"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <ImageView
+                        android:id="@+id/add_device_img"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/iot_violet" />
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size5"
+                        android:layout_toEndOf="@+id/add_device_img"
+                        android:layout_toStartOf="@+id/add_txt"
+                        android:gravity="start"
+                        android:text="@string/add_the_iot_device"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text13" />
+
+                    <TextView
+                        android:id="@+id/add_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/add_right_img"
+                        android:gravity="start"
+                        android:text="@string/add"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text10" />
+
+                    <ImageView
+                        android:id="@+id/add_right_img"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size5"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/add_round_img" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size5"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/iot_list_recycler_view"
+                    style="@style/LayoutWidMatch_HeiWrap" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/iot_device_list_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginTop="@dimen/size3" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

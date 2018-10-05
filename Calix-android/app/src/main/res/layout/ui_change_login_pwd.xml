@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/change_login_pwd_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/change_login_pwd_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/change_login_pwd_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/change_login_pwd_header_msg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/change_login_pwd_header_lay"
+                    android:layout_marginBottom="@dimen/size18">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:layout_above="@+id/change_login_pwd_header_txt"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/router" />
+
+                    <TextView
+                        android:id="@+id/change_login_pwd_header_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:text="@string/change_pwd"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/black"
+                    android:visibility="gone"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/old_pwd_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/old_pwd"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:background="@color/gray" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/black"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/new_pwd_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/new_pwd"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/confirm_pwd_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirm_pwd"
+                        android:imeActionId="100"
+                        android:imeActionLabel="@string/submit"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonOpenSansSemiBold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:elevation="0dip"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

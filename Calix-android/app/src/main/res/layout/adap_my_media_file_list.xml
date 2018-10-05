@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size5"
+    android:elevation="@dimen/size2"
+    app:cardCornerRadius="@dimen/size3"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size10"
+        android:paddingEnd="0dip"
+        android:paddingStart="@dimen/size10"
+        android:paddingTop="@dimen/size10"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/media_img"
+            android:layout_width="@dimen/size37"
+            android:layout_height="@dimen/size37"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            style="@style/TextOpenSansRegular"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_toEndOf="@+id/media_img"
+            android:layout_toStartOf="@+id/media_file_arrow_right_img"
+            android:gravity="start"
+            android:text="Browse Music"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text13" />
+
+        <ImageView
+            android:id="@+id/media_file_arrow_right_img"
+            android:layout_width="@dimen/size15"
+            android:layout_height="@dimen/size15"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:rotation="90"
+            android:src="@drawable/arrow_background" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

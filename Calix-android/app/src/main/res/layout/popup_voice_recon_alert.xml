@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/rounded_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size15">
+
+
+    <TextView
+        android:id="@+id/speech_prompt_txt"
+        style="@style/TextOpenSansSemiBold"
+        android:layout_margin="@dimen/size10"
+        android:text="@string/speech_prompt"
+        android:textSize="@dimen/text15" />
+
+    <ImageView
+        android:id="@+id/mic_img"
+        android:layout_width="@dimen/size90"
+        android:layout_height="@dimen/size90"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size10"
+        android:src="@drawable/mic_enable" />
+
+    <TextView
+        android:id="@+id/speech_prompt_status_txt"
+        style="@style/TextOpenSansSemiBold"
+        android:layout_margin="@dimen/size10"
+        android:text="@string/stop"
+        android:textSize="@dimen/text15" />
+
+
+</LinearLayout>
+
+

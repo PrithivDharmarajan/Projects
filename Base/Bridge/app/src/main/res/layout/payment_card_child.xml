@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pay_parent_lay"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginBottom="@dimen/margin5"
+        android:padding="@dimen/margin15"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin30"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/academics"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding10"
+            android:layout_toEndOf="@+id/card_img"
+            android:layout_toLeftOf="@+id/icon_img"
+            android:layout_toRightOf="@+id/card_img"
+            android:layout_toStartOf="@+id/icon_img"
+            android:text="New Text"
+            android:textSize="@dimen/text16" />
+
+        <ImageView
+            android:id="@+id/icon_img"
+            android:layout_width="@dimen/margin15"
+            android:layout_height="@dimen/margin15"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/academics"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bridge_payment_edit_icon_minus"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@color/green" />
+</LinearLayout>

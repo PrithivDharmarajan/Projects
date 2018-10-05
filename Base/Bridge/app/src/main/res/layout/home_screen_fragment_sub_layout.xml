@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/green"></View>
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size35"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/green"/>
+
+    </LinearLayout>
+
+    <com.bridgellc.bridge.ui.home.StickyGridHeadersGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/margin5"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin10"
+        android:numColumns="3"
+        android:listSelector="@android:color/transparent"
+        android:verticalSpacing="@dimen/margin5" />
+</LinearLayout>

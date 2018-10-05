@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size1"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_marginTop="@dimen/size5">
+
+        <RelativeLayout
+            android:id="@+id/adapter_network_row_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size70"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/adapter_device_img_lay"
+                android:layout_width="@dimen/size50"
+                android:layout_height="match_parent">
+
+
+                <com.calix.calixgigamanage.utils.RoundedImageView
+                    android:id="@+id/adapter_control_device_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size45"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/phones" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/device_info_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/adapter_device_img_lay"
+                android:layout_toStartOf="@+id/up_down_lay"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/device_name_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text12" />
+
+                <TextView
+                    android:id="@+id/wifi_connect_status_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/size3"
+                    android:text="Connected to Wifi - Point 1"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text10" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/up_down_lay"
+                style="@style/LayoutWrap"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:id="@+id/up_img_lay"
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_width="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/up_img"
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size2"
+                        android:src="@drawable/arrow_background" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:id="@+id/down_img_lay"
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_width="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/down_img"
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size2"
+                        android:rotation="180"
+                        android:src="@drawable/arrow_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

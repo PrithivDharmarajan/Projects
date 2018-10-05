@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/guest_network_par_lay"
+   style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+
+    <RelativeLayout
+        android:id="@+id/guest_network_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_below="@+id/guest_network_header_bg_lay">
+
+        <android.support.v7.widget.CardView
+            android:padding="@dimen/size5"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_marginTop="@dimen/size7"
+            android:layout_marginBottom="@dimen/size2"
+            app:cardCornerRadius="@dimen/size3"
+           style="@style/LayoutWidMatch_HeiWrap">
+            <RelativeLayout
+                android:id="@+id/add_guest_network_lay"
+               style="@style/LayoutWidMatch_HeiWrap">
+                <TextView
+                    android:id="@+id/guest_network_add_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size13"
+                    android:layout_alignParentStart="true"
+                    android:gravity="start"
+                    android:text="@string/add_guest"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="@dimen/size13"
+                    android:paddingEnd="0dp"
+                    android:layout_toStartOf="@+id/guest_network_add_img_lay"
+                    />
+                <RelativeLayout
+                    android:id="@+id/guest_network_add_img_lay"
+                    android:layout_width="@dimen/size50"
+                    android:layout_height="@dimen/size50"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/size13">
+                <ImageView
+                    android:id="@+id/guset_network_add_img"
+                   style="@style/LayoutMatch"
+                    android:src="@drawable/add_round_img"
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    />
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/guest_network_recycler_view"
+            android:layout_marginBottom="@dimen/size7"
+           style="@style/LayoutWidMatch_HeiWrap"/>
+    </LinearLayout>
+</RelativeLayout>

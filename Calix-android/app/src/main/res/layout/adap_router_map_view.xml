@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <LinearLayout
+        style="@style/LayoutWidWei_HeiWrap"
+        android:gravity="bottom">
+
+        <LinearLayout
+            style="@style/LayoutWrap"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/LayoutWrap"
+                android:layout_height="@dimen/size70"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/line_arrow_up_img" />
+
+            <ImageView
+                android:id="@+id/device_img"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/router_circle_blue" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/device_name_txt"
+            style="@style/TextOpenSansRegular"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:padding="@dimen/size5"
+            android:text="@string/router"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidWei_HeiWrap"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <LinearLayout
+                android:id="@+id/router_download_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_toStartOf="@+id/view"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:text="@string/download"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size8" />
+
+                <TextView
+                    android:id="@+id/download_speed_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_marginBottom="@dimen/size3"
+                    android:layout_marginTop="@dimen/size3"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size12" />
+
+                <TextView
+                    android:id="@+id/download_scale_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:text="@string/kbps"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/size7" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/size0.5"
+                android:layout_height="@dimen/size40"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/router_upload_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_toEndOf="@+id/view"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:text="@string/upload"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size8" />
+
+                <TextView
+                    android:id="@+id/upload_speed_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_marginBottom="@dimen/size3"
+                    android:layout_marginTop="@dimen/size3"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size12" />
+
+                <TextView
+                    android:id="@+id/upload_scale_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:text="@string/kbps"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/size7" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

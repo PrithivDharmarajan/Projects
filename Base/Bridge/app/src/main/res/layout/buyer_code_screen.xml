@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/code_view_txt"
+        android:layout_marginTop="@dimen/margin80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin80"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/buyer_msg_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:text="@string/code_msg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text20" />
+
+            <TextView
+                android:id="@+id/code_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text25" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/code_view_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bott_lay"
+        android:layout_marginBottom="@dimen/margin40"
+        android:gravity="center"
+        android:padding="@dimen/margin20"
+        android:text="@string/again_view"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text17" />
+
+
+    <RelativeLayout
+        android:id="@+id/bott_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/general_footer" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/general_header_with_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

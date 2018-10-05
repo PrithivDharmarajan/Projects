@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_marginBottom="@dimen/size2"
+        app:cardCornerRadius="@dimen/size3"
+        android:padding="@dimen/size3"
+        style="@style/LayoutWidMatch_HeiWrap">
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap">
+            <ImageView
+                android:id="@+id/adapter_pc_filter_img"
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:adjustViewBounds="true"
+                android:src="@drawable/amazon_img"
+                android:padding="@dimen/size7"
+                android:contentDescription="@string/app_name"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size3"
+                android:layout_marginEnd="@dimen/size10"/>
+            <TextView
+                style="@style/TextOpenSansSemiBold"
+                android:layout_toStartOf="@+id/adapter_pc_filter_switch_compat"
+                android:layout_toEndOf="@+id/adapter_pc_filter_img"
+                android:text="@string/amazon"
+                android:textSize="@dimen/text12"
+                android:layout_centerVertical="true"
+                android:gravity="start"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/adapter_pc_filter_switch_compat"
+                style="@style/LayoutWrap"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:padding="@dimen/size5"
+                app:switchMinWidth="@dimen/size5" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

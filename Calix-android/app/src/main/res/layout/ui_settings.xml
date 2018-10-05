@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+
+    </RelativeLayout>
+
+    <ScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/TextOpenSansSemiBold"
+                android:background="@color/light_gray"
+                android:gravity="start"
+                android:paddingBottom="@dimen/size5"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size5"
+                android:text="@string/security"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text14" />
+
+
+            <RelativeLayout
+                android:id="@+id/set_reset_pin_pass_code_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/set_reset_pin_pass_code_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/reset_pin_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/set_pin_passcode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/reset_pin_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size10"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size10">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/enable_passcode_switch_compat"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextOpenSansSemiBold"
+                        android:gravity="start"
+                        android:text="@string/pin_passcode"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text13" />
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:gravity="start"
+                        android:text="@string/enable_pin_passcode"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text9" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/enable_passcode_switch_compat"
+                    style="@style/LayoutWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:padding="@dimen/size5"
+                    app:switchMinWidth="@dimen/size5" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/enable_touch_id_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size10"
+                    android:paddingEnd="@dimen/size5"
+                    android:paddingStart="@dimen/size10"
+                    android:paddingTop="@dimen/size10">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/enable_touch_id_switch_compat"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextOpenSansSemiBold"
+                            android:gravity="start"
+                            android:text="@string/touch_id"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:gravity="start"
+                            android:text="@string/enable_touch_id"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text9" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/enable_touch_id_switch_compat"
+                        style="@style/LayoutWrap"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:padding="@dimen/size5"
+                        app:switchMinWidth="@dimen/size5" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+
+            <RelativeLayout
+                android:id="@+id/changes_login_pwd_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/changes_login_pwd_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/changes_login_pwd_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/change_login_pwd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/changes_login_pwd_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size20"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/about_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+                <TextView
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/about_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/about_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/terms_conditions_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+                <TextView
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/terms_conditions_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/terms_conditions_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/update_ssid_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/router_status_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/update_ssid_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/on_board_router"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/update_ssid_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/install_alexa_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/install_alexa_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/install_alexa_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/install_alexa_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/install_alexa"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/install_alexa_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/things_to_try_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/things_to_try_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/things_to_try_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/things_to_try"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/things_to_try_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/calix_agent_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/calix_agent_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/calix_agent_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/calix_agent_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/calix_iot_agent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/calix_agent_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/uninstall_alexa_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/uninstall_agent_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/uninstall_agent_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/uninstall_agent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/uninstall_agent_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/remove_router_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+
+                <TextView
+                    android:id="@+id/remove_router_txt"
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/remove_router_arrow_img"
+                    android:gravity="start"
+                    android:text="@string/remove_router"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:id="@+id/remove_router_arrow_img"
+                    android:layout_width="@dimen/size27"
+                    android:layout_height="@dimen/size27"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:src="@drawable/arrow_right_violet" />
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/app_version_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size7"
+                android:paddingEnd="@dimen/size10"
+                android:paddingStart="@dimen/size10"
+                android:paddingTop="@dimen/size7">
+
+                <TextView
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/app_version_txt"
+                    android:gravity="start"
+                    android:text="@string/app_version"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <TextView
+                    android:id="@+id/app_version_txt"
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

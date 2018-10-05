@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/screen_bg">
+
+    <TextView
+        android:id="@+id/pay_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pay_lay"
+        android:layout_marginTop="@dimen/margin70"
+        android:gravity="center"
+        android:text="@string/do_you_want_pay"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text20"/>
+
+    <LinearLayout
+        android:id="@+id/pay_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/payment_card_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin65"
+            android:layout_marginLeft="@dimen/margin25"
+            android:layout_marginRight="@dimen/margin25"
+            android:background="@drawable/payment_card_btn"
+            android:onClick="onClick"
+            android:text="@string/pay_card"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text20"/>
+
+        <Button
+            android:id="@+id/paypal_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin65"
+            android:layout_marginLeft="@dimen/margin25"
+            android:layout_marginRight="@dimen/margin25"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@drawable/paypal_icon"
+            android:onClick="onClick"
+            android:textAllCaps="false"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/general_header_with_bg"/>
+
+    </RelativeLayout>
+</RelativeLayout>

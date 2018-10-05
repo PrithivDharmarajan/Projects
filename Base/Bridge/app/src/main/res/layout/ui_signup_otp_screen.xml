@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/general_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/header_lay"
+        android:layout_marginTop="@dimen/margin15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/margin20">
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enter_your_ph"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/edu_hint_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_txt"
+                android:layout_marginTop="@dimen/margin15"
+                android:gravity="center"
+                android:text="@string/hint_edu"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text14"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green" />
+
+        <EditText
+            android:id="@+id/input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin60"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="@string/type_here"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:id="@+id/input_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin60"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:inputType="textCapSentences|textNoSuggestions"
+            android:onClick="onClick"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text16"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/general_footer_with_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

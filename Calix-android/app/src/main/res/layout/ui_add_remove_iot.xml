@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_remove_iot_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.NestedScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/add_remove_iot_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/add_remove_iot_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/add_remove_iot_header_msg_lay"
+
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/add_remove_iot_header_lay">
+
+                    <ImageView
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_above="@+id/add_remove_iot_txt"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size15"
+                        android:src="@drawable/iot_header" />
+
+                    <TextView
+                        android:id="@+id/add_remove_iot_txt"
+                        style="@style/TextOpenSansRegular"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:paddingBottom="@dimen/size15"
+                        android:text="@string/iot"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginTop="@dimen/size5"
+                android:padding="@dimen/size6">
+
+
+                <RelativeLayout
+                    android:id="@+id/iot_add_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size7"
+                    android:layout_marginStart="@dimen/size7">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size10"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/size33"
+                        android:paddingTop="@dimen/size33">
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:padding="@dimen/size5"
+                            android:text="@string/add_smart_device"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/iot_add" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remove_device_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size7"
+                    android:layout_marginStart="@dimen/size7">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size10"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/size33"
+                        android:paddingTop="@dimen/size33">
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:padding="@dimen/size5"
+                            android:text="@string/remove_smart_device"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/iot_remove" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size17"
+                android:layout_marginStart="@dimen/size17"
+                android:gravity="center"
+                android:padding="@dimen/size6"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:id="@+id/remove_all_device_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size7"
+                    android:layout_marginStart="@dimen/size7">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size10"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/size33"
+                        android:paddingTop="@dimen/size33">
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:padding="@dimen/size5"
+                            android:text="@string/remove_all_smart_device"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/iot_remove_all" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

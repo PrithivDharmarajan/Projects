@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_user_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/control_user_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/control_user_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/control_user_header_msg_lay"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/control_user_header_lay">
+
+                    <RelativeLayout
+                        android:id="@+id/profile_img_lay"
+                        android:layout_width="@dimen/size90"
+                        android:layout_height="@dimen/size90"
+                        android:layout_above="@+id/reward_bottom_lay"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/size10">
+
+                        <com.calix.calixgigamanage.utils.RoundedImageView
+                            style="@style/LayoutMatch"
+                            android:contentDescription="@string/app_name"
+                            android:src="@color/violet_rounded_bg_one" />
+
+                        <com.calix.calixgigamanage.utils.RoundedImageView
+                            android:id="@+id/control_user_profile_img"
+                            style="@style/LayoutMatch"
+                            android:layout_margin="@dimen/size7"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/default_profile_white" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/reward_bottom_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/size10"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="@dimen/size15">
+
+                        <ImageView
+                            android:layout_width="@dimen/size25"
+                            android:layout_height="@dimen/size25"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_rewards" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/size6"
+                            android:gravity="start"
+                            android:text="@string/rewards_samantha"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text10" />
+
+                        <TextView
+                            style="@style/TextOpenSansSemiBold"
+                            android:layout_width="wrap_content"
+                            android:gravity="start"
+                            android:text="@string/date_time"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text10" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size5"
+                android:padding="@dimen/size6">
+
+                <RelativeLayout
+                    android:id="@+id/pc_device_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_devices" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/six"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/device"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pc_insight_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_time" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/nine_hrs"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/insight"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pc_filter_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_filter" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/teen"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/filter"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size5"
+                android:padding="@dimen/size6">
+
+                <RelativeLayout
+                    android:id="@+id/pc_time_limit_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_time_limit" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/off"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/time_limit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pc_bed_time_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_night_time" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/nine_thirty"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/bed_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pc_off_time_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_marginEnd="@dimen/size8"
+                    android:layout_marginStart="@dimen/size8">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_margin="@dimen/size2"
+                        android:background="@drawable/rounded_white_bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size27"
+                            android:layout_marginBottom="@dimen/size2"
+                            android:layout_marginTop="@dimen/size4"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/parental_user_off_time" />
+
+                        <TextView
+                            android:id="@+id/televisions_count_txt"
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:text="@string/none"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/size4"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/off_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextOpenSansRegular"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounder_red_bg"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text10"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pause_img_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size30"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size5"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/play_pause_btn_img"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:contentDescription="@string/app_name"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pause_img" />
+
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:gravity="start"
+                    android:text="@string/pause_the_samantha"
+                    android:textColor="@color/violet"
+                    android:textSize="@dimen/text10" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

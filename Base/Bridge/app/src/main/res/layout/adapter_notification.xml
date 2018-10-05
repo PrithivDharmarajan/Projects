@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/payclick_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin7">
+
+        <RelativeLayout
+            android:id="@+id/product_img_price_lay"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:layout_centerVertical="true">
+
+            <com.bridgellc.bridge.utils.ImageViewRounded
+                android:id="@+id/product_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_horizontal"
+                android:background="@drawable/home_green_small"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/padding4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text10" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin13"
+            android:layout_marginTop="@dimen/margin7"
+            android:layout_toRightOf="@+id/product_img_price_lay"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text17" />
+
+
+        <TextView
+            android:id="@+id/productname_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_txt"
+            android:layout_marginLeft="@dimen/margin13"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_toRightOf="@+id/product_img_price_lay"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text15" />
+
+
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/productname_txt"
+            android:layout_marginRight="@dimen/margin10"
+            android:padding="@dimen/margin1"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text12"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

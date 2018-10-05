@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_green_color">#3d8301</color>
+    <color name="status_gray_color">#e6e6e6</color>
+    <color name="green">#4EA701</color>
+    <color name="footer_green_one">#4EA800</color>
+    <color name="footer_green_two">#3F8601</color>
+    <color name="footer_green_three">#2D5F00</color>
+    <color name="light_green">#804EA701</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#80FFFFFF</color>
+    <color name="blue_gray">#063644</color>
+    <color name="light_blue_gray">#80063644</color>
+    <color name="gray">#8D8D8D</color>
+    <color name="gray_home">#bfbfbf</color>
+    <color name="light_gray">#A4A4A4</color>
+    <color name="screen_bg">#F7F7F7</color>
+    <color name="blue_btn_bg">#17384B</color>
+    <color name="swipe_red">#a82624</color>
+    <color name="blue_bg">#04384C</color>
+    <color name="share_bg">#002639</color>
+    <color name="blue_home">#03252f</color>
+
+</resources>

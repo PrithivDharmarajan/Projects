@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size3">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_margin="@dimen/size10"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                android:id="@+id/iot_device_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size65"
+                android:adjustViewBounds="true"
+                android:paddingTop="@dimen/size8"
+                android:src="@drawable/binary_switch"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/iot_device_name_txt"
+                style="@style/TextOpenSansRegular"
+                android:layout_height="@dimen/size50"
+                android:maxLines="3"
+                android:text="Binary Switch"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text11" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_round_img" />
+
+    </RelativeLayout>
+
+</LinearLayout>

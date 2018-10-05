@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin5"
+        android:background="@drawable/shadow_img" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:background="@color/green"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/footer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18" />
+    </LinearLayout>
+</LinearLayout>

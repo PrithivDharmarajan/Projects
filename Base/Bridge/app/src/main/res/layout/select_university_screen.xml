@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_lay">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5"
+            android:background="@drawable/shadow_img" />
+        <include layout="@layout/search_header_with_bg_sub" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/singup_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/general_footer" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/singup_lay"
+        android:layout_below="@+id/search_lay"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"></ListView>
+</RelativeLayout>

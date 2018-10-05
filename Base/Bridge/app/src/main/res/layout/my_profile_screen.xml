@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/screen_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin60"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4.04">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/academics"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/profile_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin18"
+                    android:maxLines="1"
+                    android:maxWidth="@dimen/height200"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text17"/>
+
+                <ImageView
+                    android:id="@+id/verify_img"
+                    android:layout_width="@dimen/margin23"
+                    android:layout_height="@dimen/margin23"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/profile_name_txt"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/agree"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:src="@drawable/verify_img"
+                    android:visibility="invisible"/>
+
+                <RatingBar
+
+                    android:id="@+id/user_ratingbar"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_name_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:layout_marginStart="@dimen/padding5"
+                    android:layout_marginTop="@dimen/padding5"
+                    android:isIndicator="true"
+                    android:rating="0"
+                    android:stepSize="0.5"/>
+
+                <TextView
+                    android:id="@+id/university_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_ratingbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin18"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text16"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/becm_partner_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin3"
+                android:onClick="onClick"
+                android:padding="@dimen/margin15"
+                android:text="@string/become_par"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"/>
+
+            <TextView
+                android:id="@+id/view_al_review_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin3"
+                android:onClick="onClick"
+                android:padding="@dimen/margin15"
+                android:text="@string/view_reviews"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.24">
+
+            <LinearLayout
+                android:id="@+id/buying_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin15"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:layout_marginStart="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/buying_icon"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:text="@string/buying"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/buying_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:gravity="center"
+
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text14"/>
+
+                    <ImageView
+                        android:id="@+id/buying_right_img"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_marginRight="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/right_arrow_lightb_img"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.24">
+
+            <LinearLayout
+                android:id="@+id/selling_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin15"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:layout_marginStart="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/selling_icon"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:text="@string/selling"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/selling_item_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:gravity="center"
+
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text14"/>
+
+                    <ImageView
+                        android:id="@+id/selling_right_img"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_marginRight="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/right_arrow_lightb_img"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.24">
+
+            <LinearLayout
+                android:id="@+id/request_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin15"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:layout_marginStart="@dimen/margin3"
+                        android:contentDescription="@string/accept"
+                        android:src="@drawable/request_icon"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:text="@string/requesting"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/request_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:gravity="center"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text14"/>
+
+                    <ImageView
+                        android:id="@+id/request_right_img"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_marginRight="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/right_arrow_lightb_img"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.24">
+
+            <LinearLayout
+                android:id="@+id/bidding_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin15"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:layout_marginStart="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/bidding_icon"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:text="@string/offering"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/biding_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:gravity="center"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text14"/>
+
+                    <ImageView
+                        android:id="@+id/biding_right_img"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_marginRight="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/right_arrow_lightb_img"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/payment_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin15"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin3"
+                        android:layout_marginStart="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/payment_icon"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:text="@string/payment"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/payment_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:gravity="center"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text14"/>
+
+                    <ImageView
+                        android:id="@+id/payment_right_img"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_marginRight="@dimen/margin3"
+                        android:contentDescription="@string/academics"
+                        android:src="@drawable/right_arrow_lightb_img"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding1"
+            android:background="@color/green"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/general_header_with_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/router_map_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <RelativeLayout
+        android:id="@+id/router_map_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_below="@+id/router_map_header_bg_lay"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.CardView
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_margin="@dimen/size5"
+            app:cardCornerRadius="@dimen/size3">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical"
+                android:padding="@dimen/size5">
+
+                <LinearLayout style="@style/LayoutWidMatch_HeiWrap"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/internet_online_circle_blue" />
+
+                    <TextView
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_marginStart="@dimen/size5"
+                        android:layout_marginTop="@dimen/size5"
+                        android:gravity="start"
+                        android:text="@string/internet_cap"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size12" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/router_recycler_view"
+                    style="@style/LayoutWidMatch_HeiWrap"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>
+

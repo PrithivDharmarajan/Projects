@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:padding="@dimen/size8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_margin="@dimen/size2"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/size5">
+
+            <TextView
+                android:id="@+id/device_count_txt"
+                style="@style/TextOpenSansSemiBold"
+                android:maxLines="1"
+                android:textColor="@color/violet"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/device_name_txt"
+                style="@style/TextOpenSansSemiBold"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/size4"
+                android:paddingTop="@dimen/size3"
+                android:textColor="@color/violet"
+                android:textSize="@dimen/text12" />
+
+            <ImageView
+                android:id="@+id/device_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size20"
+                android:layout_marginBottom="@dimen/size2"
+                android:layout_marginTop="@dimen/size4"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/device_issue_count_txt"
+            style="@style/TextOpenSansSemiBold"
+            android:layout_width="@dimen/size18"
+            android:layout_height="@dimen/size18"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@drawable/rounder_red_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text10" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin60"
+    android:background="@color/green"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/footer_one_ly"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_btn_bg"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/footer_one_btn_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/footer_one_img"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding2" />
+
+                <TextView
+                    android:id="@+id/footer_one_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/footer_two_ly"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_btn_bg">
+
+            <View
+                android:layout_width="@dimen/padding1"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/footer_two_btn_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/footer_two_img"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding2" />
+
+                <TextView
+                    android:id="@+id/footer_two_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer_three_ly"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@color/blue_btn_bg">
+
+            <View
+                android:layout_width="@dimen/padding1"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/footer_three_btn_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/footer_three_img"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/academics"
+                    android:layout_marginBottom="@dimen/padding2" />
+
+                <TextView
+                    android:id="@+id/footer_three_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginBottom="@dimen/size13"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/welcome_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/welcome_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/welcome_header_msg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/welcome_header_lay"
+                    android:layout_marginBottom="@dimen/size18">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:layout_above="@+id/welcome_txt"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/router" />
+
+                    <TextView
+                        android:id="@+id/welcome_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:text="@string/welcome"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="@string/qr_code_hint"
+                    android:textColor="@color/gray"
+                    android:gravity="start"
+                    android:textSize="@dimen/text10" />
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_toStartOf="@+id/mac_address_img"
+                        android:textColorHint="@color/gray">
+
+                        <EditText
+                            android:id="@+id/mac_address_edt"
+                            style="@style/EditTextOpenSansRegular"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/mac_address"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textNoSuggestions"
+                            android:digits="0123456789abcdefABCDEF"
+                            android:maxLength="17"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size37" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/mac_address_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size8"
+                        android:src="@drawable/bar_img" />
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_toStartOf="@+id/serial_number_img"
+                        android:textColorHint="@color/gray">
+
+                        <EditText
+                            android:id="@+id/serial_number_edt"
+                            style="@style/EditTextOpenSansRegular"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/serial_number"
+                            android:imeActionId="100"
+                            android:imeOptions="actionDone|flagNoExtractUi"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size37"
+                            tools:ignore="TextFields" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/serial_number_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size8"
+                        android:src="@drawable/bar_img" />
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <TextView
+                    style="@style/TextOpenSansSemiBold"
+                    android:layout_marginTop="@dimen/size20"
+                    android:gravity="center"
+                    android:text="@string/qr_scan" />
+
+                <ImageView
+                    android:id="@+id/qr_code_scanner_img"
+                    android:layout_width="@dimen/size90"
+                    android:layout_height="@dimen/size90"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size13"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/submit"
+                    android:src="@drawable/qr_code_scanner_img" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonOpenSansSemiBold"
+        android:layout_above="@+id/address_txt"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:elevation="0dip"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/address_txt"
+        style="@style/TextOpenSansRegular"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/size2" />
+</RelativeLayout>

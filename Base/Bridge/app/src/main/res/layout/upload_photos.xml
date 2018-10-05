@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/foot_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/general_footer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/foot_lay"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/upload_pic"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text24" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/sep"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+
+            <View
+                android:id="@+id/se"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/imagePager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/se"
+                android:layout_below="@+id/sep"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin13"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:layout_centerInParent="true">
+
+                            <com.bridgellc.bridge.utils.ImageViewRounded
+                                android:id="@+id/image_one"
+                                android:layout_width="@dimen/size100"
+                                android:layout_height="@dimen/size100"
+                                android:background="@drawable/upload_icon_holder" />
+
+                            <RelativeLayout
+                                android:id="@+id/image_cls_one_lay"
+                                android:layout_width="@dimen/margin40"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:visibility="gone"
+                                android:layout_height="@dimen/margin40">
+                            <ImageView
+                                android:id="@+id/image_cls_one"
+                                android:layout_width="@dimen/margin27"
+                                android:layout_height="@dimen/margin27"
+                                android:adjustViewBounds="true"
+                                android:layout_alignParentRight="true"
+                                android:contentDescription="@string/academics"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cls_btn" /></RelativeLayout>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginStart="@dimen/margin10"
+                        android:layout_weight="1">
+
+                        <com.bridgellc.bridge.utils.ImageViewRounded
+                            android:id="@+id/image_two"
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/upload_icon_holder" />
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:layout_centerInParent="true">
+                            <RelativeLayout
+                                android:id="@+id/image_cls_two_lay"
+                                android:layout_width="@dimen/margin40"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:visibility="gone"
+                                android:layout_height="@dimen/margin40">
+                            <ImageView
+                                android:id="@+id/image_cls_two"
+                                android:layout_width="@dimen/margin27"
+                                android:layout_height="@dimen/margin27"
+                                android:adjustViewBounds="true"
+                                android:layout_alignParentRight="true"
+                                android:contentDescription="@string/academics"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cls_btn" /></RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginStart="@dimen/margin10"
+                        android:layout_weight="1">
+
+                        <com.bridgellc.bridge.utils.ImageViewRounded
+                            android:id="@+id/image_three"
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/upload_icon_holder" />
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/size100"
+                            android:layout_height="@dimen/size100"
+                            android:layout_centerInParent="true">
+                            <RelativeLayout
+                                android:id="@+id/image_cls_three_lay"
+                                android:layout_width="@dimen/margin40"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:visibility="gone"
+                                android:layout_height="@dimen/margin40">
+                            <ImageView
+                                android:id="@+id/image_cls_three"
+                                android:layout_width="@dimen/margin27"
+                                android:layout_height="@dimen/margin27"
+                                android:adjustViewBounds="true"
+                                android:layout_alignParentRight="true"
+                                android:contentDescription="@string/academics"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cls_btn" /></RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

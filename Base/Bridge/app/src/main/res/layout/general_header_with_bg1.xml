@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/header_left_btn_lay1"
+            android:layout_width="@dimen/size50"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/header_left_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/back_img" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/header_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text18" />
+
+
+        <RelativeLayout
+            android:id="@+id/header_right_btn_lay1"
+            android:layout_width="@dimen/size50"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/header_right_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/back_img" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/header_right_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text16"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/curve_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin60">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin35"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/academics"
+            android:adjustViewBounds="true"
+            android:src="@drawable/header_bg_img" />
+
+        <ImageView
+            android:id="@+id/close_img1"
+            android:layout_width="@dimen/margin23"
+            android:layout_height="@dimen/margin23"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin13"
+            android:contentDescription="@string/first_name"
+            android:src="@drawable/down_arrow_darkb_img" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/top_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin40"
+        android:layout_marginRight="@dimen/margin40"
+        android:layout_marginBottom="@dimen/margin20"
+        android:layout_above="@+id/lay"
+        android:text="@string/selling_or_requ"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text24" />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selling"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height150"
+            android:paddingRight="@dimen/margin5"
+            android:paddingLeft="@dimen/margin10"
+            android:textAllCaps="false"
+            android:background="@drawable/upload_blue_bg"
+            android:text="@string/selling"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+
+        <Button
+            android:id="@+id/requesting"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height150"
+            android:paddingRight="@dimen/margin5"
+            android:paddingLeft="@dimen/margin10"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size50"
+            android:background="@drawable/upload_green_bg"
+            android:text="@string/requesting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+    </LinearLayout>
+</RelativeLayout>

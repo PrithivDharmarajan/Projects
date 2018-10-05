@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/screen_bg">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/text16"/>
+
+
+            <TextView
+                android:id="@+id/price_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/text16"/>
+
+            <TextView
+                android:id="@+id/item_condition_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/text16"/>
+
+
+            <TextView
+                android:id="@+id/no_of_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/text16"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrollView"
+        android:layout_above="@+id/footer_lay"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin55"
+                android:layout_marginRight="@dimen/margin55"
+                android:layout_marginTop="@dimen/margin25"
+                android:background="@drawable/green_border_white_screen">
+
+                <TextView
+                    android:id="@+id/selcted_qty_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginStart="@dimen/margin5"
+                    android:clickable="true"
+                    android:padding="@dimen/margin10"
+                    android:text="@string/qty"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text15"/>
+
+                <ImageView
+                    android:layout_width="@dimen/margin25"
+                    android:layout_height="@dimen/margin25"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:src="@drawable/green_arrow"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/custom_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_below="@+id/frame_lay"
+                android:layout_marginTop="@dimen/margin25"
+                android:background="@color/green"/>
+
+
+            <TextView
+                android:id="@+id/tot_cost_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_view_line"
+                android:layout_margin="@dimen/margin10"
+                android:textSize="@dimen/text16"/>
+
+
+            <ListView
+                android:id="@+id/qty_listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_lay"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin55"
+                android:layout_marginRight="@dimen/margin55"
+                android:background="@drawable/green_border_white_screen"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/general_footer"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/general_header_with_bg"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

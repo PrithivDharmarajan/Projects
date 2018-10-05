@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Margins -->
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">3dp</dimen>
+    <dimen name="margin3">4dp</dimen>
+    <dimen name="margin5">7dp</dimen>
+    <dimen name="margin7">10dp</dimen>
+    <dimen name="margin10">15dp</dimen>
+    <dimen name="margin11">16dp</dimen>
+    <dimen name="margin13">19dp</dimen>
+    <dimen name="margin15">22dp</dimen>
+    <dimen name="margin18">27dp</dimen>
+    <dimen name="margin19">28dp</dimen>
+    <dimen name="margin20">30dp</dimen>
+    <dimen name="margin27">35dp</dimen>
+    <dimen name="margin25">37dp</dimen>
+    <dimen name="margin30">45dp</dimen>
+    <dimen name="margin35">52dp</dimen>
+    <dimen name="margin40">60dp</dimen>
+    <dimen name="margin45">67dp</dimen>
+    <dimen name="margin50">75dp</dimen>
+    <dimen name="margin55">85dp</dimen>
+    <dimen name="margin60">90dp</dimen>
+    <dimen name="margin65">97dp</dimen>
+    <dimen name="margin70">105dp</dimen>
+    <dimen name="margin75">112dp</dimen>
+    <dimen name="margin80">120dp</dimen>
+    <dimen name="margin85">127dp</dimen>
+    <dimen name="margin90">135dp</dimen>
+    <dimen name="margin95">142dp</dimen>
+    <dimen name="margin100">150dp</dimen>
+    <dimen name="size105">158dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text8">12sp</dimen>
+    <dimen name="text10">15sp</dimen>
+    <dimen name="text11">16sp</dimen>
+    <dimen name="text12">18sp</dimen>
+    <dimen name="text13">19sp</dimen>
+    <dimen name="text14">21sp</dimen>
+    <dimen name="text15">22sp</dimen>
+    <dimen name="text16">24sp</dimen>
+    <dimen name="text17">25sp</dimen>
+    <dimen name="text18">27sp</dimen>
+    <dimen name="text19">28sp</dimen>
+    <dimen name="text20">30sp</dimen>
+    <dimen name="text21">31sp</dimen>
+    <dimen name="text22">33sp</dimen>
+    <dimen name="text23">34sp</dimen>
+    <dimen name="text24">36sp</dimen>
+    <dimen name="text25">37sp</dimen>
+    <dimen name="text26">39sp</dimen>
+    <dimen name="text27">41sp</dimen>
+    <dimen name="text28">42sp</dimen>
+    <dimen name="text30">45sp</dimen>
+    <dimen name="text32">48sp</dimen>
+    <dimen name="text34">51sp</dimen>
+    <dimen name="text36">54sp</dimen>
+    <dimen name="text38">57sp</dimen>
+    <dimen name="text40">60sp</dimen>
+    <dimen name="text50">75sp</dimen>
+    <dimen name="text60">90sp</dimen>
+    <dimen name="text65">97sp</dimen>
+    <dimen name="text70">105sp</dimen>
+    <!-- height -->
+    <dimen name="height100">153dp</dimen>
+    <dimen name="height110">165dp</dimen>
+    <dimen name="height120">180dp</dimen>
+    <dimen name="height130">195dp</dimen>
+    <dimen name="height140">210dp</dimen>
+    <dimen name="height150">225dp</dimen>
+    <dimen name="height160">240dp</dimen>
+    <dimen name="height165">247dp</dimen>
+    <dimen name="height170">255dp</dimen>
+    <dimen name="height175">262dp</dimen>
+    <dimen name="height180">270dp</dimen>
+    <dimen name="height185">278dp</dimen>
+    <dimen name="height190">285dp</dimen>
+    <dimen name="height195">293dp</dimen>
+    <dimen name="height200">300dp</dimen>
+    <dimen name="height220">330dp</dimen>
+    <dimen name="height250">375dp</dimen>
+    <dimen name="height280">420dp</dimen>
+    <dimen name="height300">495dp</dimen>
+    <dimen name="height330">440dp</dimen>
+    <dimen name="height350">525dp</dimen>
+    <dimen name="height400">600dp</dimen>
+
+    <!-- Size -->
+
+    <dimen name="size30">45dp</dimen>
+    <dimen name="size35">52dp</dimen>
+    <dimen name="size50">75dp</dimen>
+    <dimen name="size75">112dp</dimen>
+    <dimen name="size80">120dp</dimen>
+    <dimen name="size90">135dp</dimen>
+    <dimen name="size100">150dp</dimen>
+    <dimen name="size120">180dp</dimen>
+    <dimen name="size130">195dp</dimen>
+    <dimen name="size150">225dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding1">1dp</dimen>
+    <dimen name="padding2">3dp</dimen>
+    <dimen name="padding3">4dp</dimen>
+    <dimen name="padding4">6dp</dimen>
+    <dimen name="padding5">7dp</dimen>
+    <dimen name="padding6">9dp</dimen>
+    <dimen name="padding7">10dp</dimen>
+    <dimen name="padding8">12dp</dimen>
+    <dimen name="padding9">13dp</dimen>
+    <dimen name="padding10">15dp</dimen>
+
+</resources>

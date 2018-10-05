@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speed_test_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray">
+
+    <RelativeLayout
+        android:id="@+id/speed_test_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_below="@+id/speed_test_header_bg_lay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size5"
+                app:contentPaddingRight="@dimen/size3">
+
+                <RelativeLayout
+                    android:id="@+id/speed_test_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:padding="@dimen/size5">
+
+                    <LinearLayout
+                        style="@style/LayoutWrap"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toStartOf="@+id/speed_test_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextOpenSansSemiBold"
+                            android:gravity="start"
+                            android:padding="@dimen/size2"
+                            android:text="@string/check_the_internet_speed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size13" />
+
+                        <TextView
+                            style="@style/TextOpenSansRegular"
+                            android:gravity="start"
+                            android:padding="@dimen/size2"
+                            android:text="@string/click_icon_to_check_speed"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/size11" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/speed_test_img"
+                        android:layout_width="@dimen/size50"
+                        android:layout_height="@dimen/size50"
+                        android:layout_alignParentEnd="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/speed_test_enable" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size5"
+                app:cardCornerRadius="@dimen/size3">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size5">
+
+                    <LinearLayout style="@style/LayoutWidMatch_HeiWrap"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/internet_online_circle_blue" />
+
+                        <TextView
+                            style="@style/TextOpenSansSemiBold"
+                            android:layout_marginStart="@dimen/size5"
+                            android:layout_marginTop="@dimen/size5"
+                            android:gravity="start"
+                            android:text="@string/internet_cap"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size12" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/speed_test_recycler_view"
+                        style="@style/LayoutWidMatch_HeiWrap"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

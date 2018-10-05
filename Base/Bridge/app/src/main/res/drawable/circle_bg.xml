@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke android:color="@color/swipe_red"/>
+    <solid android:color="@color/swipe_red"/>
+    <corners
+        android:bottomLeftRadius="@dimen/margin65"
+        android:bottomRightRadius="@dimen/margin65"
+        android:topLeftRadius="@dimen/margin65"
+        android:topRightRadius="@dimen/margin65" />
+
+    <size
+        android:height="@dimen/margin25"
+        android:width="@dimen/margin25" />
+
+</shape>

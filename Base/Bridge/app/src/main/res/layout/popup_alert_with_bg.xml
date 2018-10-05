@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_dia_lay"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/text_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height170"
+        android:alpha="0.6"
+        android:background="@drawable/popup_bg">
+
+        <RelativeLayout
+            android:id="@+id/close_img_lay"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin10"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/close_img"
+                android:layout_width="@dimen/margin15"
+                android:layout_height="@dimen/margin15"
+                android:contentDescription="@string/academics"
+                android:layout_centerInParent="true"
+                android:src="@drawable/down_arrow_white_img" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin60"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/padding2"
+                android:layout_marginEnd="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/header_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/padding2"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginStart="@dimen/margin15"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_lay"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/msg_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:contentDescription="@string/academics"
+        android:layout_below="@+id/text_lay"
+        android:background="@drawable/sepa_shadow"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/footer_lay_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_below="@+id/view" />
+
+
+</RelativeLayout>

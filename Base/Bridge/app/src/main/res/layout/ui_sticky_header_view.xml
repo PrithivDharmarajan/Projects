@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding2"
+            android:background="@color/green"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginStart="@dimen/margin15"
+                android:background="@color/white"
+                android:layout_toLeftOf="@+id/item_name"
+                android:layout_toStartOf="@+id/item_name"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding2"
+            android:background="@color/green"></View>
+
+    </LinearLayout>
+
+    <com.bridgellc.bridge.utils.FullWrapGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin5"
+        android:horizontalSpacing="@dimen/margin5"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/margin5" />
+
+    <TextView
+        android:id="@+id/no_items_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/text16"
+        android:layout_marginBottom="@dimen/margin10"
+        android:visibility="gone"
+        android:text="@string/no_item" />
+</LinearLayout>

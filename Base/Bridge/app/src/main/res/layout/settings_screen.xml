@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin60"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+
+            <RelativeLayout
+                android:id="@+id/update_profile_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/update_profile_img"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_profile_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginStart="@dimen/margin15"
+                    android:layout_toEndOf="@+id/update_profile_img"
+                    android:layout_toRightOf="@+id/update_profile_img"
+                    android:text="@string/update_profile"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/payment_info_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/payment_img"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_payment_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_toRightOf="@+id/payment_img"
+                    android:text="@string/payment_information"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green"/>
+
+            <RelativeLayout
+                android:id="@+id/bank_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/bank_img"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/settings_payment_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_toRightOf="@+id/bank_img"
+                    android:text="@string/payment_information"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/settings_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+
+            <RelativeLayout
+                android:id="@+id/tutorial_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/tutorial_img"
+                    android:layout_width="@dimen/margin27"
+                    android:layout_height="@dimen/margin27"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tut_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginStart="@dimen/margin15"
+                    android:layout_toEndOf="@+id/tutorial_img"
+                    android:layout_toRightOf="@+id/tutorial_img"
+                    android:text="@string/tutorial"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/academics"
+                    android:src="@drawable/settings_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green"/>
+
+            <RelativeLayout
+                android:id="@+id/cond_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/cond_img"
+                    android:layout_width="@dimen/margin25"
+                    android:layout_height="@dimen/margin18"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contact_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginStart="@dimen/margin15"
+                    android:layout_toEndOf="@+id/cond_img"
+                    android:layout_toRightOf="@+id/cond_img"
+                    android:text="@string/con_us"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:src="@drawable/settings_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+
+            <RelativeLayout
+                android:id="@+id/signout_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/logout_img"
+                    android:layout_width="@dimen/margin25"
+                    android:layout_height="@dimen/margin25"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/academics"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logout_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginStart="@dimen/margin15"
+                    android:layout_toEndOf="@+id/logout_img"
+                    android:layout_toRightOf="@+id/logout_img"
+                    android:text="@string/sign_out"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/academics"
+                    android:src="@drawable/settings_right_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+
+            <RelativeLayout
+                android:id="@+id/display_goods_ser_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_margin="@dimen/margin15"
+                android:clickable="true"
+                android:onClick="onClick">
+
+
+                <ImageView
+                    android:id="@+id/term_img"
+                    android:layout_width="@dimen/margin45"
+                    android:layout_height="@dimen/margin45"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/already_mem"
+                    android:onClick="onClick"
+                    android:src="@drawable/term_off"
+                    android:tag="@string/off" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_toLeftOf="@+id/term_img"
+                    android:layout_toStartOf="@+id/term_img"
+                    android:text="@string/display_good"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text16" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding1"
+                android:background="@color/green" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/general_header_with_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tutorial_pager_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tutorial_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin50">
+
+                <RelativeLayout
+                    android:id="@+id/tut_btn_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height140"
+                    android:padding="@dimen/margin45">
+
+                    <include layout="@layout/footer_lay_one" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skip_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin7"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="@dimen/margin7"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

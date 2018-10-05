@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/text_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height170"
+        android:alpha="0.6"
+        android:background="@drawable/popup_bg">
+
+        <RelativeLayout
+            android:id="@+id/close_img_lay"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin10"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/close_img"
+                android:layout_width="@dimen/margin15"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin15"
+                android:contentDescription="@string/academics"
+                android:layout_centerInParent="true"
+                android:src="@drawable/down_arrow_white_img" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/padding2"
+                android:layout_marginEnd="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/header_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/padding2"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginStart="@dimen/margin15"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_lay"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin15"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/margin20"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/top_txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:text="@string/enter_amt_bid"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.2"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin15"
+                android:paddingStart="@dimen/margin15">
+
+                <TextView
+                    android:id="@+id/doll_sym_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dollar_sym"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/text16"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/bid_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin3"
+                    android:layout_marginStart="@dimen/margin3"
+                    android:layout_toEndOf="@+id/doll_sym_txt"
+                    android:layout_toRightOf="@+id/doll_sym_txt"
+                    android:background="@null"
+                    android:hint="@string/eg_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="@color/light_gray"
+                    android:textColorHint="@color/blue_gray"
+                    android:textSize="@dimen/text15" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_below="@+id/text_lay"
+        android:contentDescription="@string/academics"
+        android:background="@drawable/sepa_shadow"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_below="@+id/view">
+
+        <include layout="@layout/footer_lay_two" />
+    </RelativeLayout>
+
+</RelativeLayout>

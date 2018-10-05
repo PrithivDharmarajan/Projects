@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/heade_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/general_header_with_bg">
+
+        </include>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/height120"
+        android:background="@null"
+        android:gravity="left|bottom"
+        android:hint="@string/enter_url_hint"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingTop="@dimen/margin10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_gray"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_below="@+id/input_box"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin7"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin30"
+        android:gravity="center_horizontal"
+        android:text="@string/or_text"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text16"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/drop_box_icon"
+        android:layout_width="@dimen/height130"
+        android:layout_height="@dimen/height130"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin25"
+        android:gravity="center_horizontal"
+        android:contentDescription="@string/academics"
+        android:scaleType="fitXY"
+        android:src="@drawable/drop_box_icon" />
+
+
+    <include
+        layout="@layout/general_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_lay"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/paydone_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin7"
+            android:layout_weight="1"
+            android:background="@color/footer_green_two"
+            android:onClick="onClick"
+            android:text="@string/sent"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+
+        <Button
+            android:id="@+id/payescrow_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin7"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:onClick="onClick"
+            android:text="@string/payment_escrow"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+
+        <Button
+            android:id="@+id/payreceive_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin7"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:onClick="onClick"
+            android:text="@string/payment_receive"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/payment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer_lay"
+        android:layout_marginBottom="@dimen/margin1"
+        android:layout_below="@+id/pay_lay"
+        android:divider="@color/green"
+        android:dividerHeight="@dimen/padding1"></ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_above="@+id/footer_lay"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/footer_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/margin15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="@string/payment_sent"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/payment_sent_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:gravity="center"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="@string/payment_received"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/payment_received_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:gravity="center"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="@string/payment_to_sent"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/payment_to_sent_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:gravity="center"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="@string/payment_to_received"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/payment_to_received_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:gravity="center"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

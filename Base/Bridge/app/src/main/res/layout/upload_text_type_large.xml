@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_box"
+        android:layout_marginBottom="@dimen/size80"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:gravity="center"
+        android:text="@string/selling_or_requ"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text24" />
+
+    <View
+        android:id="@+id/sep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_centerInParent="true"
+        android:background="@color/green" />
+
+    <EditText
+        android:id="@+id/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height180"
+        android:layout_below="@+id/sep"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="top"
+        android:padding="@dimen/margin10"
+        android:hint="@string/type_desc_here"
+        android:inputType="textCapSentences"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_below="@+id/input_box"
+        android:background="@color/green" />
+
+    <include
+        layout="@layout/general_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

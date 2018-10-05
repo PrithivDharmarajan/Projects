@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/status_green_color</item>
+        <item name="colorPrimaryDark">@color/status_green_color</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="AppSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/status_green_color</item>
+        <item name="colorPrimaryDark">@color/status_green_color</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">@drawable/splash_bg_img</item>
+    </style>
+
+    <!--<style name="CustomRatingBarBig" parent="@android:style/Widget.RatingBar">-->
+        <!--<item name="android:progressDrawable">@drawable/custom_big_rating_bar</item>-->
+        <!--<item name="android:numStars">5</item>-->
+        <!--<item name="android:minHeight">@dimen/margin40</item>-->
+        <!--<item name="android:maxHeight">@dimen/margin40</item>-->
+    <!--</style>-->
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/smallratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin19</item>
+        <item name="android:maxHeight">@dimen/margin19</item>
+        <item name="android:minWidth">@dimen/margin15</item>
+        <item name="android:maxWidth">@dimen/margin15</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="CustomRatingBarBig" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/bigratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin25</item>
+        <item name="android:maxHeight">@dimen/margin25</item>
+        <item name="android:minWidth">@dimen/margin15</item>
+        <item name="android:maxWidth">@dimen/margin15</item>
+        <item name="android:numStars">5</item>
+    </style>
+    <style name="CustomRatingBarDetails" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/detailsratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin19</item>
+        <item name="android:maxHeight">@dimen/margin19</item>
+        <item name="android:minWidth">@dimen/margin15</item>
+        <item name="android:maxWidth">@dimen/margin15</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_in_top</item>
+    </style>
+    <style name="MenuDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/menu_anim_in_top</item>
+        <item name="android:windowExitAnimation">@anim/menu_anim_in_bottom</item>
+    </style>
+
+    <style name="FilterDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/filter_anim_in_left</item>
+        <item name="android:windowExitAnimation">@anim/filter_anim_in_left_hide</item>
+    </style>
+
+</resources>

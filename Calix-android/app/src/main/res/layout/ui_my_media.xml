@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_media_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_media_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/violet">
+
+        <include layout="@layout/ui_general_header" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_media_recycler_view"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_marginBottom="@dimen/size3"
+        style="@style/LayoutWidMatch_HeiWrap" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.85"
+    android:background="@color/share_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin80"
+        android:gravity="center"
+        android:padding="@dimen/margin35"
+        android:text="@string/Invite_frnds"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text22" />
+</RelativeLayout>

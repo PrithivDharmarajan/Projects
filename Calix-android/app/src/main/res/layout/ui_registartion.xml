@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/reg_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_violet_bg">
+
+                <RelativeLayout
+                    android:id="@+id/reg_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reg_header_msg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/reg_header_lay"
+                    android:layout_marginBottom="@dimen/size18">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:layout_above="@+id/welcome_txt"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/router" />
+
+                    <TextView
+                        android:id="@+id/welcome_txt"
+                        style="@style/TextOpenSansSemiBold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:text="@string/registration"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray">
+
+                    <EditText
+                        android:id="@+id/first_name_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first_name"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray">
+
+                    <EditText
+                        android:id="@+id/last_name_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray">
+
+                    <EditText
+                        android:id="@+id/email_id_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email_id"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/pwd_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pwd"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray">
+
+                    <EditText
+                        android:id="@+id/confirm_pwd_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirm_pwd"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/gray">
+
+                    <EditText
+                        android:id="@+id/mob_edt"
+                        style="@style/EditTextOpenSansRegular"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mob_num"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/size37" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/check_box_txt_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10">
+
+                    <CheckBox
+                        android:id="@+id/terms_conditions_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size40"
+                        android:layout_alignParentStart="true"
+                        android:buttonTint="@color/violet" />
+
+                        <TextView
+                            android:id="@+id/terms_conditions_txt"
+                            style="@style/TextOpenSansSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="start"
+                            android:layout_marginStart="@dimen/size25"
+                            android:text="@string/accepts_terms"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text11" />
+
+                        <TextView
+                            android:id="@+id/conditions_txt"
+                            style="@style/TextOpenSansSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/size90"
+                            android:layout_toEndOf="@+id/terms_conditions_txt"
+                            android:gravity="start"
+                            android:text="@string/terms_conditionss"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text11" />
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_width="@dimen/size105"
+                        android:layout_height="@dimen/size0.5"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/size40"
+                        android:layout_marginStart="@dimen/size90"
+                        android:background="@color/orange"
+                        android:layout_below="@+id/conditions_txt"
+                        android:layout_marginTop="@dimen/size13"/>
+                    </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonOpenSansSemiBold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:elevation="0dip"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

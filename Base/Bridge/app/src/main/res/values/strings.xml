@@ -1,0 +1,774 @@
+<resources>
+    <string name="app_name">BASE</string>
+    <string name="app_ne">Base</string>
+
+
+    <!--Sign up Screen-->
+    <string name="not_support_google_services">not support google services</string>
+
+
+    <!--signup otp Screen-->
+    <string name="add_bank">ADD BANK DETAILS</string>
+    <string name="update_bank">UPDATE BANK DETAILS</string>
+    <string name="add_debit">ADD DEBIT CARD</string>
+    <string name="update_debit">UPDATE DEBIT CARD</string>
+    <string name="otp_c">OTP</string>
+    <!--OtherUser Profile Screen-->
+    <string name="seeallpreviews">SEE ALL PREVIEWS</string>
+    <string name="view_reviews">View Reviews</string>
+    <string name="you_dont_any_rev">You have not received any reviews yet!</string>
+
+
+    <string name="usertax_one">$1&#8211;9</string>
+    <string name="sertax_one">$0.25</string>
+    <string name="usertax_two">$10&#8211;19</string>
+    <string name="sertax_two">6.50%</string>
+    <string name="usertax_three">$20&#8211;46</string>
+    <string name="sertax_three">8.50%</string>
+    <string name="usertax_four">$46&#8211;149</string>
+    <string name="sertax_four">8.00%</string>
+    <string name="usertax_five">$150+</string>
+    <string name="sertax_five">6.50%</string>
+
+
+    <string name="alert">Alert</string>
+    <string name="user_spending">User Spending</string>
+    <string name="services_tax">Service Tax</string>
+    <string name="your_services_charge">Your Service Charges Will be</string>
+    <string name="reset_email_not">This email address is not valid. Please use a valid email address</string>
+    <string name="reset_email_sucess">Please check your mail to reset your password</string>
+
+    <string name="plz_select_file">Please select uploaded file URL is preview or original</string>
+    <string name="card_not_added">Card details not added</string>
+    <string name="bank_not_added">Bank details not added</string>
+    <string name="u_seller">If you are a seller, Please select your preferable method to receive money.</string>
+
+    <!--Server Alert Msg-->
+    <string name="serv_res_success">Success</string>
+    <string name="signin_serv_res_a">Invalid Email or Password</string>
+    <string name="signup_serv_res_a">Email Address Already exists</string>
+    <string name="reset_serv_res_a">Error Code</string>
+    <string name="reset_serv_res_b">Email Not Found</string>
+    <string name="connect_time_out">Connection to Base App Server Timeout, Please try again.</string>
+    <string name="serv_not_res"> Server is not responding properly. Please try again.</string>
+    <string name="serv_con_exce">ConversionException. Please try again.</string>
+    <string name="inte_err"> Internal Error. Please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+
+    <!--Terms and Condition & Verification Screen & Inspect code Screen-->
+    <string name="verify_code">Verification Code</string>
+    <string name="enter_inspect_mode_c">Enter valid verification code</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+
+    <!--Shop Details Screen-->
+
+    <string name="your_item">*This is your item</string>
+    <string name="sell_price">SELLING PRICE :</string>
+    <string name="tic_price">TICKET PRICE :</string>
+    <string name="item_price">ITEM PRICE :</string>
+    <string name="venue"> VENUE :</string>
+    <string name="pur_price">PURCHASED PRICE :</string>
+    <!--<string name="code_msg">Chat with \t%1$s \t to meet up. Give them this code if you\'re satisfied with the item.</string>
+    -->
+    <string name="code_msg">If you like the item\, give this code to the seller to release the funds.</string>
+
+    <string name="buyer_msg_c">Carefully inspect the item.When you\'re satisfied with it type the code below in \t%1$s \'s\t phone to confirm.</string>
+    <string name="again_view">Check Buying section in your Dashboard to chat</string>
+
+    <!--Profile Screen-->
+    <string name="profile_c">MY PROFILE</string>
+    <string name="electro">Electronics</string>
+    <string name="phy">Physicals</string>
+    <string name="no_preview">No Previews Found</string>
+    <string name="serv">Services</string>
+    <string name="profilename">NAME</string>
+
+    <string name="orginal_c">ORIGINAL</string>
+    <string name="electronic_goods_delivery_text">We have sent the link of goods to your
+        email id,you can download from there.</string>
+
+
+    <string-array name="selling_item_list">
+        <item>New</item>
+        <item>Sales to Complete</item>
+        <item>Negotiating</item>
+        <item>Sales History</item>
+    </string-array>
+    <string-array name="buyer_item_list">
+        <item>Buying</item>
+        <item>Negotiating</item>
+        <item>Buying History</item>
+    </string-array>
+    <string-array name="request_item_list">
+        <item>New</item>
+        <item>Offers</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="bidding_item_list">
+        <item>Offers Made</item>
+        <item>History</item>
+    </string-array>
+
+
+    <string-array name="six_item_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+
+
+    </string-array>
+
+    <string-array name="three_item_list">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+    </string-array>
+
+
+    <string-array name="biddingname_list">
+        <item>John Peter</item>
+        <item>Alex Pandian</item>
+        <item>Jack Sparrow</item>
+        <item>Anderson</item>
+        <item>Eethon</item>
+    </string-array>
+    <string-array name="biddingsubname_list">
+        <item>Shoe</item>
+        <item>XBox</item>
+        <item>Mobile</item>
+        <item>Watch</item>
+        <item>Wallet</item>
+    </string-array>
+
+    <string name="payments_c">PAYMENTS</string>
+    <string name="pay_c">PAYMENT</string>
+    <string name="ite">Item</string>
+    <string name="items">Items</string>
+    <string name="your_item_app">Your item has been approved</string>
+
+    <string name="no_ticket">Total tickets</string>
+    <string name="price_ticket">Price for the Ticket</string>
+
+    <string name="what_requeting">What are you requesting ?</string>
+    <string name="pur_qut">PURCHASED QUANTITY :</string>
+    <string name="sell_qut">SELLING QUANTITY :</string>
+    <string name="electron">Electronically</string>
+    <string name="how_much_pay_item">How much you are willing to pay for the item?</string>
+    <string name="how_much_pay_service">How much you are willing to pay for the service?</string>
+    <!-- <string name="brief_desc_item_cond">Briefly describe your items overall condition</string>-->
+
+    <string name="type_desc_here">TYPE DESCRIPTION HERE&#8230;</string>
+    <string name="brief_desc_offering">Briefly describe what you are offering?</string>
+    <string name="brief_desc_item">Briefly describe what your item is</string>
+    <string name="upload_photo_serv">Upload up to 3 photos to representing your service.</string>
+    <string name="upload_photo_event">Upload up to 3 photos of your event.</string>
+    <string name="upload_photo_item">Upload up to 3 photos of your item.</string>
+    <string name="send_offer_req">Send the seller a request for 20% OFF the item/service</string>
+    <string name="send_req_btn">SEND REQUEST</string>
+    <string name="publish_item">You\'re all set to publish your item!</string>
+    <string name="pub_tic_link">You can scan tickets using the Base Scanner App</string>
+    <string name="app_link">Download App</string>
+    <string name="camera">From Camera</string>
+    <string name="gallery">From Gallery</string>
+    <string name="chse_photo">Choose Photo</string>
+    <string name="or_text">OR</string>
+    <string name="mm_yy">MM / YY</string>
+
+
+    <string name="error_title">Error</string>
+    <string name="enter_text">Please enter the value</string>
+
+    <!-- Chat Screen-->
+    <string name="negotiation_chat_title">NEGOTIATION ROOM</string>
+
+
+    <!--Payment Flow-->
+    <string name="payment_info_title">PAYMENT INFORMATION</string>
+    <string name="add_credit_card">ADD CREDIT CARD</string>
+    <string name="update_credit_card">UPDATE CREDIT CARD</string>
+    <string name="update_card">UPDATE</string>
+    <string name="active_credit_card">Active Credit Card</string>
+
+
+    <!--Upload Screen-->
+    <string name="upload_file_c">UPLOAD FILE</string>
+
+
+    <!-- Rating Screen !-->
+
+    <string name="congrats">CONGRATULATIONS</string>
+    <string name="successfully_bought">You\'ve successfully bought your item!</string>
+    <string name="rate_experience">Rate your experience</string>
+    <string name="commment">COMMENTS&#8230;</string>
+    <string name="complete">COMPLETE</string>
+    <string name="commenthere">TYPE COMMENT HERE&#8230;</string>
+
+    <!--Negations Screen-->
+
+    <string name="buy_this_c">BUY THIS ITEM</string>
+    <string name="do_you_acc">Do you want to accept this item ?  </string>
+    <!--
+        <string name="facebook_app_id">1740182159550363</string>-->
+    <string name="facebook_app_id">1720833851473676</string>
+    <!-- <string name="google_app_id">1055147097721</string>-->
+
+
+    <!--New Sort Cmd-->
+
+
+    <!--Sign In Screen-->
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="or_signin">Or Sign In Using Facebook</string>
+    <string name="not_mem">Not a Member?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!--Sign In Screen Alert-->
+    <string name="enter_email">Please enter an email address</string>
+    <string name="enter_pwd">Please enter a password</string>
+    <string name="password_length_validation">Password must have 6 characters</string>
+    <string name="password_alpha">Password must have one alphanumeric</string>
+    <string name="password_numorsym">Password must have atleaset one Numeric or one Special
+        characters</string>
+    <string name="password_num">Password must have atleaset one Numeric</string>
+    <string name="password_sym">Password must have atleaset one Special character</string>
+    <string name="password_valid">Password valid</string>
+
+
+    <!--Forgot Password Screen-->
+    <!--<string name="reset_msg">We will send you a temporary password to reset your-->
+    <!--password</string>-->
+
+    <string name="reset_msg">We will email you a link to reset your password</string>
+    <string name="reset_email">A link has been sent to your email to reset the password</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="reset_pwd_c">Reset Password</string>
+    <string name="email_ph">Email or Phone number</string>
+
+    <!--Forgot Password Screen Alert-->
+    <string name="reset_enter_email_ph">Please enter a valid email address or phone number</string>
+    <string name="reset_enter_email">Please enter a valid email address</string>
+
+
+    <!--OTP and Edu Screen-->
+    <string name="phone_num">Phone Number</string>
+    <string name="enter_your_ph">A code will be sent to your phone</string>
+    <string name="ph_num_hint">+1</string>
+    <string name="submit">Submit</string>
+    <string name="verification">Verification</string>
+    <string name="otp_msg">Your Base code has been sent to your phone</string>
+    <string name="enter_otp">Enter your code here</string>
+    <string name="verify">Verify</string>
+    <string name="type_here">Type here&#8230;</string>
+    <string name="edu_email_ph">Enter your edu email address</string>
+    <string name="enter_edu_email">Please give your edu email address</string>
+    <string name="verify_edu_mail">VERIFY EDU EMAIL</string>
+    <string name="edu_email">Edu Email</string>
+    <string name="skip">Skip</string>
+
+    <!--OTP and Edu Screen Alert-->
+    <string name="enter_phone">Please enter your phone number</string>
+    <string name="otp_sent">Your Base code has been sent to your phone</string>
+    <string name="enter_val_otp">Please enter your code</string>
+    <string name="otp_verif">Your Base code has been verified</string>
+
+
+    <!--Sign Up Screen-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="signup_email">E-mail</string>
+    <string name="confm_pwd">Confirm Password</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="school_un">School/University</string>
+    <string name="gender">GENDER</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="agree">I agree to the</string>
+    <string name="terms">terms of use</string>
+    <string name="already_mem">Already a member?</string>
+    <string name="hint_edu">Using a valid .edu address will give you a verified check and make you credible</string>
+    <string name="terms_cond">Terms Of Use</string>
+    <string name="sele_school_unv">Select School/University</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="by_tap">By tapping</string>
+    <string name="you_agree">you agree</string>
+    <string name="to_the">to the</string>
+    <string name="sign_up_sym">\"Sign Up\"</string>
+    <string name="term_condterm_cond"><u>Terms &amp; Conditions</u></string>
+
+
+    <!--Sign Up Screen Alert-->
+    <string name="enter_first_name">Please enter a valid First Name</string>
+    <string name="enter_last_name">Please enter a valid Last Name</string>
+    <string name="signup_enter_email">Please enter a valid Email Address</string>
+    <string name="signup_enter_phone">Please enter a valid Phone Number</string>
+    <string name="signup_enter_pwd">Please enter a valid Password</string>
+    <string name="signup_enter_old_pwd">Please enter a valid Old Password</string>
+    <string name="enter_confm_pwd">Please confirm password</string>
+    <string name="enter_diff_pwd_confm">Pasword and Confirm password must be same</string>
+    <string name="enter_university">Please enter a valid University</string>
+    <string name="enter_dob">Please select a valid Date of Birth</string>
+    <string name="sele_unvi">Please select your university or school</string>
+
+
+    <!--Select Quantity Screen-->
+    <string name="shop">Shop</string>
+    <string name="price">Price :</string>
+    <string name="price_cost">Item Cost :</string>
+    <string name="item">Item</string>
+    <string name="condition">Condition :</string>
+    <string name="no_of_item">No of items left :</string>
+    <string name="qty">Quantity :</string>
+    <string name="total_cost">Total cost :</string>
+    <string name="tot_cost">Total cost </string>
+    <string name="dollar_sym">$</string>
+    <string name="cont">Continue</string>
+    <string name="ignore">Ignore</string>
+    <string name="do_you_pur">Confirm your purchase</string>
+    <string name="do_you_neg">Do you want to negotiate?</string>
+
+    <!--Upload and Update Item Flow-->
+
+    <string name="selling_or_requ">Are you selling or requesting?</string>
+    <string name="selling">Selling</string>
+    <string name="requesting">Requesting</string>
+    <string name="are_want_start">Are you sure you want to start over?</string>
+
+    <!--Select Goods or Service Screen-->
+    <string name="what_selling">What are you selling?</string>
+    <string name="goods">Goods</string>
+    <string name="services">Services</string>
+
+    <!--Select Delivery Preference Screen-->
+    <string name="delivery_type_item">How will you deliver this?</string>
+    <string name="delivery_type_req">Choose your delivery preference</string>
+
+    <string name="deltype_inper">In Person</string>
+    <string name="deltype_ele">Electronically</string>
+
+    <!--Choose a Category Screen-->
+    <string name="choose_category">Choose a category</string>
+    <string name="academics">Academics</string>
+    <string name="apparel">Apparel</string>
+    <string name="social">Social</string>
+    <string name="ticket">Tickets</string>
+    <string name="electronics">Electronics</string>
+    <string name="misc">Misc</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="errands">Errands</string>
+
+    <!--Item Name Screen-->
+    <string name="what_is_your_item">What is your item?</string>
+    <string name="pg_title">Enter a title</string>
+    <string name="next">Next</string>
+
+    <string name="name_of_event">Name of event</string>
+    <string name="what_is_your_service">What is your service</string>
+    <string name="type_wht_do">Type what you do&#8230;</string>
+
+    <string name="item_looking_for">What are you looking for?</string>
+    <string name="i_need"> I need&#8230;</string>
+    <string name="service_looking_for">What do you need done?</string>
+
+    <!--Item Name Screen Alert-->
+    <string name="enter_pg_title">Please enter a title</string>
+    <string name="enter_tick_title">Please enter the event name</string>
+    <string name="enter_ps_title">Please enter the service you provide</string>
+    <string name="enter_reqpg_title">Please enter your request</string>
+
+    <!--Ticket Upload Screen-->
+    <string name="date_of_event">When is the event</string>
+    <string name="select_date">Select date</string>
+    <string name="venue_of_event">Venue</string>
+
+    <!--Ticket Upload Screen Alert-->
+    <string name="pick_date">Please pick a date</string>
+    <string name="enter_venue">Please enter the venue</string>
+
+    <!--Item Cost Screen-->
+    <string name="how_much_for_item">How much are you looking to get for your item?</string>
+    <string name="pg_price">Enter a price</string>
+    <string name="tick_price">Ticket price</string>
+    <string name="how_much_for_service">How much are you looking to get?</string>
+    <string name="how_much_for_willing">How much are you willing to pay?</string>
+
+    <!--Item Cost Screen Alert-->
+    <string name="enter_pg_price">Please enter a price</string>
+
+    <!--Item Qty Screen-->
+    <string name="quantity_how_many">How many items are you looking to sell?</string>
+    <string name="pg_quantity">Enter a quantity</string>
+
+    <string name="tick_quantity">Total tickets</string>
+    <string name="reqpg_quantity">How many items do you want?</string>
+
+    <!--Item Qty Screen Alert-->
+    <string name="enter_pg_quantity">Please enter a quantity</string>
+    <string name="enter_tick_quantity">Please enter quantity</string>
+
+    <!--Item Condition Screen-->
+    <string name="brief_desc_item_cond">What is your item\'s condition?</string>
+    <string name="cond_new">New</string>
+    <string name="cond_used">Used</string>
+
+    <!--Item Skill Level Screen-->
+    <string name="brief_desc_serv_cond">What is your skill level?</string>
+    <string name="cond_novice">Novice</string>
+    <string name="cond_intermediate">Intermediate</string>
+    <string name="cond_expert">Expert</string>
+
+    <!--Item  Describe Screen-->
+    <string name="pg_desc">Description</string>
+    <string name="pg_desc_plch">Tell us all the juicy stuff</string>
+    <string name="tick_desc_plch">Describe your event!</string>
+
+    <string name="ps_desc">Describe what you can do</string>
+    <string name="ps_desc_plch">Enter description</string>
+
+    <string name="reqpg_desc">Describe what you want</string>
+    <string name="reqpg_desc_plch">Be as descriptive as possible&#8230;</string>
+
+    <string name="reqps_desc">Describe what you need</string>
+    <string name="reqes_desc"> Describe what you need done</string>
+
+    <!--Item  Describe Screen Alert-->
+    <string name="enter_pg_desc">Please enter a description</string>
+    <string name="enter_tick_desc">Please enter description</string>
+
+    <!--Item Upload Pic Screen-->
+    <string name="upload_pic">Upload up to 3 photos</string>
+    <string name="please_upload_pic">Please upload a photo</string>
+
+    <!-- Upload Preview and Original file Screen-->
+    <string name="upload_preview">Upload a preview </string>
+    <string name="upload_orginal">Upload full file</string>
+    <string name="enter_url_hint">Enter url</string>
+    <string name="enter_url">Please enter url</string>
+    <string name="upload_preview_file"> Upload a preview of your work</string>
+
+    <!--Item Publish Screen-->
+    <string name="you_have_green">You have the greenlight!</string>
+    <string name="publish">Publish</string>
+    <string name="publish_success">Your item is published!</string>
+    <string name="done">Done</string>
+
+    <!--Negotiation and Chat Screen-->
+    <string name="negotiation">Negotiation</string>
+    <string name="chat">Chat</string>
+    <string name="send">Send</string>
+    <string name="cont_chat">Continue For Dashboard</string>
+    <string name="cont_send_msg">You can\'t send message</string>
+
+    <string name="type_amt">Type Amount Here&#8230;</string>
+    <string name="neg_amt">Negotiate your price</string>
+    <string name="you_cannot_msg">You must wait for the user to counter-offer</string>
+    <string name="max_msg">Negotiation limit reached</string>
+    <string name="do_you_want">Do you want to approve?</string>
+    <string name="sell_approve">Follow up on the Dashboard once buyer paid for your item.</string>
+    <string name="price_approved">Price approved! Check your Dashboard to complete this sale </string>
+
+    <!--Home Screen-->
+    <string name="no_result">Get your friends on here!</string>
+    <string name="home_c">BASE</string>
+    <string name="menu">MENU</string>
+    <string name="new_post">New Post</string>
+    <string name="search">SEARCH</string>
+    <string name="profile">PROFILE</string>
+    <string name="settings">SETTINGS</string>
+    <string name="notification_c">NOTIFICATIONS</string>
+    <string name="dashboard_c">DASHBOARD</string>
+
+
+    <!--Home Filter Screen-->
+    <string name="filter">FILTER</string>
+    <string name="all">All</string>
+    <string name="all_c">ALL</string>
+    <string name="request_c">REQUEST</string>
+    <string name="shop_c">SHOP</string>
+
+    <!--Settings Screen-->
+    <string name="Setting">Settings</string>
+    <string name="sign_out_con">Are you sure you want to sign out?</string>
+
+    <!--Update Profile Screen-->
+    <string name="update_profile">Update Profile</string>
+    <string name="update">Update</string>
+
+
+    <!--Rating Screen-->
+    <string name="enter_comment">Please enter comments</string>
+    <string name="enter_rate">Please enter your rating</string>
+    <string name="ratebuyer">Rate buyer</string>
+    <string name="rateseller">Rate seller</string>
+    <string name="be_honest">Be honest</string>
+    <string name="post">Post</string>
+
+
+    <!--Payment Screen-->
+    <string name="payment">Payments</string>
+    <string name="sent">Sent</string>
+    <string name="payment_escrow">Escrow</string>
+    <string name="payment_receive">Received</string>
+    <string name="payment_sent">Payments sent</string>
+    <string name="payment_received">Payments received</string>
+    <string name="payment_to_sent">Payments sent in escrow</string>
+    <string name="payment_to_received">Payments received in escrow</string>
+    <string name="you_msg">You don\’t have payment notification</string>
+    <string name="pay_act">Payment Activity</string>
+
+    <!--Notification Screen-->
+    <string name="notification">Notifications</string>
+    <string name="you_dont_msg">You don\'t have any notifications</string>
+    <string name="do_you_want_clr">Do you want to delete the notifications?</string>
+
+
+    <!--Payment Information Screen-->
+    <string name="accepted_cards">Accepted cards</string>
+    <string name="card_number">Card number</string>
+    <string name="card_number_hint">1234–1234–1234–1234</string>
+    <string name="year_month">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="scan_debit_card">Scan Debit Card</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="manually_later">Manually Enter</string>
+    <string name="pay_card">Payment Card</string>
+    <string name="add_new_debit">Add New Debit Card</string>
+    <string name="do_you_want_pay">Do you want to pay with?</string>
+
+
+    <string name="save_debit_card">Save Debit Card</string>
+    <string name="save_card">Save Card</string>
+    <string name="add_payment">Receiving Money</string>
+
+    <!--Payment Information Screen Alert-->
+    <string name="enter_user_name">Please enter a valid Name</string>
+    <string name="enter_card_number">Please enter valid card number</string>
+    <string name="enter_month">Please enter valid expiration date</string>
+    <string name="enter_cvv">Please enter valid security code</string>
+    <string name="are_primary_card">Are you sure do you want to move first this item?</string>
+
+    <!--Product Details Screen-->
+    <string name="details">Details</string>
+    <string name="univ_name">School/University :</string>
+    <string name="category">Category :</string>
+    <string name="delivery_type">Delivery type :</string>
+    <string name="skill_level">Skill level :</string>
+    <string name="desc">Description :</string>
+    <string name="neg_price">Negotiate Price :</string>
+    <string name="no_qut">Quantity :</string>
+
+    <string name="event_name">Name :</string>
+    <string name="event_date">Date :</string>
+    <string name="event_venue">Venue :</string>
+    <string name="no_tic">Tickets left :</string>
+    <string name="sold_price">Sold For :</string>
+    <string name="amt_paid">Amount paid :</string>
+    <string name="service_price">Safety fee :</string>
+    <string name="tips">Tips :</string>
+    <string name="total_price">Total Price :</string>
+    <string name="tickets_sold"> Tickets sold :</string>
+    <string name="commission"> Commission :</string>
+    <string name="item_name">Item name </string>
+    <string name="serv_name">Service name </string>
+    <string name="delete">Delete</string>
+    <string name="negotiating">Negotiating</string>
+
+
+    <!--Product Details Screen Alert-->
+    <string name="delete_conf">Are you sure want to delete this?</string>
+    <string name="start_ser_conf">Is the service beginning?</string>
+    <string name="services_not">You haven\'t started the service yet</string>
+    <string name="unsatiesfy_conf">Are you unhappy with this product?</string>
+    <string name="preview_not_fund">The seller hasn\'t uploaded a preview yet</string>
+    <string name="enter_bidd_amt">Please enter a valid Offer</string>
+    <string name="finish_service">Do you want to finish your service?</string>
+
+
+    <!--My Dashboard Screen-->
+    <string name="my_dashboard">Dashboard</string>
+    <string name="my_selling">Selling List</string>
+    <string name="my_buying">Buying List</string>
+    <string name="my_req">Requesting List</string>
+    <string name="my_bidding">Offer List</string>
+    <string name="buying">Buying</string>
+    <string name="offering">Offering</string>
+    <string name="offers">offers</string>
+
+
+    <string name="nw">New</string>
+    <string name="http">http://</string>
+    <string name="bidding_orders">Offers Made</string>
+    <string name="sale_to_com">Sales to Complete</string>
+    <string name="history">History</string>
+    <string name="sal_history">Sales History</string>
+    <string name="buy_history">Buying History</string>
+    <string name="buying_orders">Buying</string>
+
+
+    <!--Dialog Box Button -->
+    <string name="ok">OK</string>
+    <string name="sign_out_title">SIGNOUT</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view">View</string>
+    <string name="nego">Negotiate</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="totl_cost">total price</string>
+    <string name="service_tax">Safety fee</string>
+    <string name="product_price">Selling price</string>
+
+    <!--Product Details Button Name-->
+    <string name="edit">Edit</string>
+    <string name="finish">Finish</string>
+    <string name="rating">Rate Now</string>
+    <string name="upload_txt">Upload</string>
+    <string name="update_txt">Update</string>
+    <string name="code">Code</string>
+    <string name="unsatis">Unsatisfactory</string>
+    <string name="start">Start</string>
+    <string name="started">Started</string>
+    <string name="preview">Preview</string>
+    <string name="approve">Approve</string>
+    <string name="approved">Approved</string>
+    <string name="buy_it">Buy It Now</string>
+    <string name="buy_nw">Buy Now</string>
+    <string name="offer_nw">Offer Now</string>
+
+    <!--Recent Activity Payment Screen-->
+    <string name="activity">Activity</string>
+    <string name="invite_friends_get_paid">Invite friends, get paid.</string>
+
+    <!--Partner Screen-->
+    <string name="become_par">Become a Partner</string>
+    <string name="you_r_partner">You\'re Partner</string>
+    <string name="becoming_par_for">Becoming Partner For?</string>
+    <string name="info_c">INFORMATION</string>
+    <string name="enter_par_code">Enter your partner code</string>
+    <string name="par_code_plc">Enter your code here</string>
+    <string name="if_interested_par">if you\'re interested in becoming a partner  </string>
+    <string name="partner_email">email : <u>support@gobaseapp.com</u> </string>
+    <string name="i_would_like">I would like to become a certified partner with Base..</string>
+
+    <string name="info_one"> Become an official vendor of Base</string>
+    <string name="info_two">Better placement of your posts</string>
+    <string name="info_three">No need for escrow payments</string>
+    <string name="info_four">Market your phone number and website to increase sales</string>
+
+
+    <!--Partner Screen Alert-->
+    <string name="select_goods">Please select partner type</string>
+
+    <!--Other User Profile Screen-->
+    <string name="otherprofile">Profile</string>
+    <string name="seeallreviews">See All Reviews</string>
+    <string name="reviews">Reviews</string>
+    <string name="report_user">I would like to report \t%1$s\t for the objectionable content </string>
+
+    <string name="eg_name">ex: $50</string>
+    <string name="choose_pref">Preference</string>
+    <string name="enter_amt_bid">Please enter your amount for Offer</string>
+    <string name="enter_amt_tip">Please enter your amount for Tips</string>
+    <string name="inspect_mode">Inspect Mode</string>
+    <string name="ref_pro_c">REFERRALS</string>
+    <string name="cert_partner">Certified Partner</string>
+    <string name="cert_student">Certified Student</string>
+    <string name="enter_wesite">Please enter your website</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_num_sym">Phone Number :</string>
+    <string name="web_sym">Website :</string>
+    <string name="tel">tel:</string>
+    <string name="Invite_frnds">Invite your friends for a chance to win a special prize</string>
+    <string name="paid_you">Paid you $</string>
+    <string name="you_paid">You paid $</string>
+    <string name="share_txt">Join Base! Come to one place to get everything you need &amp; make money!</string>
+    <string name="android_app">Android :</string>
+    <string name="ios_app">IOS :</string>
+    <string name="enter_partner_code">Please enter partner code</string>
+    <string name="you_del">You can\'t edit the product details.</string>
+    <string name="sel_univ_sc">Selecty university or school</string>
+    <string name="wht_ph">What is your Phone number?</string>
+    <string name="wht_web">What is your Website?</string>
+    <string name="your_off_app">You approved offer.Please follow from BuyingList->Buying</string>
+    <string name="no_item">No Items available</string>
+    <string name="no_reviews">No reviews found</string>
+    <string name="make_off">Make Offer</string>
+    <string name="offer">Offer</string>
+    <string name="to_day">Today</string>
+    <string name="yest_day">Yesterday</string>
+
+    <!--Settings Flow-->
+    <string name="payment_information">Payment Information</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="con_us">Contact Us</string>
+    <string name="sign_out">Signout</string>
+    <string name="display_good">Your School or Local Schools</string>
+    <string name="bank_detail">Banking Details</string>
+    <string name="debit_card_detail">Debit Card Details</string>
+    <string name="paypal_detail">Paypal Details</string>
+    <string name="email_id">Email Id</string>
+    <string name="user_name">Username</string>
+    <string name="bank_acc_no">Bank Account No</string>
+    <string name="routing_no">Routing No</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="enter_bank_acc_no">Please enter a Bank account no</string>
+    <string name="enter_routing_no">Please enter a routing no</string>
+    <string name="enter_bank_name">Please enter a Bank name</string>
+    <string name="enter_email_id">Please enter a valid email</string>
+
+    <!--Ban Deatils -->
+    <string name="debit">Debit Card</string>
+    <string name="bank">Bank Details</string>
+    <string name="paypal">Paypal Details</string>
+    <string name="name_on_card">Name On Card</string>
+    <string name="card_num">Card Number</string>
+    <string name="exp_date">Expiration Date</string>
+    <string name="sec_code">Security Code</string>
+
+    <string name="app_exit">Are you sure you want to exit?</string>
+
+    <!--Request Bidding!-->
+    <string name="rec_off">Received Offers</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="rej_item">Do you want to reject this item ? </string>
+
+
+    <!--Terms and Conditions Web page!-->
+    <string name="apirequestsuccess">apirequestsuccess</string>
+    <string name="error_code">error_code</string>
+    <string name="message">message</string>
+    <string name="result">result</string>
+
+
+    <!--Block User Screen-->
+    <string name="report">Report</string>
+    <string name="block_user">Block User</string>
+    <string name="are_you_block">Are you sure want to?</string>
+    <string name="are_sure_block">Are you sure want to block this user?</string>
+    <string name="are_sure_item">Are you sure want to report this item?</string>
+    <string name="select_block">Please select any type</string>
+    <string name="block_msg">You are blocked for objectionable content so you can\'t you use the app</string>
+    <string name="del_payment_his">Do you want to clear all the payment history ?</string>
+    <string name="camera_storage_req">Camera, Storage and Call Service Permission required for this app</string>
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+
+
+</resources>

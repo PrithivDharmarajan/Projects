@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay"
+        android:layout_margin="@dimen/margin20"
+        android:id="@+id/top_txt"
+        android:gravity="center"
+        android:text="@string/brief_desc_serv_cond"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text24" />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selling"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height150"
+            android:background="@drawable/upload_blue_bg"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingRight="@dimen/margin5"
+            android:text="@string/cond_novice"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+
+        <Button
+            android:id="@+id/requesting"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height150"
+            android:layout_marginLeft="@dimen/size50"
+            android:background="@drawable/upload_green_bg"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingRight="@dimen/margin5"
+            android:text="@string/cond_intermediate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/expert"
+        android:layout_width="@dimen/height130"
+        android:layout_height="@dimen/height130"
+        android:layout_below="@+id/lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin35"
+        android:background="@drawable/upload_red"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin5"
+        android:text="@string/cond_expert"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text15" />
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.bridgellc.bridge">
+    //Storage Permission
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    //GCM Permission
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.bridgellc.bridge.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    //Make a phone Call Permission
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    //GCM Push Permission
+    <permission
+        android:name="com.bridgellc.bridge.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_ne"
+        android:name=".main.BridgeApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:largeHeap="true"
+        android:fullBackupContent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".ui.SplashScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SignInScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ForgotPwdScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PhOTPEmailScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SelectUniversityNewScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.UpdateProfileScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SignUpScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SelectUniversityScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.TermsCondScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.home.HomeScreenActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.home.SearchScreenActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.upload.UploadScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.upload.UpdateItemScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.upload.UploadPublishScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ProductDetailsBuyNeg"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ProductBuyNegScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.DashboardScreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PartnerScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PaymentScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ReferalScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ProfileListScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ProductDetailsScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.RequestBiddingScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ChatScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.RateBuySellScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.NegotiationChatRoom"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ReviewScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:label="@string/reset_pwd_c"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.DropboxUpload"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SettingsScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.AddPayCard"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.OtherUserProfile"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.BlockUserScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.RecentActivityScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.BuyerCodeScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.InspectModeScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.OtherUserProductDetails"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PaymentCardListScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PaymentPaypalStripScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.BankAccountDetails"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.PaymentHomeScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.NotificationScreen"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".main.GCMNotificationActivity"
+            android:configChanges="locale|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        //Default Facebook Activity
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        //Custom GCM Listener
+
+        //Custom SMS Receiver
+        <receiver android:name=".utils.MySMSListenerService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        //Default GCM Receiver
+        <service android:name=".main.SSFcmMessageListnerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".main.SSInstanceIdService">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        //Facebook default metadata
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        //Playservices default metadata
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        //Glide Config Conversion RGB_565 into ARGB_8888 (like picasso img)
+        <meta-data
+            android:name="com.bridgellc.bridge.main.GlideConfiguration"
+            android:value="GlideModule"/>
+    </application>
+
+</manifest>

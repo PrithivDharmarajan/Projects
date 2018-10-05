@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bridgellc.bridge.stickygridview.StickyGridHeadersGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/asset_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin10"
+    android:listSelector="@android:color/transparent"
+    android:clipToPadding="false"
+    android:numColumns="3" />

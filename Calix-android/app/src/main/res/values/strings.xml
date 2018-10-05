@@ -1,0 +1,603 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Calix Gigamanage</string>
+
+    <!--Login screen-->
+    <string name="login">Login</string>
+    <string name="forgot_pwd">Forgot Password</string>
+    <string name="new_user">New User?</string>
+    <string name="send">Send</string>
+
+
+    <!--Registration screen-->
+    <string name="registration">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="pwd">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="mob_num">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="router_default_name">%1$s\'s Router</string>
+
+    <string name="enter_first_name">Please Enter First Name</string>
+    <string name="enter_last_name">Please Enter Last Name</string>
+    <string name="enter_email_id">Please Enter Email Id</string>
+    <string name="enter_valid_email_id">Please Enter Valid Email Id</string>
+    <string name="enter_pwd">Please Enter Password</string>
+    <string name="pwd_does_not_match">Password and Confirm Password Does Not Match</string>
+    <string name="enter_mob_num">Please Enter Mobile Number</string>
+    <string name="pass_contains">A Password must be Eight Characters including One Uppercase Letter, One Special Character and Alphanumeric Characters</string>
+
+
+    <!--Network welcome screen-->
+    <string name="welcome">Welcome</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="qr_scan">QR Scan</string>
+
+    <string name="enter_mac_address">Please Enter MAC Address</string>
+    <string name="enter_serial_number">Please Enter Serial Number</string>
+    <string name="invalid_code">Please scan the QR code provided in the Quick Start Guide</string>
+
+    <!--Bar code Scanner-->
+    <string name="no_barcode_detected">No Barcode Detected</string>
+
+
+    <!--Network detected screen-->
+    <string name="network_name_ssid">Network Name (SSID)</string>
+    <string name="network_detected">Network Successfully Detected</string>
+    <string name="router_name">Router Name</string>
+    <string name="network_pwd">Network Password</string>
+    <string name="auth_type">Authentication Type</string>
+    <string name="none">None</string>
+    <string name="do_you_want_change">Do you want to change the network name and the password?</string>
+
+    <string name="enter_router_name">Please Enter Router Name</string>
+    <string name="enter_network_name">Please Enter Network Name</string>
+    <string name="enter_network_pwd">Please Enter Password</string>
+    <string name="pass_contains_eight_char">Password must have at least Eight Characters</string>
+
+
+    <!--Router set-up screen-->
+    <string name="router_set_up">Router Set-Up </string>
+    <string name="config">Configuring&#8230;</string>
+    <string name="success_config">Successfully Configured</string>
+    <string name="router_config">Please wait, your router is being configuring&#8230;\nDo not go back or cancel</string>
+    <string name="finalize_setup">The Router has been paired with your phone.\nTap Continue to finalize the setup.</string>
+    <string name="cont">Continue</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--Slide menu-->
+    <string name="hello_user_name">Hello %1$s, %2$s</string>
+    <string name="network_map">Network Map</string>
+    <string name="iot_device">IOT Device</string>
+    <string name="device_list">Device List</string>
+    <string name="my_media">My Media</string>
+    <string name="speed_test">Speed Test</string>
+    <string name="network_usage">Network Usage</string>
+    <string name="parental_control">Parental Control</string>
+    <string name="guest_network">Guest Network</string>
+    <string name="settings">Settings</string>
+    <string name="alexa">Alexa</string>
+    <string name="iothub">iothub</string>
+    <string name="logout">Logout</string>
+
+
+    <!--Dash board screen-->
+    <string name="dashboard">Dashboard</string>
+    <string name="upload">Upload</string>
+    <string name="ping">Ping</string>
+    <string name="download">Download</string>
+    <string name="mbps">Mbps</string>
+    <string name="mbytes">Mbytes</string>
+    <string name="kbytes">Kbytes</string>
+    <string name="kbps">Kbps</string>
+    <string name="device_connected">Devices Connected</string>
+    <string name="click_router_map">Click the Icon to view Router Map</string>
+    <string name="issue_found">Issue has been found</string>
+    <string name="issues_found">Issues has been found</string>
+    <string name="console">Console</string>
+    <string name="television">Television</string>
+    <string name="phone">Phone</string>
+    <string name="storage">Storage</string>
+    <string name="printer">Printer</string>
+    <string name="computer">Computer</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="exit_msg">Are you sure you want to Exit?</string>
+    <string name="logout_msg">Are you sure you want to Logout?</string>
+    <string name="delete_msg">Are you sure you want to Delete?</string>
+    <string name="uninstall_msg">Are you sure you want to Uninstall?</string>
+    <string name="uninstall_success">Uninstalled successfully</string>
+    <string name="removed_success">Removed successfully</string>
+    <string name="qr_code_hint">Please input/scan MAC and Serial number or scan QR code</string>
+
+
+    <!--Alert screen-->
+    <string name="alert">Alert</string>
+    <string name="read">Read</string>
+    <string name="done">Done</string>
+
+    <!--Alexa-->
+    <string name="amazon_alexa">Amazon Alexa</string>
+    <string name="skip">Skip</string>
+    <string name="your_device_includes">Your device includes access to Alexa. Connect your Amazon account to access personalized features.</string>
+    <string name="alexa_allows">Alexa allows you to use your voice to play music and get news,sports scores,weather and more—all hands-free.All you have to do is ask Alexa.</string>
+    <string name="sign_in_amazon">Sign in/Sign out with Amazon</string>
+    <string name="alexa_enabled">Alexa Enabled</string>
+    <string name="alexa_install_shortly">Alexa will install shortly</string>
+
+    <!--Settings screen-->
+    <string name="security">Security</string>
+    <string name="pin_passcode">Passcode</string>
+    <string name="enable_pin_passcode">This will enable the Passcode</string>
+    <string name="set_pin_passcode">Set Passcode</string>
+    <string name="reset_pin_passcode">Reset Passcode</string>
+    <string name="touch_id">Touch ID</string>
+    <string name="enable_touch_id">This will enable the Touch Id</string>
+    <string name="change_login_pwd">Change Login Password</string>
+    <string name="about">About</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="update_ssid">Update SSID</string>
+    <string name="on_board_router">On-board Router</string>
+    <string name="install_alexa">Install Alexa</string>
+    <string name="things_to_try">Things to Try</string>
+    <string name="calix_iot_agent">Calix IOT Agent</string>
+    <string name="uninstall_agent">Uninstall Agent</string>
+    <string name="remove_router">Remove Router</string>
+    <string name="developer_mode">Developer Mode</string>
+    <string name="please_on_board_router">Please On-board your Router</string>
+    <string name="please_on_board_router_settings">Please go to Settings, On-board your Router</string>
+    <string name="are_remove_router">Are you sure you want to remove the Router?</string>
+    <string name="calix_agent_not_found">Calix IOT Agent not Found in Your Router. Go to Settings -> Calix IOT Agent</string>
+    <string name="app_version">App Version</string>
+    <string name="install_alexa_low">install alexa</string>
+    <string name="alexa_install_low">alexa install</string>
+    <string name="enable_agent">Enable Agent</string>
+    <string name="disable_agent">Disable Agent</string>
+    <string name="install_success">Installed Successfully</string>
+    <string name="stop">Stop</string>
+
+
+    <string name="speech_prompt">No Alexa Agent on Your Router \nSay! "Install Alexa&#8230;"</string>
+    <string name="speak_try_again">Didn\'t catch that. Try speaking again.\nTry again.</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="development">Development</string>
+    <string name="production">Production</string>
+    <string name="stage">Stage</string>
+    <string name="select_options">Select Options</string>
+    <string name="agent_not_found">Agent not found in your Router</string>
+    <string name="agent_list">Agent List</string>
+
+    <!--Set pin and Reset pin screen-->
+    <string name="set_pin">Set Passcode</string>
+    <string name="reset_pin">Reset Passcode</string>
+    <string name="type_current_pin">Type Current Passcode</string>
+    <string name="type_new_pin">Type New Passcode</string>
+    <string name="type_confirm_pin">Type Confirm Passcode</string>
+
+    <string name="please_enter_pin">Please Enter New Passcode </string>
+    <string name="pin_contains_four_char">Passcode must have at least Four Digits</string>
+    <string name="please_first_set_pin">Please Set Passcode </string>
+    <string name="please_first_enable_pin">Please Enable Passcode </string>
+    <string name="incorrect_pin">Incorrect Passcode</string>
+    <string name="incorrect_pin_note"> Note: You need to uninstall the App and install the App again if you forgot the Passcode.</string>
+
+    <string name="pin_does_not_match">Passcode Does not match</string>
+
+    <!--Change Password screen-->
+    <string name="change_pwd">Change Password</string>
+    <string name="old_pwd">Old Password</string>
+    <string name="new_pwd">New Password</string>
+
+    <string name="pwd_update_success">Password Updated Successfully</string>
+
+    <!--Login with Pin and Finger print-->
+    <string name="enter_pass_code">Enter Passcode</string>
+    <string name="forgot_pin">Forgot Passcode?</string>
+    <string name="or">Or</string>
+    <string name="login_with">Login with Touch ID</string>
+
+    <string name="android_key_store">AndroidKeyStore</string>
+    <string name="failed_key_generator">Failed to get KeyGenerator instance</string>
+    <string name="failed_get_cipher">Failed to get Cipher</string>
+    <string name="failed_init_cipher">Failed to init Cipher</string>
+    <string name="authentication_error">Fingerprint Authentication error</string>
+    <string name="authentication_help">Fingerprint Authentication help</string>
+    <string name="authentication_failed">Fingerprint Authentication failed</string>
+    <string name="logged_success">logged in successfully</string>
+
+
+    <!--Dialog-->
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="immediate">Immediate</string>
+    <string name="schedule">Schedule</string>
+
+
+    <!--Parental Control-->
+    <string name="pause_the_filter">This will Pause the Filter</string>
+    <string name="add_device">Add a Device to Manage</string>
+    <string name="add">Add</string>
+    <string name="manage">Manage</string>
+    <string name="samantha">Samantha</string>
+    <string name="device">Devices</string>
+    <string name="hrs">Hrs</string>
+    <string name="connect_internet">Connect to the Internet</string>
+    <string name="disconnect_internet">Disconnect from the Internet</string>
+    <string name="pause_the_internet">Pause the Internet</string>
+
+
+    <!--Parental Control User-->
+    <string name="insight_for">Insight for Samantha</string>
+    <string name="rewards_samantha">Reward samantha - </string>
+    <string name="date_time"> Date/Time</string>
+    <string name="six">6</string>
+    <string name="nine_hrs">9 hrs</string>
+    <string name="nine_thirty">9:30 PM</string>
+    <string name="off">Off</string>
+    <string name="teen">Teen</string>
+    <string name="insight">Insight</string>
+    <string name="filter">Filters</string>
+    <string name="time_limit">Time Limit</string>
+    <string name="bed_time">Bed Time</string>
+    <string name="off_time">Off Time</string>
+    <string name="pause_the_samantha">Pause Samantha Internet</string>
+
+
+    <!--Parental Control Insight-->
+    <string name="today_Spent">Today Samantha spent 13 hours online</string>
+    <string name="samantha_browser_history">Samantha Browser History</string>
+    <string name="tap_to_edit_date">Tap the Icon to change the date</string>
+    <string name="date_formate_insight">Friday, December, 1,2017</string>
+    <string name="calender_insight">Calendar</string>
+
+    <!--Parental Control Reward-->
+    <string name="today">Today</string>
+    <string name="reward_for_samantha">Reward for Samantha</string>
+    <string name="select_for_samantha">Select reward for samantha</string>
+    <string name="skip_limit">This will skip the limit</string>
+    <string name="skip_off_time">This will skip the off time</string>
+    <string name="skip_bed_time">This will skip the bed time</string>
+
+
+    <!--Parental Control Off Time-->
+    <string name="added">Added</string>
+    <string name="off_time_for_samantha">Off time for samantha</string>
+    <string name="filter_enable_time">Filter Enable time</string>
+    <string name="internet_stop">Internet will stop at this time</string>
+    <string name="filter_disable_time">Filter Disable time</string>
+    <string name="internet_restart">Internet will restart at this time</string>
+    <string name="add_weekend">Add Weekends</string>
+    <string name="enable_time_limit">This will enable the time limit in weekend</string>
+    <string name="eleven_thirty">11:30 PM</string>
+    <string name="seven">7:00 PM</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="F">F</string>
+    <string name="s">S</string>
+
+
+    <!--Parental Time Limit-->
+    <string name="time_limit_header">Time limit for Samantha</string>
+    <string name="time_limit_header_bottom">Time limit-30min</string>
+    <string name="toggle_enable_filter">toggled was enable the filter</string>
+    <string name="nine">9:00 PM</string>
+    <string name="nine_thiry">9:30 PM</string>
+
+
+    <!--Parental Bed Time-->
+    <string name="pause_filter">This will pause the filter</string>
+    <string name="awake_time">Awake time</string>
+    <string name="bed_time_weekend">Bed time for weekends</string>
+    <string name="enable_bed_time_weekend">This will enable bed time system to work in weekend</string>
+    <string name="seven_thiry">7:30 AM</string>
+    <string name="bed_time_for_samantha">Bed time for samantha</string>
+
+    <!--Parental Control Fileter-->
+    <string name="filter_for_samantha">Filter for Samantha</string>
+    <string name="adult_cap">ADULT</string>
+    <string name="teen_cap">TEEN</string>
+    <string name="kid_cap">KID</string>
+    <string name="pre_k_cap">PRE-K</string>
+    <string name="none_cap">NONE</string>
+    <string name="platform_cap">PLATFORM</string>
+    <string name="catagery">CATEG0RIES</string>
+    <string name="privacy_setting_cap">PRIVACY &amp; SETTINGS</string>
+    <string name="amazon">Amazon</string>
+
+    <!--Parental Control Devices-->
+    <string name="devices">Devices</string>
+    <string name="connected_to">Connected to</string>
+    <string name="disconnected_from">Disconnected from</string>
+    <string name="edit_devices">Edit the Device Name</string>
+    <string name="change_the_device_name">Change the Device Name</string>
+    <string name="change_the_device_loc">Change the Device Location</string>
+    <string name="data_usage">Data Usage</string>
+    <string name="one_fifty">150.65</string>
+    <string name="all">All</string>
+    <string name="downloaded_speed">Data Downloaded</string>
+    <string name="uploaded_speed">Data Uploaded</string>
+
+    <!--Network Usage and Priority -->
+    <string name="change_network_priority">Change Network Priority</string>
+    <string name="network_priority">Network Priority</string>
+    <string name="prioritize_device">Prioritize Device</string>
+    <string name="skip_device_priority">This will priority the devices for better internet</string>
+
+
+    <!--IOT  devices connected-->
+    <string name="iot_devices_connected">IOT Devices Connected</string>
+    <string name="iot">IOT</string>
+    <string name="add_the_iot_device">Add the IOT Devices</string>
+    <string name="add_iot_device">Add IOT Devices</string>
+    <string name="zero">0</string>
+    <string name="login_failed">Login Failed. Please try again</string>
+    <string name="iot_local_hub">_iothub.local</string>
+
+    <!--IOT add device-->
+    <string name="calix_device">Calix Device</string>
+
+    <!--IOT add remove device-->
+    <string name="add_smart_device">Add a\nSmart Device</string>
+    <string name="remove_smart_device">Remove a\nSmart Device</string>
+    <string name="remove_all_smart_device">Remove All\nSmart Device</string>
+
+    <!--Remove IOT Device-->
+    <string name="remove">Remove</string>
+    <string name="remove_iot_msg">Are you sure want to Remove the %1$s</string>
+    <string name="remove_all_iot_msg">Are you sure want to Remove All Devices</string>
+
+    <!--Guest Network-->
+    <string name="add_guest">Add the Guest Network</string>
+    <string name="activated_time">Activated time %1$s</string>
+    <string name="hyphen_sym">-</string>
+    <string name="colon_sym">:</string>
+    <string name="delete">Delete</string>
+    <string name="event_name">Enter the Event Name</string>
+    <string name="enter_event_name">Please Enter the Event Name</string>
+    <string name="enter_guest_network_name">Please Enter Guest Network Name</string>
+    <string name="failed_directory">Oops! Failed create Fautus directory</string>
+    <string name="wpa">WPA</string>
+
+
+    <!--Setup Guest Network-->
+    <string name="setup_guest_wifi">Setup Guest WiFi</string>
+    <string name="indefinite_network">Indefinite Network</string>
+    <string name="time_duration_cap">TIME DURATION</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="guest_network_name">Guest Network Name (SSID)</string>
+    <string name="password">Password</string>
+    <string name="one_date" tools:ignore="TypographyDashes">01-12-2018</string>
+    <string name="to">To</string>
+    <string name="wifi_point">Wifi Point1</string>
+    <string name="select_feature_date_time">Select Future Date and Time</string>
+    <string name="select_valid_date_time">Select valid Date and Time</string>
+    <string name="select_one_contact">Select at Least One Contact</string>
+    <string name="app_not_support_sms">Your App not Support SMS sending process</string>
+    <string name="guest_network_created">Guest Network Created Successfully</string>
+    <string name="guest_network_updated">Guest Network Updated Successfully</string>
+
+    <string name="go_settings_per">You have denied the app permissions. Go to Settings and Enable the Permissions.</string>
+
+
+    <!--RouterMap-->
+    <string name="internet_cap">Internet</string>
+    <string name="router">Router</string>
+    <string name="wifi_point_1">Wifi Point(1)</string>
+    <string name="wifi_point_2">Wifi Point(2)</string>
+    <string name="ms">ms</string>
+    <string name="router_map">Router Map</string>
+    <string name="jose_phone">Jose Iphone</string>
+
+
+    <!--Speed Test-->
+    <string name="check_the_internet_speed">Check the Internet Speed</string>
+    <string name="click_icon_to_check_speed">Click the icon for speed test</string>
+    <string name="ip_address">IP Address</string>
+    <string name="band">Band</string>
+    <string name="channel">Channel</string>
+    <string name="dbm">dBm</string>
+
+
+    <!--SetupWifi Contact-->
+    <string name="search">Search</string>
+    <string name="all_contacts">All Contacts</string>
+    <string name="contact_selected">%1$s Contact Selected</string>
+    <string name="contacts_selected">%1$s Contacts Selected</string>
+    <string name="no_contacts">No Contacts</string>
+
+
+    <!--IOT add Zig-bee screen-->
+    <string name="add_zig_bee">Add a ZigBee or Z-Wave device.</string>
+    <string name="put_the_device_pairing">Put the device in pairing mode, then tap Continue to add it to Calix.\n\n\nCheck the device\'s manual to find out how to put it in pairing mode. </string>
+
+
+    <!--IOT search add get devi-->
+    <string name="searching">Searching&#8230;</string>
+    <string name="adding_device">Adding Device&#8230;</string>
+    <string name="getting_device_info">Getting Device Info&#8230;</string>
+    <string name="device_added">Device Added</string>
+    <string name="calix_looking">Calix is looking for nearby devices and will pair with them automatically, this can take up to two minutes</string>
+    <string name="device_finalize_setup">The device has been paired with your phone.\nTap to Continue to finalize the setup.</string>
+
+
+    <!--Device ready to use-->
+    <string name="device_ready">Device Ready to Use</string>
+    <string name="your_device_ready">Your device is now ready to use with Calix.Check the device\'s manual for tips on installation and usage. "</string>
+
+    <!--Router Settings-->
+    <string name="custom_device_settings">Customize the Device Settings</string>
+    <string name="edit_device_name">Edit the Device Name</string>
+    <string name="location">Location</string>
+    <string name="def">Default</string>
+    <string name="mac_address">MAC Address</string>
+
+
+    <!--Console-->
+    <string name="signal_strength">Signal Strength</string>
+    <string name="disconnect_device">Disconnect the Device from the %1$s</string>
+    <string name="connect_device">Connect the Device to the %1$s</string>
+
+    <!--Device-->
+    <string name="iot_device_connected">%1$s Connected</string>
+    <string name="android">Android</string>
+    <string name="ios">IOS</string>
+    <string name="linux">Linux</string>
+    <string name="windows">Windows</string>
+    <string name="mac">Mac</string>
+
+
+    <!--Television-->
+    <string name="television_connected">Television Connected</string>
+
+    <!--Phone-->
+    <string name="phone_connected">Phone Connected</string>
+
+    <!--Storage-->
+    <string name="storage_connected">Storage Connected</string>
+
+    <!--Printer-->
+    <string name="printer_connected">Printer Connected</string>
+
+    <!--Printer-->
+    <string name="computer_connected">Computer Connected</string>
+
+    <!--Media-->
+    <string name="enter_device_name">Enter Device Name </string>
+    <string name="enter_device_loc">Enter Device Location </string>
+    <string name="please_enter_device_name">Please Enter Device Name </string>
+    <string name="please_enter_device_loc">Please Enter Device Location </string>
+
+
+    <!--Server issue-->
+    <string name="connect_time_out">Could not connect to Calix Gigamanage App Server. Please try again.</string>
+    <string name="failed_to_connect_router">Failed to Connect Your Router, Please try again.</string>
+
+
+    <string name="no_internet"> Please Verify Your Internet Connection.</string>
+    <string name="retry">Retry</string>
+
+    <!--Num-->
+    <string name="one">1</string>
+
+    <!--Wishes-->
+    <string name="gud_morn">Good Morning</string>
+    <string name="gud_afternoon">Good Afternoon</string>
+    <string name="gud_evn">Good Evening</string>
+
+
+    <!--Device Details-->
+    <string name="min">min</string>
+    <string name="mins">mins</string>
+    <string name="hour">hour</string>
+    <string name="current_hour">current hour</string>
+    <string name="hours">hours</string>
+    <string name="day">day</string>
+    <string name="current_day">current day</string>
+    <string name="days">days</string>
+    <string name="week">week</string>
+    <string name="current_week">current week</string>
+    <string name="weeks">weeks</string>
+    <string name="month">month</string>
+    <string name="current_month">current month</string>
+    <string name="months">months</string>
+    <string name="year">year</string>
+    <string name="current_year">current year</string>
+    <string name="years">years</string>
+    <string name="just_now">just now</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="language_not_supported">This Language is not supported</string>
+    <string name="accepts_terms">I Accept the</string>
+    <string name="terms_conditionss">Terms &amp; Conditions</string>
+    <string name="please_tick_tc">Please Accept the Terms and Conditions</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+
+
+
+    <string name="about_msg">Calix Gigamanage is an intuitive, easy-to-use mobile application that lets subscribers set up a guest Wi-Fi network, set parental controls, provide basic policy management.</string>
+    <string name="terms_msg">CALIX, INC.
+\nGIGAMANAGE” END USER LICENSE AGREEMENT
+
+\n\nTHIS END USER LICENSE AGREEMENT (“CALIX GIGAMANAGE”) IS AN AGREEMENT BETWEEN CALIX, INC. (“CALIX”) AND YOU AS END USER (“YOU” OR “END USER”) FOR RIGHTS TO USE CALIX GIGAMANAGE (“SOFTWARE”) PROVIDED BY CALIX. THIS Calix Gingamanage IS LIMITED TO THE TERMS AND CONDITIONS SET FORTH IN THIS AGREEMENT.
+
+\n\nCALIX EXPRESSLY REJECTS ANY TERMS OR CONDITIONS THAT ARE NOT SET FORTH IN THIS Calix Gingamanage. PLEASE READ THE Calix Gingamanage CAREFULLY AS IT IS LEGALLY BINDING. BY DOWNLOADING, INSTALLING OR USING THE SOFTWARE, YOU ACCEPT THE TERMS OF THE Calix Gingamanage. IF YOU ARE ACCEPTING THESE TERMS ON BEHALF OF ANOTHER PERSON OR A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT AND WARRANT THAT YOU HAVE FULL AUTHORITY TO ACT FOR AND TO BIND THAT PERSON, COMPANY, OR LEGAL ENTITY TO THESE TERMS.  IF YOU DO NOT HAVE SUCH AUTHORITY, OR IF YOU DO NOT AGREE WITH THESE TERMS AND CONDITIONS, YOU MUST NOT ACCEPT THIS Calix Gingamanage AND MAY NOT USE THE SOFTWARE.
+
+
+\n\n\n1.	Permitted Use; Term.
+\n1.1	Subject to the terms and conditions of this Calix Gingamanage, Calix hereby grants End User, during the Term (as defined below), a non-exclusive, non-transferable, non-sublicenseable, limited right to access and use the Software solely in connection with one or more Calix offerings (including product, cloud service and/or software offerings) for End User’s network needs (the “Permitted Use”). This Calix Gingamanage does not entitle End User to any technical support with respect to the Software. Calix reserves the right to provide support in its sole discretion and at such terms as Calix shall in its sole discretion determine.
+
+\n\n1.2	The “Term” shall begin upon End User’s download of the Software and shall continue until the earlier of (i) termination of this Calix Gingamanage by either party, or (ii) End User discontinuing use of the Software. Calix may immediately terminate this Calix Gingamanage for convenience or in the event End User breaches this Calix Gingamanage or any terms associated with Calix offerings in connection with the Permitted Use. End User agrees that a breach of this Calix Gingamanage shall constitute a material default for which Calix may have no adequate remedy at law, such that injunctive or other equitable relief may be appropriate to restrain such breach, whether threatened or actual. Upon termination of this Calix Gingamanage, the license granted to End User shall terminate and End User shall immediately discontinue using the Software. Upon request, End User will certify to Calix that it has deleted and/or destroyed all copies of the Software. In the event of expiration or termination of this Agreement, Sections 1.2, 2, 3, 4, 6, 7, 8, 9 and 10 will survive and continue in effect.
+
+\n\n2.	Restrictions.
+\n2.1	End User shall not itself, or through any parent, subsidiary, affiliate, agent or other third party permit any third party to (i) use the Software other than for the Permitted Use; (ii) sell, lease, license, transfer, sublicense, make any external commercial use of or any way distribute the Software, (iii) provide, disclose, divulge or make available to, or permit use of the Software by any third party, (iv) copy, modify or reproduce, translate, reverse engineer, disassemble, decompile, or create derivative works based on, or copy the Software or any portion thereof, (v) directly or indirectly use the Software in any way to build a competitive product or service, (vi) modify any proprietary rights notices that appear in the Software or components thereof, or (vii) use the Software in violation of any applicable laws and regulations (including any export laws, restrictions, national security controls and regulations).
+
+\n\n2.2	End User shall notify Calix promptly of any unauthorized use of any password or account or any other known or suspected breach of security or misuse of the Software. End User is responsible for use of the Software by any and all employees, or other users that it allows to access the Software.
+
+\n\n3.	Confidentiality
+\n3.1	“Confidential Information” means non-public information, technical data or know-how of a party and/or its affiliates, which is furnished to the other party in written or tangible form in connection with this Calix Gingamanage.  Oral disclosure will also be deemed Confidential Information if it would reasonably be considered to be of a confidential nature or if it is confirmed at the time of disclosure to be confidential.
+
+\n\n3.2	Notwithstanding the foregoing, Confidential Information does not include information which is: (i) already in the possession of the receiving party and not subject to a confidentiality obligation to the providing party; (ii) independently developed by the receiving party; (iii) publicly disclosed through no fault of the receiving party; (iv) rightfully received by the receiving party from a third party that is not under any obligation to keep such information confidential; (v) approved for release by written agreement with the disclosing party; or (vi) disclosed pursuant to the requirements of law, regulation, or court order, provided that the receiving party will promptly inform the providing party of any such requirement and cooperate with any attempt to reasonably limit such disclosure or to procure a protective order or similar treatment.
+
+\n\n3.3	Neither party will use the other party’s Confidential Information except as reasonably required for the performance of this Calix Gingamanage.  Each party will hold in confidence the other party’s Confidential Information by means that are no less restrictive than those used for its own confidential materials. Each party agrees not to disclose the other party’s Confidential Information to anyone other than its employees or subcontractors who are bound by confidentiality obligations and who need to know the same to perform such party’s obligations hereunder.
+
+\n\n3.4	Upon termination or expiration of this Calix Gingamanage, except as otherwise agreed in writing or otherwise stated in this Calix Gingamanage, each party will, upon the request of the disclosing party, either: (i) return all of such Confidential Information of the disclosing party and all copies thereof in the receiving party’s possession or control to the disclosing party; or (ii) destroy all Confidential Information and all copies thereof in the receiving party’s possession or control.  The receiving party will at the request of the disclosing party certify in writing that no copies have been retained by the receiving party, its employees or agents.
+
+\n\n3.5	In case a party receives legal process that demands or requires disclosure of the disclosing party’s Confidential Information, such party will give prompt notice to the disclosing party, if legally permissible, to enable the disclosing party to challenge such demand.
+
+\n\n3.6	The receiving party acknowledges that unauthorized disclosure of the disclosing party’s Confidential Information could cause substantial harm to the disclosing party for which damages alone might not be a sufficient remedy and, therefore, that upon any such disclosure by the receiving party the disclosing party will be entitled to appropriate equitable relief in addition to whatever other remedies it might have at law or equity.
+
+\n\n4.	User Data.
+\n4.1	End User is responsible for all data, information or material provided, submitted or otherwise transmitted by End User through the Software (“User Data”). End User will have the sole responsibility for the accuracy, quality, integrity, legality, reliability, appropriateness of and permissions for User Data. Except as described in this Calix Gingamanage, Calix will not access or disclose User Data other than as required by law or regulation.
+
+\n\n4.2	End User represents and warrants that End User (i) has provided and will provide all legally required disclosures regarding User Data, including personally identifiable information and (ii) if applicable, has obtained and will obtain legally enforceable written consents to provide User Data, including personally identifiable information, to Calix to collect and use the User Data and any personally identifiable information as referenced in the Subscriber Data Collection and Usage documentation for the Software attached as Appendix A to this Calix Gingamanage, as may be updated by Calix from time to time.
+
+\n\n4.3	Subject to the terms and conditions of this Calix Gingamanage, End User grants to Calix a non-exclusive worldwide license to host, copy, store, use, transmit and display User Data to the extent reasonably necessary to provide, maintain and/or enhance the Service. Calix will not use the User Data for any purpose other than (i) as provided in the applicable Subscriber Data Collection and Usage documentation, (ii) to provide and maintain the Software and, (iii) provided use is on an anonymous and/or aggregated basis, to enhance and/or evaluate the Software from time to time. End User agrees that continued use of the Software represents End User’s consent to the foregoing use by Calix unless End User provides formal written notice otherwise to Calix.
+
+\n\n5.	Proprietary Rights.
+\n5.1	Calix and its suppliers retain all rights, title and interest in the Software. This Calix Gingamanage grants no ownership rights to End User. No license is granted to End User except as to use of the Software as expressly stated herein. The Calix name, the Calix logo, and the product names associated with the Software are trademarks of Calix or third parties, and they may not be used without Calix’s prior written consent.
+
+\n\n5.2	Open-Source Software. The Software may include third-party software licensed under terms different from those contained in this Calix Gingamanage. Portions of the Software may only be available to End User under public licenses (each a “Public License”). End User’s rights and obligations with respect to such Software are set forth in the applicable Public License and this Calix Gingamanage. Information about applicable Public Licenses and a copy of the applicable licensing provisions for the open source software used by Calix may be found in Appendix B to this Calix Gingamanage. End User either must agree to the provisions of each applicable Public License or not exercise such licensed rights. This Calix Gingamanage is not intended to change or restrict the terms of any Public License, and Calix does not seek to restrict, or receive compensation for, the copying or redistribution of publicly licensed code that is otherwise freely re-distributable to third parties (and not otherwise restricted by federal copyright or other laws). Calix disclaims all liability and warranties with respect to software subject to a Public License.
+
+\n\n6.	Disclaimer of Warranties. THE SOFTWARE AND ANY ASSOCIATED DOCUMENTATION IS BEING PROVIDED TO END USER WITHOUT CHARGE FOR THE PERMITTED USE ONLY, AND IS THEREFORE BEING PROVIDED “AS IS”.  CALIX EXPRESSLY DISCLAIMS ANY AND ALL OTHER REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, WITH RESPECT THERETO, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, OR THE CONTINUOUS, UNINTERRUPTED, ERROR-FREE, VIRUS-FREE, OR SECURE ACCESS TO OR OPERATION OF THE SOFTWARE.  CALIX EXPRESSLY DISCLAIMS ANY WARRANTY AS TO THE ACCURACY OR COMPLETENESS OF ANY INFORMATION OR DATA ACCESSED OR USED IN CONNECTION WITH THE SOFTWARE AND ANY ASSOCIATED DOCUMENTATION. Calix is not responsible for any delays, delivery failures, or any other loss or damage resulting from the transfer of data over communications networks and facilities, including the Internet, and End User acknowledges that the Software and any associated documentation may be subject to limitations, delays and other problems inherent in the use of such communications facilities.
+
+\n\n7.	Indemnity. End User agrees to defend, at its expense, Calix (and its officers, directors, employees and agents) against any third-party claim to the extent such claim arises from or is made in connection with End User’s breach of Sections 2(i), 4 or 10, or End User’s negligence or willful misconduct, and End User shall pay all costs and damages finally awarded against Calix by a court of competent jurisdiction as a result of any such claim.
+
+\n\n8.	Limitation of Liability.   IN NO EVENT SHALL CALIX BE LIABLE FOR ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, INCLUDING DAMAGES FOR LOSS OF REVENUES OR PROFITS, LOSS OF USE, BUSINESS INTERRUPTION, OR LOSS OF DATA, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF IT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL CALIX’S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS Calix Gingamanage EXCEED $100.00 US.
+
+\n\n9.	Privacy. By accepting this Calix Gingamanage, End User agrees to the Calix Website Terms of Use located at https://www.calix.com/pages/terms-of-use.html and to the Calix Privacy Policy located at https://www.calix.com/content/calix/en/site-prod/home/pages/privacy-policy.html. End User acknowledges that Calix may collect certain usage metrics through the Software to enhance and/or evaluate the Software from time to time.  End User grants Calix a worldwide, perpetual, irrevocable, royalty-free license to use and incorporate into the Software any suggestion, enhancement request or other feedback provided by End User relating to the Software.
+
+\n\n10.	U.S. Export Compliance.  The Software, along with any associated documentation and other technology we may make available to End User in connection with the Software, may be subject to export laws and regulations of the United States. End User represents that neither End User nor any additional authorized user is named on any U.S. government denied-party list. End User further agree that End User will immediately terminate a user’s access to the Software if such user becomes the subject of any U.S. government denied-party list. End User shall not permit its authorized users to access or use any Software in a U.S.-embargoed country (currently, the Crimea Region of Ukraine, Cuba, Iran, North Korea, Sudan and Syria) or otherwise in violation of any U.S. export law or regulations.
+
+\n\n11.	MISCELLANEOUS. This Calix Gingamanage shall be governed by and construed under the laws of the State of California, United States of America. The parties consent to the exclusive jurisdiction and venue of the courts located in and serving San Francisco, California.  Failure by either party to exercise any of its rights under, or to enforce any provision of, this Calix Gingamanage will not be deemed a waiver or forfeiture of such rights or ability to enforce such provision. If any provision of this Calix Gingamanage is held by a court of competent jurisdiction to be illegal, invalid or unenforceable, such provision will be amended to achieve as nearly as possible the same economic effect of the original provision and the remainder of this Calix Gingamanage will remain in full force and effect. This Calix Gingamanage represents the entire agreement between the parties and supersedes any previous or contemporaneous oral or written agreements or communications regarding the subject matter of this Calix Gingamanage. The person accepting this Calix Gingamanage for End User represents that such person is duly authorized by all necessary and appropriate corporate action to enter into this Calix Gingamanage on behalf of End User. Any modification to this Calix Gingamanage must be in writing and signed by a duly authorized agent of both parties. No joint venture, partnership, employment, or agency relationship exists between the parties as a result of this Calix Gingamanage or use of the Software. End User may not assign this Calix Gingamanage and any purported assignment in violation of this section shall be void. Calix may assign, transfer, or subcontract this Calix Gingamanage in whole or in part. Calix may give notice to End User by electronic mail to End User’s email address on record in End User’s account information.  End User may give notice to Calix at any time by any letter delivered by nationally recognized overnight delivery service or first class postage prepaid mail to Calix at Calix, Inc., Attention: Legal, 100 Headquarters Drive, San Jose, CA 95134-1370, United States of America, with courtesy copy to calixlegal@calix.com. A party may, by giving notice, change its applicable address, email, or other contact information. Notice will be deemed to have been given upon the expiration of 36 hours after mailing (if sent by first class mail) or sending by courier or 12 hours after sending (if sent by email), or, if earlier, when received.
+ 
+\n\nAppendix A
+
+\n\nSubscriber Data Collection and Usage in Calix Gigamanage
+
+\n\nWhat information do we collect?
+
+\n\nCalix Gigamanage is an intuitive, easy-to-use mobile application that lets subscribers set up a guest Wi-Fi network, set parental controls, provide basic policy management and associate devices in the network to household members.
+
+\n\nIn order to provide these services, Calix Gigamanage may use the following subscriber configuration information:
+\n•	E-mail address
+\n•	Mapping of devices associated to a household member, including subscriber created labels to designate such devices
+\n•	SSID settings – username and password for primary SSIDs
+\n•	SSID settings – username and password for guest SSIDs
+
+\n\nHow is subscriber information used within Calix Gigamanage?
+
+\n\nCalix Gigamanage uses the information provided in the application and collected from subscriber’s residential gateway device to enforce and display subscriber-configured policies.
+ 
+\n\nAppendix B
+
+\n\nBelow is information about applicable third-party software public licenses and a copy of the applicable licensing provisions for the open source software used by Calix in Gigamanage:
+
+[TBD]
+</string>
+</resources>

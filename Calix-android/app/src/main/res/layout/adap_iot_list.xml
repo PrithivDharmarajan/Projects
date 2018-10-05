@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_list_type_txt"
+    style="@style/TextOpenSansRegular"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/size6"
+    android:background="@drawable/iot_selected_violet_bg"
+    android:paddingStart="@dimen/size15"
+    android:paddingEnd="@dimen/size15"
+    android:paddingTop="@dimen/size5"
+    android:paddingBottom="@dimen/size5"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text12" />
+

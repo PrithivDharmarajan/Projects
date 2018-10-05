@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_lay"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin60"
+
+        android:background="@color/blue_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin80"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/verify_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/slide_pointer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/slidepointer_one"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:contentDescription="@string/reset_msg"
+                        android:src="@drawable/keypad_selection_on" />
+
+                    <ImageView
+                        android:id="@+id/slidepointer_two"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:contentDescription="@string/reset_msg"
+                        android:src="@drawable/keypad_selection_on" />
+
+                    <ImageView
+                        android:id="@+id/slidepointer_three"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:contentDescription="@color/black"
+                        android:src="@drawable/keypad_selection_on" />
+
+                    <ImageView
+                        android:id="@+id/slidepointer_four"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:contentDescription="@color/black"
+                        android:src="@drawable/keypad_selection_on" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/keypad_123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/one"
+                        android:text="@string/one"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/two"
+                        android:text="@string/two"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/three"
+                        android:text="@string/three"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/keypad_456"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textSize="@dimen/text20">
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/four"
+                        android:text="@string/four"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/five"
+                        android:text="@string/five"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:layout_marginLeft="@dimen/margin15"
+                        android:background="@drawable/keyboard_btn"
+                        android:tag="@string/six"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:text="@string/six"
+                        android:textColor="@color/blue_gray"
+                        android:textSize="@dimen/text26" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad_789"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textSize="@dimen/text20">
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="@dimen/margin70"
+                    android:layout_height="@dimen/margin70"
+                    android:background="@drawable/keyboard_btn"
+                    android:tag="@string/seven"
+                    android:text="@string/seven"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text26"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="@dimen/margin70"
+                    android:layout_height="@dimen/margin70"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:background="@drawable/keyboard_btn"
+                    android:tag="@string/eight"
+                    android:text="@string/eight"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text26"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="@dimen/margin70"
+                    android:layout_height="@dimen/margin70"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:background="@drawable/keyboard_btn"
+                    android:tag="@string/nine"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:text="@string/nine"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="@dimen/text26" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="@dimen/margin70"
+                android:layout_height="@dimen/margin70"
+                android:layout_margin="@dimen/margin15"
+                android:background="@drawable/keyboard_btn"
+                android:tag="@string/zero"
+                android:layout_gravity="center"
+                android:text="@string/zero"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:textColor="@color/blue_gray"
+                android:textSize="@dimen/text26"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/general_header_with_bg" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

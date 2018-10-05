@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_box_lay"
+        android:layout_marginBottom="@dimen/size80"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:gravity="center"
+        android:text="@string/date_of_event"
+        android:textColor="@color/blue_gray"
+        android:textSize="@dimen/text24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_above="@+id/input_box_lay"
+        android:background="@color/green"/>
+
+    <RelativeLayout
+        android:id="@+id/input_box_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/input_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:hint="@string/select_date"
+            android:inputType="datetime"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text16" />
+
+        <ImageView
+            android:id="@+id/calender_img"
+            android:layout_width="@dimen/margin45"
+            android:layout_height="@dimen/margin45"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin5"
+            android:contentDescription="@string/already_mem"
+            android:padding="@dimen/margin10"
+            android:src="@drawable/cal_img" />
+
+        <RelativeLayout
+            android:id="@+id/inpt_box_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:layout_below="@+id/input_box_lay"
+        android:background="@color/green"></View>
+
+    <include
+        layout="@layout/general_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/univ_select_lay"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/margin15">
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="@dimen/margin25"
+            android:layout_height="@dimen/margin25"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/ok"
+            android:src="@drawable/tick_gray_img" />
+
+        <TextView
+            android:id="@+id/university_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:clickable="false"
+            android:layout_toLeftOf="@+id/right_img"
+            android:layout_toStartOf="@+id/right_img"
+            android:textColor="@color/blue_gray"
+            android:textSize="@dimen/text16" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding1"
+        android:background="@color/green" />
+</LinearLayout>
