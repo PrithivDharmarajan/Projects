@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/conversation_gray" >
+
+    <LinearLayout
+        android:id="@+id/new_conv_bg_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin25"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/margin40"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:contentDescription="@drawable/converstation_jolt_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/converstation_jolt_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:gravity="center"
+            android:text="@string/new_conv_ques"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text12" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/new_conv_bg_lay"
+        android:layout_marginBottom="@dimen/margin10"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin5"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:paddingTop="@dimen/margin7" >
+
+        <EditText
+            android:id="@+id/edit_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding5"
+            android:layout_toLeftOf="@+id/converstation_photo_icon"
+            android:background="@drawable/write_message_rounded"
+            android:hint="@string/write_a_reply"
+            android:minHeight="@dimen/margin30"
+            android:paddingLeft="@dimen/margin5"
+            android:textSize="@dimen/text14" />
+
+        <ImageView
+            android:id="@+id/converstation_photo_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin7"
+            android:layout_toLeftOf="@+id/send_btn"
+            android:background="@drawable/converstation_photo_icon"
+            android:clickable="false"
+            android:contentDescription="@drawable/converstation_photo_icon"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size30"
+            android:layout_alignBottom="@+id/edit_chat"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/green_btn"
+            android:clickable="true"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When selected, use hover image -->
+    <item android:drawable="@drawable/grey_rounded" android:state_pressed="true"/>
+    <item android:drawable="@drawable/grey_rounded" android:state_enabled="false"/>
+    <!-- When not selected, use normal image -->
+    <item android:drawable="@drawable/green_rounded"/>
+
+</selector>

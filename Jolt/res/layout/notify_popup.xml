@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transperent_40"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/notify_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin30" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:src="@drawable/converstation_jolt_icon" />
+
+        <TextView
+            android:id="@+id/notify_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_toRightOf="@+id/icon"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18" />
+    </RelativeLayout>
+
+</LinearLayout>

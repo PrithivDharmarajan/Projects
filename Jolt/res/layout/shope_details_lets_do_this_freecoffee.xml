@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shope_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:id="@+id/coffee_shope_name_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/coffee_shope_name_address_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin10" >
+
+            <TextView
+                android:id="@+id/coffee_shope_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin60"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/coffee_shope_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coffee_shope_name"
+                android:layout_marginRight="@dimen/margin60"
+                android:singleLine="true"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text15" />
+        </RelativeLayout>
+
+        <com.smaat.jolt.util.ImageViewRounded
+            android:id="@+id/shop_logo"
+            android:layout_width="@dimen/margin40"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:contentDescription="@drawable/jolt_app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/converstation_jolt_icon" />
+            </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:id="@+id/time_date_coffee_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/time_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/coffee_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding3"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/coffee_type_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/coming_right_up_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height130"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@color/gray"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/coming_right_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/its_on_the_way"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text26" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/so_how_was_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/so_how_was_it"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <FrameLayout
+                android:id="@+id/awesomeAnim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.smaat.jolt.util.GifMovieView
+                        android:id="@+id/awesomeAnimImage"
+                        android:layout_width="@dimen/size100"
+                        android:layout_height="@dimen/size100"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/awesome"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/awesomeOver"
+                    android:layout_width="@dimen/size75"
+                    android:layout_height="@dimen/size75"
+                    android:background="@drawable/animation_over"
+                    android:contentDescription="@drawable/animation_over"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/goodAnim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.smaat.jolt.util.GifMovieView
+                        android:id="@+id/goodAnimImage"
+                        android:layout_width="@dimen/size150"
+                        android:layout_height="@dimen/size150"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/good"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size75"
+                    android:layout_height="@dimen/size75"
+                    android:layout_gravity="center"
+                    android:background="@drawable/animation_over"
+                    android:contentDescription="@drawable/animation_over"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/avgAnim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.smaat.jolt.util.GifMovieView
+                        android:id="@+id/avgAnimImage"
+                        android:layout_width="@dimen/size150"
+                        android:layout_height="@dimen/size150"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/average"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size75"
+                    android:layout_height="@dimen/size75"
+                    android:background="@drawable/animation_over"
+                    android:contentDescription="@drawable/animation_over"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/poorAnim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.smaat.jolt.util.GifMovieView
+                        android:id="@+id/poorAnimImage"
+                        android:layout_width="@dimen/size150"
+                        android:layout_height="@dimen/size150"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/poor"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size75"
+                    android:layout_height="@dimen/size75"
+                    android:background="@drawable/animation_over"
+                    android:contentDescription="@drawable/animation_over"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/freeCoffeLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/dummy_after_checkout_triangleafe"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/gift_icon"
+                android:contentDescription="@drawable/gift_icon" />
+
+            <TextView
+                android:id="@+id/gift_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin18"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:text="@string/get_free_coffee_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@color/green" />
+
+</LinearLayout>

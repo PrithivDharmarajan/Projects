@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:id="@+id/drinks_available_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height200" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_transperent" >
+            </android.support.v4.view.ViewPager>
+
+            <ImageView
+                android:id="@+id/listbottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size75"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:contentDescription="@drawable/list_bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_bottom" />
+
+            <TextView
+                android:id="@+id/shopopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginBottom="@dimen/margin30"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin27"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin50"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/shopstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin100"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            
+            <TextView
+            android:id="@+id/atmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/margin5"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/margin50"
+            android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/padding8"
+                android:layout_marginRight="@dimen/margin5"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/favouriteselect"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin50"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="top|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/favouriteselect_img"
+                    android:layout_width="@dimen/margin25"
+                    android:layout_height="@dimen/margin25"
+                    android:layout_marginTop="@dimen/padding8"
+                    android:clickable="false"
+                    android:contentDescription="@drawable/favouriteheartunselected"
+                    android:src="@drawable/favouriteheartunselected" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMap"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginLeft="@dimen/margin5"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:clickable="false"
+                    android:contentDescription="@drawable/detail_screen_map_icon"
+                    android:src="@drawable/detail_screen_map_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgDetails"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginLeft="@dimen/margin45"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:clickable="false"
+                    android:contentDescription="@drawable/detailscreen"
+                    android:src="@drawable/detailscreen" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/slide_pointer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin15"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="@dimen/margin70"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/slidepointer_one"
+                    android:layout_width="@dimen/margin10"
+                    android:layout_height="@dimen/margin10"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:contentDescription="@drawable/nextpageselect"
+                    android:src="@drawable/nextpageselect" />
+
+                <ImageView
+                    android:id="@+id/slidepointer_two"
+                    android:layout_width="@dimen/margin10"
+                    android:layout_height="@dimen/margin10"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:contentDescription="@drawable/nextpageunselect"
+                    android:src="@drawable/nextpageunselect" />
+
+                <ImageView
+                    android:id="@+id/slidepointer_three"
+                    android:layout_width="@dimen/margin10"
+                    android:layout_height="@dimen/margin10"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:contentDescription="@drawable/nextpageunselect"
+                    android:src="@drawable/nextpageunselect" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/leftArrow"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin45"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/margin65"
+                android:clickable="true"
+                android:gravity="center|left" >
+
+                <Button
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin35"
+                    android:layout_marginLeft="@dimen/margin3"
+                    android:background="@drawable/leftarrow"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rightArrow"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin45"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin65"
+                android:clickable="true"
+                android:gravity="center|right" >
+
+                <Button
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin35"
+                    android:layout_marginRight="@dimen/margin3"
+                    android:background="@drawable/rightarrow"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/map_frame_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <fragment
+                    android:id="@+id/map_fragment_view"
+                    android:name="com.smaat.jolt.util.CustomMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height200" />
+
+                <ImageView
+                    android:id="@+id/available_drinks_detail"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@drawable/map_back_icon"
+                    android:contentDescription="@drawable/map_back_icon" />
+
+                <ImageView
+                    android:id="@+id/imgListDetails"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/margin50"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:contentDescription="@drawable/detailscreen"
+                    android:background="@drawable/detailscreen" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/drinkscurrentLocation"
+                        android:layout_width="@dimen/margin40"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:contentDescription="@drawable/currentlocation"
+                        android:src="@drawable/currentlocation" />
+
+                    <ImageView
+                        android:id="@+id/navigate"
+                        android:layout_width="@dimen/margin40"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:contentDescription="@drawable/navigate"
+                        android:src="@drawable/navigate"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/direction"
+                        android:layout_width="@dimen/margin40"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:contentDescription="@drawable/direction"
+                        android:src="@drawable/direction"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_shop_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/map_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/map_distance"
+                android:singleLine="true"
+                android:textColor="@color/gray_2" />
+
+            <TextView
+                android:id="@+id/map_shopstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map_shopname"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/margin50"
+                android:layout_marginTop="@dimen/margin2"
+                android:singleLine="true"
+                android:textColor="@color/gray_2" />
+
+            <TextView
+                android:id="@+id/map_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textColor="@color/gray_2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/green" />
+
+        <TextView
+            android:id="@+id/choosedrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="@string/choosedrink"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <LinearLayout
+            android:id="@+id/drinks"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/choosedrinkpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin50" >
+                </android.support.v4.view.ViewPager>
+
+                <RelativeLayout
+                    android:id="@+id/choosedrink_left"
+                    android:layout_width="@dimen/margin40"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:gravity="center|left" >
+
+                    <Button
+                        android:layout_width="@dimen/margin18"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:background="@drawable/choose_drink_left_arrow"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/choosedrink_right"
+                    android:layout_width="@dimen/margin40"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_gravity="center_vertical|right"
+                    android:clickable="true"
+                    android:gravity="center|right" >
+
+                    <Button
+                        android:layout_width="@dimen/margin18"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_marginRight="@dimen/margin5"
+                        android:background="@drawable/choose_drink_right_arrow"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/choosedrink_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/choosedrink_size"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text16" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/drinkssize"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin50" >
+                </android.support.v4.view.ViewPager>
+
+                <RelativeLayout
+                    android:id="@+id/drinkssize_left"
+                    android:layout_width="@dimen/margin40"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:gravity="center|left" >
+
+                    <Button
+                        android:layout_width="@dimen/margin18"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:background="@drawable/choose_drink_left_arrow"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/drinkssize_right"
+                    android:layout_width="@dimen/margin40"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_gravity="center_vertical|right"
+                    android:clickable="true"
+                    android:gravity="center|right" >
+
+                    <Button
+                        android:layout_width="@dimen/margin18"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_marginRight="@dimen/margin5"
+                        android:background="@drawable/choose_drink_right_arrow"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/howmany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/howmany"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/text16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:orientation="horizontal"
+                android:weightSum="9" >
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="@dimen/margin35"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/cup_unselected" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/letsdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:padding="@dimen/margin15"
+                android:background="@drawable/green_btn"
+                android:text="@string/letstry"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

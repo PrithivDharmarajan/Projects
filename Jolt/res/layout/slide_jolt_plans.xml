@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jolt_plans_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin40"
+        android:gravity="center"
+        android:text="@string/what_do_u_fancy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text34"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/what_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin65"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnInclude"
+            android:layout_width="@dimen/margin40"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/question_icon"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/what_included_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/what_included"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/what_lay"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/basics"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin40"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1"
+            android:background="@drawable/classics_normal"
+            android:gravity="center"
+            android:text="@string/the_classics"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18" />
+
+        <TextView
+            android:id="@+id/drinks"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin40"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_weight="1"
+            android:background="@drawable/classics_normal"
+            android:gravity="center"
+            android:text="@string/all_drinks"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_lay"
+        android:layout_marginBottom="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin30"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.smaat.jolt.util.CustomViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

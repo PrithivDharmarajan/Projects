@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_lauyot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin10"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/slidepointer_one_img"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height150"
+            android:layout_gravity="center"
+            android:contentDescription="@color/new_black"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height130"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="JOLT"
+            android:textColor="@color/jolt_green"
+            android:textSize="@dimen/text70"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_lauyot"
+        android:layout_marginTop="@dimen/margin10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/swipe_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/margin5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

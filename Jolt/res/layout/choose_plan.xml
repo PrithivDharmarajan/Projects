@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+     <LinearLayout
+        android:id="@+id/what_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnInclude"
+            android:layout_width="@dimen/margin40"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/question_icon"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/what_included_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/what_included"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/what_lay"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/basics"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin35"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1"
+            android:background="@drawable/classics_normal"
+            android:gravity="center"
+            android:text="@string/the_classics"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/drinks"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin35"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_weight="1"
+            android:background="@drawable/classics_over"
+            android:gravity="center"
+            android:text="@string/all_drinks"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_lay"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.DirectionalViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.DirectionalViewPager>
+        <!--
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_choose_plan" />>
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

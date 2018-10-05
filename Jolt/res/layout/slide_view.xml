@@ -1,0 +1,347 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height300"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidebg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/profile_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/img_lay"
+                android:layout_width="@dimen/margin80"
+                android:layout_height="@dimen/margin80"
+                android:layout_margin="@dimen/margin5" >
+
+                <com.smaat.jolt.util.ImageViewRounded
+                    android:id="@+id/user_profile_img"
+                    android:layout_width="@dimen/margin80"
+                    android:layout_height="@dimen/margin80"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin10"
+                    android:background="@drawable/default_sign_in"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin20"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_lay"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_toRightOf="@+id/img_lay"
+                android:gravity="left|center" >
+
+                <TextView
+                    android:id="@+id/user_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/new_slide_text"
+                    android:textSize="@dimen/text20" />
+
+                <TextView
+                    android:id="@+id/view_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name_txt"
+                    android:layout_marginBottom="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/view_profile"
+                    android:textColor="@color/new_slide_text"
+                    android:textSize="@dimen/text16" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SignInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:layout_margin="@dimen/margin5" >
+
+            <com.smaat.jolt.util.ImageViewRounded
+                android:id="@+id/user_default_img"
+                android:layout_width="@dimen/margin80"
+                android:layout_height="@dimen/margin80"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin10"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_sign_in" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/sign_in_caps"
+                android:textColor="@color/new_slide_text"
+                android:textSize="@dimen/text24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+         android:visibility="gone"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/joltplan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/joltplan"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:visibility="gone"
+        android:text="@string/joltplan"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+         android:visibility="gone"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/entercoupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/entercoupon"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+         android:visibility="gone"
+        android:padding="@dimen/padding5"
+        android:text="@string/entercoupon"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/promocode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/entercoupon"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/promocode"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:id="@+id/entercoupon_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/myhistory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/history"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding10"
+        android:text="@string/myhistory"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:id="@+id/myhistoryview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/txtEmailUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/get_free_coffee"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/emailus"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewEmailUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/getfreecoffe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/get_free_coffee"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/getfreecoffe"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:id="@+id/getfreecoffeview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/suggest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/suggest_icon"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/suggest"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/recommend_barista"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/recommend_barista_icon"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/recommend_barista"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/sendgift"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/send_gift"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/sendgift"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/sendgiftview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/messageus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/message_us"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/messageus"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:id="@+id/viewmessageus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_settings"
+        android:drawablePadding="@dimen/padding10"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:padding="@dimen/padding5"
+        android:text="@string/help"
+        android:textColor="@color/new_slide_text"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/slide_divider" />
+
+</LinearLayout>

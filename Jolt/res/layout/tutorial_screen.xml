@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/tutorial_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_layout"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/margin30"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/slide_pointer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin30"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/slidepointer_one"
+                    android:layout_width="@dimen/margin15"
+                    android:layout_height="@dimen/margin15"
+                    android:contentDescription="@color/new_black"
+                    android:src="@drawable/green_dot" />
+
+                <ImageView
+                    android:id="@+id/slidepointer_two"
+                    android:layout_width="@dimen/margin15"
+                    android:layout_height="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:contentDescription="@color/new_black"
+                    android:src="@drawable/grey_dot" />
+
+                <ImageView
+                    android:id="@+id/slidepointer_three"
+                    android:layout_width="@dimen/margin15"
+                    android:layout_height="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:contentDescription="@color/black"
+                    android:src="@drawable/grey_dot" />
+
+                <ImageView
+                    android:id="@+id/slidepointer_four"
+                    android:layout_width="@dimen/margin15"
+                    android:layout_height="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:contentDescription="@color/black"
+                    android:src="@drawable/grey_dot" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/get_started"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginLeft="@dimen/margin40"
+                android:layout_marginRight="@dimen/margin40"
+                android:background="@drawable/green_btn"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/get_started_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

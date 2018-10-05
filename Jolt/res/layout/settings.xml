@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/showdistance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:id="@+id/showdistance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/toggle_btn"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin15"
+            android:text="@string/showditance"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <ImageView
+            android:id="@+id/toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@drawable/miles_visible"
+            android:scaleType="fitXY"
+            android:src="@drawable/miles_visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <TextView
+        android:id="@+id/working"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin45"
+        android:gravity="center|left"
+        android:paddingBottom="@dimen/margin7"
+        android:paddingLeft="@dimen/margin15"
+        android:paddingTop="@dimen/margin7"
+        android:text="@string/how_works"
+        android:textColor="@color/gray_2"
+        android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <RelativeLayout
+        android:id="@+id/emailus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin45" >
+
+        <TextView
+            android:id="@+id/email_us"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:paddingBottom="@dimen/margin7"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingTop="@dimen/margin7"
+            android:text="@string/emailus"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <RelativeLayout
+        android:id="@+id/faq_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin45" >
+
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:paddingBottom="@dimen/margin7"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingTop="@dimen/margin7"
+            android:text="@string/faq"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+  
+        <TextView
+            android:id="@+id/rateus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin45"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/margin7"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingTop="@dimen/margin7"
+            android:text="@string/rateus"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <RelativeLayout
+        android:id="@+id/terms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin30"
+        android:layout_marginBottom="@dimen/margin7"
+        android:layout_marginTop="@dimen/margin7" >
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:paddingLeft="@dimen/margin15"
+            android:text="@string/terms"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <RelativeLayout
+        android:id="@+id/version_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin30"
+        android:layout_marginBottom="@dimen/margin7"
+        android:layout_marginTop="@dimen/margin7" >
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin15"
+            android:text="@string/version"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:id="@+id/sym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/version"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_toRightOf="@+id/version"
+            android:gravity="center"
+            android:text="@string/sym_colon"
+            android:textColor="@color/gray_2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/version_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/sym"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin15"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+    <RelativeLayout
+        android:id="@+id/contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin30"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/margin7"
+        android:layout_marginTop="@dimen/margin7" >
+
+        <TextView
+            android:id="@+id/txtlogout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:paddingLeft="@dimen/margin15"
+            android:text="@string/logout"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:id="@+id/txtSignInSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:paddingLeft="@dimen/margin20"
+            android:text="@string/sign_in"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_2" />
+
+</LinearLayout>

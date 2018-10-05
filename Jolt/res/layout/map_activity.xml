@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_shop_bg" >
+
+    <FrameLayout
+        android:id="@+id/map_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_lay"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/map_fragment_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/current_location_button"
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/mylocation_btn" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map_list_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_lay"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/map_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:isScrollContainer="false"
+            android:listSelector="@null"
+            android:orientation="vertical" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/gray_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/footer_img"
+            android:layout_width="@dimen/margin30"
+            android:layout_height="@dimen/margin30"
+            android:clickable="false"
+            android:contentDescription="@drawable/jolt_app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_view_icon" />
+
+        <TextView
+            android:id="@+id/footer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin5"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/map_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text20"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/searchSugestionView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/search_shop_bg"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/searchList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:isScrollContainer="false"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/serchbylay"
+        android:layout_width="@dimen/height250"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/CoffeeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin5"
+                android:paddingTop="@dimen/margin5"
+                android:text="@string/search_by_shop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/ShopSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin5"
+                android:paddingTop="@dimen/margin5"
+                android:text="@string/speciality_coffee"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/SearchbyShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_background"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin5"
+                android:paddingTop="@dimen/margin5"
+                android:text="@string/beans_used"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text18" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

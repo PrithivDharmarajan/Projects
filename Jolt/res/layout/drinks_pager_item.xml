@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/drink1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_toLeftOf="@+id/drink2"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray_2"
+        android:textSize="@dimen/text14" />
+
+    <TextView
+        android:id="@+id/drink2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:text="(CAFE AU LAIT)"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/gray_2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drink3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin20"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/drink2"
+        android:textColor="@color/gray_2"
+        android:text=""
+        android:textSize="@dimen/text14" />
+
+</RelativeLayout>

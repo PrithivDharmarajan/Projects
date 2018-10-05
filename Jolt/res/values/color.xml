@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#EAEAEA</color>
+    <color name="conversation_gray">#E4E4E4</color>
+    <color name="green">#40B279</color>
+    <color name="new_black">#525252</color>
+    <color name="new_blue">#157efb</color>
+    <color name="new_text_grey">#4c4c4c</color>
+    <color name="new_hint_grey">#c7c7cd</color>
+    <color name="new_view_bg">#a4a4a5</color>
+    <color name="new_slide_view_bg">#b7b7b7</color>
+    <color name="new_slide_text">#555555</color>
+    <color name="new_settings_bg">#efeff4</color>
+    <color name="new_popup_bg">#ebebec</color>
+    <color name="login_view_bg">#80cccccc</color>
+    <!-- Scheule Screen -->
+
+    <color name="black_transperent">#80000000</color>
+    <color name="black_transperent_40">#66000000</color>
+     <color name="black_transperent_75">#40000000</color>
+    <color name="overlay_transperent">#B3000000</color>
+    <color name="jolt_green">#1FA561</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="fb_blue">#3b5998</color>
+    <color name="google_plus">#df4a32</color>
+    <color name="gray_bg">#8c8c8c</color>
+     <color name="search_shopname_color">#444444</color>
+     <color name="search_shop_bg">#F4F4F4</color>
+      <color name="message_box_round">#BFBFBF</color>
+    <color name="gray_2">#797979</color>
+    <color name="view_deep_blue">#011549</color>
+    <color name="view_red">#9B1001</color>
+    <color name="view_green">#005425</color>
+    <color name="closed_red">#a51f1f</color>
+
+</resources>

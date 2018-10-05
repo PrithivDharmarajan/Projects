@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/couponmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin20"
+                android:paddingRight="@dimen/margin20"
+                android:text="@string/freecoffee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/couponcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin30"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sharetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="@string/shareyourcode"
+                android:textColor="@color/gray_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:background="@drawable/fb_share_btn" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:background="@drawable/twitter_share_btn" />
+
+                <Button
+                    android:id="@+id/mail"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:background="@drawable/email_share_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/whatsapp"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:background="@drawable/whatsapp_share_btn" />
+
+                <Button
+                    android:id="@+id/message"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size80"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:background="@drawable/message_share_btn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@color/green" />
+
+            <LinearLayout
+                android:id="@+id/will_share_later_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/will_share_later"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_btn"
+                    android:gravity="center"
+                    android:padding="@dimen/margin10"
+                    android:text="@string/will_share_later"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@color/green" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

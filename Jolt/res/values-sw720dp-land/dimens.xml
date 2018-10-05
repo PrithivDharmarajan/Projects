@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin1">2dp</dimen>
+    <dimen name="margin2">4dp</dimen>
+    <dimen name="margin3">4dp</dimen>
+    <dimen name="margin5">10dp</dimen>
+    <dimen name="margin7">10dp</dimen>
+    <dimen name="margin10">20dp</dimen>
+    <dimen name="margin11">16dp</dimen>
+    <dimen name="margin13">19dp</dimen>
+    <dimen name="margin15">30dp</dimen>
+    <dimen name="margin18">27dp</dimen>
+    <dimen name="margin20">40dp</dimen>
+    <dimen name="margin25">50dp</dimen>
+    <dimen name="margin30">60dp</dimen>
+    <dimen name="margin35">70dp</dimen>
+    <dimen name="margin40">80dp</dimen>
+    <dimen name="margin45">90dp</dimen>
+    <dimen name="margin50">100dp</dimen>
+    <dimen name="margin55">110dp</dimen>
+    <dimen name="margin60">120dp</dimen>
+    <dimen name="margin65">130dp</dimen>
+    <dimen name="margin70">140dp</dimen>
+    <dimen name="margin75">150dp</dimen>
+    <dimen name="margin80">160dp</dimen>
+    <dimen name="margin85">170dp</dimen>
+    <dimen name="margin90">180dp</dimen>
+    <dimen name="margin95">190dp</dimen>
+    <dimen name="margin100">200dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text8">16sp</dimen>
+    <dimen name="text10">20sp</dimen>
+    <dimen name="text11">22sp</dimen>
+    <dimen name="text12">24sp</dimen>
+    <dimen name="text13">26sp</dimen>
+    <dimen name="text14">28sp</dimen>
+    <dimen name="text15">30sp</dimen>
+    <dimen name="text16">32sp</dimen>
+    <dimen name="text17">34sp</dimen>
+    <dimen name="text18">36sp</dimen>
+    <dimen name="text19">38sp</dimen>
+    <dimen name="text20">40sp</dimen>
+    <dimen name="text21">42sp</dimen>
+    <dimen name="text22">44sp</dimen>
+    <dimen name="text23">46sp</dimen>
+    <dimen name="text24">48sp</dimen>
+    <dimen name="text25">50sp</dimen>
+    <dimen name="text26">52sp</dimen>
+    <dimen name="text28">56sp</dimen>
+    <dimen name="text30">60sp</dimen>
+
+    <!-- height -->
+    <dimen name="height110">220dp</dimen>
+    <dimen name="height120">240dp</dimen>
+    <dimen name="height130">260dp</dimen>
+    <dimen name="height140">280dp</dimen>
+    <dimen name="height150">300dp</dimen>
+    <dimen name="height160">320dp</dimen>
+    <dimen name="height165">330dp</dimen>
+    <dimen name="height170">340dp</dimen>
+    <dimen name="height175">350dp</dimen>
+    <dimen name="height180">360dp</dimen>
+    <dimen name="height190">380dp</dimen>
+    <dimen name="height200">400dp</dimen>
+    <dimen name="height220">440dp</dimen>
+    <dimen name="height250">500dp</dimen>
+    <dimen name="height300">600dp</dimen>
+    <dimen name="height330">660dp</dimen>
+    <dimen name="height350">700dp</dimen>
+    <dimen name="height400">800dp</dimen>
+
+    <!-- Size -->
+    <dimen name="size30">60dp</dimen>
+    <dimen name="size35">70dp</dimen>
+    <dimen name="size50">100dp</dimen>
+    <dimen name="size75">150dp</dimen>
+    <dimen name="size80">160dp</dimen>
+    <dimen name="size100">200dp</dimen>
+    <dimen name="size120">240dp</dimen>
+    <dimen name="size130">260dp</dimen>
+    <dimen name="size150">300dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding1">2dp</dimen>
+    <dimen name="padding2">4dp</dimen>
+    <dimen name="padding3">6dp</dimen>
+    <dimen name="padding4">8dp</dimen>
+    <dimen name="padding5">10dp</dimen>
+    <dimen name="padding6">12dp</dimen>
+    <dimen name="padding7">14dp</dimen>
+    <dimen name="padding8">16dp</dimen>
+    <dimen name="padding9">18dp</dimen>
+    <dimen name="padding10">20dp</dimen>
+
+</resources>

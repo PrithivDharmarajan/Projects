@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/faq_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height200"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/faq_condition_image" />
+
+    <ListView
+        android:id="@+id/faq_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/faq_img"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/faq_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin10"
+        android:text="@string/faq_jolt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text20"
+        android:textStyle="bold" />
+
+</RelativeLayout>

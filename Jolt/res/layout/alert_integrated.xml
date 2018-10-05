@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transperent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin35"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin25"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin45"
+            android:layout_gravity="center"
+            android:background="@color/jolt_green"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18" />
+    </LinearLayout>
+
+</RelativeLayout>
