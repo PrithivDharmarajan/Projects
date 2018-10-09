@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/guest_network_contact_txt_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <TextView
+            android:id="@+id/guest_network_contact_txt"
+            style="@style/TextRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size16"
+            android:layout_toStartOf="@+id/adapter_setup_guest_contact_checkbox"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text12" />
+
+        <CheckBox
+            android:id="@+id/adapter_setup_guest_contact_checkbox"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size1"
+        android:layout_below="@+id/guest_network_contact_txt_lay"
+        android:background="@color/gray_light" />
+
+</RelativeLayout>

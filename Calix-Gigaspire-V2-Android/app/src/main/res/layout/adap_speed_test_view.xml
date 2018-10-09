@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            tools:ignore="UseCompoundDrawables">
+
+            <LinearLayout
+                style="@style/LayoutWrap"
+                android:layout_marginEnd="@dimen/size3"
+                android:layout_marginStart="@dimen/size10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/LayoutWrap"
+                    android:layout_height="@dimen/size100">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/arrow_gif_img"
+                        style="@style/LayoutWrap"
+                        android:layout_height="@dimen/size70"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/line_arrow_up_gif"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/arrow_img_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:id="@+id/router_top_connect_img"
+                            style="@style/LayoutWrap"
+                            android:layout_height="@dimen/size70"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="@dimen/size2"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_dot_speed" />
+
+                        <ImageView
+                            android:id="@+id/arrow_up"
+                            style="@style/LayoutWrap"
+                            android:layout_height="@dimen/size10"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_router_arrow" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/device_img"
+                        android:layout_width="@dimen/size50"
+                        android:layout_height="@dimen/size50"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_router" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/internet_label_header"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size8"
+                android:layout_marginTop="@dimen/size10">
+
+                <ImageView
+                    android:layout_width="@dimen/size15"
+                    android:layout_height="@dimen/size15"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:rotation="90"
+                    android:visibility="invisible"
+                    android:src="@drawable/triangle_gray" />
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size90"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@drawable/gray_border_btn"
+                    android:padding="@dimen/size10">
+
+                    <TextView
+                        android:id="@+id/device_name_txt"
+                        style="@style/TextRobotoMedium"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/router"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size12" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/device_name_txt"
+                        android:gravity="bottom">
+
+
+                        <LinearLayout
+                            style="@style/LayoutWidWei_HeiWrap"
+                            android:layout_marginEnd="@dimen/size2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:text="@string/download"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size9" />
+
+                            <TextView
+                                android:id="@+id/download_speed_txt"
+                                style="@style/TextRobotoRegular"
+                                android:layout_marginBottom="@dimen/size3"
+                                android:layout_marginTop="@dimen/size3"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutWidWei_HeiWrap"
+                            android:layout_marginEnd="@dimen/size1"
+                            android:layout_marginStart="@dimen/size1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:text="@string/upload"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size9" />
+
+                            <TextView
+                                android:id="@+id/upload_speed_txt"
+                                style="@style/TextRobotoRegular"
+                                android:layout_marginBottom="@dimen/size3"
+                                android:layout_marginTop="@dimen/size3"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutWidWei_HeiWrap"
+                            android:layout_marginStart="@dimen/size2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:text="@string/ping"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size9" />
+
+                            <TextView
+                                android:id="@+id/ping_txt"
+                                style="@style/TextRobotoRegular"
+                                android:layout_marginBottom="@dimen/size3"
+                                android:layout_marginTop="@dimen/size3"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size10" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

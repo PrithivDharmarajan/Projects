@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/temp_lay"
+        android:layout_width="@dimen/size100"
+        android:layout_height="@dimen/size90"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size30"
+        android:elevation="@dimen/size3"
+        app:cardCornerRadius="@dimen/size3"
+        tools:ignore="UnusedAttribute"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/relative_lay"
+            style="@style/LayoutWrap"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/size12"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                style="@style/TextRobotoMedium"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="45%"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text12" />
+
+            <ImageView
+                android:layout_width="@dimen/size30"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size3"
+                android:src="@drawable/temperature" />
+
+            <TextView
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

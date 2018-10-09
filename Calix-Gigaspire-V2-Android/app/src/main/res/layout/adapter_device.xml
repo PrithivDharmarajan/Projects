@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginStart="@dimen/size6"
+    android:layout_marginEnd="@dimen/size6"
+    android:layout_marginTop="@dimen/size3"
+    android:layout_marginBottom="@dimen/size3"
+    app:cardCornerRadius="@dimen/size3">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+            <ImageView
+                android:id="@+id/device_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/ic_devices_phone" />
+
+            <LinearLayout
+                android:id="@+id/device_name_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_toEndOf="@+id/device_img"
+                android:layout_toStartOf="@+id/device_signal_lay"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/device_name_txt"
+                    style="@style/TextRobotoMedium"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size11" />
+
+                <TextView
+                    android:id="@+id/device_subtype_txt"
+                    style="@style/TextRobotoMedium"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size10" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/device_signal_lay"
+                style="@style/LayoutWrap"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:padding="@dimen/size3"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_gravity="center"
+
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_signal_strength" />
+
+                <TextView
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@string/signal_strength"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text9" />
+
+                <TextView
+                    android:id="@+id/connected_device_signal_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/size3"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_height="@dimen/size0.25"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/device_details_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <ImageView
+                    android:id="@+id/connect_disconnect_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size8" />
+
+                <TextView
+                    android:id="@+id/connect_disconnect_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/connect_disconnect_img"
+                    android:layout_toStartOf="@+id/connect_disconnect_switch_btn"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/disconnected_from"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text10" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/connect_disconnect_switch_btn"
+                    style="@style/LayoutWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size10"
+                    app:kswBackColor="@color/deep_gray"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size8"
+                    app:kswTextAdjust="-1dp"
+                    app:kswTextExtra="@dimen/size6"
+                    app:kswTextOff="@string/off"
+                    app:kswTextOn="@string/on"
+                    app:kswThumbColor="@color/white"
+                    app:kswThumbHeight="@dimen/size13"
+                    app:kswThumbWidth="@dimen/size13" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/visible_invisible_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size23"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size6"
+            android:src="@drawable/ic_down_arrow" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

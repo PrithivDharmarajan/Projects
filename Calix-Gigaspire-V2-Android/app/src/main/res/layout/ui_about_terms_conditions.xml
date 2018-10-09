@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_terms_parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/about_terms_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+
+    </RelativeLayout>
+
+    <ScrollView style="@style/LayoutWidMatch_HeiWrap">
+
+        <TextView
+            android:id="@+id/about_terms_txt"
+            style="@style/TextRobotoRegular"
+            android:autoLink="web"
+            android:gravity="start"
+            android:padding="@dimen/size10"
+            android:text="@string/terms_msg"
+             android:textColor="@color/black"
+            android:textSize="@dimen/size13" />
+
+    </ScrollView>
+
+
+</LinearLayout>

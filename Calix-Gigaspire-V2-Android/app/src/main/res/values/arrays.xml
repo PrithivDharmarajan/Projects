@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="tick_below_text_length_5">
+        <item>ADULT</item>
+        <item>TEEN</item>
+        <item>KID</item>
+        <item>PRE-K</item>
+        <item>NONE</item>
+    </array>
+
+</resources>

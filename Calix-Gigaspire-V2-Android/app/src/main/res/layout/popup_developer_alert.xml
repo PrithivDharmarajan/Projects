@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15">
+
+    <LinearLayout
+        android:id="@+id/dev_mode_change_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextRobotoMedium"
+            android:paddingTop="@dimen/size10"
+            android:text="@string/developer_mode"
+            android:textSize="@dimen/text16" />
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size0.25"
+
+            android:layout_marginTop="@dimen/size10"
+            android:layout_marginBottom="@dimen/size10"
+            android:background="@color/gray"/>
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/development_radio_btn"
+                style="@style/TextRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="true"
+                android:gravity="start|center"
+                android:text="@string/development"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/stage_radio_btn"
+                style="@style/TextRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="false"
+                android:gravity="start|center"
+                android:text="@string/stage"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+
+            <RadioButton
+                android:id="@+id/production_radio_btn"
+                style="@style/TextRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:checked="false"
+                android:gravity="start|center"
+                android:text="@string/production"
+                android:textSize="@dimen/text13" />
+
+            <View
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_height="0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size35"
+            android:layout_marginBottom="@dimen/size15"
+            android:layout_marginTop="@dimen/size15"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/size25"
+            android:paddingStart="@dimen/size25"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/alert_negative_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_width="0dip"
+                android:background="@drawable/gray_btn"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/size10"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textAllCaps="false"  />
+
+            <Button
+                android:id="@+id/alert_positive_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="@string/submit"
+                android:textSize="@dimen/text14" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

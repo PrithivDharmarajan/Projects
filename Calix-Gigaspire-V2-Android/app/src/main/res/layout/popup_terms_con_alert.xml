@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15">
+
+    <ScrollView style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_margin="@dimen/size1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextRobotoRegular"
+                android:background="@color/blue"
+                android:paddingBottom="@dimen/size10"
+                android:paddingTop="@dimen/size10"
+                android:text="@string/terms_conditions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text16" />
+
+            <TextView
+                android:id="@+id/alert_msg_txt"
+                style="@style/TextRobotoRegular"
+                android:padding="@dimen/size10"
+                android:textSize="@dimen/text13"
+                android:gravity="start"
+                android:autoLink="web"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size37"
+                android:layout_marginBottom="@dimen/size15"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/size25"
+                android:paddingStart="@dimen/size25"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/alert_negative_btn"
+                    style="@style/ButtonRobotoMedium"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/alert_positive_btn"
+                    style="@style/ButtonRobotoMedium"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text14" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

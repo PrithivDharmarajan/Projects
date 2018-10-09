@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/LayoutMatch"
+        android:layout_above="@id/pager_more_lay">
+
+        <android.support.v4.widget.NestedScrollView
+            style="@style/LayoutMatch"
+            android:fillViewport="true">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/header_view_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/dashboard_header_bg_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size145"
+                        android:background="@drawable/header_bg">
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_header_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:visibility="visible">
+
+                            <include layout="@layout/ui_general_header" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_header_msg_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_below="@+id/dashboard_header_lay">
+
+                            <RelativeLayout
+                                style="@style/LayoutMatch"
+                                android:layout_above="@+id/name_txt">
+
+                                <com.calix.calixgigaspireapp.utils.RoundedImageView
+                                    android:id="@+id/user_profile_img"
+                                    android:layout_width="@dimen/size55"
+                                    android:layout_height="@dimen/size55"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/default_profile_white" />
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/name_txt"
+                                style="@style/TextRobotoRegular"
+                                android:layout_alignParentBottom="true"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:padding="@dimen/size10"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text10" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size45"
+                        android:background="@color/green">
+
+                        <RelativeLayout style="@style/LayoutWidWei_HeiWrap">
+
+                            <RelativeLayout
+                                style="@style/LayoutMatch"
+                                android:layout_toStartOf="@+id/download_end_img"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/download_speed_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text18" />
+
+                                <TextView
+                                    android:id="@+id/download_scale_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignBottom="@+id/download_speed_txt"
+                                    android:layout_marginStart="@dimen/size2"
+                                    android:layout_toEndOf="@+id/download_speed_txt"
+                                    android:paddingBottom="@dimen/size3"
+                                    android:text="@string/mbytes"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text7" />
+
+                                <TextView
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_below="@id/download_speed_txt"
+                                    android:text="@string/download"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text7" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/download_end_img"
+                                style="@style/LayoutMatch"
+                                android:layout_width="@dimen/size37"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/size2"
+                                android:contentDescription="@string/download"
+                                android:padding="@dimen/size10"
+                                android:src="@drawable/download" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/size1"
+                            android:layout_height="match_parent"
+                            android:background="@color/white" />
+
+                        <RelativeLayout style="@style/LayoutWidWei_HeiWrap">
+
+                            <RelativeLayout
+                                style="@style/LayoutMatch"
+                                android:layout_toStartOf="@+id/upload_end_img"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/upload_speed_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text18" />
+
+
+                                <TextView
+                                    android:id="@+id/upload_scale_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignBottom="@+id/upload_speed_txt"
+                                    android:layout_marginStart="@dimen/size2"
+                                    android:layout_toEndOf="@+id/upload_speed_txt"
+                                    android:paddingBottom="@dimen/size3"
+                                    android:text="@string/mbytes"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text7" />
+
+
+                                <TextView
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_below="@id/upload_speed_txt"
+                                    android:text="@string/upload"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text7" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/upload_end_img"
+                                style="@style/LayoutMatch"
+                                android:layout_width="@dimen/size37"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/size2"
+                                android:contentDescription="@string/download"
+                                android:padding="@dimen/size10"
+                                android:rotation="180"
+                                android:src="@drawable/download" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size1"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutMatch"
+                    android:gravity="center">
+
+                    <RelativeLayout style="@style/LayoutMatch">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/devices_viewpager"
+                            android:layout_width="@dimen/size260"
+                            android:layout_height="@dimen/size260"
+                            android:layout_centerInParent="true"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_more_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@id/footer_lay"
+        android:layout_centerHorizontal="true"
+        android:minWidth="@dimen/size100"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size7"
+            android:layout_gravity="center"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <TextView
+            android:id="@+id/more_txt"
+            style="@style/TextRobotoRegular"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/size2"
+            android:text="@string/more"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text5" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer_lay"
+        android:layout_alignParentBottom="true"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_general_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/app_version_lay"
+        android:layout_below="@+id/settings_header_bg_lay">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size13"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size7"
+                            android:src="@drawable/security" />
+
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size10"
+                            android:gravity="start"
+                            android:text="@string/security_type"
+                            android:textSize="@dimen/text14" />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.25"
+                        android:background="@color/gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_reset_pin_pass_code_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:paddingEnd="@dimen/size10"
+                        android:paddingStart="@dimen/size10"
+                        android:paddingTop="@dimen/size10"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/security_type_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size7"
+                            android:src="@drawable/reset" />
+
+                        <TextView
+                            android:id="@+id/set_reset_pin_pass_code_txt"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/size10"
+                            android:layout_toEndOf="@+id/security_type_img"
+                            android:layout_toStartOf="@+id/security_type_arrow_img"
+                            android:gravity="start"
+                            android:text="@string/set_pin_pass_code"
+                            android:textSize="@dimen/text14" />
+
+                        <ImageView
+                            android:id="@+id/security_type_arrow_img"
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:rotation="270"
+                            android:src="@drawable/down_arrow" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/security_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:orientation="vertical">
+
+                        <View
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_height="@dimen/size0.25"
+                            android:background="@color/gray" />
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingEnd="0dip"
+                            android:paddingStart="@dimen/size10"
+                            android:paddingTop="@dimen/size10">
+
+                            <ImageView
+                                android:id="@+id/enable_pass_code_img"
+                                android:layout_width="@dimen/size35"
+                                android:layout_height="@dimen/size35"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size5"
+                                android:src="@drawable/security_type" />
+
+                            <TextView
+                                style="@style/TextRobotoMedium"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/size10"
+                                android:layout_toEndOf="@+id/enable_pass_code_img"
+                                android:layout_toStartOf="@+id/enable_pass_code_switch_compat"
+                                android:gravity="start"
+                                android:text="@string/pin_pass_code"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text13" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/enable_pass_code_switch_compat"
+                                style="@style/LayoutWrap"
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/size10"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size8"
+                                app:kswBackColor="@color/deep_gray"
+                                app:kswTextAdjust="-1dp"
+                                app:kswTextExtra="@dimen/size6"
+                                app:kswTextOff="@string/off"
+                                app:kswTextOn="@string/on"
+                                app:kswThumbColor="@color/white"
+                                app:kswThumbHeight="@dimen/size13"
+                                app:kswThumbWidth="@dimen/size13" />
+
+                        </RelativeLayout>
+
+                        <View
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_height="@dimen/size0.25"
+                            android:background="@color/gray" />
+
+                        <RelativeLayout
+                            android:id="@+id/enable_touch_id_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:paddingEnd="0dip"
+                            android:paddingStart="@dimen/size10"
+                            android:paddingTop="@dimen/size10">
+
+                            <ImageView
+                                android:id="@+id/enable_touch_id_img"
+                                android:layout_width="@dimen/size35"
+                                android:layout_height="@dimen/size35"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size7"
+                                android:src="@drawable/enable_touch_id" />
+
+                            <TextView
+                                style="@style/TextRobotoMedium"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/size10"
+                                android:layout_toEndOf="@+id/enable_touch_id_img"
+                                android:layout_toStartOf="@+id/enable_touch_id_switch_compat"
+                                android:gravity="start"
+                                android:text="@string/touch_id"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text13" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/enable_touch_id_switch_compat"
+                                style="@style/LayoutWrap"
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/size10"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size8"
+                                app:kswBackColor="@color/deep_gray"
+                                app:kswTextAdjust="-1dp"
+                                app:kswTextExtra="@dimen/size6"
+                                app:kswTextOff="@string/off"
+                                app:kswTextOn="@string/on"
+                                app:kswThumbColor="@color/white"
+                                app:kswThumbHeight="@dimen/size13"
+                                app:kswThumbWidth="@dimen/size13" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.25"
+                        android:background="@color/gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/changes_login_pwd_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:paddingEnd="@dimen/size10"
+                        android:paddingStart="@dimen/size10"
+                        android:paddingTop="@dimen/size10"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/changes_login_pwd_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size7"
+                            android:src="@drawable/changes_login_pwd" />
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/changes_login_pwd_img"
+                            android:layout_toStartOf="@+id/changes_login_pwd_arrow_img"
+                            android:gravity="start"
+                            android:paddingEnd="0dip"
+                            android:paddingStart="@dimen/size10"
+                            android:text="@string/change_login_pwd"
+                            android:textSize="@dimen/text14" />
+
+                        <ImageView
+                            android:id="@+id/changes_login_pwd_arrow_img"
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:rotation="270"
+                            android:src="@drawable/down_arrow" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/about_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:paddingBottom="@dimen/size5"
+                        android:paddingEnd="@dimen/size10"
+                        android:paddingStart="@dimen/size10">
+
+                        <ImageView
+                            android:id="@+id/about_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size7"
+                            android:src="@drawable/about" />
+
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/about_img"
+                            android:layout_toStartOf="@+id/about_arrow_img"
+                            android:gravity="start"
+                            android:paddingEnd="0dip"
+                            android:paddingStart="@dimen/size10"
+                            android:text="@string/about"
+                            android:textSize="@dimen/text14" />
+
+                        <ImageView
+                            android:id="@+id/about_arrow_img"
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:rotation="270"
+                            android:src="@drawable/down_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.25"
+                        android:background="@color/gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/terms_conditions_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:paddingEnd="@dimen/size10"
+                        android:paddingStart="@dimen/size10"
+                        android:paddingTop="@dimen/size10">
+
+                        <ImageView
+                            android:id="@+id/terms_conditions_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size7"
+                            android:src="@drawable/terms_conditions" />
+
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/terms_conditions_img"
+                            android:layout_toStartOf="@+id/terms_conditions_arrow_img"
+                            android:gravity="start"
+                            android:paddingEnd="0dip"
+                            android:paddingStart="@dimen/size10"
+                            android:text="@string/terms_conditions"
+                            android:textSize="@dimen/text14" />
+
+                        <ImageView
+                            android:id="@+id/terms_conditions_arrow_img"
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:rotation="270"
+                            android:src="@drawable/down_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/on_board_update_ssid_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/on_board_update_ssid_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/on_board_update_ssid" />
+
+
+                    <TextView
+                        android:id="@+id/router_status_txt"
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/on_board_update_ssid_img"
+                        android:layout_toStartOf="@+id/on_board_update_ssid_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/on_board_router"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/on_board_update_ssid_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/install_alexa_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/install_alexa_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/install_alexa" />
+
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/install_alexa_img"
+                        android:layout_toStartOf="@+id/install_alexa_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/install_alexa"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/install_alexa_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginTop="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/things_to_try_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/things_to_try_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/things_to_try" />
+
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/things_to_try_img"
+                        android:layout_toStartOf="@+id/things_to_try_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/things_to_try"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/things_to_try_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/calix_iot_agent_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/calix_iot_agent_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/calix_iot_agent" />
+
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/calix_iot_agent_img"
+                        android:layout_toStartOf="@+id/calix_iot_agent_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/calix_iot_agent"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/calix_iot_agent_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size13"
+                android:layout_marginEnd="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/uninstall_alexa_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/uninstall_agent_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/uninstall_agent" />
+
+
+                    <TextView
+                        android:id="@+id/uninstall_agent_txt"
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/uninstall_agent_img"
+                        android:layout_toStartOf="@+id/uninstall_agent_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/uninstall_agent"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/uninstall_agent_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/remove_router_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/remove_router_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/remove_router" />
+
+
+                    <TextView
+                        android:id="@+id/remove_router_txt"
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/remove_router_img"
+                        android:layout_toStartOf="@+id/remove_router_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/remove_router"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/remove_router_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size5"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:background="@color/blue"
+                android:elevation="@dimen/size2"
+                app:cardCornerRadius="@dimen/size3"
+                tools:ignore="UnusedAttribute">
+
+                <RelativeLayout
+                    android:id="@+id/developer_mode_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10">
+
+                    <ImageView
+                        android:id="@+id/developer_mode_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/developer_mode" />
+
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/developer_mode_img"
+                        android:layout_toStartOf="@+id/developer_mode_arrow_img"
+                        android:gravity="start"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/developer_mode"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:id="@+id/developer_mode_arrow_img"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="270"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/app_version_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="@dimen/size10">
+
+        <TextView
+            style="@style/TextRobotoMedium"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_toStartOf="@+id/app_version_txt"
+            android:gravity="start"
+            android:text="@string/app_version"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text13" />
+
+        <TextView
+            android:id="@+id/app_version_txt"
+            style="@style/TextRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text13" />
+
+    </RelativeLayout>
+</RelativeLayout>

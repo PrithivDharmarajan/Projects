@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rewards_header_bg_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pc_head_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size170"
+                android:background="@drawable/parent_control_bg">
+
+                <RelativeLayout
+                    android:id="@+id/rewards_status_bg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/pc_insights_bg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/rewards_status_bg_lay"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/rewards_img"
+                        android:layout_width="@dimen/size90"
+                        android:layout_height="@dimen/size90"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/hexagonal_white"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size20"
+                        android:src="@drawable/reward_icon"
+                        android:tint="@color/blue" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size250"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="@dimen/size8">
+
+                <!--   <RelativeLayout
+                       android:id="@+id/seek_bar_hours_lay"
+                       style="@style/LayoutWrap"
+                       android:layout_marginEnd="@dimen/size4"
+                       android:layout_marginStart="@dimen/size4"
+                       android:layout_marginTop="@dimen/size8"
+                       >
+
+                       <TextView
+                           android:id="@+id/start_date_txt"
+                           style="@style/TextRobotoRegular"
+                           android:layout_toStartOf="@+id/time_lay"
+                           android:gravity="start"
+                           android:padding="@dimen/size7"
+                           android:text="@string/rewards_time"
+                           android:textColor="@color/black"
+                           android:textSize="@dimen/text10" />
+
+                       <RelativeLayout
+                           android:id="@+id/time_lay"
+                           style="@style/LayoutWrap"
+                           android:layout_height="@dimen/size30"
+                           android:layout_alignParentEnd="true"
+                           android:background="@drawable/blue_bg"
+                           android:gravity="center">
+
+                           <TextView
+                               android:id="@+id/hours_minutes_txt"
+                               style="@style/TextRobotoRegular"
+                               android:layout_width="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_margin="@dimen/size0.5"
+                               android:text="@string/zero"
+                               android:padding="@dimen/size1"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/text9" />
+
+                           <TextView
+                               android:id="@+id/minutes_txt"
+                               style="@style/TextRobotoRegular"
+                               android:layout_width="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_toEndOf="@+id/hours_minutes_txt"
+                               android:text="@string/zero"
+                               android:padding="@dimen/size1"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/text9" />
+
+                           <ImageView
+                               android:layout_width="@dimen/size40"
+                               android:layout_height="@dimen/size40"
+                               android:layout_centerInParent="true"
+                               android:layout_centerVertical="true"
+                               android:layout_toEndOf="@+id/minutes_txt"
+                               android:adjustViewBounds="true"
+                               android:layout_marginStart="@dimen/size3"
+                               android:contentDescription="@string/app_name"
+                               android:src="@drawable/set_time_icon" />
+                       </RelativeLayout>
+
+                   </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/seek_bar_hours_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:padding="@dimen/size6">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_centerInParent="true"
+                        android:layout_toStartOf="@+id/hr_mnt_card_view"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size3"
+                            android:text="@string/rewards_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text11" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/hr_mnt_card_view"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_width="@dimen/size100"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/size5"
+                        android:elevation="@dimen/size2"
+                        app:cardCornerRadius="@dimen/size5"
+                        tools:targetApi="lollipop">
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:padding="@dimen/size5">
+
+                            <TextView
+                                android:id="@+id/hours_minutes_txt"
+                                android:layout_width="0dip"
+                                android:layout_height="@dimen/size20"
+                                android:layout_weight="1"
+                                android:width="@dimen/size5"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/size2"
+                                android:text="@string/zero"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text10" />
+
+                            <TextView
+                                style="@style/LayoutWrap"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/colon"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size10" />
+
+                            <TextView
+                                android:id="@+id/minutes_txt"
+                                android:layout_width="0dip"
+                                android:layout_height="@dimen/size20"
+                                android:layout_weight="1"
+                                android:width="@dimen/size5"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/size2"
+                                android:text="@string/zero"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text10" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size18"
+                                android:layout_height="@dimen/size18"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/set_time_icon" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pm_am_lay"
+                    style="@style/LayoutWrap"
+                    android:gravity="center"
+                    android:padding="@dimen/size5">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size5"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            style="@style/LayoutWrap"
+                            android:checked="true"
+                            android:text="@string/am"
+                            android:textSize="@dimen/size9"
+                            tools:ignore="RtlSymmetry" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            style="@style/LayoutWrap"
+                            android:checked="false"
+                            android:text="@string/pm"
+                            android:textSize="@dimen/size9"
+                            tools:ignore="RtlSymmetry" />
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/first_hours_lay"
+                    style="@style/LayoutWrap"
+                    android:layout_marginEnd="@dimen/size4"
+                    android:layout_marginStart="@dimen/size4"
+                    android:padding="@dimen/size5">
+
+                    <TextView
+                        android:id="@+id/hours_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/size7"
+                        android:text="@string/hours"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text10"
+                        />
+
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/discrete_hours"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_below="@+id/hours_txt"
+                        app:isb_indicator_color="@color/blue"
+                        app:isb_indicator_text_color="@color/white"
+                        app:isb_max="12"
+                        app:isb_min="0"
+                        app:isb_seek_bar_type="discrete_ticks_texts"
+                        app:isb_show_indicator="true"
+                        app:isb_text_color="@color/blue"
+                        app:isb_thumb_color="@color/blue"
+                        app:isb_tick_color="@color/blue"
+                        app:isb_tick_num="13"
+                        app:isb_track_background_bar_color="@color/deep_gray"
+                        app:isb_track_progress_bar_color="@color/blue" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWrap"
+                    android:layout_marginEnd="@dimen/size5"
+                    android:layout_marginStart="@dimen/size5"
+                    android:padding="@dimen/size5">
+
+                    <TextView
+                        android:id="@+id/time_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/size7"
+                        android:text="@string/minutes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text10"/>
+
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/discrete_times"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_below="@+id/time_txt"
+                        app:isb_indicator_color="@color/blue"
+                        app:isb_max="60"
+                        app:isb_min="0"
+                        app:isb_seek_bar_type="continuous"
+                        app:isb_show_indicator="true"
+                        app:isb_text_color="@color/blue"
+                        app:isb_text_size="@dimen/size10"
+                        app:isb_thumb_color="@color/blue"
+                        app:isb_thumb_progress_stay="true"
+                        app:isb_track_background_bar_color="@color/deep_gray"
+                        app:isb_track_progress_bar_color="@color/blue" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/enable_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/text10"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginTop="@dimen/size25"
+                android:text="@string/enable"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

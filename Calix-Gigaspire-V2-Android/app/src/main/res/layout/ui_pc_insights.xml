@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_control_dashboard_header_bg_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pc_total_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size170"
+                android:background="@drawable/parent_control_bg">
+
+                <RelativeLayout
+                    android:id="@+id/parent_control_dashboard_bg_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/pc_bg_insights_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_below="@+id/parent_control_dashboard_bg_lay"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/user_img"
+                        android:layout_width="@dimen/size90"
+                        android:layout_height="@dimen/size90"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size10"
+                        android:src="@drawable/avatar_1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size5">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:padding="@dimen/size8">
+
+                    <LinearLayout
+                        android:id="@+id/devices_connect_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/devices_img"
+                                android:layout_width="@dimen/size50"
+                                android:layout_height="@dimen/size50"
+                                android:background="@drawable/hexagonal_icon"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size14"
+                                android:src="@drawable/devices_center" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/devices_txt"
+                            style="@style/TextRobotoRegular"
+                            android:maxLines="1"
+                            android:text="@string/devices"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size9" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/insights_connect_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/insights_img"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:background="@drawable/hexagonal_icon"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size14"
+                            android:src="@drawable/time_icon"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/insights_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/pc_insights"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <View
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/reward_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/reward_img"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:background="@drawable/hexagonal_icon"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size14"
+                            android:src="@drawable/reward_icon"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/reward_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/rewards"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size9" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:padding="@dimen/size7">
+
+                    <LinearLayout
+                        android:id="@+id/set_time_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:background="@drawable/hexagonal_icon"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/rewards_img"
+                                android:layout_width="@dimen/size25"
+                                android:layout_height="@dimen/size25"
+                                android:layout_centerHorizontal="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size4"
+                                android:src="@drawable/time_on_off_icon" />
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:layout_below="@+id/rewards_img"
+                                android:maxLines="1"
+                                android:text="Off"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size8" />
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:maxLines="1"
+                            android:text="@string/set_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size9" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/filter_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:background="@drawable/hexagonal_icon"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/filter_img"
+                                android:layout_width="@dimen/size25"
+                                android:layout_height="@dimen/size25"
+                                android:layout_centerHorizontal="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size4"
+                                android:src="@drawable/filter" />
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:layout_below="@+id/filter_img"
+                                android:maxLines="1"
+                                android:text="Teen"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size8" />
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:maxLines="1"
+                            android:text="@string/filter"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                android:id="@+id/pause_play_internet_img"
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/pause_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pause_icon" />
+
+            <TextView
+                android:id="@+id/pause_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/pause_internet"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/router_detected_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/router_detected_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_bg">
+
+                <RelativeLayout
+                    android:id="@+id/router_detected_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/router_detected_header_img"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/router_detected_header_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/router" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginStart="@dimen/size15"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/router_name_edt"
+                    style="@style/EditTextRobotoRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:hint="@string/router_name"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/network_name_edt"
+                    style="@style/EditTextRobotoRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:hint="@string/network_name_ssid"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_height="@dimen/size35"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/blue_border_bg">
+
+                    <Spinner
+                        android:id="@+id/auth_type_spinner"
+                        style="@style/LayoutMatch"
+                        android:layout_toStartOf="@+id/spinner_drop_down_img"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:padding="0dip"
+                        android:textAlignment="textStart" />
+
+                    <ImageView
+                        android:id="@+id/spinner_drop_down_img"
+                        style="@style/LayoutMatch"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size10"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/pwd_confirm_pwd_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginTop="@dimen/size10"
+                        android:background="@drawable/blue_border_bg">
+
+                        <EditText
+                            android:id="@+id/pwd_edt"
+                            style="@style/EditTextRobotoRegular"
+                            android:layout_toStartOf="@+id/pwd_in_visible_img"
+                            android:background="@null"
+                            android:hint="@string/pwd"
+                            android:imeOptions="actionNext|flagNoExtractUi"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:id="@+id/pwd_in_visible_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size9"
+                            android:src="@drawable/in_visible"
+                            android:tag="1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginTop="@dimen/size10"
+                        android:background="@drawable/blue_border_bg">
+
+                        <EditText
+                            android:id="@+id/confirm_pwd_edt"
+                            style="@style/EditTextRobotoRegular"
+                            android:layout_toStartOf="@+id/confirm_pwd_in_visible_img"
+                            android:background="@null"
+                            android:hint="@string/confirm_pwd"
+                            android:imeActionId="100"
+                            android:imeActionLabel="@string/submit"
+                            android:imeOptions="actionDone|flagNoExtractUi"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:id="@+id/confirm_pwd_in_visible_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size9"
+                            android:src="@drawable/in_visible"
+                            android:tag="1" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonRobotoMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size15"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

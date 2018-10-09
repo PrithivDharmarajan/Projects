@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/slide_menu_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dashboard_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/dashboard_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        android:src="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_dashboard" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size13"
+                    android:layout_toEndOf="@+id/dashboard_img_lay"
+                    android:gravity="start"
+                    android:text="@string/dashboard"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/parental_control_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/parental_control_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_parental_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/parental_control_img_lay"
+                    android:gravity="start"
+                    android:text="@string/parental_control"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/guest_network_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/guest_network_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_guest_network_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/guest_network_img_lay"
+                    android:gravity="start"
+                    android:text="@string/guest_network"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/device_list_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/device_list_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_device_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/device_list_img_lay"
+                    android:gravity="start"
+                    android:text="@string/device_list"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iot_device_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/iot_device_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_iot_devices_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/iot_device_img_lay"
+                    android:gravity="start"
+                    android:text="@string/iot_device"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/network_usage_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/network_usage_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_network_usagae_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/network_usage_img_lay"
+                    android:gravity="start"
+                    android:text="@string/network_usage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wifi_speed_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/wifi_speed_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_wifispeed_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/wifi_speed_img_lay"
+                    android:gravity="start"
+                    android:text="@string/wifi_speed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alexa_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/alexa_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_alexa_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/alexa_img_lay"
+                    android:gravity="start"
+                    android:text="@string/alexa"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settings_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/gray"
+                    android:paddingBottom="@dimen/size1" />
+
+                <RelativeLayout
+                    android:id="@+id/settings_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_sky_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_setting_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/settings_img_lay"
+                    android:gravity="start"
+                    android:text="@string/settings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size50"
+                android:background="@color/blue"
+                android:paddingEnd="0dip"
+
+                android:paddingStart="@dimen/size12"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <RelativeLayout
+                    android:id="@+id/logout_img_lay"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        style="@style/LayoutMatch"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:rotation="90"
+                        android:padding="@dimen/size0.5"
+                        app:srcCompat="@drawable/hexagonal_blue" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size25"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="bottom"
+                        android:src="@drawable/menu_logout_icon" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/logout_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/logout_img_lay"
+                    android:gravity="start"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text13" />
+                <TextView
+                    android:id="@+id/version_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_toEndOf="@+id/logout_txt"
+                    android:gravity="end"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text8" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

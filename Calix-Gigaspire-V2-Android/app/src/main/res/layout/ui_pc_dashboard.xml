@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parental_control_dashboard_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/pc_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/pc_header_bg_lay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linear_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="@color/gray_light">
+
+                <TextView
+                    android:id="@+id/guest_network_add_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/guest_network_add_img_lay"
+                    android:gravity="start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size13"
+                    android:text="@string/add_a_device_to_manage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size13" />
+
+                <RelativeLayout
+                    android:id="@+id/guest_network_add_img_lay"
+                    android:layout_width="@dimen/size50"
+                    android:layout_height="@dimen/size50"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/size13">
+
+                    <ImageView
+                        android:id="@+id/add_device_img"
+                        style="@style/LayoutMatch"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/add_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size3"
+                android:visibility="gone"
+                android:background="@color/gray_light">
+
+                <LinearLayout
+                    android:id="@+id/time_limit_enable_lay"
+                    style="@style/LayoutWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size5">
+
+                    <TextView
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size3"
+                        android:gravity="start"
+                        android:text="@string/parent_control"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text13" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/size3"
+                        android:gravity="start"
+                        android:text="@string/pause_filter"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text11" />
+                </LinearLayout>
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/pc_switch_compact"
+                    style="@style/LayoutWrap"
+                    app:kswBackColor="@color/deep_gray"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size6"
+                    android:padding="@dimen/size10"
+                    android:textColor="@color/white"
+                    app:kswTextAdjust="-1dp"
+                    app:kswTextExtra="@dimen/size6"
+                    app:kswTextOff="@string/off"
+                    app:kswTextOn="@string/on"
+                    app:kswThumbColor="@color/white"
+                    app:kswThumbHeight="@dimen/size13"
+                    app:kswThumbWidth="@dimen/size13"
+                    android:textSize="@dimen/size8"/>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/parent_control_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginTop="@dimen/size3"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/map_view_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/map_view_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                android:id="@+id/play_pause_img"
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pause_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/pause_internet"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:padding="@dimen/size7"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_patient_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_patient_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/search"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

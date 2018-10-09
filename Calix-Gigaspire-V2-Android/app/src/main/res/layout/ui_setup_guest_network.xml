@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_guest_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/gray_light">
+
+    <RelativeLayout
+        android:id="@+id/setup_guest_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_below="@+id/setup_guest_header_bg_lay">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search_name_edit_txt"
+                style="@style/EditTextRobotoRegular"
+                android:layout_margin="@dimen/size13"
+                android:ellipsize="end"
+                android:hint="@string/event_name"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColorHint="@color/gray" />
+
+
+            <EditText
+                android:id="@+id/guest_network_name_edt"
+                style="@style/EditTextRobotoRegular"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:ellipsize="end"
+                android:hint="@string/guest_network_name"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColorHint="@color/gray" />
+
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size35"
+                android:layout_margin="@dimen/size13"
+                android:background="@drawable/blue_border_bg">
+
+                <Spinner
+                    android:id="@+id/auth_type_spinner"
+                    style="@style/LayoutMatch"
+                    android:layout_toStartOf="@+id/spinner_drop_down_img"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:padding="0dip"
+                    android:textAlignment="textStart" />
+
+                <ImageView
+                    android:id="@+id/spinner_drop_down_img"
+                    style="@style/LayoutMatch"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pwd_confirm_pwd_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginEnd="@dimen/size13"
+                    android:layout_marginStart="@dimen/size13"
+                    android:background="@drawable/blue_border_bg">
+
+                    <EditText
+                        android:id="@+id/guest_network_pwd_edt"
+                        style="@style/EditTextRobotoRegular"
+                        android:layout_toStartOf="@+id/pwd_in_visible_img"
+                        android:background="@null"
+                        android:hint="@string/pwd"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:id="@+id/pwd_in_visible_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size9"
+                        android:src="@drawable/in_visible"
+                        android:tag="1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginEnd="@dimen/size13"
+                    android:layout_marginStart="@dimen/size13"
+                    android:layout_marginTop="@dimen/size13"
+                    android:background="@drawable/blue_border_bg">
+
+                    <EditText
+                        android:id="@+id/guest_network_confirm_pwd_edt"
+                        style="@style/EditTextRobotoRegular"
+                        android:layout_toStartOf="@+id/confirm_pwd_in_visible_img"
+                        android:background="@null"
+                        android:hint="@string/confirm_pwd"
+                        android:imeActionId="100"
+                        android:imeActionLabel="@string/submit"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:id="@+id/confirm_pwd_in_visible_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size9"
+                        android:src="@drawable/in_visible"
+                        android:tag="1" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size2"
+                android:layout_marginTop="@dimen/size15"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:padding="@dimen/size5">
+
+                <TextView
+                    style="@style/TextRobotoMedium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:layout_toStartOf="@+id/indefinite_switch_compat"
+                    android:gravity="start"
+                    android:text="@string/indefinite_network"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size13" />
+
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/indefinite_switch_compat"
+                    style="@style/LayoutWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size8"
+                    app:kswBackColor="@color/deep_gray"
+                    app:kswTextAdjust="-1dp"
+                    app:kswTextExtra="@dimen/size6"
+                    app:kswTextOff="@string/off"
+                    app:kswTextOn="@string/on"
+                    app:kswThumbColor="@color/white"
+                    app:kswThumbHeight="@dimen/size13"
+                    app:kswThumbWidth="@dimen/size13" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/setup_guest_indefinite_network_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                app:cardCornerRadius="@dimen/size3">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/size10">
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/size20"
+                            android:layout_height="@dimen/size20"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_guest_time" />
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size10"
+                            android:gravity="start"
+                            android:text="@string/time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10">
+
+                        <TextView
+                            android:id="@+id/start_ti_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/start_time"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/text10" />
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+
+                            android:layout_toEndOf="@+id/start_ti_txt">
+
+                            <LinearLayout
+                                android:id="@+id/start_time_lay"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/blue_bg"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/start_time_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/size7"
+                                    android:paddingEnd="@dimen/size20"
+                                    android:paddingStart="@dimen/size20"
+                                    android:text="@string/seven_thiry"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_time_white" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_marginTop="@dimen/size15">
+
+                        <TextView
+                            android:id="@+id/end_ti_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/end_time"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/text10" />
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+
+                            android:layout_toEndOf="@+id/end_ti_txt">
+
+                            <LinearLayout
+                                android:id="@+id/end_time_lay"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/blue_bg"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/end_time_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/size7"
+                                    android:paddingEnd="@dimen/size20"
+                                    android:paddingStart="@dimen/size20"
+                                    android:text="@string/seven_thiry"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_time_white" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.5"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/size20"
+                            android:layout_height="@dimen/size20"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_calendar" />
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size10"
+                            android:gravity="start"
+                            android:text="@string/date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_marginTop="@dimen/size15">
+
+                        <TextView
+                            android:id="@+id/start_da_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/start_date"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/text10" />
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_toEndOf="@+id/start_da_txt">
+
+                            <LinearLayout
+                                android:id="@+id/start_date_lay"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/blue_bg"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/start_date_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/size7"
+                                    android:paddingEnd="@dimen/size13"
+                                    android:paddingStart="@dimen/size13"
+                                    android:text="@string/one_date"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_calendar_white" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_marginTop="@dimen/size15">
+
+                        <TextView
+                            android:id="@+id/end_da_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/size3"
+                            android:text="@string/end_date"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/text10" />
+
+                        <RelativeLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_toEndOf="@+id/end_da_txt">
+
+                            <LinearLayout
+                                android:id="@+id/end_date_lay"
+                                style="@style/LayoutWrap"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/blue_bg"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/end_date_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/size7"
+                                    android:paddingEnd="@dimen/size13"
+                                    android:paddingStart="@dimen/size13"
+                                    android:text="@string/one_date"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text11" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/ic_calendar_white" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/cont_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:layout_marginTop="@dimen/size20"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_marginEnd="@dimen/size13"
+                android:layout_marginStart="@dimen/size13"
+                android:background="@drawable/red_btn"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

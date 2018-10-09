@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/rounded_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size15">
+
+    <TextView
+        android:id="@+id/primaryLabel"
+        style="@style/TextRobotoMedium"
+        android:layout_marginTop="@dimen/size10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text15" />
+
+    <TextView
+        android:id="@+id/secondaryLabel"
+        style="@style/TextRobotoMedium"
+        android:layout_marginBottom="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text12" />
+
+    <EditText
+        android:id="@+id/device_name_edt"
+        style="@style/EditTextRobotoRegular"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_name_bg"
+        android:ellipsize="end"
+        android:hint="@string/enter_device_name"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:inputType="textCapSentences"
+        android:minHeight="@dimen/size37" />
+
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size35"
+        android:layout_margin="@dimen/size20">
+
+        <Button
+            android:id="@+id/negative_btn"
+            style="@style/ButtonRobotoMedium"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btn"
+            android:elevation="0dip"
+            android:text="@string/cancel"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text12"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            style="@style/ButtonRobotoMedium"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_weight="1"
+            android:elevation="0dip"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

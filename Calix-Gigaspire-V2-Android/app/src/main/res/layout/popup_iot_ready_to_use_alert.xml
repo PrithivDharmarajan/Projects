@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:elevation="@dimen/size2"
+    app:cardCornerRadius="@dimen/size3"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size5"
+
+        android:orientation="vertical"
+        android:padding="@dimen/size10">
+
+
+        <TextView
+            style="@style/TextRobotoMedium"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/device_ready"
+            android:textSize="@dimen/text13" />
+
+
+        <ImageView
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size5"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/tick" />
+
+
+        <TextView
+            style="@style/TextRobotoRegular"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginTop="@dimen/size5"
+            android:gravity="start"
+            android:paddingEnd="@dimen/size20"
+            android:paddingStart="@dimen/size20"
+            android:text="@string/your_device_ready"
+            android:textSize="@dimen/text12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size35"
+            android:layout_marginBottom="@dimen/size10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/size20"
+            android:paddingStart="@dimen/size20"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/alert_positive_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_weight="1"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text13"  />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

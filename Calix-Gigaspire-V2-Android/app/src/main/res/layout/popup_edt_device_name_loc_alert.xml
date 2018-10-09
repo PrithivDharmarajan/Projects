@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:elevation="@dimen/size2"
+    app:cardCornerRadius="@dimen/size3"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/size7"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit" />
+
+        <TextView
+            style="@style/TextRobotoMedium"
+            android:layout_marginTop="@dimen/size10"
+            android:text="@string/change_the_device_name"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text15" />
+
+
+        <EditText
+            android:id="@+id/device_name_edt"
+            style="@style/EditTextRobotoRegular"
+            android:layout_margin="@dimen/size10"
+            android:ellipsize="end"
+            android:hint="@string/enter_device_name"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/device_loc_name_edt"
+            style="@style/EditTextRobotoRegular"
+            android:layout_margin="@dimen/size10"
+            android:ellipsize="end"
+            android:hint="@string/enter_device_loc"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <Button
+                android:id="@+id/negative_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:elevation="0dip"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/positive_btn"
+                style="@style/ButtonRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:elevation="0dip"
+                android:text="@string/done"
+                android:textColor="@color/blue"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

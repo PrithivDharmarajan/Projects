@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/white" />
+
+        <TextView
+            style="@style/TextRobotoMedium"
+            android:paddingTop="@dimen/size10"
+            android:textSize="@dimen/text20"
+            android:textColor="@color/white"
+            android:paddingBottom="@dimen/size10"
+            android:text="@string/app_name" />
+    </LinearLayout>
+</RelativeLayout>

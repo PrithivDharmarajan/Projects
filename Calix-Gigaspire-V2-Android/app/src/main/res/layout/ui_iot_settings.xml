@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iot_settings_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/cont_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/iot_settings_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_bg">
+
+                <RelativeLayout
+                    android:id="@+id/iot_settings_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/iot_settings_header_img"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/iot_settings_header_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/router" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginTop="@dimen/size7"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:gravity="start"
+                    android:text="@string/device_name_colon"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text9" />
+
+                <EditText
+                    android:id="@+id/iot_settings_device_name_edt"
+                    style="@style/EditTextRobotoRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:hint="@string/device_name"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_marginTop="@dimen/size7"
+                    android:gravity="start"
+                    android:text="@string/device_location_colon"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text9" />
+
+                <EditText
+                    android:id="@+id/iot_settings_device_loc_edt"
+                    style="@style/EditTextRobotoRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:hint="@string/device_location"
+                    android:imeActionLabel="@string/cont"
+                    android:imeActionId="100"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginTop="@dimen/size10"
+                android:background="@color/blue" />
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <ImageView
+                    android:id="@+id/device_ip_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size7"
+                    android:src="@drawable/ip" />
+
+                <TextView
+                    android:id="@+id/device_user_ip_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/device_ip_img"
+                    android:layout_toStartOf="@+id/device_ip_num_txt"
+                    android:gravity="start"
+                    android:text="@string/ip_address"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text11" />
+
+                <TextView
+                    android:id="@+id/device_ip_num_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text11" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <ImageView
+                    android:id="@+id/mac_ip_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size7"
+                    android:src="@drawable/mac" />
+
+                <TextView
+                    android:id="@+id/mac_address_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/mac_ip_img"
+                    android:gravity="start"
+                    android:text="@string/mac_address"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text11" />
+
+                <TextView
+                    android:id="@+id/mac_num_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size18"
+                    android:layout_toEndOf="@+id/mac_address_txt"
+                    android:gravity="start"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text11" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cont_btn"
+        style="@style/ButtonRobotoMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size15"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:text="@string/cont"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

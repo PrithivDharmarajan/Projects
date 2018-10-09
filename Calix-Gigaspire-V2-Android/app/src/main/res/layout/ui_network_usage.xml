@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/network_usage_par_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/network_usage_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/network_usage_header_lay"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue"
+        app:tabMaxWidth="0dp"
+        app:tabMinWidth="@dimen/size80"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/black"
+        tools:targetApi="lollipop" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/tab_lay" />
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+       <!-- <RelativeLayout
+            android:id="@+id/dashboard_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/map_view_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/map_view_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>-->
+
+        <!-- <RelativeLayout
+             android:id="@+id/alert_lay"
+             style="@style/LayoutWidWei_HeiWrap"
+             android:layout_height="match_parent"
+             android:padding="@dimen/size6">
+
+             <RelativeLayout
+                 android:id="@+id/header_right_img_lay"
+                 android:layout_width="@dimen/size45"
+                 android:layout_height="match_parent"
+                 android:layout_centerHorizontal="true"
+                 android:background="?android:attr/selectableItemBackground"
+                 android:visibility="visible">
+
+                 <ImageView
+                     android:id="@+id/header_right_img"
+                     android:layout_width="@dimen/size20"
+                     android:layout_height="@dimen/size20"
+                     android:layout_centerHorizontal="true"
+                     android:adjustViewBounds="true"
+                     android:clickable="false"
+                     android:contentDescription="@string/app_name"
+                     android:src="@drawable/ic_notification" />
+
+                 <RelativeLayout
+                     android:id="@+id/notification_count_lay"
+                     style="@style/LayoutMatch"
+                     android:visibility="gone">
+
+                     <TextView
+                         android:id="@+id/notification_count_temp_txt"
+                         style="@style/TextRobotoRegular"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="@dimen/size23"
+                         android:layout_marginTop="@dimen/size1"
+                         android:ellipsize="end"
+                         android:gravity="center"
+                         android:maxLines="1"
+                         android:padding="@dimen/size2"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/text5"
+                         android:visibility="visible" />
+
+
+                     <ImageView
+                         style="@style/LayoutWrap"
+                         android:layout_alignBottom="@+id/notification_count_temp_txt"
+                         android:layout_alignEnd="@+id/notification_count_temp_txt"
+                         android:layout_alignStart="@+id/notification_count_temp_txt"
+                         android:layout_alignTop="@+id/notification_count_temp_txt"
+                         android:layout_centerInParent="true"
+                         android:adjustViewBounds="true"
+                         android:clickable="false"
+                         android:contentDescription="@string/app_name"
+                         android:src="@drawable/notification_badge_background" />
+
+                     <TextView
+                         android:id="@+id/notification_count_txt"
+                         style="@style/TextRobotoRegular"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="@dimen/size23"
+                         android:layout_marginTop="@dimen/size15"
+                         android:ellipsize="end"
+                         android:gravity="center"
+                         android:maxLines="1"
+                         android:padding="@dimen/size2"
+                         android:textColor="@color/white"
+                         android:textSize="@dimen/text5"
+                         android:visibility="visible" />
+
+                 </RelativeLayout>
+
+             </RelativeLayout>
+
+             <TextView
+                 android:id="@+id/dashboard_txt"
+                 style="@style/TextRobotoRegular"
+                 android:layout_alignParentBottom="true"
+                 android:paddingBottom="@dimen/size3"
+                 android:text="@string/alert"
+                 android:textColor="@color/white" />
+
+         </RelativeLayout>-->
+       <!-- <RelativeLayout
+            android:id="@+id/head_img_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                android:id="@+id/header_right_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_notification" />
+
+            <RelativeLayout
+                android:id="@+id/notification_count_lay"
+                style="@style/LayoutMatch"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/notification_count_temp_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/size23"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text5"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    style="@style/LayoutWrap"
+                    android:layout_alignBottom="@+id/notification_count_temp_txt"
+                    android:layout_alignEnd="@+id/notification_count_temp_txt"
+                    android:layout_alignStart="@+id/notification_count_temp_txt"
+                    android:layout_alignTop="@+id/notification_count_temp_txt"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/notification_badge_background" />
+
+                <TextView
+                    android:id="@+id/notification_count_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size23"
+                    android:layout_marginTop="@dimen/size15"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text5"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/alert"
+                android:textColor="@color/white" />
+        </RelativeLayout>-->
+        <RelativeLayout
+            android:id="@+id/footer_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:visibility="visible">
+
+            <include layout="@layout/ui_general_footer" />
+        </RelativeLayout>
+
+       <!-- <RelativeLayout
+            android:id="@+id/search_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:padding="@dimen/size7"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_patient_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_patient_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/search"
+                android:textColor="@color/white" />
+        </RelativeLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <android.support.v7.widget.CardView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size2"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_marginTop="@dimen/size4"
+        android:padding="@dimen/size5">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_marginBottom="@dimen/size5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/adapter_guest_network_edit_lay"
+                style="@style/LayoutWidMatch_HeiWrap" >
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_toStartOf="@+id/adapter_guest_network_arrow_right_img">
+
+                    <com.calix.calixgigaspireapp.utils.RoundedImageView
+                        android:id="@+id/guest_user_img"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_marginStart="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:src="@color/blue" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/size10" >
+
+                        <TextView
+                            android:id="@+id/event_name_txt"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:gravity="start"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size12" />
+
+                        <TextView
+                            android:id="@+id/event_time_txt"
+                            style="@style/TextRobotoRegular"
+                            android:gravity="start"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/size10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/adapter_guest_network_arrow_right_img"
+                    android:layout_width="@dimen/size35"
+                    android:layout_height="@dimen/size35"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/ic_guest_up_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/date_details_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size10">
+
+                    <ImageView
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size10"
+                        android:src="@drawable/ic_calendar" />
+
+
+                    <LinearLayout
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:layout_marginStart="@dimen/size10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/start_date_txt"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size11" />
+
+                        <TextView
+                            android:id="@+id/date_format"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/date_format"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/size11" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/end_date_txt"
+                            style="@style/TextRobotoMedium"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size11" />
+
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:paddingTop="@dimen/size2"
+                            android:text="@string/date_format"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/size11" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_marginTop="@dimen/size5">
+
+                    <View
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/size20"
+                        android:gravity="start|center"
+                        android:text="@string/start"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/size11" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/end"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/size11" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeValuesLay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size10">
+
+                    <ImageView
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size10"
+                        android:src="@drawable/ic_guest_time" />
+
+                    <TextView
+                        android:id="@+id/start_time_txt"
+                        style="@style/TextRobotoMedium"
+                        android:layout_marginStart="@dimen/size10"
+                        android:gravity="start|center"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size11" />
+
+                    <TextView
+                        android:id="@+id/end_time_txt"
+                        style="@style/TextRobotoMedium"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size11" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

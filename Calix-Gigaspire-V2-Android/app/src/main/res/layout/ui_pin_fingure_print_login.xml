@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pin_finger_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pin_finger_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_bg">
+
+                <RelativeLayout
+                    android:id="@+id/pin_finger_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/pin_finger_header_img"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/pin_finger_header_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/router" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/TextRobotoMedium"
+                android:layout_marginTop="@dimen/text15"
+                android:text="@string/enter_pass_code"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/pass_code_edt"
+                style="@style/EditTextRobotoRegular"
+                android:layout_height="@dimen/size45"
+                android:layout_marginEnd="@dimen/size45"
+                android:layout_marginStart="@dimen/size45"
+                android:layout_marginTop="@dimen/size20"
+                android:background="@drawable/rounded_blue_bg"
+                android:gravity="center"
+                android:hint=""
+                android:imeActionId="100"
+                android:imeActionLabel="@string/done"
+                android:imeOptions="actionGo|flagNoExtractUi"
+                android:inputType="numberPassword"
+                android:padding="@dimen/size3"
+                android:textColor="@color/black"
+                tools:ignore="LabelFor" />
+
+
+            <LinearLayout
+                android:id="@+id/touch_id_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size7"
+                android:orientation="vertical">
+
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.25"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size5"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_toStartOf="@+id/or_txt"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/or_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/size5"
+                        android:text="@string/or"
+                        android:textSize="@dimen/text12" />
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size0.25"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:layout_marginStart="@dimen/size5"
+                        android:layout_toEndOf="@+id/or_txt"
+                        android:background="@color/blue" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/TextRobotoMedium"
+                    android:text="@string/login_with"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:layout_width="@dimen/size90"
+                    android:layout_height="@dimen/size90"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/submit"
+                    android:src="@drawable/login_with_touch_id" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

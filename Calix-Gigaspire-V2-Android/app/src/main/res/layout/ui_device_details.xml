@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_par_lay"
+    style="@style/LayoutMatch">
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/footer_lay"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/graph_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size170"
+                android:background="@drawable/header_bg">
+
+                <RelativeLayout
+                    android:id="@+id/graph_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_above="@+id/time_conversion_scale_txt"
+                    android:layout_below="@+id/graph_header_lay">
+
+                    <TextView
+                        android:id="@+id/byte_conversion_scale_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:rotation="-90"
+                        android:text="@string/mbytes"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size6"
+
+                        />
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/line_chart"
+                        style="@style/LayoutMatch"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="@dimen/size10" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/time_conversion_scale_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_above="@+id/graph_bottom_lay"
+                    android:text="@string/downloaded_speed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size6" />
+
+                <LinearLayout
+                    android:id="@+id/graph_bottom_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/size5"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/text15"
+                            android:layout_height="@dimen/text15"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size3"
+                            android:src="@drawable/rounder_green_bg" />
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/size4"
+                            android:text="@string/downloaded_speed"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutWidWei_HeiWrap"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/text15"
+                            android:layout_height="@dimen/text15"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size3"
+                            android:src="@drawable/rounder_yellow_bg" />
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/size4"
+                            android:text="@string/uploaded_speed"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size10" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size5"
+                android:background="@color/gray_light"
+                app:cardCornerRadius="@dimen/size3">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:layout_marginTop="@dimen/size2"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/size5"
+                    android:paddingStart="@dimen/size5">
+
+                    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+                        <ImageView
+                            android:id="@+id/device_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size6" />
+
+                        <LinearLayout
+                            android:id="@+id/device_name_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/device_img"
+                            android:layout_toStartOf="@+id/device_edit_img"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/device_name_txt"
+                                style="@style/TextRobotoMedium"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size11" />
+
+                            <TextView
+                                android:id="@+id/device_name_sub_txt"
+                                style="@style/TextRobotoMedium"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/size11" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/device_edit_img"
+                            android:layout_width="@dimen/size35"
+                            android:layout_height="@dimen/size35"
+                            android:layout_alignParentEnd="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size10"
+                            android:src="@drawable/ic_edit" />
+                    </RelativeLayout>
+
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0.25"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:baselineAligned="false"
+                        android:padding="@dimen/size3"
+                        android:weightSum="3">
+
+
+                        <LinearLayout
+                            style="@style/LayoutWrap"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <LinearLayout
+                                style="@style/LayoutWrap"
+                                android:layout_gravity="start">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="@dimen/size3"
+                                    android:src="@drawable/ic_download" />
+
+                                <TextView
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:text="@string/download"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/LayoutWrap"
+                                android:layout_gravity="start">
+
+                                <TextView
+                                    android:id="@+id/download_speed_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text12" />
+
+                                <TextView
+                                    android:id="@+id/download_scale_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:text="@string/mbytes"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/data_usage"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text12" />
+
+                        <LinearLayout
+                            style="@style/LayoutWrap"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <LinearLayout
+                                style="@style/LayoutWrap"
+                                android:layout_gravity="end">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size20"
+                                    android:layout_height="@dimen/size20"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:padding="@dimen/size3"
+                                    android:src="@drawable/ic_upload" />
+
+                                <TextView
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:text="@string/upload"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/LayoutWrap"
+                                android:layout_gravity="end">
+
+                                <TextView
+                                    android:id="@+id/upload_speed_txt"
+                                    style="@style/TextRobotoMedium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginStart="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text12" />
+
+                                <TextView
+                                    android:id="@+id/upload_scale_txt"
+                                    style="@style/TextRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="start|center"
+                                    android:layout_marginEnd="@dimen/size5"
+                                    android:layout_marginStart="@dimen/size5"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:text="@string/mbytes"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text10" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size0.25"
+                        android:background="@color/gray" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/signal_strength_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/wifi_img"
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size4"
+                            android:src="@drawable/ic_signal_strength" />
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/wifi_img"
+                            android:layout_toStartOf="@+id/signal_strength_txt"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="@string/signal_strength"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+                        <TextView
+                            android:id="@+id/signal_strength_txt"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/size5"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size4"
+                            android:src="@drawable/ic_ip_addr" />
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/ip_address"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+                        <TextView
+                            android:id="@+id/ip_address_txt"
+                            style="@style/TextRobotoMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size25"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wifi_detail_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="@dimen/size30"
+                                android:layout_height="@dimen/size30"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size4"
+                                android:src="@drawable/ic_band" />
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="@string/band"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text10" />
+
+                            <TextView
+                                android:id="@+id/band_txt"
+                                style="@style/TextRobotoMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/size50"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="@dimen/size30"
+                                android:layout_height="@dimen/size30"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/size4"
+                                android:src="@drawable/ic_channel" />
+
+                            <TextView
+                                style="@style/TextRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="@string/channel"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text10" />
+
+                            <TextView
+                                android:id="@+id/channel_txt"
+                                style="@style/TextRobotoMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/size35"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text10" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:visibility="visible">
+
+
+                        <ImageView
+                            android:id="@+id/connect_disconnect_img"
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size4" />
+
+                        <TextView
+                            android:id="@+id/connect_disconnect_txt"
+                            style="@style/TextRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/connect_disconnect_img"
+                            android:layout_toStartOf="@+id/connect_disconnect_switch_btn"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="@string/disconnected_from"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10" />
+
+                        <ToggleButton
+                            android:id="@+id/connect_disconnect_switch_btn"
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size23"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/toggle_button"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size10"
+
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <ImageView
+        android:id="@+id/transparent_img"
+        style="@style/LayoutMatch"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/transparent_bg"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/device_spinner_card_view"
+        style="@style/LayoutWrap"
+        android:layout_above="@id/footer_lay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size220"
+        android:elevation="@dimen/size3"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/size3">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/device_spinner_recycler_view"
+            style="@style/LayoutMatch" />
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/footer_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_general_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@drawable/parent_control_bg"
+        android:gravity="center">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/size90"
+                android:layout_height="@dimen/size80"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size10"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/user_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size3"
+                android:layout_marginTop="@dimen/size10"
+                android:text="Samantha"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/pc_setting_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size23"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/size5"
+                android:layout_marginEnd="@dimen/size5"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/setting_icon"
+                android:onClick="onClick"/>
+
+            <ImageView
+                android:id="@+id/pc_pause_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size23"
+                android:layout_below="@+id/pc_setting_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginTop="@dimen/size20"
+                android:visibility="invisible"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pause_icon"
+                android:onClick="onClick"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/device_bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/size10"
+        android:paddingEnd="0dp"
+        android:paddingStart="@dimen/size15">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingTop="@dimen/size4">
+
+            <ImageView
+                android:layout_width="@dimen/size25"
+                android:layout_height="@dimen/size25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/device_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/device_count_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/size6"
+                android:gravity="start"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/size2"
+                android:gravity="start"
+                android:text="@string/devices_connected"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingTop="@dimen/size4">
+
+            <ImageView
+                android:layout_width="@dimen/size25"
+                android:layout_height="@dimen/size25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/time_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/device_hours_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size6"
+                android:gravity="start"
+                android:text="1.5 Hrs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

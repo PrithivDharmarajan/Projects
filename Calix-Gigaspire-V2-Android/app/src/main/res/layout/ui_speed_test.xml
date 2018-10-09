@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speed_test_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/speed_test_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/begin_speed_test_btn"
+        android:layout_below="@+id/speed_test_header_bg_lay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size5"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="@dimen/size5"
+                tools:ignore="UseCompoundDrawables">
+
+
+                    <RelativeLayout style="@style/LayoutWrap"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/internet_img"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/size10"
+                            android:layout_marginStart="@dimen/size10"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_internet_globe" />
+
+                        <TextView
+                            android:id="@+id/notificationCount"
+                            style="@style/TextRobotoRegular"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_alignEnd="@+id/internet_img"
+                            android:layout_width="@dimen/size14"
+                            android:layout_height="@dimen/size14"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/internet_badge_background" />
+
+
+
+
+                    </RelativeLayout>
+
+
+                <RelativeLayout
+                    style="@style/LayoutWrap"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="90"
+                        android:visibility="invisible"
+                        android:src="@drawable/triangle_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/internet_label_header"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size90"
+                        android:layout_marginStart="@dimen/size10"
+                        android:background="@drawable/gray_border_btn"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/size10">
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:gravity="start"
+                            android:text="@string/internet"
+                            android:textSize="@dimen/size12" />
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:layout_marginEnd="@dimen/size20"
+                            android:gravity="end"
+                            android:text="@string/strong"
+                            android:textSize="@dimen/size12" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/speed_test_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size5" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/begin_speed_test_btn"
+        style="@style/ButtonRobotoMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size15"
+        android:text="@string/begin_speed_test"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

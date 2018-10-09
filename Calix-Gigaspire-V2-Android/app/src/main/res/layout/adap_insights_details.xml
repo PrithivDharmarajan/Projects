@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        card_view:cardCornerRadius="@dimen/size2">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@drawable/white_border_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/LayoutWidWei_HeiWrap"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size20"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:id="@+id/hours_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="@dimen/size40"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/blue_bg"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:text="5 Hrs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text8" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/size4"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/user_insights_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size50"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/video_icon" />
+
+                <TextView
+                    android:id="@+id/insights_name_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/size8"
+                    android:maxLines="2"
+                    android:text="Videos"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

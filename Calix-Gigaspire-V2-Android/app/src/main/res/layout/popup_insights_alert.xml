@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        app:cardCornerRadius="@dimen/size2">
+
+        <ScrollView
+            style="@style/LayoutMatch"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical"
+                android:padding="@dimen/size8">
+
+                <RelativeLayout
+                    android:id="@+id/insight_details_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:padding="@dimen/size5">
+
+                    <TextView
+                        android:id="@+id/insight_details_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:text="Video"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hour_details_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/insight_details_txt"
+                        android:gravity="end"
+                        android:text="5 hrs"
+                        android:textSize="@dimen/size11"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/gray_light" />
+                <!-- <RelativeLayout
+                     android:id="@+id/insight_app_details_lay"
+                     style="@style/LayoutWidMatch_HeiWrap"
+                     android:padding="@dimen/size3"
+                     android:visibility="visible">
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/size1"
+                         android:background="@color/gray_light" />
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/inside_recycler_view"
+                         style="@style/LayoutWidMatch_HeiWrap"
+                         android:layout_marginBottom="@dimen/size3"
+                         android:layout_marginTop="@dimen/size6"
+                         android:background="@color/white" />
+                 </RelativeLayout>-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/inside_recycler_view"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginBottom="@dimen/size3"
+                    android:layout_marginTop="@dimen/size6"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/inside_cancel_btn"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

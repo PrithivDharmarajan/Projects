@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wifi_speed_result_bg_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/wifi_speed_header_lay"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/wifi_speed_header_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="@color/blue">
+
+                <include layout="@layout/ui_general_header" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/wifi_speed_result_bg_rel_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size55"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size3"
+                android:background="@color/gray_light"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/header_linear_lay"
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size1"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/device_edit_circle_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/internet_icon" />
+
+                    <TextView
+                        style="@style/TextRobotoRegular"
+                        android:ellipsize="end"
+                        android:text="@string/internet"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text9" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/size0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size5"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/download"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/mbps"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text9" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size5"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/upload"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/mbps"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text9" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size5"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    style="@style/LayoutWidWei_HeiWrap"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/ping"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:text="@string/ms"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text9" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wifi_speed_result_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_marginTop="@dimen/size3"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/map_view_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/map_view_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/refresh_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/refresh_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/refresh"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

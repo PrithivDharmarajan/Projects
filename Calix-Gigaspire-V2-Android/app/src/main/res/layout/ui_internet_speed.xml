@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/internet_speed_test_bg_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/internet_speed_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/internet_speed_header_lay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/internet_speed_header_lay"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size20"
+                android:layout_marginBottom="@dimen/size8"
+                android:layout_marginEnd="@dimen/size8"
+                android:layout_marginStart="@dimen/size8"
+                android:background="@color/gray_light">
+
+                <com.github.anastr.speedviewlib.SpeedView
+                    android:id="@+id/speedometer"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_width="@dimen/size180"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/size9"
+                    app:sv_centerCircleColor="@color/orange"
+                    app:sv_highSpeedColor="@color/blue"
+                    app:sv_indicator="NormalIndicator"
+                    app:sv_indicatorColor="@color/orange"
+                    app:sv_indicatorWidth="@dimen/size10"
+                    app:sv_lowSpeedColor="@color/blue"
+                    app:sv_mediumSpeedColor="@color/blue"
+                    app:sv_speedometerWidth="@dimen/size10"
+                   />
+
+
+                <!-- <ImageView
+                     android:id="@+id/imageView"
+                     style="@style/LayoutWidMatch_HeiWrap"
+                     android:layout_centerInParent="true"
+                     android:layout_centerVertical="true"
+                     android:adjustViewBounds="true"
+                     android:scaleType="centerCrop"
+                     android:contentDescription="@string/app_name"
+                     app:srcCompat="@drawable/speedometer_internet_speed" />
+
+                 <ImageView
+                     android:id="@+id/barImageView"
+                     style="@style/LayoutWidMatch_HeiWrap"
+                     android:layout_alignParentTop="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerInParent="true"
+                     android:adjustViewBounds="true"
+                     android:contentDescription="@string/app_name"
+                     app:srcCompat="@drawable/speedometer_rotate" />-->
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/startButton"
+                style="@style/ButtonRobotoMedium"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/text10"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginTop="@dimen/size3"
+                android:text="@string/begin_speed_test"
+                android:textColor="@color/white"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/map_view_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/map_view_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/refresh_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/refresh_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/refresh"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

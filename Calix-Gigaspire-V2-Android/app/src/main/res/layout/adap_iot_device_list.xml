@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical"
+    android:padding="@dimen/size5">
+
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size70"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/device_status_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size70"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hexagonal_white_with_blue" />
+
+        <ImageView
+            android:id="@+id/device_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size45"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/default_iot_device_blue" />
+
+        <ImageView
+            android:id="@+id/remove_img"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/size4"
+            android:src="@drawable/remove"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/device_status_card_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_width="@dimen/size80"
+        android:layout_gravity="center"
+        android:elevation="@dimen/size2"
+        app:cardCornerRadius="@dimen/size5"
+        tools:targetApi="lollipop">
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <TextView
+                android:id="@+id/on_txt"
+                style="@style/TextRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/size2"
+                android:text="@string/on"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text12" />
+
+            <View
+                android:layout_width="@dimen/size1"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/off_txt"
+                style="@style/TextRobotoMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@color/grey"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/size2"
+                android:text="@string/off"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/device_name_txt"
+        style="@style/TextRobotoRegular"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text12" />
+
+    <TextView
+        android:id="@+id/device_status_txt"
+        style="@style/TextRobotoRegular"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text10" />
+
+
+</LinearLayout>

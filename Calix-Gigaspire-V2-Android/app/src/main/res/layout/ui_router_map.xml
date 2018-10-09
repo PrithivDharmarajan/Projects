@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/router_map_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/router_map_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_below="@+id/router_map_header_bg_lay"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/router_map_label_header"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:background="@color/gray_light"
+                android:padding="@dimen/size10"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size100">
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:gravity="start"
+                        android:text="@string/mode" />
+
+                    <TextView
+                        style="@style/TextRobotoMedium"
+                        android:layout_marginEnd="@dimen/size25"
+                        android:gravity="end"
+                        android:text="@string/speed"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:padding="@dimen/size5"
+                tools:ignore="UseCompoundDrawables">
+
+                <LinearLayout
+                    style="@style/LayoutWrap"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/LayoutWrap">
+
+                        <ImageView
+                            style="@style/LayoutWrap"
+                            android:layout_width="@dimen/size20"
+                            android:layout_height="@dimen/size40"
+                            android:layout_below="@id/internet_globe"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/size3"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_dot_router" />
+
+                        <ImageView
+                            android:id="@+id/internet_globe"
+                            android:layout_width="@dimen/size50"
+                            android:layout_height="@dimen/size50"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/size10"
+                            android:layout_marginStart="@dimen/size10"
+                            android:layout_marginTop="@dimen/size10"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_internet_globe" />
+
+                        <TextView
+                            android:id="@+id/notificationCount"
+                            android:layout_width="@dimen/size14"
+                            android:layout_height="@dimen/size14"
+                            android:layout_marginStart="@dimen/size45"
+                            android:layout_marginTop="@dimen/size30"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/internet_badge_background" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWrap"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:rotation="90"
+                        android:src="@drawable/triangle_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/internet_label_header"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size90"
+                        android:layout_marginStart="@dimen/size10"
+                        android:background="@drawable/gray_border_btn"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/size10">
+
+                        <TextView
+                            style="@style/TextRobotoMedium"
+                            android:gravity="start"
+                            android:text="@string/internet"
+                            android:textSize="@dimen/size12" />
+
+                        <TextView
+                            style="@style/TextRobotoRegular"
+                            android:layout_marginEnd="@dimen/size20"
+                            android:gravity="end"
+                            android:text="@string/strong"
+                            android:textSize="@dimen/size12" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/router_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size5" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+

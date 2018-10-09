@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/devices_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/devices_list_recycler_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@+id/footer_lay"
+        android:layout_below="@id/devices_header_bg_lay"
+        android:layout_marginEnd="@dimen/size5"
+        android:layout_marginStart="@dimen/size5"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:id="@+id/transparent_img"
+        style="@style/LayoutMatch"
+        android:layout_below="@id/devices_header_bg_lay"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/transparent_bg"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/device_spinner_card_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_width="match_parent"
+        android:layout_below="@id/devices_header_bg_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:elevation="@dimen/size3"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/size3"
+        tools:targetApi="lollipop">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/device_spinner_recycler_view"
+            style="@style/LayoutMatch" />
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/footer_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_general_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

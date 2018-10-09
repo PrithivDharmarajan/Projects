@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/insight_detials_lay"
+            style="@style/LayoutWidMatch_HeiWrap">
+
+            <TextView
+                android:id="@+id/insights_details_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:text="Youtube"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/insights_details_hour_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/insight_details_txt"
+                android:gravity="end"
+                android:text="1:30:00"
+                android:textSize="@dimen/size11" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

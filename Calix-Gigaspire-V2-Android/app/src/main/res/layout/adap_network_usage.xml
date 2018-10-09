@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginTop="@dimen/size8"
+    android:layout_marginBottom="@dimen/size3"
+    android:layout_marginEnd="@dimen/size5"
+    android:layout_marginStart="@dimen/size5"
+    android:padding="@dimen/size3"
+    app:cardCornerRadius="@dimen/size3">
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_marginBottom="@dimen/size5"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/size2"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/size5"
+            android:paddingStart="@dimen/size5">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/device_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginStart="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size6"
+                    android:src="@drawable/phone_icon" />
+
+
+                <LinearLayout
+                    android:id="@+id/adapter_device_connect_lay"
+                    style="@style/LayoutWrap"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/connection_name_txt"
+                        style="@style/TextRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size9" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/visible_invisible_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/size9"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_down_arrow" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_details"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.CardView>

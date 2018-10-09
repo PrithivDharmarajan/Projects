@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginEnd="@dimen/size10"
+    android:layout_marginStart="@dimen/size10"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/size5"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_filter_wifi" />
+
+    <TextView
+        android:id="@+id/filter_name_txt"
+        style="@style/TextRobotoRegular"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/size8"
+        android:gravity="start"
+        android:text="@string/wifi_point"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text12" />
+</LinearLayout>

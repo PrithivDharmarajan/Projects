@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_user_insights_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/pc_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:scrollbars="none"
+        android:layout_below="@+id/pc_header_bg_lay"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_marginBottom="@dimen/size2">
+
+    <LinearLayout
+        android:id="@+id/control_user_header_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_below="@+id/pc_header_bg_lay"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginStart="@dimen/size8"
+            android:paddingTop="@dimen/size10"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:adjustViewBounds="true"
+                android:background="@drawable/calender_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/device_count_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/size5"
+                android:layout_marginStart="@dimen/size6"
+                android:text="@string/set_date_range"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setup_guest_start_date"
+            style="@style/LayoutWrap"
+            android:layout_marginEnd="@dimen/size7"
+            android:layout_marginStart="@dimen/size7"
+            android:layout_marginTop="@dimen/size8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/start_date_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_toStartOf="@+id/date_relative_lay"
+                android:gravity="start"
+                android:padding="@dimen/size7"
+                android:text="@string/start_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+            <RelativeLayout
+                android:id="@+id/date_relative_lay"
+                style="@style/LayoutWrap"
+                android:layout_height="@dimen/size25"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/blue_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/start_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/one_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text11" />
+
+                <ImageView
+                    android:id="@+id/date_img"
+                    style="@style/LayoutWrap"
+                    android:layout_width="@dimen/size30"
+                    android:layout_marginStart="@dimen/size5"
+                    android:layout_toEndOf="@+id/start_txt"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/calender_icon"
+                    android:tint="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setup_guest_end_date"
+            style="@style/LayoutWrap"
+            android:layout_marginEnd="@dimen/size7"
+            android:layout_marginStart="@dimen/size7"
+            android:layout_marginTop="@dimen/size10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/end_date_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_toStartOf="@+id/end_relative_lay"
+                android:gravity="start"
+                android:padding="@dimen/size7"
+                android:text="@string/end_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text11" />
+
+            <RelativeLayout
+                android:id="@+id/end_relative_lay"
+                style="@style/LayoutWrap"
+                android:layout_height="@dimen/size25"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/blue_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/end_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/one_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text11" />
+
+                <ImageView
+                    android:id="@+id/end_img"
+                    style="@style/LayoutWrap"
+                    android:layout_width="@dimen/size30"
+                    android:layout_marginStart="@dimen/size5"
+                    android:layout_toEndOf="@+id/end_txt"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/calender_icon"
+                    android:tint="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/overall_time_bottom_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size8">
+
+            <ImageView
+                android:id="@+id/overall_time"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/overall_time_icon" />
+
+            <TextView
+                android:id="@+id/overall_time_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toEndOf="@+id/overall_time"
+                android:gravity="start"
+                android:padding="@dimen/size3"
+                android:text="John Spent Overall Time:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/size3"
+                android:layout_toEndOf="@+id/overall_time_txt"
+                android:gravity="start"
+                android:padding="@dimen/size3"
+                android:text="11 Hrs."
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <View
+            style="@style/LayoutMatch"
+            android:layout_height="@dimen/size1"
+            android:background="@color/gray_light" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_insights_recycler_view"
+            style="@style/LayoutMatch"
+            android:layout_marginBottom="@dimen/size3"
+            android:layout_marginEnd="@dimen/size6"
+            android:layout_marginStart="@dimen/size6"
+            android:layout_marginTop="@dimen/size3" />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue">
+
+        <RelativeLayout
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size5">
+
+            <ImageView
+                android:id="@+id/pc_dashboard_lay"
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/dashboard_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dashboard_icon" />
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size6">
+
+            <ImageView
+                android:id="@+id/internet_pause_img"
+                style="@style/LayoutMatch"
+                android:layout_above="@+id/push_internet_txt"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pause_icon" />
+
+            <TextView
+                android:id="@+id/push_internet_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/size3"
+                android:text="@string/pause_internet"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

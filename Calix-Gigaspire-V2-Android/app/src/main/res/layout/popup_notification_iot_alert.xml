@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/rounded_white_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size15">
+
+
+    <TextView
+        style="@style/TextRobotoMedium"
+        android:layout_marginTop="@dimen/size10"
+        android:text="@string/notifications"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text15" />
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/size8"/>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginTop="@dimen/size3"
+        android:padding="@dimen/size10">
+
+        <LinearLayout
+            android:id="@+id/notification_details_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginStart="@dimen/size5"
+            android:orientation="vertical"
+            android:layout_toStartOf="@+id/on_off_notifi_card_view">
+
+            <TextView
+                style="@style/TextRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size3"
+                android:gravity="start"
+                android:text="@string/allow_notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+
+            <TextView
+                style="@style/TextRobotoMedium"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/size3"
+                android:maxLines="2"
+                android:gravity="start"
+                android:text="@string/allow_notification_details"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text9" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/on_off_notifi_card_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="@dimen/size90"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:elevation="@dimen/size2"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/size2"
+            tools:targetApi="lollipop">
+
+            <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/notification_on_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="1dip"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:text="@string/on"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10"/>
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/notification_off_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:text="@string/off"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray"/>
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap"
+        android:padding="@dimen/size10"
+        android:layout_marginStart="@dimen/size4">
+
+        <TextView
+            style="@style/TextRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="start"
+            android:text="@string/notify_me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text13" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/on_off_notify_card_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="@dimen/size90"
+            android:layout_gravity="end"
+            android:elevation="@dimen/size2"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/size2"
+            tools:targetApi="lollipop"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/always_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:text="@string/allows"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10" />
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/whenarmed__txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/size2"
+                    android:text="@string/when_armed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+   <!-- <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <Button
+            android:id="@+id/negative_btn"
+            style="@style/ButtonRobotoMedium"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="start|bottom"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            style="@style/ButtonRobotoMedium"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:elevation="0dip"
+            android:gravity="end|bottom"
+            android:text="@string/done"
+            android:textColor="@color/gray"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>-->
+
+</LinearLayout>
+
+

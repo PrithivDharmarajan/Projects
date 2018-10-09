@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter_header_bg_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/filter_status_bg_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/blue">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/LayoutMatch"
+        android:layout_below="@+id/filter_status_bg_lay"
+        android:layout_marginBottom="@dimen/size2"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/control_user_header_bg_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/pc_header_bg_lay"
+            android:layout_marginTop="@dimen/size10"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size8"
+                android:paddingTop="@dimen/size10"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/user_filter"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/filter_icon"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/filter_selection_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/size5"
+                    android:layout_marginStart="@dimen/size6"
+                    android:text="@string/filter_selection"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text12" />
+            </LinearLayout>
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seekbar_filter"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size8"
+                android:padding="@dimen/size7"
+                app:isb_indicator_stay="false"
+                app:isb_progress="0"
+                app:isb_seek_bar_type="discrete_ticks_texts"
+                app:isb_show_indicator="false"
+                app:isb_text_array="@array/tick_below_text_length_5"
+                app:isb_text_color="@color/blue"
+                app:isb_thumb_color="@color/blue"
+                app:isb_tick_color="@color/blue"
+                app:isb_tick_num="5"
+                app:isb_track_progress_bar_color="@color/gray_light"/>
+
+            <TextView
+                android:id="@+id/selected_count_txt"
+                style="@style/TextRobotoRegular"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="@dimen/size8"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+            <View
+                style="@style/LayoutMatch"
+                android:layout_height="@dimen/size0.5"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size8"
+                android:layout_marginTop="@dimen/size10"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/setting_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/setting_one_icon"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/customize_sites_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/size5"
+                    android:layout_toEndOf="@+id/setting_img"
+                    android:padding="@dimen/size8"
+                    android:text="@string/customize_sites"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text12" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/restrict_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/size5"
+                    android:gravity="start"
+                    android:padding="@dimen/size2"
+                    android:text="@string/customize_sites"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="@dimen/text10" />
+
+                <TextView
+                    android:id="@+id/website_txt"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/size8"
+                    android:gravity="start"
+                    android:text="www.linkedin.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size8"
+                android:layout_marginTop="@dimen/size10"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/allow_btn"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="@dimen/size90"
+                    android:layout_height="@dimen/size35"
+                    android:layout_margin="@dimen/size8"
+                    android:background="@color/blue"
+                    android:text="@string/allow"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/decline_btn"
+                    style="@style/TextRobotoRegular"
+                    android:layout_width="@dimen/size90"
+                    android:layout_height="@dimen/size35"
+                    android:layout_margin="@dimen/size8"
+                    android:layout_toEndOf="@+id/allow_btn"
+                    android:background="@color/blue"
+                    android:text="@string/decline"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical"
+    android:padding="@dimen/size5">
+
+    <RelativeLayout
+        android:id="@+id/adapter_add_device_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size70"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size70"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hexagonal_white_with_blue" />
+
+        <ImageView
+            android:id="@+id/iot_device_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size45"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iot_device_name_txt"
+        style="@style/TextRobotoRegular"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text11" />
+
+
+</LinearLayout>

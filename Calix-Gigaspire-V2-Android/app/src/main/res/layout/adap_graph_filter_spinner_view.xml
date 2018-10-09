@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_width="@dimen/size150"
+    android:background="@color/white"
+    android:paddingEnd="@dimen/size5"
+    android:paddingStart="@dimen/size5">
+
+
+    <ImageView
+        android:id="@+id/filter_img"
+        style="@style/LayoutWrap"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/filter_name_txt"
+        style="@style/TextRobotoRegular"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size8"
+        android:gravity="start|center_horizontal"
+        android:text="@string/wifi_point"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text12" />
+</LinearLayout>

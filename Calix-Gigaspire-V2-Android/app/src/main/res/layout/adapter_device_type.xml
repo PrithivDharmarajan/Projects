@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_lay"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginStart="@dimen/size6"
+    android:layout_marginEnd="@dimen/size6"
+    android:layout_marginTop="@dimen/size3"
+    android:layout_marginBottom="@dimen/size3"
+    app:cardCornerRadius="@dimen/size3">
+
+    <LinearLayout
+        android:id="@+id/device_list_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:paddingTop="@dimen/size5"
+            android:paddingBottom="@dimen/size5"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/device_type_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/phone_icon" />
+
+            <LinearLayout
+                android:id="@+id/adapter_device_connect_lay"
+                style="@style/LayoutWrap"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/device_name_txt"
+                    style="@style/TextRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/visible_invisible_img"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size9"
+                android:src="@drawable/ic_down_arrow" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separator_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/blue"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/devices_recycler_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:paddingBottom="@dimen/size8"
+            android:paddingTop="@dimen/size8"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

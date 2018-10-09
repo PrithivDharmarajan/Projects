@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/set_reset_pin_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/set_reset_pin_header_bg_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size190"
+                android:background="@drawable/header_bg">
+
+                <RelativeLayout
+                    android:id="@+id/set_reset_pin_header_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:visibility="visible">
+
+                    <include layout="@layout/ui_general_header" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/set_reset_pin_header_img"
+                    style="@style/LayoutMatch"
+                    android:layout_below="@+id/set_reset_pin_header_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/router" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/type_current_pin_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/blue_border_bg">
+
+                    <ImageView
+                        android:id="@+id/type_current_pin_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/pwd" />
+
+
+                    <EditText
+                        android:id="@+id/type_current_pin_edt"
+                        style="@style/EditTextRobotoRegular"
+                        android:layout_toEndOf="@+id/type_current_pin_img"
+                        android:layout_toStartOf="@+id/type_current_pin_visible_img"
+                        android:background="@null"
+                        android:hint="@string/type_current_pin"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="0dip" />
+
+                    <ImageView
+                        android:id="@+id/type_current_pin_visible_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size9"
+                        android:src="@drawable/in_visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/blue_border_bg">
+
+                    <ImageView
+                        android:id="@+id/type_new_pin_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/pwd" />
+
+
+                    <EditText
+                        android:id="@+id/type_new_pin_edt"
+                        style="@style/EditTextRobotoRegular"
+                        android:layout_toEndOf="@+id/type_new_pin_img"
+                        android:layout_toStartOf="@+id/type_new_pin_visible_img"
+                        android:background="@null"
+                        android:hint="@string/type_new_pin"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="0dip" />
+
+                    <ImageView
+                        android:id="@+id/type_new_pin_visible_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size9"
+                        android:src="@drawable/in_visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/blue_border_bg">
+
+                    <ImageView
+                        android:id="@+id/type_confirm_pin_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size7"
+                        android:src="@drawable/pwd" />
+
+
+                    <EditText
+                        android:id="@+id/type_confirm_pin_edt"
+                        style="@style/EditTextRobotoRegular"
+                        android:layout_toEndOf="@+id/type_confirm_pin_img"
+                        android:layout_toStartOf="@+id/type_confirm_pin_visible_img"
+                        android:background="@null"
+                        android:hint="@string/type_confirm_pin"
+                        android:imeActionId="100"
+                        android:imeActionLabel="@string/submit"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:paddingEnd="0dip"
+                        android:paddingStart="0dip" />
+
+                    <ImageView
+                        android:id="@+id/type_confirm_pin_visible_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size9"
+                        android:src="@drawable/in_visible" />
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/TextRobotoRegular"
+                    android:layout_marginTop="@dimen/size10"
+                    android:gravity="start"
+                    android:text="@string/incorrect_pin_note"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text10" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/ButtonRobotoMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:elevation="0dip"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+</RelativeLayout>
