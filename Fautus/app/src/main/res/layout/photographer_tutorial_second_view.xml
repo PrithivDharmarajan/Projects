@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:padding="@dimen/size35"
+    android:weightSum="6.50">
+
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:text="@string/how_it_work"
+        android:textSize="@dimen/text12" />
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="0dip"
+        android:layout_weight="1.6">
+
+        <TextView
+            style="@style/TextLight"
+            android:layout_gravity="center"
+            android:text="@string/user_near_req"
+            android:textSize="@dimen/text12" />
+    </ScrollView>
+
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="1">
+
+        <ImageView
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/review_img" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="0dip"
+        android:layout_weight="1.5">
+
+        <TextView
+            style="@style/TextLight"
+            android:layout_gravity="center"
+            android:text="@string/after_last_photo"
+            android:textSize="@dimen/text12" />
+    </ScrollView>
+
+    <TextView
+        style="@style/TextLight"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:text="@string/having_slow"
+        android:textSize="@dimen/text12" />
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="0dip"
+        android:layout_weight="1.3">
+
+        <TextView
+            style="@style/TextLight"
+            android:layout_gravity="center"
+            android:text="@string/approach_potential"
+            android:textSize="@dimen/text12" />
+    </ScrollView>
+</LinearLayout>

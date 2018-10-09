@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:padding="@dimen/size35"
+    android:weightSum="6">
+
+
+    <TextView
+        style="@style/TextLight"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="@string/all_you_need"
+        android:textSize="@dimen/text12" />
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="2"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/youtube_video_img"
+            style="@style/LayoutMatch"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/youtube_play_img"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size7"
+            android:src="@drawable/play_img" />
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="0dip"
+        android:layout_weight="1.2"
+        android:text="@string/remember_data"
+        android:textSize="@dimen/text13" />
+
+    <TextView
+        style="@style/TextLight"
+        android:layout_height="0dip"
+        android:layout_weight="1.2"
+        android:gravity="bottom|center"
+        android:padding="@dimen/size5"
+        android:text="@string/for_more_details"
+        android:textSize="@dimen/text13" />
+
+    <LinearLayout
+        android:id="@+id/cont_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="0.5"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="bottom|center">
+
+        <TextView
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:text="@string/cont"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text14" />
+
+        <ImageView
+            android:layout_width="@dimen/size15"
+            android:layout_height="@dimen/size15"
+            android:layout_marginStart="@dimen/size10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/next_img" />
+    </LinearLayout>
+</LinearLayout>

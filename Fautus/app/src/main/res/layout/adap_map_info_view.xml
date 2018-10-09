@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWrap"
+        android:layout_gravity="center"
+        android:background="@drawable/corner_light_rounded_white_bg"
+        android:padding="@dimen/size5">
+
+        <ImageView
+            android:id="@+id/info_img"
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/photo_opp_name_txt"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/info_img" />
+
+        <TextView
+            android:id="@+id/photo_opp_name_txt"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textSize="@dimen/text13"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/size15"
+        android:layout_height="@dimen/size15"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/triangle_bottom_bg" />
+
+
+</LinearLayout>

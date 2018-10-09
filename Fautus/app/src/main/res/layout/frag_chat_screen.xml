@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:paddingBottom="@dimen/size10"
+        android:background="@color/gray_bg" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size3"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chat_edt"
+            style="@style/EditTextLight"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size4"
+            android:layout_marginStart="@dimen/size1"
+            android:layout_weight="6"
+            android:background="@drawable/rectangle_bordered_bg"
+            android:hint="@string/new_message"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:maxLines="6"
+            android:minHeight="@dimen/size35"
+            android:paddingLeft="@dimen/size10"
+            android:paddingRight="@dimen/size10"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/send_btn"
+            style="@style/TextRegular"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/size35"
+            android:layout_marginEnd="@dimen/size1"
+            android:layout_weight="2.7"
+            android:background="@color/black"
+            android:text="@string/send"
+            android:layout_gravity="bottom"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text10" />
+    </LinearLayout>
+
+</RelativeLayout>

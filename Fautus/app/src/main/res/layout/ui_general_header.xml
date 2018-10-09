@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size45"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/TextBold"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/fautus"
+        android:layout_toEndOf="@+id/header_parent_left_lay"
+        android:layout_toStartOf="@+id/header_parent_right_lay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text14" />
+
+    <LinearLayout
+        android:id="@+id/header_parent_left_lay"
+        style="@style/LayoutWrap">
+
+        <RelativeLayout
+            android:id="@+id/header_left_lay"
+            style="@style/LayoutWrap"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:id="@+id/header_left_btn_lay"
+                android:layout_width="@dimen/size45"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/header_left_img"
+                    android:layout_width="@dimen/size33"
+                    android:layout_height="@dimen/size33"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/back_img" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/header_left_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/size15"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minWidth="@dimen/size60"
+                android:text="@string/fautus"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/header_left_second_btn_lay"
+            android:layout_width="@dimen/size45"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header_parent_right_lay"
+        style="@style/LayoutWrap"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:id="@+id/header_right_second_btn_lay"
+            android:layout_width="@dimen/size45"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/size33"
+                android:layout_height="@dimen/size33"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/map_loc_img" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_right_lay"
+            style="@style/LayoutWrap"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:id="@+id/header_right_btn_lay"
+                android:layout_width="@dimen/size45"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/header_right_img"
+                    android:layout_width="@dimen/size33"
+                    android:layout_height="@dimen/size33"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/circle_sky_blue_bg" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/header_right_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/size15"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minWidth="@dimen/size60"
+                android:text="@string/fautus"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

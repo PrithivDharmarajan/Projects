@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/gray_bg">
+
+    <ScrollView style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size20"
+            android:paddingBottom="@dimen/size20"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size25"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="@dimen/size40"
+                android:paddingStart="@dimen/size40"
+                android:src="@drawable/card_img" />
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                style="@style/TextRegular"
+                android:layout_height="@dimen/size40"
+                android:layout_marginTop="@dimen/size20"
+                android:background="@color/white"
+                android:gravity="start|center"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size20"
+                android:textSize="@dimen/text15" />
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_height="@dimen/size40"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:layout_marginTop="@dimen/size20"
+                android:gravity="start|bottom"
+                android:text="@string/card"
+                android:textColor="@color/gray_edit_hint"
+                android:textSize="@dimen/text15" />
+
+
+            <com.stripe.android.view.CardInputWidget
+                android:id="@+id/card_input_widget"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:layout_marginTop="@dimen/size6"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingEnd="@dimen/size20"
+                android:paddingStart="@dimen/size20" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

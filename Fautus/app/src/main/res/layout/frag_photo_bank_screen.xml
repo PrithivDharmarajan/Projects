@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/TextRegular"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:autoLink="web"
+        android:background="@color/sky_blue"
+        android:paddingEnd="@dimen/size20"
+        android:paddingStart="@dimen/size20"
+        android:text="@string/strip_intro"
+        android:textColor="@color/white"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text14" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/acc_num_edt"
+        style="@style/EditTextLight"
+        android:layout_height="0dip"
+        android:layout_marginBottom="@dimen/size0.5"
+        android:layout_weight="1"
+        android:hint="@string/acc_num"
+        android:imeOptions="actionNext"
+        android:inputType="number|textNoSuggestions"
+        android:maxLength="40"
+        android:paddingEnd="0dip"
+        android:paddingStart="@dimen/size15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/routing_num_edt"
+        style="@style/EditTextLight"
+        android:layout_height="0dip"
+        android:layout_marginBottom="@dimen/size0.5"
+        android:layout_weight="1"
+        android:hint="@string/routing_num"
+        android:imeOptions="actionDone"
+        android:inputType="number|textNoSuggestions"
+        android:maxLength="40"
+        android:paddingEnd="0dip"
+        android:paddingStart="@dimen/size15" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/black" />
+
+    <TextView
+        style="@style/TextBold"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="@string/acc_bal"
+        android:textSize="@dimen/text14" />
+
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size0.5">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/available_amt_txt"
+                style="@style/TextLight"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/size7"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/pending_amt_txt"
+                style="@style/TextLight"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size7"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/continue_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables">
+
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:text="@string/cont"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text14" />
+
+        <ImageView
+            android:layout_width="@dimen/size15"
+            android:layout_height="@dimen/size15"
+            android:layout_marginStart="@dimen/size10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/next_img" />
+    </LinearLayout>
+
+</LinearLayout>

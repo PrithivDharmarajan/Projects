@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/authenticity_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size8"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_marginStart="@dimen/size8"
+        android:padding="@dimen/size10">
+
+        <TextView
+            style="@style/TextMedium"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/authenticity_strip_lay"
+            android:gravity="start"
+            android:text="@string/authenticity_strip"
+            android:textSize="@dimen/text15" />
+
+        <RelativeLayout
+            android:id="@+id/authenticity_strip_lay"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size27"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_green_bg">
+
+            <ImageView
+                android:id="@+id/strip_off_img"
+                android:layout_width="@dimen/size27"
+                android:layout_height="@dimen/size27"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_white_gray_bg"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/strip_on_img"
+                android:layout_width="@dimen/size27"
+                android:layout_height="@dimen/size27"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_white_green_bg"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextLight"
+        android:layout_below="@+id/authenticity_lay"
+        android:layout_marginEnd="@dimen/size18"
+        android:layout_marginStart="@dimen/size18"
+        android:gravity="start"
+        android:text="@string/strip_msg"
+        android:textSize="@dimen/text12" />
+
+    <TextView
+        android:id="@+id/version_num_txt"
+        style="@style/TextLight"
+        android:layout_above="@+id/logout_view"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/size8"
+        android:textSize="@dimen/text13" />
+    <View
+        android:id="@+id/logout_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.25"
+        android:layout_above="@+id/logout_txt"
+        android:background="@color/black" />
+    <TextView
+        android:id="@+id/logout_txt"
+        style="@style/TextRegular"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/size15"
+        android:text="@string/logout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text15" />
+
+
+</RelativeLayout>

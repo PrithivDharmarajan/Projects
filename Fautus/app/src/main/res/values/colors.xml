@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11141B</color>
+    <color name="colorPrimaryDark">#010103</color>
+
+    <color name="sky_blue">#00D0D0</color>
+    <color name="chat_sky_blue">#00FFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#24292D</color>
+    <color name="hash">#E0E0E0</color>
+    <color name="gray_edit_hint">#5A5A5A</color>g
+    <color name="gray_btn">#A4A4A4</color>
+    <color name="gray_rounded">#C8C8C8</color>
+    <color name="black_txt">#121319</color>
+    <color name="black_light_txt">#11141A</color>
+    <color name="slide_bg">#10151B</color>
+    <color name="green">#42D351</color>
+    <color name="gray_bg">#F2F2F5</color>
+    <color name="chat_gray">#AAAAAA</color>
+    <color name="typing_gray">#E0E0E6</color>
+    <color name="typing_dark_gray">#87878C</color>
+
+</resources>

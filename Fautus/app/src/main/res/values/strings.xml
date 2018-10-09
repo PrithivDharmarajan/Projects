@@ -1,0 +1,446 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Fautus</string>
+    <string name="fautus">fautus</string>
+
+    <!--Consumer-->
+
+    <!--Welcome Screen-->
+    <string name="skip">Skip</string>
+    <string name="welcome">Welcome</string>
+    <string name="fautus_allow">With Fautus you can request a nearby photographer, on demand</string>
+    <string name="to_do_this">To do this, Fautus needs access to your location.</string>
+
+    <string name="choose_level">Choose the level of your Fautus photographer, and get matched instantly, on demand</string>
+    <string name="within_seconds">Your photographer will message you within seconds and take professional photos of your casual Moment</string>
+
+    <string name="after_all_pho">After all photos are taken, the Moment is closed. Then, all photos will appear instantly in your own smartphone.</string>
+    <string name="review_them">Review them in detail and pay\n for only those like.</string>
+    <string name="that_simple">That Simple</string>
+
+    <!--SignUp Screen-->
+    <string name="sign_up_free">SignUp now for free</string>
+    <string name="sign_up_photo">SignUp to become a fautus photographer</string>
+    <string name="email_address">Email Address</string>
+    <string name="pwd">Password</string>
+    <string name="sign_up">SignUp</string>
+    <string name="already_acc"><u>Already have an account? Login</u> </string>
+    <string name="am_photographer">I am a photographer</string>
+
+    <!--Login Screen-->
+    <string name="login_acc">Login to your account</string>
+    <string name="login">Login</string>
+    <string name="sign_up_acc"><u>Don\'t have an account? Signup now</u> </string>
+    <string name="forgot_pwd">Forgot your password</string>
+    <string name="forgot_pwd_ques">Forgot your password?</string>
+
+    <!--Forgot Pwd Screen-->
+    <string name="request">Request</string>
+    <string name="an_email_reset">An email will be sent with instructions \n on how to reset your password.</string>
+
+
+    <!--ParsePhotographerEntity-->
+
+    <!--Welcome Screen-->
+    <string name="cancel">Cancel</string>
+    <string name="making_money">Making Money</string>
+    <string name="never_been">Has Never Been Easier</string>
+    <string name="ready_to_tack">Be ready to take high-quality photos.</string>
+    <string name="follow_the_map">Follow the map. Find Fautus users. And let your passion and talent for photography capture their Moment.</string>
+    <string name="very_simple">Fautus needs access to your location</string>
+
+    <string name="how_it_work">How Does it Work?</string>
+    <string name="user_near_req">A Moment opens when a nearby user requests a photographer. After the request is sent, use the map, and find the user’s specific location.\n\nOnce you find the user, take six to nine photos, as they request.</string>
+    <string name="after_last_photo">After the last photo is taken, close the Moment. Instantly, all the photos will appear, in protected form, in the user’s app, where they can be purchased and shared.</string>
+    <string name="having_slow">Having a slow day?</string>
+    <string name="approach_potential">Approach a potential user, and tell them about Fautus. Take their photos, and share a ‘Snap’ Moment code. It works the same way!</string>
+
+    <string name="all_you_need">All you need is a DSLR camera with your favorite adapter connected to your phone.</string>
+    <string name="remember_data">Remember! Sufficient cellular data or a WiFi connection are required at all times</string>
+    <string name="for_more_details">For more detailed information make sure to check the FAQ\'s section</string>
+
+
+    <!--Create Profile-->
+    <string name="create_profile">Create Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="languages_spoken">Languages Spoken (comma separated)</string>
+    <string name="dob">Date of Birth</string>
+    <string name="ssn">Last 4 of SSN</string>
+    <string name="cont">Continue</string>
+    <string name="upload_selfie">Upload Selfie</string>
+    <string name="upload_photo_id">Upload picture of \nPhoto ID</string>
+    <string name="create_your_profile">Create your profile</string>
+    <string name="slash_sym">/</string>
+    <string name="user_profile_img">userProfile.png</string>
+    <string name="user_id_img">userId.png</string>
+
+    <!--Select Equipment-->
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="model_here">Don\'t see your  listed? Enter the brand and model here</string>
+    <string name="all_photography_req">All photographers are required to have a semi-professional DSLR camera or better.\n\nPlease select your primary equipment below</string>
+    <string name="select_equipment">Select Equipment</string>
+
+
+    <!--Select Your Levels !-->
+    <string name="avid">Avid</string>
+    <string name="skill">Skill</string>
+    <string name="pro">Pro</string>
+    <string name="select_your_level">Select your level</string>
+    <string name="user_can_req">Users can request different levels of photographers.\n\nThe cost to the end user, as well as your compensation share, vary upon the chosen level.</string>
+    <string name="photographer_type_avid">Avid photographers are hobbyists who love taking photos with pro or semi-pro DSLR cameras.\n\nThey are matched with users requesting only Avid photographers. The compensation for the Avid level is $0.90 per moment, plus $0.75 per photo sold. Per hour, the average Avid photographer captures 7 Moments, and sells about 21 photos.</string>
+    <string name="photographer_type_skill">Skill photographers have years of experience. They take amazing photos, but photography is not their primary source of income.\n\nSkill photographers can choose to be matched with users requesting either the Skill or Avid levels. The compensation share for Skill photographers is $1.60 per Moment, plus $1.50 per photo sold.</string>
+    <string name="photographer_type_pro">Pro photographers make any practice of the photography industry their main source of income,and are expected to be part of a business.\n\nPro photographers can choose to be matched with users requesting the Avid, Skill, or Pro levels. The compensation share for Pro photographers is $2.30 per Moment, plus $2.25 per photo sold.</string>
+
+    <!--Shipping Information-->
+    <string name="photo_req">Fautus photographers are required to have the Fautus camera strap to identify themselves as a Fautus approved photographer.\nEnter your shipping address to have one shipped to you for free.</string>
+    <string name="shipping_information">Shipping information</string>
+    <string name="address_one">Address 1</string>
+    <string name="address_two">Address 2</string>
+    <string name="zip">Zip</string>
+    <string name="usa">USA</string>
+
+
+    <!--Slide menu-->
+    <string name="home">Home</string>
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+    <string name="moments">Moments</string>
+    <string name="help_faq">Help / FAQ</string>
+    <string name="settings">Settings</string>
+    <string name="legal">Legal</string>
+    <string name="photographer">Photographer</string>
+
+    <!--Map Screen-->
+    <string name="moment_colon">Moment:</string>
+    <string name="each_photo">Each Photo:</string>
+    <string name="req_photo">Request a Photographer</string>
+    <string name="snap_photo_moment">I have a snap moment code</string>
+    <string name="create_photo_moment">Create a snap photo session</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="not_available">Not Available</string>
+    <string name="available">Available</string>
+
+    <!--Settings Screen-->
+    <string name="logout">Logout</string>
+    <string name="authenticity_strip">Authenticity Strip</string>
+    <string name="strip_msg">At Fautus, we are proud of our photographers’ artistic vision. The authenticity strip that appears to the right of each photo guarantees it is an authentic Fautus photograph, and is a symbol of your support for local artists.</string>
+    <string name="version">v</string>
+
+    <!-- Terms and Condition-->
+    <string name="terms_service">Terms Of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="apirequestsuccess">apirequestsuccess</string>
+    <string name="error_code">error_code</string>
+    <string name="message">message</string>
+    <string name="result">result</string>
+
+    <!--Chat Screen-->
+    <string name="send">Send</string>
+    <string name="new_message">New Message</string>
+    <string name="your_moment">Your Moment</string>
+    <string name="unknown">Unknown</string>
+    <string name="user_one">User 1</string>
+    <string name="user_two">User 2</string>
+
+    <!--Moment Screen-->
+    <string name="photo">Photo</string>
+    <string name="photos">Photos</string>
+    <string name="purchased">Purchased</string>
+    <string name="no_moments">You have no moments.</string>
+
+    <!--Consumer Moment Details Screen-->
+    <string name="selected">Selected</string>
+    <string name="per_photo">per photo</string>
+    <string name="but_moment">Buy This Moment </string>
+    <string name="complete_moment">Complete Your Moment</string>
+    <string name="purchase_remaining">Purchase Remaining</string>
+    <string name="approx">approx</string>
+    <string name="tran_fee">TransactionFee</string>
+    <string name="share_moment">Share Moment</string>
+    <string name="moment">Moment</string>
+    <string name="share_txt">Hey there. Check out this moment!</string>
+
+    <!--Photographer Moment Screen-->
+    <string name="in_moment">In Moment</string>
+    <string name="email_invite">Email Invite</string>
+
+    <!--Pay Moment Screen-->
+    <string name="please_rate">Please Rate Your Photographer</string>
+    <string name="friendliness">Friendliness</string>
+    <string name="quality_photo">Quality of photo</string>
+    <string name="quality_photos">Quality of photos</string>
+    <string name="no_tips">No tip</string>
+    <string name="tip_one">$1</string>
+    <string name="tip_two">$2</string>
+    <string name="tip_five">$5</string>
+    <string name="tip_ten">$10</string>
+    <string name="pay_down">Pay &amp; Download</string>
+    <string name="zero">0</string>
+
+    <!--Upload Moment Screen-->
+    <string name="upload_info">Once the photoshoot is complete please transfer the photos from your camera to your mobile device, then upload them to automatically share them with your customer to be purchased.</string>
+    <string name="upload_photos">Upload Photos</string>
+    <string name="download_photos">Download Photos</string>
+
+    <!--Cons Loader Screen-->
+    <string name="your_photos_appear">Your photos will appear here automatically once your moment photoshoot is complete.</string>
+    <string name="plz_patient">Please be patient</string>
+
+    <!--Consumer Profile Screen-->
+    <string name="upload_optional_selfie">Upload Optional Selfie</string>
+    <string name="update">Update</string>
+    <string name="full_name_optional">Full Name (Optional)</string>
+
+
+    <!--Profile Photo Upload-->
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose_type">Choose Type</string>
+
+    <!--Legal-->
+    <string name="choose_any">Choose Any One</string>
+
+    <!--Consumer Payment Screen-->
+    <string name="invalid_data">Invalid Card Data</string>
+    <string name="save">Save</string>
+    <string name="card">Card</string>
+    <string name="add_card">Add a Card</string>
+    <string name="pay_method">Payment Method</string>
+    <string name="ending_in">Ending In</string>
+    <string name="add_new_card">Add New Card&#8230;</string>
+
+    <!--Photographer Bank Acc details-->
+    <string name="payment_info">Payment Information</string>
+    <string name="strip_intro">Fautus uses stripe.com to manage funds transfers between a customer and you. Please provide your banking information for where you would like your funds transferred.</string>
+    <string name="acc_num">Account number</string>
+    <string name="routing_num">Routing numer</string>
+    <string name="acc_bal">Account Balance</string>
+    <string name="pending_bal">Pending:$ %1$s USD</string>
+    <string name="available_bal">Available:$ %1$s USD</string>
+
+
+    <!--Symbols-->
+    <string name="dollar_sym">$</string>
+    <string name="hyphen_sym">-</string>
+    <string name="comma_sym">,</string>
+    <string name="colon_sym">:</string>
+    <string name="open_bracket">(</string>
+    <string name="close_bracket">)</string>
+
+    <!--Dialog-->
+    <string name="ok_underline"><u tools:ignore="Typos">Ok</u></string>
+    <string name="ok">OK</string>
+    <string name="cancel_underline"><u>Cancel</u></string>
+    <string name="video_err">Video Error</string>
+    <string name="close_underline"><u>Close</u></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="web_address">Website Address</string>
+    <string name="business_name">Business Name</string>
+    <string name="pro_photographer">Please enter your business information to be verified as a Pro level Fautus photographer. \n\nThis information is confidential and will not be shared with users.</string>
+    <string name="congratulations">Congratulations! </string>
+    <string name="sign_up_entry_msg">  Your strap is on its way, and should arrive in three to five days.\n\nDon\'t wait for the strap, though, to begin using Fautus. Contact family and friends.\n\nIn the meantime get to know the app and make money by capturing their Moments
+      </string>
+    <string name="avid_photo">Avid Photographers</string>
+    <string name="skill_photo">Skill Photographers</string>
+    <string name="pro_photo">Pro Photographers</string>
+    <string name="acc_photo">Accept Photoshoot</string>
+    <string name="reject_moment_underline"><u>Reject Moment</u></string>
+    <string name="con_req">Congratulations. Your %1$s expertise is being requested.</string>
+    <string name="moment_req_time">The moment is being offered to you for the next 15 seconds; thereafter, other photographers in the area will be notified.</string>
+    <string name="req_photographer">Requesting a nearby \nphotographer</string>
+    <string name="please_patient">Please be patient</string>
+    <string name="here_snap">Here is the code for your Snap Moment:</string>
+    <string name="upload_photo">Upload the photos from your Snap Moment, and share that code with your client. Then, they can view and download the photos.</string>
+    <string name="enter_the_code">To see your photos, enter your snap code for the Moment your photographer started</string>
+    <string name="enter_five_chat">Enter 5 character code</string>
+    <string name="wht_was_problem">What was the problem?</string>
+    <string name="we_noticed">We noticed you chose to rate your photographer 2.0 stars for friendliness. Please tell us more so we can improve</string>
+    <string name="describe_issue">Describe your Issue</string>
+    <string name="send_this">Send this moment to the customer</string>
+    <string name="email_will_sent">An email will be sent to the user with instructions on how to install and download the app and purchase photos.\n\n*This information will not be sold</string>
+    <string name="done">Done</string>
+    <string name="i_agree">I agree</string>
+
+
+    <!--Dialog Alert-->
+    <string name="email_req">Email Required</string>
+    <string name="sign_up_email_req">A valid email is required to register.</string>
+    <string name="pwd_req">Password Required</string>
+    <string name="sign_up_pwd_req">A valid password is required to register.</string>
+
+    <string name="login_mail_req">Your mail is required to login.</string>
+    <string name="login_pwd_req">Your password is required to login.</string>
+
+    <string name="pwd_reset">Password Reset Error</string>
+    <string name="reset_email_req">Your email address is required to reset the password.</string>
+
+    <string name="connect_time_out">Connection to Spark App Server timeout, please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+
+    <string name="email_already_reg">Account already exists for this email address</string>
+
+    <string name="req_name_topic">Full Name Required</string>
+    <string name="req_name_msg">Your full name is required to register as a photographer.</string>
+    <string name="req_name_strap_msg">Your full name is required.</string>
+
+    <string name="req_city_topic">City Required</string>
+    <string name="req_city_msg">Your city is required to register as a photographer.</string>
+    <string name="req_city_strap_msg">Your city is required.</string>
+
+    <string name="req_state_topic">State Required</string>
+    <string name="req_state_msg">Your state is required to register as a photographer.</string>
+    <string name="req_state_strap_msg">Your state is required.</string>
+
+
+    <string name="req_address_one_topic">Address 1 Required</string>
+    <string name="req_address_one_strap_msg">Your address is required.</string>
+
+
+    <string name="req_zip_topic">ZIP Required</string>
+    <string name="req_zip_strap_msg">Your ZIP code is required.</string>
+
+    <string name="req_language_topic">Language Required</string>
+    <string name="req_language_msg">Your Language is required to register as a photographer.</string>
+
+    <string name="req_dob_topic">Date of Birth Required</string>
+    <string name="req_dob_msg">Your date of birth is required to register as a photographer.</string>
+
+    <string name="req_ssn_topic">Last 4 SSN Required</string>
+    <string name="req_ssn_msg">Your last 4 of your SSN is required to register as a photographer.</string>
+    <string name="req_ssn_4_digits_msg">SSN last 4 must be exactly4 digits.</string>
+
+
+    <string name="req_selfie_topic">Selfie Photo Required</string>
+    <string name="req_selfie_msg">Your selfie photo is required to register as a photographer.</string>
+
+
+    <string name="req_photo_id_topic">Photo ID Required</string>
+    <string name="req_photo_id_msg">Your photo id is required to register as a photographer.</string>
+
+
+    <string name="req_business_topic">Business Name Required</string>
+    <string name="req_business_msg">Please enter your business name.</string>
+
+    <string name="req_describe_topic">Describe Required</string>
+    <string name="req_describe_msg">Please enter your describe issue.</string>
+
+    <string name="req_web_topic">Website Name Required</string>
+    <string name="req_web_msg">Please enter your website name.</string>
+
+    <string name="user_cancelled">User cancelled image capture</string>
+    <string name="sorry_failed_img">Sorry! Failed to capture image</string>
+    <string name="failed_directory">Oops! Failed create Fautus directory</string>
+    <string name="select_past_date">Select past date</string>
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+    <string name="app_permission_req">Camera,Storage permission required for this app</string>
+
+    <string name="your_code">Your Moment Code</string>
+    <string name="your_fautus_snap_code">This is your Fautus Snap Code: \n\n%1$s\n\nGo to your Fautus App, enter the Snap Code to instantly see the photos your Fautus photographer just took.\n\nWe are currently working to enhance your experience by adding a link. Until then, it is that simple.</string>
+    <string name="req_camera_brand_topic">Camera Brand Required</string>
+    <string name="req_camera_brand_msg">Camera brand is required</string>
+
+    <string name="req_camera_model_topic">Camera Model Required</string>
+    <string name="req_camera_model_msg">Camera model is required</string>
+
+    <string name="err_create_frag">Error in creating fragment</string>
+
+    <string name="exit_msg">Are you sure want to Exit?</string>
+    <string name="logout_msg">Are you sure you want to logout of Fautus?</string>
+
+    <string name="avid_photo_info">Avid photographers are hobbyists who love taking photos with pro or semi-pro DSLR cameras.</string>
+    <string name="skill_photo_info">Skill photographers have years of experience. They take amazing photos, but photography is not their primary source of income.</string>
+    <string name="pro_photo_info">Pro photographers make any practice of the photography industry their main source of income,and are expected to be part of a business.</string>
+
+    <string name="req_code_topic">Moment Code Required</string>
+    <string name="req_code_msg">Please enter moment code.</string>
+
+    <string name="no_ava">Sorry there are no available photographers near your location at this time.</string>
+    <string name="email_verify_topic">Your account is unverified.</string>
+    <string name="email_verify_msg">You must complete your personal profile and provide and add payment transfer account information for where your funds will be deposited before you can take photos.</string>
+    <string name="oops">Oops</string>
+    <string name="you_reg">You are registered as %1$s and so cannot choose a higher level.</string>
+
+    <string name="matched_photo">Congratulations! you\'ve been matched with a photographer</string>
+    <string name="photo_shoot_msg">Hi, my name is %1$s, and I’m excited to handle your photoshoot today. If you could describe yourself it would help me find you faster.</string>
+
+    <string name="down_photo">Download this photo to your device?</string>
+    <string name="downloading">Downloading&#8230;</string>
+    <string name="downloaded">Downloaded&#8230;</string>
+    <string name="oops_create">Oops! Failed create </string>
+    <string name="directory">directory </string>
+
+    <string name="no_moment">No Moment found for this code</string>
+
+    <string name="profile_store_topic">Couldn\'t Save</string>
+    <string name="profile_store_msg">There was an error when we tried to save your information. Please try again.</string>
+
+    <string name="profile_update_topic">Profile Updated</string>
+    <string name="profile_update_msg">Your profile has been updated</string>
+    <string name="menu_photographer_topic">Hold Up</string>
+    <string name="menu_photographer_msg">Before you press ‘Continue,’ a warning - You cannot go back.\n\nYou can only have one Fautus account per email. So, if you set up a photographer account, you cannot have a user account with that same email.\n\nIf you are ready to set up your photographer account, then proceed.</string>
+
+    <string name="close_moment_topic">Close this Moment?</string>
+    <string name="close_moment_msg">Closing the moment will disconnect you from the user.\n\nYou will not be able to add additional photos once the moment is closed.\n\nPlease be sure all photos are uploaded and your user is satisfied before continuing.</string>
+
+    <string name="select_one_photo">Please select at least one photo</string>
+    <string name="select_only_photo">Cannot select more than 9 photos</string>
+
+    <string name="acc_num_req">Account Num Required</string>
+    <string name="acc_num_msg">Account num is required.</string>
+    <string name="routing_num_req">Routing Num Required</string>
+    <string name="routing_num_msg">Routing num is required.</string>
+
+    <string name="val_service_fee">Value Service Fee</string>
+    <string name="invite_mail_req">Your mail is required to invite.</string>
+
+    <string name="stripe_reg_one">By registering your account, you agree to our</string>
+    <string name="stripe_reg_two">Services Agreement</string>
+    <string name="stripe_reg_three">and the</string>
+    <string name="stripe_reg_four">Strip Connected Account Agreement</string>
+
+    <string name="payment_success_topic">Payment Success!</string>
+    <string name="payment_success_msg">Your payment was successful.\nDownload photos to your library?</string>
+
+    <string name="moment_cancelled_topic">Moment Cancelled</string>
+    <string name="moment_cancelled_msg">Sorry, the Moment has been canceled</string>
+
+    <string name="previous_moment_msg">Return to previous Moment?</string>
+    <string name="something_went_wrong">Something went wrong. Please try again.</string>
+
+    <!--API Alert-->
+    <string name="invalid_email_topic">Email Invalid</string>
+    <string name="invalid_email_msg">Your email address doesn\'t seem quite right. Please check and try again.</string>
+
+    <!--Parse Init-->
+    <!--Live-->
+    <string name="parse_server_url">https://young-tundra-37252.herokuapp.com/parse/</string>
+    <!--Test Key-->
+    <!--<string name="parse_server_url">https://fautus-sandbox.herokuapp.com/parse/</string>-->
+
+    <string name="parse_app_id">fautus01</string>
+
+    <!--Google map API key-->
+    <string name="google_console_key">AIzaSyA8zKBs0EtVnQMwn_qZjNBz2UTh4QJDygw</string>
+    <string name="push_photo_req_msg">Your photography talent is begin requested nearby!</string>
+
+    <!--Map location label name-->
+    <string name="your_cus_loc">Your Customer Location</string>
+    <string name="your_pho_loc">Your Photographer Location</string>
+
+    <!-- GCM Sender ID -->
+    <string name="sender_id">395602250982</string>
+
+    <!--Play service-->
+    <string name="play_service_err">Google Play Services Error</string>
+    <string name="device_not_support">This device is not supported for required Google Play Services. Please update your Google Play Services</string>
+    <string name="user_not_update"> User does not update location setting</string>
+
+    <!--Google map and Crashlytics config acc -->
+    <!--prithiviraj@smaatapps.com-->
+
+
+</resources>

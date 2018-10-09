@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <ScrollView
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical"
+            android:padding="@dimen/size16"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/header_txt"
+                style="@style/TextBold"
+                android:layout_margin="@dimen/size5"
+                android:text="@string/con_req"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                style="@style/TextLight"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:text="@string/moment_req_time"
+                android:textSize="@dimen/text13" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size200" />
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/acc_photo_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:background="@drawable/rectangle_bordered_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/size10"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        style="@style/TextBold"
+                        android:layout_width="wrap_content"
+                        android:text="@string/acc_photo"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_marginStart="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/next_img" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reject_moment_txt"
+                    style="@style/TextLight"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/size5"
+                    android:textColor="@color/gray_edit_hint"
+                    android:text="@string/reject_moment_underline"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

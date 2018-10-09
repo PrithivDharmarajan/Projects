@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginBottom="@dimen/size20"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:padding="@dimen/size15">
+
+            <TextView
+                android:id="@+id/moment_name_txt"
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/moment_amt_txt"
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="@dimen/text15" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:padding="@dimen/size15">
+
+            <TextView
+                android:id="@+id/photos_count_txt"
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/photos_amt_txt"
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="@dimen/text15" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:padding="@dimen/size15">
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text="@string/val_service_fee"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/service_fee_amt_txt"
+                style="@style/TextMedium"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="@dimen/text15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/tot_amt_txt"
+            style="@style/TextMedium"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:gravity="end"
+            android:padding="@dimen/size15"
+            android:textSize="@dimen/text15" />
+
+        <TextView
+            android:id="@+id/close_txt"
+            style="@style/TextRegular"
+            android:layout_marginTop="@dimen/size10"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size5"
+            android:text="@string/close_underline"
+            android:textSize="@dimen/text13" />
+    </LinearLayout>
+
+</RelativeLayout>

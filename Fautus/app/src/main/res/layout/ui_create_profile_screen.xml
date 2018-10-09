@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/full_name_edt"
+            style="@style/EditTextLight"
+            android:layout_height="0dip"
+            android:layout_marginBottom="@dimen/size0.5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/full_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:maxLength="40"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_marginBottom="@dimen/size0.5">
+
+            <EditText
+                android:id="@+id/city_edt"
+                style="@style/EditTextLight"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/city"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size15" />
+
+            <EditText
+                android:id="@+id/state_edt"
+                style="@style/EditTextLight"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/state"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:maxLines="1"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/language_spoken_edt"
+            style="@style/EditTextLight"
+            android:layout_height="0dip"
+            android:layout_marginBottom="@dimen/size0.5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/languages_spoken"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:maxLines="1"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_marginBottom="@dimen/size0.5">
+
+            <TextView
+                android:id="@+id/dob_txt"
+                style="@style/TextLight"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size15"
+                android:text="@string/dob" />
+
+            <EditText
+                android:id="@+id/ssn_edt"
+                style="@style/EditTextLight"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/ssn"
+                android:imeOptions="actionDone"
+                android:inputType="number|textNoSuggestions"
+                android:maxLines="1"
+                android:paddingEnd="0dip"
+                android:paddingStart="@dimen/size15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_marginBottom="@dimen/size0.5"
+            android:layout_weight="6">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWei">
+
+                    <RelativeLayout
+                        android:id="@+id/upload_selfie_img_lay"
+                        style="@style/LayoutMatch"
+                        android:layout_width="wrap_content"
+                        android:layout_above="@+id/upload_selfie_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size15">
+
+                        <ImageView
+                            android:id="@+id/upload_selfie_holder_img"
+                            style="@style/LayoutMatch"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/selfie_img" />
+
+                        <RelativeLayout
+                            android:id="@+id/rounded_selfie_img_lay"
+                            style="@style/LayoutMatch"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/size100"
+                            android:layout_centerHorizontal="true">
+
+                            <com.fautus.fautusapp.utils.RoundedImageView
+                                style="@style/LayoutMatch"
+                                android:scaleType="fitXY"
+                                android:src="@color/black" />
+
+                            <com.fautus.fautusapp.utils.RoundedImageView
+                                android:id="@+id/upload_selfie_img"
+                                style="@style/LayoutMatch"
+                                android:layout_margin="@dimen/size1"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/upload_selfie_txt"
+                        style="@style/TextLight"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/size5"
+                        android:text="@string/upload_selfie"
+                        android:textColor="@color/gray_edit_hint"
+                        android:textSize="@dimen/text11" />
+
+                    <ImageView
+                        android:id="@+id/upload_selfie_close_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_toEndOf="@+id/upload_selfie_img_lay"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/close_img"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWei">
+
+                    <ImageView
+                        android:id="@+id/upload_photo_id_img"
+                        style="@style/LayoutMatch"
+                        android:layout_width="wrap_content"
+                        android:layout_above="@+id/upload_photo_id_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size15"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/photo_id_img" />
+
+                    <TextView
+                        android:id="@+id/upload_photo_id_txt"
+                        style="@style/TextLight"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size3"
+                        android:layout_marginTop="@dimen/size2"
+                        android:text="@string/upload_photo_id"
+                        android:textColor="@color/gray_edit_hint"
+                        android:textSize="@dimen/text11" />
+
+                    <ImageView
+                        android:id="@+id/upload_photo_close_img"
+                        android:layout_width="@dimen/size35"
+                        android:layout_height="@dimen/size35"
+                        android:layout_toEndOf="@+id/upload_photo_id_img"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/size5"
+                        android:src="@drawable/close_img"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/continue_lay"
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_margin="@dimen/size0.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:text="@string/cont"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text14" />
+
+            <ImageView
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_marginStart="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/next_img" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

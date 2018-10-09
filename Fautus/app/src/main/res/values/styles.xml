@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- App general theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+    <!-- Splash theme -->
+    <style name="AppSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryDark">@color/sky_blue</item>
+        <item name="colorAccent">@color/sky_blue</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/sky_blue</item>
+    </style>
+
+
+    <!-- Layout style - (width and height both are match_parent) -->
+    <style name="LayoutMatch" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Layout style - (width and height both are wrap_content) -->
+    <style name="LayoutWrap" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Layout style - (width match_parent and  height wrap_content) -->
+    <style name="LayoutWidMatch_HeiWrap" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Layout style - (width match_parent and  height 0dip) -->
+    <style name="LayoutWidMatch_HeiWei" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Layout style - (width 0dip and  height wrap_content) -->
+    <style name="LayoutWidWei_HeiWrap" parent="AppTheme">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--Text style Gotham-Bold -->
+    <style name="TextBold" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="fontPath">fonts/Gotham-Bold.otf</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Text style Gotham-Medium -->
+    <style name="TextMedium" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="fontPath">fonts/Gotham-Medium.otf</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Text style Gotham-Regular -->
+    <style name="TextRegular" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text11</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:gravity">center</item>
+        <item name="fontPath">fonts/Gotham-Regular.otf</item>
+    </style>
+
+    <!--Text style Helvetica-Light -->
+    <style name="TextLight" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text12</item>
+        <item name="android:textColor">@color/black_light_txt</item>
+        <item name="android:gravity">center</item>
+        <item name="fontPath">fonts/Helvetica-Light.otf</item>
+    </style>
+
+
+    <!--Edit text style Helvetica-Light-->
+    <style name="EditTextLight" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size37</item>
+        <item name="android:textColor">@color/black_txt</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/gray_edit_hint</item>
+        <item name="android:textSize">@dimen/text12</item>
+        <item name="fontPath">fonts/Helvetica-Light.otf</item>
+    </style>
+
+    <!--Dialog box bottom animation-->
+    <style name="PopupBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_in_top</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

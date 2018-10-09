@@ -1,0 +1,3 @@
+Key store password : redfoundry123$
+Key alias : key
+Key password : redfoundry123$

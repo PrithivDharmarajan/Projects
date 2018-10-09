@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size5"
+        android:layout_marginStart="@dimen/size5"
+        android:orientation="vertical"
+        android:padding="@dimen/size25">
+
+        <TextView
+
+            android:id="@+id/term_agree_txt"
+            style="@style/TextRegular"
+            android:layout_margin="@dimen/size5"
+            android:textColorHighlight="@color/white"
+            android:textSize="@dimen/text14" />
+
+        <LinearLayout
+            android:id="@+id/agree_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size15"
+            android:background="@drawable/rectangle_bordered_bg"
+            android:gravity="center"
+            android:padding="@dimen/size8"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:text="@string/i_agree"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text14" />
+
+            <ImageView
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_marginStart="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/next_img" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextRegular"
+            android:layout_marginTop="@dimen/size20"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size5"
+            android:text="@string/cancel_underline"
+            android:textSize="@dimen/text13" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

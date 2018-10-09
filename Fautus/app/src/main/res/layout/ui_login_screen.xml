@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="5"
+            android:background="@color/sky_blue">
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_centerInParent="true"
+                android:text="@string/login_acc"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15" />
+
+        </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:maxLength="40"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/pwd_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/pwd"
+                    android:imeActionId="100"
+                    android:imeActionLabel="@string/sign_up"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:maxLength="40"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/login_lay"
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        style="@style/TextRegular"
+                        android:layout_width="wrap_content"
+                        android:text="@string/login"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_marginStart="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/next_img" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="4">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_marginTop="@dimen/size18"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/sign_up_acc_txt"
+                    style="@style/TextLight"
+                    android:layout_height="0dip"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:text="@string/sign_up_acc"
+                    android:textColor="@color/gray_edit_hint" />
+
+                <!--Temp view for screen fit-->
+                <View
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_weight="0.7" />
+
+                <TextView
+                    android:id="@+id/forgot_pwd_txt"
+                    style="@style/TextRegular"
+                    android:layout_height="0dip"
+                    android:layout_marginEnd="@dimen/size60"
+                    android:layout_marginStart="@dimen/size60"
+                    android:layout_weight="0.55"
+                    android:background="@color/black"
+                    android:text="@string/forgot_pwd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

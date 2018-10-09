@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size40"
+    android:weightSum="14">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginTop="@dimen/size35"
+        android:layout_weight="6.5">
+
+        <ImageView
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/con_tutorial_third_img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="7.5">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:layout_marginEnd="@dimen/size35"
+            android:layout_marginStart="@dimen/size35"
+            android:orientation="vertical"
+            android:weightSum="4.5">
+
+            <ScrollView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="0dip"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_weight="1.1">
+
+                <TextView
+                    style="@style/TextLight"
+                    android:layout_gravity="center"
+                    android:text="@string/after_all_pho"
+                    android:textSize="@dimen/text12" />
+            </ScrollView>
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWei"
+                android:layout_weight="1.1">
+
+                <ImageView
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/review_img" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextLight"
+                android:layout_height="0dip"
+                android:layout_weight="1.1"
+                android:text="@string/review_them"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_height="0dip"
+                android:layout_weight="0.7"
+                android:text="@string/that_simple"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text15" />
+
+            <LinearLayout
+                android:id="@+id/cont_lay"
+                style="@style/LayoutWidMatch_HeiWei"
+                android:layout_weight="0.5"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:text="@string/cont"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="@dimen/size15"
+                    android:layout_height="@dimen/size15"
+                    android:layout_marginStart="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/next_img" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

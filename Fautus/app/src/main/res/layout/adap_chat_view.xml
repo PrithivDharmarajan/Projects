@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_lay"
+        style="@style/LayoutWrap"
+        android:layout_marginEnd="@dimen/size55"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/left_msg_lay"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/chat_left_side_img" />
+
+        <LinearLayout
+            android:id="@+id/left_msg_lay"
+            style="@style/LayoutWrap"
+            android:layout_marginStart="@dimen/size10"
+            android:background="@drawable/chat_rounded_sky_blue_bg"
+            android:minWidth="@dimen/size80"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_msg_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/size15"
+                android:gravity="start" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/right_lay"
+        style="@style/LayoutWrap"
+        android:layout_marginEnd="@dimen/size15"
+        android:layout_marginStart="@dimen/size55"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/right_msg_lay"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/chat_right_side_img" />
+
+
+        <LinearLayout
+            android:id="@+id/right_msg_lay"
+            style="@style/LayoutWrap"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size7"
+            android:background="@drawable/chat_rounded_gray_bg"
+            android:minWidth="@dimen/size80"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/right_msg_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/size15"
+                android:gravity="start" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/typing_status_lay"
+        style="@style/LayoutWrap"
+        android:layout_marginEnd="@dimen/size55"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/typing_msg_lay"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/chat_typing_status_img" />
+
+        <LinearLayout
+            android:id="@+id/typing_msg_lay"
+            style="@style/LayoutWrap"
+            android:layout_width="@dimen/size80"
+            android:layout_marginStart="@dimen/size10"
+            android:background="@drawable/chat_rounded_typing_gray_bg"
+            android:gravity="center"
+            android:minWidth="@dimen/size80"
+            android:padding="@dimen/size3">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/indicator_view"
+                android:layout_height="@dimen/size30"
+                android:layout_width="wrap_content"
+                style="@style/AVLoadingIndicatorView"
+                app:indicatorColor="@color/typing_dark_gray"
+                app:indicatorName="BallPulseSyncIndicator" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

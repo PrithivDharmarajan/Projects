@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWrap"
+    android:paddingStart="0dip"
+    android:paddingEnd="@dimen/size1">
+
+    <ImageView
+        android:id="@+id/moment_img"
+        android:layout_width="@dimen/size50"
+        android:layout_height="@dimen/size50"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+</FrameLayout>

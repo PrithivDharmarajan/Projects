@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <ScrollView style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_margin="@dimen/size7"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/size15"
+            android:paddingStart="@dimen/size15"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginBottom="@dimen/size5"
+                android:layout_marginTop="@dimen/size15"
+                android:text="@string/matched_photo"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/photographer_name_txt"
+                style="@style/TextBold"
+                android:layout_marginTop="@dimen/size10"
+                android:textSize="@dimen/text14" />
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/size110"
+                android:layout_height="@dimen/size110"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size17">
+
+                <com.fautus.fautusapp.utils.RoundedImageView
+                    android:id="@+id/photographer_img"
+                    style="@style/LayoutMatch"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/languages_txt"
+                style="@style/TextLight"
+                android:layout_marginTop="@dimen/size3"
+                android:textSize="@dimen/text10" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginTop="@dimen/size10">
+
+                <View
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size40"
+                    android:background="@drawable/triangle_right_bg" />
+
+                <TextView
+                    android:id="@+id/hint_txt"
+                    style="@style/TextRegular"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size15"
+                    android:background="@drawable/rounded_gray_bg"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/size11"
+                    android:paddingEnd="@dimen/size15"
+                    android:paddingStart="@dimen/size15"
+                    android:paddingTop="@dimen/size11"
+                    android:text="@string/photo_shoot_msg"
+                    android:textSize="@dimen/text13" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/continue_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size7"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="@dimen/size7"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <TextView
+                    style="@style/TextBold"
+                    android:layout_width="wrap_content"
+                    android:text="@string/cont"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="@dimen/size15"
+                    android:layout_height="@dimen/size15"
+                    android:layout_marginStart="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/next_img" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

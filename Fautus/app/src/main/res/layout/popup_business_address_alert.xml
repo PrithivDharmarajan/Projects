@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="vertical"
+        android:padding="@dimen/size16">
+
+        <TextView
+            style="@style/TextRegular"
+            android:paddingTop="@dimen/size10"
+            android:layout_margin="@dimen/size5"
+            android:text="@string/pro_photographer"
+            android:textSize="@dimen/text14" />
+
+        <EditText
+            android:id="@+id/business_name_edt"
+            style="@style/EditTextLight"
+            android:background="@drawable/rectangle_bordered_bg"
+            android:hint="@string/business_name"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="@dimen/size10"
+            android:inputType="textCapSentences|textNoSuggestions"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size15" />
+        <EditText
+            android:id="@+id/web_address_edt"
+            style="@style/EditTextLight"
+            android:background="@drawable/rectangle_bordered_bg"
+            android:hint="@string/web_address"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="@dimen/size15"
+            android:inputType="textNoSuggestions"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size15" />
+
+        <LinearLayout
+            android:id="@+id/continue_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size7"
+            android:padding="@dimen/size10"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <TextView
+                style="@style/TextBold"
+                android:layout_width="wrap_content"
+                android:text="@string/cont"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text14" />
+
+            <ImageView
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_marginStart="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/next_img" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextRegular"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size5"
+            android:text="@string/cancel_underline"
+            android:textSize="@dimen/text13" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

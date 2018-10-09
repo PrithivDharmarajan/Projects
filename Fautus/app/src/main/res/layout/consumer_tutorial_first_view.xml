@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size40"
+    android:weightSum="14">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="7"
+        android:background="@color/sky_blue">
+
+        <ImageView
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/size50"
+            android:layout_marginStart="@dimen/size50"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/con_tutorial_first_img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="7">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:layout_marginEnd="@dimen/size35"
+            android:layout_marginStart="@dimen/size35"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_height="0dip"
+                android:layout_weight="1.1"
+                android:text="@string/welcome"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text22" />
+
+            <TextView
+                style="@style/TextLight"
+                android:layout_height="0dip"
+                android:layout_weight="1.1"
+                android:text="@string/fautus_allow"
+                android:textSize="@dimen/text13" />
+
+            <ImageView
+                style="@style/LayoutWidMatch_HeiWei"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/camera_img" />
+
+            <View
+                style="@style/LayoutWidMatch_HeiWei"
+                android:layout_weight="0.3" />
+
+            <ScrollView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="0dip"
+                android:layout_weight="0.5">
+
+                <TextView
+                    style="@style/TextLight"
+                    android:layout_gravity="center"
+                    android:text="@string/to_do_this"
+                    android:textSize="@dimen/text9" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

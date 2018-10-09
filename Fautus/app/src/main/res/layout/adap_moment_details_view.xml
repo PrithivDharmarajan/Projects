@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:layout_marginTop="@dimen/size5"
+        android:padding="@dimen/size5">
+
+        <TextView
+            android:id="@+id/photo_address_txt"
+            style="@style/TextBold"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/right_arrow_img"
+            android:gravity="start"
+            android:textSize="@dimen/text13" />
+
+        <ImageView
+            android:id="@+id/right_arrow_img"
+            android:layout_width="@dimen/size17"
+            android:layout_height="@dimen/size17"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:rotation="270"
+            android:src="@drawable/down_arrow_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size15"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size2">
+
+        <TextView
+            android:id="@+id/date_txt"
+            style="@style/TextRegular"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="@dimen/text13" />
+
+        <TextView
+            android:id="@+id/photo_purchase_txt"
+            style="@style/TextRegular"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textSize="@dimen/text13" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/photo_horizontal_recycler_view"
+        style="@style/LayoutWrap"
+        android:layout_marginTop="@dimen/size10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/black" />
+
+</LinearLayout>

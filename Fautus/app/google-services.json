@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "444324916796",
+    "firebase_url": "https://fautus-168705.firebaseio.com",
+    "project_id": "fautus-168705",
+    "storage_bucket": "fautus-168705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444324916796:android:6c75f241a488ff68",
+        "android_client_info": {
+          "package_name": "com.fautus.fautusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444324916796-3op5j1maspfo6bvbbb19bs2d5c99p4jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCGZ7zM1gyNP_zDjAKMbvHHjQlURTMgnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

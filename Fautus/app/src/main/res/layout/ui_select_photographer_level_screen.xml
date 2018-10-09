@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:orientation="vertical"
+        android:weightSum="11">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="4"
+            android:background="@color/sky_blue"
+            android:padding="@dimen/size20">
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_centerInParent="true"
+                android:text="@string/user_can_req"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_marginEnd="@dimen/size20"
+            android:layout_marginStart="@dimen/size20"
+            android:layout_weight="2.7"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5">
+
+                <ImageView
+                    android:id="@+id/select_avid_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/avid_img" />
+
+                <ImageView
+                    android:id="@+id/select_skill_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="invisible"
+                    android:src="@drawable/skill_img" />
+
+                <ImageView
+                    android:id="@+id/select_pro_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:visibility="invisible"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/pro_img" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/size20"
+                    android:layout_marginStart="@dimen/size20"
+                    android:background="@color/black" />
+
+                <ImageView
+                    android:id="@+id/select_avid_pointer_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size20"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size6"
+                    android:src="@drawable/circle_sky_blue_bg" />
+
+                <ImageView
+                    android:id="@+id/select_skill_pointer_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size6"
+                    android:src="@drawable/circle_black_bg" />
+
+                <ImageView
+                    android:id="@+id/select_pro_pointer_img"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size6"
+                    android:src="@drawable/circle_black_bg"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/avid_txt"
+                    style="@style/TextRegular"
+                    android:layout_width="wrap_content"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10"
+                    android:text="@string/avid"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/skill_txt"
+                    style="@style/TextRegular"
+
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10"
+                    android:text="@string/skill"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/pro_txt"
+                    style="@style/TextRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/size10"
+                    android:paddingStart="@dimen/size10"
+                    android:text="@string/pro"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_marginBottom="@dimen/size0.5"
+            android:layout_weight="3.3"
+            android:padding="@dimen/size5"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/photographer_skill_txt"
+                style="@style/TextLight"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginStart="@dimen/size15"
+                android:text="@string/photographer_type_avid"
+                android:textSize="@dimen/text12" />
+
+        </ScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/continue_lay"
+            style="@style/LayoutWidMatch_HeiWei"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:text="@string/cont"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text14" />
+
+            <ImageView
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_marginStart="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/next_img" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

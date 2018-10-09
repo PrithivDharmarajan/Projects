@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/size7">
+
+        <TextView
+            android:id="@+id/header_txt"
+            style="@style/TextBold"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size15"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/msg_txt"
+            style="@style/TextRegular"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size15"
+            android:paddingEnd="@dimen/size25"
+            android:paddingStart="@dimen/size25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size35"
+            android:layout_margin="@dimen/size20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/first_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_weight="1"
+                android:background="@color/gray_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <Button
+                android:id="@+id/second_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/size10"
+                android:layout_marginStart="@dimen/size20"
+                android:layout_weight="1"
+                android:background="@color/gray_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

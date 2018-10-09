@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="5"
+            android:background="@color/sky_blue">
+
+            <TextView
+                android:id="@+id/sign_up_hint_txt"
+                style="@style/TextRegular"
+                android:layout_centerInParent="true"
+                android:text="@string/sign_up_free"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="3">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="0dip"
+                    android:layout_margin="@dimen/size0.5"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:maxLength="40"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/pwd_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="0dip"
+                    android:layout_margin="@dimen/size0.5"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/pwd"
+                    android:imeActionId="100"
+                    android:imeActionLabel="@string/sign_up"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:maxLength="40"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/sign_up_lay"
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_margin="@dimen/size0.5"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        style="@style/TextRegular"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_marginStart="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/next_img" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWei"
+            android:layout_weight="4">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_marginTop="@dimen/size18"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/already_acc_txt"
+                    style="@style/TextLight"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/already_acc"
+                    android:textColor="@color/gray_edit_hint" />
+
+                <!--Temp view for screen fit-->
+                <View
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_weight="1.75" />
+
+
+                <TextView
+                    android:id="@+id/am_photographer_txt"
+                    style="@style/TextRegular"
+                    android:layout_height="0dip"
+                    android:layout_marginEnd="@dimen/size35"
+                    android:layout_marginStart="@dimen/size35"
+                    android:layout_weight="0.7"
+                    android:background="@color/black"
+                    android:text="@string/am_photographer"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text10" />
+
+                <TextView
+                    android:id="@+id/cancel_txt"
+                    style="@style/TextRegular"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.7"
+                    android:textColor="@color/gray_edit_hint"
+                    android:text="@string/cancel_underline"
+                    android:textSize="@dimen/text10"
+                    android:visibility="gone" />
+
+                <!--Temp view for screen fit-->
+                <View
+                    style="@style/LayoutWidMatch_HeiWei"
+                    android:layout_weight="0.55" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

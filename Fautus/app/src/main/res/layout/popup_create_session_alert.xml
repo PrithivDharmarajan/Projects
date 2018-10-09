@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size15"
+    android:background="@drawable/corner_rounded_white_bg">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/size5"
+        android:layout_marginEnd="@dimen/size5"
+        android:padding="@dimen/size25">
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_margin="@dimen/size5"
+            android:text="@string/here_snap"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            style="@style/TextBold"
+            android:id="@+id/code_txt"
+            android:padding="@dimen/size10"
+            android:layout_margin="@dimen/size5"
+            android:textSize="@dimen/text18" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_margin="@dimen/size5"
+            android:text="@string/upload_photo"
+            android:textSize="@dimen/text14" />
+        <LinearLayout
+            android:id="@+id/continue_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@drawable/rectangle_bordered_bg"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size15"
+            android:padding="@dimen/size10"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:text="@string/cont"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text14" />
+
+            <ImageView
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_marginStart="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/next_img" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextRegular"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size5"
+            android:layout_marginTop="@dimen/size20"
+            android:text="@string/cancel_underline"
+            android:textSize="@dimen/text13" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

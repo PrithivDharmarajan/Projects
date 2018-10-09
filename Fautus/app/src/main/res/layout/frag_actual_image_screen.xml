@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/black">
+
+    <com.fautus.fautusapp.utils.ZoomLayout
+        android:id="@+id/zoom_parent_lay"
+        style="@style/LayoutWrap"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout style="@style/LayoutWrap">
+
+
+            <RelativeLayout
+                android:id="@+id/image_lay"
+                style="@style/LayoutWrap">
+
+                <com.fautus.fautusapp.utils.StripLineImageView
+                    android:id="@+id/actual_with_sky_img"
+                    style="@style/LayoutWrap"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/actual_with_out_sky_img"
+                    style="@style/LayoutWrap"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/actual_holder_img"
+                style="@style/LayoutWrap"
+                android:layout_alignBottom="@id/image_lay"
+                android:layout_alignEnd="@id/image_lay"
+                android:layout_alignStart="@id/image_lay"
+                android:layout_alignTop="@id/image_lay"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/full_place_holder_img"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </com.fautus.fautusapp.utils.ZoomLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/web_view"
+        style="@style/LayoutWidMatch_HeiWrap" />
+
+</LinearLayout>

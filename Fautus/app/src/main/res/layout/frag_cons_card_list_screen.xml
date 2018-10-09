@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/gray_bg">
+
+    <ScrollView style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size20"
+            android:paddingBottom="@dimen/size20"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size25"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="@dimen/size40"
+                android:paddingStart="@dimen/size40"
+                android:src="@drawable/card_img" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size20"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/add_card_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/add_img"
+                    android:layout_width="@dimen/size35"
+                    android:layout_height="@dimen/size35"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/card_added_img" />
+
+                <TextView
+                    style="@style/TextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size20"
+                    android:gravity="start|center"
+                    android:text="@string/add_new_card"
+                    android:textColor="@color/gray_edit_hint"
+                    android:textSize="@dimen/text15" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

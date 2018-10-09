@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/slide_bg"
+    android:orientation="vertical"
+    android:paddingEnd="0dip"
+    android:paddingStart="@dimen/size15"
+    android:paddingTop="@dimen/size30">
+
+    <View
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:id="@+id/home_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/home_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/home"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/payment_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/payment_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/payment"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/profile_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/profile_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/moments_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/moments_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/moments"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/photographer_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/photographer_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/photographer_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size12"
+            android:text="@string/photographer"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/help_faq_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/help_faq_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/help_faq"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/settings_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginTop="@dimen/size5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/settings_img" />
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size13"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="@dimen/size13" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/legal_txt"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size30"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/size10"
+            android:text="@string/legal"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+

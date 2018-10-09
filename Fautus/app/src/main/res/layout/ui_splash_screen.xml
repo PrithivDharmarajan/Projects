@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/sky_blue">
+
+    <ImageView
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/size80"
+        android:layout_marginStart="@dimen/size80"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fautus_img" />
+</RelativeLayout>
