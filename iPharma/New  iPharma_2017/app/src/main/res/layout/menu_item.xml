@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="@dimen/size50">
+<TextView
+    android:id="@+id/menu_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:text="@string/about"
+    android:textSize="@dimen/size15"
+    style="@style/TextMedium"
+    android:textColor="@color/blackcolor"
+    android:layout_marginLeft="@dimen/size20"
+    android:gravity="left|center"/>
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size12"
+        android:layout_marginBottom="@dimen/size12"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="@dimen/size20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/recent_order_icon"/>
+</RelativeLayout>
+</LinearLayout>

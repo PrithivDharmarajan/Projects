@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size40"
+        android:text="@string/total_amount"
+        style="@style/TextRegular"
+        android:textColor="@color/blackcolor"
+        android:gravity="center"
+        android:textSize="@dimen/size18" />
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size20"
+        android:text="sddsdsd"
+        android:gravity="center"
+        style="@style/TextMedium"
+        android:textColor="@color/blackcolor"
+        android:textSize="@dimen/size22" />
+
+
+    <LinearLayout
+        android:id="@+id/purchase_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_marginRight="@dimen/size20"
+        android:layout_marginTop="@dimen/size25"
+        android:layout_marginBottom="@dimen/size25"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cash_on_delivery_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginTop="@dimen/size10"
+            android:background="@drawable/green_rounded_bg"
+            android:text="@string/cash_on_delivery"
+            android:textSize="@dimen/size14"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ipharma_money_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginTop="@dimen/size10"
+            android:background="@drawable/green_rounded_bg"
+            android:text="@string/money_ipharma"
+            android:textSize="@dimen/size14"
+            android:visibility="visible" />
+
+
+
+        <Button
+            android:id="@+id/debit_card_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginTop="@dimen/size10"
+            android:textSize="@dimen/size14"
+            android:background="@drawable/green_rounded_bg"
+            android:text="@string/debit_card" />
+
+        <Button
+            android:id="@+id/credit_card_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginTop="@dimen/size10"
+            android:textSize="@dimen/size14"
+            android:background="@drawable/green_rounded_bg"
+            android:text="@string/credit_card" />
+
+        <Button
+            android:id="@+id/net_banking_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginTop="@dimen/size10"
+            android:background="@drawable/green_rounded_bg"
+            android:textSize="@dimen/size14"
+            android:text="@string/net_banking" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

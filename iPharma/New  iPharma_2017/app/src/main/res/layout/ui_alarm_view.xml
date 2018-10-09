@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitecolor"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/size120"
+        android:layout_height="@dimen/size120"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size50"
+        android:src="@drawable/alarm_placeholder"/>
+    <LinearLayout
+        android:id="@+id/reminder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextLight"
+            android:textColor="@color/blackcolor"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size20"
+            android:layout_marginBottom="@dimen/size5"
+            android:textSize="@dimen/size22"
+            android:text="Reminder For Your Pill"/>
+
+        <TextView
+            android:id="@+id/alarm_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextMedium"
+            android:textColor="@color/blackcolor"
+            android:gravity="center"
+            android:layout_margin="@dimen/size5"
+            android:textSize="@dimen/size18"
+            android:text="Water Flower"/>
+        <TextView
+            android:id="@+id/alarm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextMedium"
+            android:textColor="@color/blackcolor"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/alarm_bell"
+            android:drawablePadding="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:textSize="@dimen/size16"
+            android:text="12:00 AM"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/done_button"
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:layout_margin="@dimen/size20"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reminder_layout"
+        android:src="@drawable/ok_btn"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "649780524066",
+    "firebase_url": "https://renters-block-177215.firebaseio.com",
+    "project_id": "renters-block-177215",
+    "storage_bucket": "renters-block-177215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649780524066:android:252a6376e58620d5",
+        "android_client_info": {
+          "package_name": "com.smaat.renterblock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649780524066-qqv40d4lggu5cgic29cnq1ndfr0do3cp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.renterblock",
+            "certificate_hash": "c5621acf7f995e54251e70a1ed7dd54556dbf950"
+          }
+        },
+        {
+          "client_id": "649780524066-ann7h7c6uqsaagv0r4qtb1ni9q0hqtii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBS9owmjeiWT0wNh4mjpI3jW2ro8E-S5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649780524066-ann7h7c6uqsaagv0r4qtb1ni9q0hqtii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

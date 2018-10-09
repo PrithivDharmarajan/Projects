@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/recent_lay"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size40"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="@dimen/size5"
+                android:text="@string/recents"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:id="@+id/recents_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size5"
+                android:background="@color/app_blue"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friends_lay"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size40"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friends_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="@dimen/size5"
+                android:text="@string/friends"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:id="@+id/friends_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size5"
+                android:background="@color/app_blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size30"
+        android:layout_marginStart="@dimen/size30"
+        android:layout_marginTop="@dimen/size5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size15"
+            android:layout_height="@dimen/size15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/size5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/search_icon_gray_bg" />
+
+        <EditText
+            android:id="@+id/user_name_search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size20"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:layout_marginTop="@dimen/size10"
+            android:background="@null"
+            android:hint="@string/search_for_people"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:paddingEnd="@dimen/size5"
+            android:paddingStart="@dimen/size5"
+            android:textColor="@color/black"
+            android:textColorHint="@color/ash"
+            android:textSize="@dimen/text14"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@color/black_transparent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_recycler_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:padding="@dimen/size5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recent_friends_recycler_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:padding="@dimen/size5"
+        android:visibility="gone" />
+</LinearLayout>

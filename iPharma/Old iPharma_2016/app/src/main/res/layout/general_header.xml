@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_menu_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin60"
+    android:background="@drawable/header" >
+
+    <RelativeLayout
+        android:id="@+id/header_left_lay"
+        android:layout_width="@dimen/margin45"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick" >
+
+        <Button
+            android:id="@+id/header_left"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:background="@drawable/slide"
+            android:clickable="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/header_right_lay"
+        android:layout_toRightOf="@+id/header_left_lay"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text18" />
+
+    <RelativeLayout
+        android:id="@+id/header_right_lay"
+        android:layout_width="@dimen/margin45"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/header_right"
+            android:layout_width="@dimen/margin35"
+            android:layout_height="@dimen/margin35"
+            android:background="@drawable/maplist_normal"
+            android:clickable="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</RelativeLayout>

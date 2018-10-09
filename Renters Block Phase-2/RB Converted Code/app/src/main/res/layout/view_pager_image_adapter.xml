@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transperent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/map_overlay"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.DirectionalViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+        </android.support.v4.view.DirectionalViewPager>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/prop_request_button"
+                android:layout_width="@dimen/margin80"
+                android:layout_height="@dimen/margin30"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/prop_review_button"
+                android:background="@drawable/request_info_btn"
+                android:contentDescription="@drawable/house_four"
+                android:padding="5dp"
+                android:text="@string/request_info"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text11" />
+
+            <Button
+                android:id="@+id/prop_review_button"
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/register_normal"
+                android:contentDescription="@drawable/house_four"
+                android:padding="5dp"
+                android:text="@string/review"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text11" />
+
+            <Button
+                android:id="@+id/request_info"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/request_info_btn"
+                android:padding="10dp"
+                android:text="@string/request_info"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bac_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin15"
+                android:background="@drawable/back_arrow_white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/close_btn"
+                android:layout_width="@dimen/margin20"
+                android:layout_height="@dimen/margin20"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/close_icon" />
+
+            <TextView
+                android:id="@+id/number_of_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/prop_request_button"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:text="1 of 9"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <VideoView
+                android:id="@+id/property_user_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/property_user_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/property_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/margin10"
+                android:text="10241 Bayhead Beach Ave"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:id="@+id/property_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/property_address"
+                android:layout_alignLeft="@+id/property_address"
+                android:text="$ 6000"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/descs_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/property_amount"
+                android:layout_alignLeft="@+id/property_amount"
+                android:layout_marginBottom="40dp"
+                android:maxLines="2"
+                android:textColor="#fff"
+                android:textSize="@dimen/text14"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/times_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/property_amount"
+                android:textColor="#fff"
+                android:textSize="@dimen/text14"
+                android:layout_alignLeft="@+id/descs_txt"
+                android:layout_marginBottom="16dp"
+                android:text="Time" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

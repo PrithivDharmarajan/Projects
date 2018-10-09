@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="@dimen/height250"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin35"
+        android:background="@color/blue_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin10"
+            android:padding="@dimen/margin10"
+            android:text=""
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin20"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:background="@color/blue_color"
+                android:padding="@dimen/margin10"
+                android:text=""
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text16" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_weight="0.5"
+                android:background="@color/blue_color"
+                android:padding="@dimen/margin10"
+                android:text=""
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slide_menu_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin40"
+            android:text="@string/total_amount"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text18" />
+
+        <TextView
+            android:id="@+id/purchase_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin25"
+            android:text="RS 500"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text30" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/purchase_amount"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin25"
+            android:gravity="center"
+            android:text="@string/imoney_refund"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text15" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin25"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ipharma_money_text_box"
+                android:hint="@string/card_number"
+                android:inputType="phone"
+                android:maxLength="19"
+                android:paddingLeft="@dimen/margin10"
+                android:textSize="@dimen/text16" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <EditText
+                    android:id="@+id/mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/ipharma_money_small_text_box"
+                    android:hint="@string/mm"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingLeft="@dimen/margin10"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/yyyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginRight="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/ipharma_money_small_text_box"
+                    android:hint="@string/yyyy"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="@dimen/margin10"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="1"
+                    android:background="@drawable/ipharma_money_small_text_box"
+                    android:hint="@string/cvv"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="@dimen/margin10"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/name_on_the_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@drawable/ipharma_money_text_box"
+                android:hint="@string/name_on_the_card"
+                android:inputType="textAutoCorrect|textCapCharacters"
+                android:paddingLeft="@dimen/margin10"
+                android:textSize="@dimen/text16" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/check_box"
+                    android:layout_width="@dimen/margin45"
+                    android:layout_height="@dimen/margin45"
+                    android:contentDescription="@drawable/register_till_fill"
+                    android:onClick="onClick"
+                    android:padding="@dimen/margin10"
+                    android:src="@drawable/register_till_fill" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:gravity="left|center"
+                    android:text="@string/save_card"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@color/ipharma_green"
+                android:gravity="center"
+                android:text="@string/pay_now"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

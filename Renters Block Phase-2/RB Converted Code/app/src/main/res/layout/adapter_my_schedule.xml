@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin5" >
+        
+        <RelativeLayout
+            android:id="@+id/img_main_lay"
+            android:layout_width="@dimen/height100"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10" >
+
+            <ImageView
+                android:id="@+id/my_img1"
+                android:layout_width="@dimen/height100"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sche_clock_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/my_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="25-05-2015"
+                android:layout_marginTop="@dimen/margin5"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text16" />
+
+            <TextView
+                android:id="@+id/my_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/my_date_text"
+                android:singleLine="true"
+                android:text="5:35 pm"
+                android:layout_marginTop="@dimen/margin10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text16" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/name_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toLeftOf="@+id/time_lay"
+            android:layout_toRightOf="@+id/img_main_lay"
+            android:layout_marginTop="@dimen/margin10"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/my_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Project Meeting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/my_group_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Mike1"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+            
+            <TextView
+                android:id="@+id/check_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Online"
+                android:layout_marginTop="@dimen/margin10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin5"
+            android:gravity="center|right"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

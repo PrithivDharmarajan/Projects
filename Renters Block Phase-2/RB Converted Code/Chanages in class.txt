@@ -1,0 +1,26 @@
+
+RB Changes File:
+
+ 1) 
+  FriendsAdapter : voice_call, video_call -Click
+ 2) 
+  CallChatActivity : accept, end_call -Click 
+ 3) 
+  FriendChatScreen : onVideoChat -Click 
+ 4) 
+  FriendsMainScreen :  invite_layout -Click 
+  
+  @channel,
+Please download latest android build at below
+Development URL :
+  App version: 2.0.11
+  Build link: http://50.87.171.216/release/Fautus/Fautus-10-July-2017-Development.apk
+  
+Live URL :
+  App version: 1.0.2
+  Build link: http://50.87.171.216/release/Fautus/Fautus-10-July-2017-Live.apk
+    
+Following point we fixed (Bug Tower Issues):
+   1. User Profile Pic does not upload.(Fixed)
+   2. Address not being saved to parse.(Fixed)
+   3. We need to add more time to Request a Photographer. (Fixed)

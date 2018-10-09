@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/size150"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_detail_popup"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size5"
+        android:paddingTop="@dimen/size5"
+        android:paddingBottom="@dimen/size5">
+
+        <!--<ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="@dimen/size37"
+            android:layout_height="@dimen/size37"
+            android:layout_gravity="left|center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@drawable/app_logo"
+            android:scaleType="fitXY" />-->
+
+        <RelativeLayout
+            android:id="@+id/txt_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/shopright_arrow"
+            android:layout_marginLeft="@dimen/size7" >
+
+            <TextView
+                android:id="@+id/pharmacy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="40"
+                android:maxLines="2"
+                android:text="adasdasdadad"
+                android:paddingTop="@dimen/size5"
+                android:paddingBottom="@dimen/size5"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/size16" />
+
+            <TextView
+                android:id="@+id/pharmacy_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pharmacy_name"
+                android:ellipsize="end"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/text10" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/shopright_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/left_arrow_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

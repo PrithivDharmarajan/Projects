@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/parent_lay"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tab_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size40"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@drawable/search_backgroud_icon">
+
+        <AutoCompleteTextView
+            android:id="@+id/tab_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="@string/tab_hint"
+            android:imeActionLabel="Search"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoCorrect|textCapSentences|textAutoComplete"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingRight="@dimen/margin30"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tab_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin10"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text20"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/med_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_with_rounded_pg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginStart="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_dur"
+                    android:textSize="@dimen/text15"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin1"
+                    android:background="@color/gray_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin50"
+                    android:background="@color/white_color"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding6"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/time_dur_lay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/padding3"
+                        android:layout_marginRight="@dimen/padding3"
+                        android:layout_weight="1"
+                        android:background="@drawable/gray_with_rounded_pg">
+
+
+                        <Spinner
+                            android:id="@+id/time_dur_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin10"
+                            android:layout_marginStart="@dimen/margin10"
+                            android:gravity="center_vertical"
+                            android:text="zofcckjxfd"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/time_sub_dur_lay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding3"
+                        android:layout_marginStart="@dimen/padding3"
+                        android:layout_weight="1"
+                        android:background="@drawable/gray_with_rounded_pg">
+
+                        <Spinner
+                            android:id="@+id/time_sub_dur_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin10"
+                            android:layout_marginStart="@dimen/margin10"
+                            android:gravity="center_vertical"
+                            android:text="zofcckjxfd"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_time_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/gray_with_rounded_pg"
+                android:padding="@dimen/margin10">
+
+                <ImageView
+                    android:id="@+id/add_pill_time_img"
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/about"
+                    android:src="@drawable/about_icon"/>
+
+                <TextView
+                    android:id="@+id/add_pill_time_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginStart="@dimen/margin10"
+                    android:layout_toLeftOf="@+id/add_pill_time_img"
+                    android:layout_toStartOf="@+id/add_pill_time_img"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_pill_time"
+                    android:textSize="@dimen/text15"/>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pill_reminder_time_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/margin70"
+        android:layout_height="@dimen/margin70"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/default_prop_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Denver"
+        android:textColor="#000"
+        android:textSize="@dimen/text18"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/review_ratingbar"
+        style="@style/MediumBlueRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="@dimen/margin5"
+        android:isIndicator="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/review_ratingbar"
+        android:text="A good locality" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/review_ratingbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin18"
+        android:text="3 months ago"
+        android:textSize="@dimen/text16" />
+
+</RelativeLayout>

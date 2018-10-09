@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Replace placeholder ID with your tracking ID -->
+    <string name="ga_trackingId">UA-68229185-2</string>
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <string name="ga_logLevel">verbose</string>
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <!-- Set Your Application Screen as per your choice -->
+
+    <string name="com.smaat.renterblock.ui.SplashScreen">Splash Screen</string>
+    <string name="com.smaat.renterblock.ui.LoginActivity">Login Screen</string>
+    <string name="com.smaat.renterblock.ui.RegisterScreen">Registration Screen</string>
+    <string name="com.smaat.renterblock.ui.ProfileScreen">Profile Screen</string>
+    <string name="com.smaat.renterblock.ui.CreateAccountScreen">Create Account Screen</string>
+    <string name="com.smaat.renterblock.ui.ListingActivity">Listing Screen</string>
+    <string name="com.smaat.renterblock.ui.MyReviewActivity">Review Screen</string>
+    <string name="com.smaat.renterblock.ui.NotificationActivity">Notifications Screen</string>
+    <string name="com.smaat.renterblock.settings.SettingsActivity">Settings Screen</string>
+    <string name="com.smaat.renterblock.scheduling.SchedulingActivity">Scheduling Screen</string>
+    <string name="com.smaat.renterblock.savedsearch.SavedSearchActivity">Saved Search Screen</string>
+    <string name="com.smaat.renterblock.myfavourite.MyFavouriteActivity">MyFavourites Screen</string>
+    <string name="com.smaat.renterblock.hotleads.ui.HotLeadsMainScreen">HotLeads Screen</string>
+    <string name="com.smaat.renterblock.friends.ui.FriendsMainScreen">Friends Screen</string>
+    <string name="com.smaat.renterblock.findagent.FindAgentActivity">Find Agent Screen</string>
+    <string name="com.smaat.renterblock.MapFragmentActivity">Map Screen</string>
+    <string name="com.smaat.renterblock.ui.TutorialScreen">Tutorial Screen</string>
+    <string name="com.smaat.renterblock.alerts.AlertsActivity">Alerts Screen</string>
+
+</resources>

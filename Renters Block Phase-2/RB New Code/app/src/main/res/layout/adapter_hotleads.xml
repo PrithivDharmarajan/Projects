@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_height="@dimen/size180"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/details_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <ImageView
+            android:id="@+id/property_img"
+            style="@style/LayoutMatch"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/default_prop_icon"
+            android:contentDescription="@string/app_name" />
+        <ImageView
+            android:id="@+id/image_mask"
+            style="@style/LayoutMatch"
+            android:background="@drawable/image_overlay"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/property_img_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginBottom="@dimen/size15">
+
+            <LinearLayout
+                android:id="@+id/view_hot_leads_lay"
+                style="@style/LayoutWrap"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:gravity="end|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view_count_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/size18"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hot_leads_count_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/size18"
+                    android:textColor="@color/hot_leads_red" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/property_location_txt"
+                style="@style/TextHelvetica"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginEnd="@dimen/size10"
+                android:layout_toStartOf="@+id/view_hot_leads_lay"
+                android:gravity="start"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:id="@+id/left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/property_location_txt"
+                android:layout_alignEnd="@+id/view_hot_leads_lay"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/property_cost_txt"
+                        style="@style/TextHelveticaBold"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/property_details_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/size5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text12" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginBottom="@dimen/size5">
+
+                    <RatingBar
+                        android:id="@+id/review_rating_bar"
+                        style="@style/BigRatingBar"
+                        android:focusable="false"
+                        android:isIndicator="true" />
+
+                    <TextView
+                        android:id="@+id/property_reviews_count_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_toEndOf="@+id/review_rating_bar"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/forward_img"
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size8"
+                android:src="@drawable/forward_img"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

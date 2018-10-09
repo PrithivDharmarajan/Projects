@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/margin50"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:background="@drawable/menu_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/close_layout"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/filter"
+            android:layout_toRightOf="@+id/close_layout"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:text="My Favorites"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18" />
+
+        <RelativeLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="@dimen/height300"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_toLeftOf="@+id/filter"
+            android:layout_toRightOf="@+id/close_layout"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin30"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_toRightOf="@+id/how_edit"
+                android:background="@drawable/search_icon"
+                android:clickable="true"
+                android:contentDescription="@drawable/ic_launcher" />
+
+            <AutoCompleteTextView
+                android:id="@+id/how_edit"
+                android:layout_width="@dimen/height200"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="Search Place"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:textColor="@color/text_color_white"
+                android:textColorHint="@color/text_color_white"
+                android:textSize="@dimen/text18" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/edit_button"
+            android:clickable="true"
+            android:contentDescription="@drawable/ic_launcher"
+            android:onClick="onClick" />
+
+        <ProgressBar
+            android:id="@+id/location_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/add_btn_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/add_button"
+            android:onClick="onClick"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/close_btn_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@drawable/close_icon"
+            android:onClick="onClick"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

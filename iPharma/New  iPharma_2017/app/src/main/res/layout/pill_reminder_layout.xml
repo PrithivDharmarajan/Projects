@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <!--<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+            <EditText
+                android:id="@+id/pill_title_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:background="@drawable/etx_bg"
+                android:hint="@string/enter_title"
+                android:gravity="left|center"
+                android:textSize="@dimen/size14"
+                style="@style/EditLight"
+                android:textColor="@color/blackcolor"
+                android:cursorVisible="true"
+                android:imeOptions="actionDone"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/greycolor"
+                android:layout_marginLeft="@dimen/size18"
+                android:layout_marginRight="@dimen/size18"
+                android:layout_marginTop="@dimen/size20"
+                android:layout_marginBottom="@dimen/size5" />
+        <View
+            android:id="@+id/seperater"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:layout_marginTop="@dimen/size20"
+            android:background="@color/app_color"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="@dimen/size1"
+                android:divider="@color/app_color"
+                android:background="@color/whitecolor"
+                >
+            </ListView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pill_title_edt"
+            android:layout_marginTop="@dimen/size15"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size7"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:id="@+id/morning_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size130"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/size5"
+                        android:text="@string/morning"
+
+                        android:textSize="@dimen/text15" />
+
+                    <TextView
+                        android:id="@+id/mrg_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="@dimen/size5"
+                        android:src="@drawable/pill_reminder_morning" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/afternoon_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size130"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/size5"
+                        android:text="@string/afternoon"
+                        android:textSize="@dimen/text15" />
+
+                    <TextView
+                        android:id="@+id/afternoon_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="top"
+                        android:src="@drawable/pill_reminder_afternoon" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/evening_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size7"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size130"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/size5"
+                        android:text="@string/evening"
+                        android:textSize="@dimen/text15" />
+
+                    <TextView
+                        android:id="@+id/eve_time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="@dimen/size5"
+                        android:src="@drawable/pill_reminder_evening" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/night_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size130"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size130"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="@dimen/size5"
+                            android:text="@string/night"
+                            android:textSize="@dimen/text15" />
+
+                        <TextView
+                            android:id="@+id/night_time_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size30"
+                            android:layout_height="@dimen/size30"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="top"
+                            android:layout_marginRight="@dimen/size5"
+                            android:src="@drawable/pill_reminder_night" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="@color/app_color"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_color"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/left_arrow_white" />
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="@string/add_reminder"
+                android:textColor="@color/whitecolor"
+                android:textSize="@dimen/size18" />
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+</RelativeLayout>

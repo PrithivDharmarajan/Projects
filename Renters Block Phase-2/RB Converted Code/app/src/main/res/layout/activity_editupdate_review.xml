@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bar" >
+
+        <LinearLayout
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="@dimen/padding5" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/back_arrow_white"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_business"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="@dimen/padding5" >
+
+            <Button
+                android:id="@+id/view_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:text="@string/view_listing"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/view_business"
+            android:layout_toRightOf="@+id/back_icon"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding5"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_lay" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/user_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10" >
+
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="@dimen/margin60"
+                    android:layout_height="@dimen/margin60"
+                    android:background="@drawable/profile_pic"
+                    android:contentDescription="@drawable/profile_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile_pic" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:paddingLeft="2dp"
+                    android:textSize="@dimen/text18"
+                    android:text="ghdghd" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/user_image" >
+
+                    <TextView
+                        android:id="@+id/friends_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/friends_icon"
+                        android:drawablePadding="@dimen/padding5"
+                        android:text=""
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+
+                    <TextView
+                        android:id="@+id/reviews_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_toRightOf="@+id/friends_count"
+                        android:drawableLeft="@drawable/review_star_icon"
+                        android:drawablePadding="@dimen/padding5"
+                        android:text=""
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+
+                    <TextView
+                        android:id="@+id/photos_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_toRightOf="@+id/reviews_count"
+                        android:drawableLeft="@drawable/photo_icon"
+                        android:drawablePadding="@dimen/padding5"
+                        android:text=""
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text10" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/user_lay"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/rating_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_margin="10dp" >
+
+                <RatingBar
+                    android:id="@+id/user_ratingbar"
+                    style="@style/MediumBlueRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@+id/minutes_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text14" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rating_lay"
+                android:background="@drawable/view_bg" />
+
+            <TextView
+                android:id="@+id/main_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_margin="@dimen/margin20"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/main_comment"
+                android:background="@drawable/view_bg" />
+
+            <TableLayout
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view3" >
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_list"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/edit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin35"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edit_update_review_bg"
+                    android:text="@string/edit_review"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin35"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edit_update_review_bg"
+                    android:text="@string/update_review"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

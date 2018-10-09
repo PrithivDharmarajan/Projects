@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/blackcolor"
+                style="@style/TextMedium"
+                android:layout_margin="@dimen/size5"
+                android:textSize="@dimen/size14"/>
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                style="@style/TextLight"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="@dimen/size5"
+                android:textSize="@dimen/size10"/>
+            <TextView
+                android:id="@+id/comments_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size5"
+                android:textColor="@color/blackcolor"
+                style="@style/TextRegular"
+                android:textSize="@dimen/size12"
+                android:text="asdasdasd"/>
+            <TextView
+                android:id="@+id/review_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size5"
+                android:textColor="@color/blackcolor"
+                style="@style/TextRegular"
+                android:textSize="@dimen/size12"
+                android:text="asdasdasd"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pharmacy_rat"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true" >
+            <RatingBar
+                android:id="@+id/review_rating_bar"
+                style="@style/StarRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5"
+                android:layout_below="@+id/name_txt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

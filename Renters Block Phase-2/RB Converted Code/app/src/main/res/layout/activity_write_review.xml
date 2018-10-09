@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bar"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/back_arrow_white"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="close"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/review_head_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/continue_txt"
+            android:layout_toRightOf="@+id/close"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding5"
+            android:text=""
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/continue_txt"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="Continue"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text13" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/update_review_alert_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_lay"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/update_review_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5"
+            android:gravity="center"
+            android:text="@string/update_review_alert"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@drawable/view_bg" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/update_review_alert_lay"
+        android:layout_margin="@dimen/margin10" >
+
+        <RatingBar
+            android:id="@+id/review_ratingbar"
+            style="@style/BigBlueRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin10"
+            android:isIndicator="false"
+            android:stepSize="1" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/height130"
+            android:layout_height="2dp"
+            android:layout_below="@+id/review_ratingbar"
+            android:layout_centerInParent="true"
+            android:background="@drawable/view_bg" />
+
+        <EditText
+            android:id="@+id/review_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_margin="@dimen/margin10"
+            android:background="@null"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/padding5"
+            android:scrollbars="none"
+            android:textSize="@dimen/text18" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

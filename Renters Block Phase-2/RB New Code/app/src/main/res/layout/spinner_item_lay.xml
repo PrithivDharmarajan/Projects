@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch">
+
+    <TextView
+        android:id="@+id/spinner_item"
+        style="@style/TextHelveticaBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size5"
+        android:gravity="center|end"
+        android:text="@string/any"
+        android:textColor="@color/dart_gray" />
+
+</RelativeLayout>

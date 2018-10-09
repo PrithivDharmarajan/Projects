@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center" >
+
+        <include layout="@layout/header_with_back" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/schedule_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/invite_lay"
+        android:layout_below="@+id/top_lay"
+        android:layout_margin="@dimen/margin10"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/view_bg"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/invite_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_bar"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <TextView
+            android:id="@+id/invite_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Invite"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

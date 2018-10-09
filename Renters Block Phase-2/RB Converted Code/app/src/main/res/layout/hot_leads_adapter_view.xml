@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height230" >
+
+    <RelativeLayout
+        android:id="@+id/adap_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/property_radio"
+            android:layout_width="@dimen/margin25"
+            android:layout_height="@dimen/margin25"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/minus_icon"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height230"
+            android:layout_toRightOf="@+id/property_radio" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height230"
+                android:layout_gravity="center"
+                android:background="@drawable/default_prop_icon"
+                android:clickable="true"
+                android:contentDescription="@color/blue_normal"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_overlay"
+                android:contentDescription="@color/blue_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin15" >
+
+                <LinearLayout
+                    android:id="@+id/left_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/margin15"
+                    android:layout_toLeftOf="@+id/linearLayout1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/property_cost_hot_leads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text18"
+                            android:textStyle="bold" />
+                        <!--android:text="$2,950"-->
+                        <TextView
+                            android:id="@+id/property_details_hot_leads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="@dimen/margin5"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text14" />
+                    </LinearLayout>
+                    <!--android:text="2 bd 1 ba"-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RatingBar
+                            android:id="@+id/review_ratingbar_hot_leads"
+                            style="@style/SmallWhiteRating"
+                            android:layout_marginTop="@dimen/margin5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true" />
+
+                        <TextView
+                            android:id="@+id/property_reviews_hot_leads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding4"
+
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text16" />
+                    </LinearLayout>
+                    <!--android:text="80 Reviews"-->
+                    <TextView
+                        android:id="@+id/property_location_hot_leads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:maxLines="2"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+                <!--android:text="316 W 51st St #5-F"-->
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:gravity="right|center|bottom"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/favourite"
+                        android:layout_width="@dimen/margin30"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_gravity="center|right"
+                        android:background="@drawable/favourite_enable"
+                        android:clickable="true"
+                        android:contentDescription="@color/blue_normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/no_of_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text16" />
+                    <!--android:text="Views (5)"-->
+                    <TextView
+                        android:id="@+id/no_of_leads"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#ff0000"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+                <!--android:text="Hot Leads (0)"-->
+                <ImageView
+                    android:id="@+id/show_leads_property_view"
+                    android:layout_width="@dimen/margin40"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/linearLayout1"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:src="@drawable/blue_forward_btn" />
+
+                <ImageView
+                    android:id="@+id/add_property_popup"
+                    android:layout_width="@dimen/margin70"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_alignRight="@+id/show_leads_property_view"
+                    android:layout_below="@+id/show_leads_property_view"
+                    android:src="@drawable/bubble_box"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

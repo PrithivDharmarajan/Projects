@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="@dimen/size12"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/setting_text"
+            style="@style/TextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5"
+            android:padding="@dimen/size5"
+            android:text="@string/txt_settings"
+            android:layout_gravity="center|center_horizontal"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/text17"
+            android:layout_weight="0.80" />
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/size5"
+            android:layout_weight="0.20"
+            android:layout_margin="@dimen/size1"
+            android:src="@drawable/settings_icon" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:visibility="gone"
+        android:background="@color/greycolor" />
+
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size1"-->
+        <!--android:background="@color/color_white" />-->
+
+
+
+    <LinearLayout
+        android:id="@+id/notification_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size5">
+
+        <TextView
+            android:id="@+id/notification_txt"
+            style="@style/TextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/notification_icon"
+            android:textColor="@color/blackcolor"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/size5"
+
+            android:layout_gravity="center"
+            android:text="@string/txt_notification"
+            android:layout_margin="@dimen/size5"
+            android:layout_weight="0.32"
+            android:padding="@dimen/size5"
+
+            android:textSize="@dimen/size15" />
+
+        <ToggleButton
+            android:id="@+id/push_notification_toggle"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size20"
+            android:layout_margin="@dimen/size5"
+            android:background="@drawable/toggle_push_notification"
+            android:checked="true"
+            android:layout_gravity="center"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greycolor"
+      />
+
+    <LinearLayout
+        android:id="@+id/terms_and_condition_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size5">
+
+        <TextView
+            android:id="@+id/terms_and_condition_text"
+            style="@style/TextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5"
+            android:gravity="left|center"
+            android:layout_weight="0.32"
+            android:textColor="@color/blackcolor"
+            android:text="@string/txt_terms_and_condition"
+            android:drawableLeft="@drawable/terms_and_condition_icon"
+            android:layout_gravity="center"
+            android:padding="@dimen/size5"
+            android:drawablePadding="@dimen/size5"
+
+            android:textSize="@dimen/size15" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/terms_and_condition_arrow_img"-->
+        <!--android:layout_width="@dimen/size15"-->
+        <!--android:layout_height="@dimen/size15"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/size5"-->
+        <!--android:contentDescription="@string/send"-->
+        <!--android:src="@drawable/moos_settings_right_arrow" />-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greycolor"
+   />
+
+    <LinearLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:padding="@dimen/size5">
+
+        <TextView
+            android:id="@+id/logout_text"
+            style="@style/TextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5"
+            android:padding="@dimen/size5"
+            android:text="@string/txt_signout"
+            android:drawablePadding="@dimen/size5"
+
+            android:gravity="left|center"
+            android:drawableLeft="@drawable/signout_icon"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/size15" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greycolor" />
+</LinearLayout>

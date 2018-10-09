@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/LayoutMatch"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/update_review_alert_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/update_review_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5"
+            android:gravity="center"
+            android:text="@string/update_review_alert"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@drawable/view_bg" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/update_review_alert_lay"
+        android:layout_margin="@dimen/size10" >
+
+        <RatingBar
+            android:id="@+id/review_ratingbar"
+            style="@style/MediumBlueRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/size10"
+            android:isIndicator="false"
+            android:stepSize="1" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/size70"
+            android:layout_height="2dp"
+            android:layout_below="@+id/review_ratingbar"
+            android:layout_centerInParent="true"
+            android:background="@drawable/view_bg" />
+
+        <EditText
+            android:id="@+id/review_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_margin="@dimen/size10"
+            android:background="@null"
+            android:hint="@string/find_an_agent_rev_hint"
+            android:textColorHint="@color/gray_dark"
+            android:textColor="@color/gray_dark"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/size5"
+            android:scrollbars="none"
+            android:textSize="@dimen/text13" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

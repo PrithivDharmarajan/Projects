@@ -1,0 +1,1314 @@
+<resources>
+    <string name="app_name">Renter\'s Block</string>
+
+    <!--App Ids-->
+    <string name="fabric_app_id">a175b9b8fdbc8dede3f17d11413d00fbadf55371</string>
+    <string name="facebook_app_id">493902087441931</string>
+    <string name="google_map_id">AIzaSyCBS9owmjeiWT0wNh4mjpI3jW2ro8E-S5c</string>
+    <!--Tutorials screen-->
+    <string name="get_started">Get Started</string>
+
+
+    <!--Login Screen-->
+    <string name="cancel">Cancel</string>
+    <string name="renters_block">Renter\&apos;s Block</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="or">Or</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="agree">By tapping Register you agree to our</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="send">Send</string>
+    <string name="success">Success</string>
+
+    <string name="msg_txt">Here\'s the property ID - </string>
+
+    <!--Header text-->
+    <string name="enter_your_city">Enter your city</string>
+
+    <!--Slide Menu-->
+    <string name="login">Login</string>
+    <string name="my_block">My Block</string>
+    <string name="listing">Listings</string>
+    <string name="hot_leads">Hot Leads</string>
+    <string name="reviews">Reviews</string>
+    <string name="friends">Friends</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="profile">Profile</string>
+
+    <string name="pending">Pending</string>
+
+
+    <string name="search">Search</string>
+    <string name="exclusives">Exclusives</string>
+    <string name="homes_for_rent">Homes for Rent</string>
+    <string name="homes_for_sale">Homes for Sale</string>
+    <string name="saved_searches">Saved Searches</string>
+    <string name="my_favourites">My Favorites</string>
+    <string name="alerts">Alerts</string>
+    <string name="open_houses">Open Houses</string>
+    <string name="find_an_agent">Find an Agent</string>
+
+
+    <string name="photos_videos">Photos &amp; Videos</string>
+    <string name="more">More</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_this_app">Rate this App</string>
+    <string name="share_this_app">Share this App</string>
+    <string name="settings">Settings</string>
+    <string name="map_view">Map View</string>
+
+    <!-- My Review Screen -->
+    <string name="my_reviews">My Reviews</string>
+    <string name="edit_review">Edit Review</string>
+    <string name="update_review">Update Review</string>
+    <string name="view_business">View Business</string>
+    <string name="view_listing">View Listing</string>
+    <string name="close">Close</string>
+    <string name="post">Post</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="con">Continue</string>
+    <string name="post_review">Post Review</string>
+    <string name="write_review_hint"> Did you have to deal with the World’s Worst Landlord for what seemed like an eternity? Were you so happy with your experience that you shed a few tears when you closed the door on the apartment for the last time? We want to hear about it! Whether it’s to save future souls from blood-thirsty realtors or to shed light on AMAZING apartments that would otherwise go unnoticed, lay it out for us.</string>
+    <string name="post_review_hint">You are leaving another review for this business.Only the rating for your most recent review counts towards the business average rating.</string>
+    <string name="alert_rating">Please select rating</string>
+
+    <!-- Listing Activity -->
+    <string name="add_listing_header">Add Listing</string>
+    <string name="edit_listing">Edit Listing</string>
+    <string name="listing_header">Listings</string>
+    <string name="property_header">Properties</string>
+    <string name="address">Address</string>
+    <string name="add_loc_map">Add location on map</string>
+    <string name="select_any_property">Please select any property</string>
+    <string name="select_one_property">Please select one property</string>
+    <string name="property_types">Property Types</string>
+
+    <!--Feedback screen-->
+    <string name="to_with_colon">To:</string>
+    <string name="sub_with_colon">Subject:</string>
+    <string name="message">Message</string>
+    <string name="android_version_with_colon">Android Version:</string>
+    <string name="app_version_with_colon">App Version:</string>
+    <string name="device_with_colon">Device:</string>
+    <string name="support_email">support@rentersblock.com</string>
+    <string name="version">v</string>
+
+    <!--Dialog button-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="sign_out">Sign out</string>
+
+    <!--Dialog alert-->
+    <string name="exit_msg">Are you sure want to Exit?</string>
+    <string name="please_enter_email">Please enter the email</string>
+    <string name="please_enter_valid_email">Please enter the valid email</string>
+    <string name="please_enter_password">Please enter the password</string>
+    <string name="logout_msg">Are you sure, you want to sign out?</string>
+    <string name="enter_current_pwd">Please Enter Current password.</string>
+    <string name="enter_new_pwd">Please Enter New password.</string>
+    <string name="enter_conf_pwd">Please Enter Confirm New password.</string>
+    <string name="pwd_does_not_match">Password doesn\'t match.</string>
+    <string name="please_enter_msg">Please enter the message</string>
+    <string name="please_enter_name">Please enter the name</string>
+    <string name="no_email_id_fb">Sorry, you do not have email id in your facebook account. Please try with different account, that has email id.</string>
+
+    <string name="please_enter_email_address">Please enter your Email Address</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_location_save">Please enter location to save</string>
+
+    <!--Toast string-->
+    <string name="err_create_frag">Error in creating fragment</string>
+    <string name="google_unauthenticated">Google Unauthenticated</string>
+    <string name="err_empty_location">Please select location</string>
+    <string name="not_valid_location">Not valid location</string>
+    <string name="logged_in">logged in successfully!</string>
+    <string name="registered">registered successfully </string>
+    <string name="logged_out">You are logged out successfully</string>
+    <string name="send_email">Send email &#8230;</string>
+    <string name="please_upload_image">Please upload image</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="please_enter_description">Please enter description</string>
+    <string name="please_enter_price">Please enter price</string>
+    <string name="sorry_unable_create">Sorry! unable to create maps</string>
+    <string name="connection_suspended">onConnectionSuspended</string>
+
+
+    <!--Server alert-->
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+    <string name="connect_time_out">Connection to Renter\'s Block App Server timeout, please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+
+    <!--Play service-->
+    <string name="play_service_err">Google Play Services Error</string>
+    <string name="device_not_support">This device is not supported for required Google Play Services. Please update your Google Play Services</string>
+    <string name="user_not_update"> User does not update location setting</string>
+
+    <!-- Create Account Screen -->
+    <string name="create_account">Create Your Account</string>
+    <string name="are_looking">Are you looking to:</string>
+    <string name="are_you">Are you a(n):</string>
+    <string name="buy">Buy</string>
+    <string name="rent">Rent</string>
+    <string name="sell">Sell</string>
+    <string name="agent">Agent</string>
+    <string name="broker">Broker</string>
+    <string name="skip">Skip</string>
+
+    <!-- Register Screen -->
+    <string name="email_text">Email</string>
+    <string name="pass_text">Password</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_name_optional">Business Name (Optional)</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="user_name">User Name</string>
+    <string name="zip_text">Zip</string>
+    <string name="phone_text">Phone</string>
+    <string name="phone_optional">Phone (Optional)</string>
+    <string name="address_1">Address Line1</string>
+    <string name="address_2">Address Line2</string>
+    <string name="city_state_zip">City,State,Zip</string>
+    <string name="enhanced_profile">Enhanced Profile</string>
+    <string name="standard_profile">Standard Profile</string>
+    <string name="acc_manager">Account Manager</string>
+    <string name="home_owner">Home Owner</string>
+
+    <string name="register">Register</string>
+
+    <string name="terms_of_use_txt">By tapping Register you agree to our\nTerms of Use and Privacy Policy</string>
+
+    <!-- Registration Screen Validation-->
+    <string name="please_enter_first_name">Please enter the first name</string>
+    <string name="please_enter_last_name">Please enter the last name</string>
+    <string name="please_enter_user_name">Please enter the user name</string>
+    <string name="please_enter_zipcode">Please enter the zipcode</string>
+    <string name="please_enter_business_name">Please enter the business name</string>
+    <string name="please_enter_address_line1">Please enter the address line1</string>
+    <string name="please_enter_address_line2">Please enter the address line2</string>
+    <string name="please_enter_phone_number">Please enter the phone number</string>
+    <string name="please_enter_city_state">Please enter the City, State, Zip</string>
+    <string name="verification_mail">Registered successfully, Verification mail sent to your mail id.</string>
+
+    <string name="choose_exisiting_photo">Choose Existing Photo</string>
+    <string name="select_video">Select Video</string>
+    <string name="choose_exisiting_video">Choose Existing Video</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="choose">Choose Photo or Video</string>
+
+    <string name="user_cancelled">User cancelled image capture</string>
+    <string name="sorry_failed_img">Sorry! Failed to capture image</string>
+    <string name="picture">Picture</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_pic">Choose Picture</string>
+    <string name="choose_video">Choose Video</string>
+    <string name="choose_existing_photo">Choose Existing Photo</string>
+    <string name="choose_existing_video">Choose Existing Video</string>
+    <string name="take_video">Take Video</string>
+    <!--Tutorial Screen Text-->
+
+    <string name="tut_header1">Home searching made easy</string>
+    <string name="tut_header2">Find homes near you</string>
+    <string name="tut_header3">Early bird gets the home</string>
+    <string name="tut_header4">Review your home or apartment</string>
+    <string name="tut_header5">Real-time video chat</string>
+
+    <string name="tut_txt1">Renter\'s Block is innovating new ways to make finding your next home effortless and convenient</string>
+    <string name="tut_txt2">Renter\'s Block needs your location to provide the latest updates on homes in your area \n\n When prompted tap OK</string>
+    <string name="tut_txt3">Receive custom alerts to be the first to know about homes matching your criteria hitting the market\n\n When prompted tap OK</string>
+    <string name="tut_txt4">Rate and review any property and get the inside scoop from previous owners or renters</string>
+    <string name="tut_txt5">Schedule a live video chat to view a property using your mobile device</string>
+
+
+    <!--<Share This App>-->
+    <string name="mail">Mail</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="app_content">Your future lifestyle awaits, check out the Renter\'s Block app to find your next home.</string>
+
+
+    <!--<Settings>-->
+    <string name="sync_contact">Sync Contact</string>
+    <string name="mobile_alerts">MOBILE ALERTS</string>
+    <string name="new_saved_search_matches">New saved search matches</string>
+    <string name="search_results">SEARCH RESULTS</string>
+    <string name="search_result_per_screen">Search result per screen</string>
+    <string name="from_ten_fivty">From 10 \- 50</string>
+    <string name="update_results_as_map_moves">Update results as map moves</string>
+    <string name="about_renters_blocks">About Renter\'s Block</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="fifty">50</string>
+    <string name="copy_rights">Copy Rights</string>
+
+    <!---Pop up Layers -->
+    <string name="select_layers">Select Layers</string>
+    <string name="default_1">Default</string>
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="done">Done</string>
+
+    <!-- Opening Screen -->
+    <string name="save_search">Save Search</string>
+    <string name="layers">Layers</string>
+    <string name="list">List</string>
+
+    <!-- Saved Search Popup -->
+    <string name="name_your_search">Name your search</string>
+    <string name="save_search_as">Save search as</string>
+    <string name="save">Save</string>
+
+    <!-- Sorting Popup Texts -->
+    <string name="best_match">Best Match</string>
+    <string name="latest_update">Latest Updates</string>
+    <string name="rating">Rating</string>
+    <string name="price_ltoh">Price(Low to High)</string>
+    <string name="price_htol">Price(High to Low)</string>
+    <string name="bed_rooms">Bedrooms</string>
+    <string name="bath_rooms">Bathrooms</string>
+    <string name="sqft">Square Feet(High to Low)</string>
+    <string name="sort_options">Sort Options</string>
+    <string name="saved_search">Saved Search</string>
+    <string name="baths">Baths</string>
+    <string name="bath_single">Bath</string>
+    <string name="bed_single">Bed</string>
+
+
+    <!--Map SavedSearchAdapter-->
+    <string name="current_location">Current Location</string>
+
+    <!--Map Fragment-->
+    <string name="na">NA</string>
+    <string name="dollor">$</string>
+    <string name="k">k</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="bed">bed</string>
+    <string name="bath">bath</string>
+    <string name="mo">/ mo</string>
+    <string name="map">Map</string>
+    <string name="sort">Sort</string>
+    <string name="agent_des">Featured Local Market Hotshot</string>
+
+    <!-- Filter Screen -->
+    <string name="for_sale">For Sale</string>
+    <string name="for_rent">For Rent</string>
+    <string name="sold">Sold</string>
+    <string name="filters">FILTERS</string>
+    <string name="any">Any</string>
+    <string name="description">Description</string>
+    <string name="all_types">All Types</string>
+    <string name="price_range">Price Range</string>
+    <string name="property_type">Property Type</string>
+    <string name="beds">Beds</string>
+    <string name="square_footage">Square Footage</string>
+    <string name="num0">0+</string>
+    <string name="num1">1+</string>
+    <string name="num2">2+</string>
+    <string name="num3">3+</string>
+    <string name="num4">4+</string>
+    <string name="num5">5+</string>
+    <string name="n0">0</string>
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+    <string name="no_fee">No Fee</string>
+    <string name="year_built">Year Built</string>
+    <string name="sold_within">Sold Within</string>
+    <string name="lot_size">Lot Size</string>
+    <string name="days_on_rb">Days on RB</string>
+    <string name="listing_caps">LISTING TYPE</string>
+    <string name="resale">Resale</string>
+    <string name="new_construction">New Construction</string>
+    <string name="include_estimates">Include Estimates</string>
+    <string name="set">Set</string>
+    <string name="fore_closure">Forclosure</string>
+    <string name="show_only">SHOW ONLY</string>
+    <string name="show_more">Show More</string>
+    <string name="reduced_prices">Reduced Prices</string>
+    <string name="keywords">Keywords</string>
+    <string name="mls">MLS #</string>
+    <string name="clear_all">Clear All</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="message_board">Message Boards</string>
+    <string name="msg_btn_txt">Add this Property to Your My Boards</string>
+    <string name="view_all">Viewall</string>
+    <string name="request_info">Request Info</string>
+    <string name="request_send">Request Send</string>
+    <string name="recommended_reviews">Recommended Reviews</string>
+    <string name="search_places">Search Places</string>
+    <string name="single_family">Single-Family Home</string>
+    <string name="condo">Condo</string>
+    <string name="town_house">Townhouse</string>
+    <string name="coop">Coop</string>
+    <string name="tic">TIC</string>
+    <string name="apartment">Apartment</string>
+    <string name="apartment_condo">Apartment/Condo/Townhouse</string>
+    <string name="loft">Loft</string>
+    <string name="mobile_manufactured">Mobile/Manufactured</string>
+    <string name="farm_ranch">Farm/Ranch</string>
+    <string name="lot_land">Lot/land</string>
+    <string name="multi_family">Multi-Family</string>
+    <string name="income_investment">Income/Investment</string>
+    <string name="houseboat">Houseboat</string>
+    <string name="filter_options">Filter Options</string>
+    <string name="filter_key_hints">Pool,Garage,Water Front,Pets</string>
+    <string name="id">ID</string>
+    <string name="sale">Sale</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+
+    <!--Filter property type-->
+    <string-array name="Property_Type">
+        <item>@string/single_family</item>
+        <item>@string/condo</item>
+        <item>@string/town_house</item>
+        <item>@string/coop</item>
+        <item>@string/apartment</item>
+        <item>@string/loft</item>
+        <item>@string/tic</item>
+        <item>@string/apartment_condo</item>
+        <item>@string/mobile_manufactured</item>
+        <item>@string/farm_ranch</item>
+        <item>@string/lot_land</item>
+        <item>@string/multi_family</item>
+        <item>@string/income_investment</item>
+        <item>@string/houseboat</item>
+
+    </string-array>
+
+    <!--Date utils-->
+    <string name="year_ago">year ago</string>
+    <string name="years_ago">years ago</string>
+    <string name="month_ago">month ago</string>
+    <string name="months_ago">months ago</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="hour_ago">hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="min_ago">min ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="sec_ago">sec ago</string>
+    <string name="just_now">just now</string>
+
+
+    <!-- Scheduling Screen -->
+    <string name="scheduling_header">Scheduling</string>
+    <string name="share_app_header">Share this App</string>
+    <string name="schedule_meet_header">Schedule a Meeting</string>
+    <string name="hint_meeting_subject">Meeting Subject</string>
+    <string name="select">Select</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="add_venue">Add a Venue</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="please_enter_meeting">Please enter the Title</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_time">Please select time</string>
+    <string name="please_select_venue">Please select Location</string>
+    <string name="please_add_friends">Please add friends</string>
+    <string name="please_select_friends">Please select atleast one friend</string>
+    <string name="title">Title</string>
+    <string name="invite">Invite</string>
+
+    <!--Days onRb String -->
+    <string-array name="DaysOnRbList">
+        <item>@string/any</item>
+        <item>@string/one_day</item>
+        <item>@string/seven_day</item>
+        <item>@string/fort_day</item>
+        <item>@string/thirty_day</item>
+        <item>@string/ninety_day</item>
+    </string-array>
+    <string name="one_day">1 day</string>
+    <string name="seven_day">7 days</string>
+    <string name="fort_day">14 days</string>
+    <string name="thirty_day">30 days</string>
+    <string name="ninety_day">90 days</string>
+
+    <!--LotSize list-->
+    <string name="square_feet_2">2,000+ sqft</string>
+    <string name="square_feet_3">3,000+ sqft</string>
+    <string name="square_feet_4">4,000+ sqft</string>
+    <string name="square_feet_5">5,000+ sqft</string>
+    <string name="square_feet_75">7,500+ sqft</string>
+    <string name="qrt_acre"><![CDATA[&#188;+ acre]]></string>
+    <string name="half_acre"><![CDATA[&#189;+ acre]]></string>
+    <string name="one_acre">1+ acre</string>
+    <string name="two_acre">2+ acre</string>
+    <string name="five_acre">5+ acre</string>
+    <string name="ten_acre">10+ acre</string>
+
+    <string-array name="LotSizeList">
+        <item>@string/any</item>
+        <item>@string/square_feet_2</item>
+        <item>@string/square_feet_3</item>
+        <item>@string/square_feet_4</item>
+        <item>@string/square_feet_5</item>
+        <item>@string/square_feet_75</item>
+        <item>@string/qrt_acre</item>
+        <item>@string/half_acre</item>
+        <item>@string/one_acre</item>
+        <item>@string/two_acre</item>
+        <item>@string/five_acre</item>
+        <item>@string/ten_acre</item>
+
+    </string-array>
+
+    <!--year list-->
+
+    <string name="year1">1900</string>
+    <string name="year2">1902</string>
+    <string name="year3">1903</string>
+    <string name="year4">1904</string>
+    <string name="year5">1905</string>
+    <string name="year6">1906</string>
+    <string name="year7">1907</string>
+    <string name="year8">1908</string>
+    <string name="year9">1909</string>
+    <string name="year10">1910</string>
+    <string name="year11">1911</string>
+    <string name="year12">1912</string>
+    <string name="year13">1913</string>
+    <string name="year14">1914</string>
+    <string name="year15">1915</string>
+    <string name="year16">1916</string>
+    <string name="year17">1917</string>
+    <string name="year18">1918</string>
+    <string name="year19">1919</string>
+    <string name="year20">1920</string>
+    <string name="year21">1921</string>
+    <string name="year22">1922</string>
+    <string name="year23">1923</string>
+    <string name="year24">1924</string>
+    <string name="year25">1925</string>
+    <string name="year26">1926</string>
+    <string name="year27">1927</string>
+    <string name="year28">1928</string>
+    <string name="year29">1929</string>
+    <string name="year30">1930</string>
+    <string name="year31">1931</string>
+    <string name="year32">1932</string>
+    <string name="year33">1933</string>
+    <string name="year34">1934</string>
+    <string name="year35">1935</string>
+    <string name="year36">1936</string>
+    <string name="year37">1937</string>
+    <string name="year38">1938</string>
+    <string name="year39">1939</string>
+    <string name="year40">1940</string>
+    <string name="year41">1941</string>
+    <string name="year42">1942</string>
+    <string name="year43">1943</string>
+    <string name="year44">1944</string>
+    <string name="year45">1945</string>
+    <string name="year46">1946</string>
+    <string name="year47">1947</string>
+    <string name="year48">1948</string>
+    <string name="year49">1949</string>
+    <string name="year50">1950</string>
+    <string name="year51">1951</string>
+    <string name="year52">1952</string>
+    <string name="year53">1953</string>
+    <string name="year54">1954</string>
+    <string name="year55">1955</string>
+    <string name="year56">1956</string>
+    <string name="year57">1957</string>
+    <string name="year58">1958</string>
+    <string name="year59">1959</string>
+    <string name="year60">1960</string>
+    <string name="year61">1961</string>
+    <string name="year62">1962</string>
+    <string name="year63">1963</string>
+    <string name="year64">1964</string>
+    <string name="year65">1965</string>
+    <string name="year66">1966</string>
+    <string name="year67">1967</string>
+    <string name="year68">1968</string>
+    <string name="year69">1969</string>
+    <string name="year70">1970</string>
+    <string name="year71">1971</string>
+    <string name="year72">1972</string>
+    <string name="year73">1973</string>
+    <string name="year74">1974</string>
+    <string name="year75">1975</string>
+    <string name="year76">1976</string>
+    <string name="year77">1977</string>
+    <string name="year78">1978</string>
+    <string name="year79">1979</string>
+    <string name="year80">1980</string>
+    <string name="year81">1981</string>
+    <string name="year82">1982</string>
+    <string name="year83">1983</string>
+    <string name="year84">1984</string>
+    <string name="year85">1985</string>
+    <string name="year86">1986</string>
+    <string name="year87">1987</string>
+    <string name="year88">1988</string>
+    <string name="year89">1989</string>
+    <string name="year90">1990</string>
+    <string name="year91">1991</string>
+    <string name="year92">1992</string>
+    <string name="year93">1993</string>
+    <string name="year94">1994</string>
+    <string name="year95">1995</string>
+    <string name="year96">1996</string>
+    <string name="year97">1997</string>
+    <string name="year98">1998</string>
+    <string name="year99">1999</string>
+    <string name="year100">2000</string>
+    <string name="year101">2001</string>
+    <string name="year102">2002</string>
+    <string name="year103">2003</string>
+    <string name="year104">2004</string>
+    <string name="year105">2005</string>
+    <string name="year106">2006</string>
+    <string name="year107">2007</string>
+    <string name="year108">2008</string>
+    <string name="year109">2009</string>
+    <string name="year110">2010</string>
+    <string name="year111">2011</string>
+    <string name="year112">2012</string>
+    <string name="year113">2013</string>
+    <string name="year114">2014</string>
+    <string name="year115">2015</string>
+    <string name="year116">2016</string>
+    <string name="year117">2017</string>
+    <string name="no_min">No Min</string>
+    <string name="no_max">No Max</string>
+
+    <string-array name="YearBuiltList">
+        <item>@string/no_min</item>
+        <item>@string/no_max</item>
+        <item>@string/year117</item>
+        <item>@string/year116</item>
+        <item>@string/year115</item>
+        <item>@string/year114</item>
+        <item>@string/year113</item>
+        <item>@string/year112</item>
+        <item>@string/year111</item>
+        <item>@string/year110</item>
+        <item>@string/year109</item>
+        <item>@string/year108</item>
+        <item>@string/year107</item>
+        <item>@string/year106</item>
+        <item>@string/year105</item>
+        <item>@string/year104</item>
+        <item>@string/year103</item>
+        <item>@string/year102</item>
+        <item>@string/year101</item>
+        <item>@string/year100</item>
+        <item>@string/year99</item>
+        <item>@string/year98</item>
+        <item>@string/year97</item>
+        <item>@string/year96</item>
+        <item>@string/year95</item>
+        <item>@string/year94</item>
+        <item>@string/year93</item>
+        <item>@string/year92</item>
+        <item>@string/year91</item>
+        <item>@string/year90</item>
+        <item>@string/year89</item>
+        <item>@string/year88</item>
+        <item>@string/year87</item>
+        <item>@string/year86</item>
+        <item>@string/year85</item>
+        <item>@string/year84</item>
+        <item>@string/year83</item>
+        <item>@string/year82</item>
+        <item>@string/year81</item>
+        <item>@string/year80</item>
+        <item>@string/year79</item>
+        <item>@string/year78</item>
+        <item>@string/year77</item>
+        <item>@string/year76</item>
+        <item>@string/year75</item>
+        <item>@string/year74</item>
+        <item>@string/year73</item>
+        <item>@string/year72</item>
+        <item>@string/year71</item>
+        <item>@string/year70</item>
+        <item>@string/year69</item>
+        <item>@string/year68</item>
+        <item>@string/year67</item>
+        <item>@string/year66</item>
+        <item>@string/year65</item>
+        <item>@string/year64</item>
+        <item>@string/year63</item>
+        <item>@string/year62</item>
+        <item>@string/year61</item>
+        <item>@string/year60</item>
+        <item>@string/year59</item>
+        <item>@string/year58</item>
+        <item>@string/year57</item>
+        <item>@string/year56</item>
+        <item>@string/year55</item>
+        <item>@string/year54</item>
+        <item>@string/year53</item>
+        <item>@string/year52</item>
+        <item>@string/year51</item>
+        <item>@string/year50</item>
+        <item>@string/year49</item>
+        <item>@string/year48</item>
+        <item>@string/year47</item>
+        <item>@string/year46</item>
+        <item>@string/year45</item>
+        <item>@string/year44</item>
+        <item>@string/year43</item>
+        <item>@string/year42</item>
+        <item>@string/year41</item>
+        <item>@string/year40</item>
+        <item>@string/year39</item>
+        <item>@string/year38</item>
+        <item>@string/year37</item>
+        <item>@string/year36</item>
+        <item>@string/year35</item>
+        <item>@string/year34</item>
+        <item>@string/year33</item>
+        <item>@string/year32</item>
+        <item>@string/year31</item>
+        <item>@string/year30</item>
+        <item>@string/year29</item>
+        <item>@string/year28</item>
+        <item>@string/year27</item>
+        <item>@string/year26</item>
+        <item>@string/year25</item>
+        <item>@string/year24</item>
+        <item>@string/year23</item>
+        <item>@string/year22</item>
+        <item>@string/year21</item>
+        <item>@string/year20</item>
+        <item>@string/year19</item>
+        <item>@string/year18</item>
+        <item>@string/year17</item>
+        <item>@string/year16</item>
+        <item>@string/year15</item>
+        <item>@string/year14</item>
+        <item>@string/year13</item>
+        <item>@string/year12</item>
+        <item>@string/year11</item>
+        <item>@string/year10</item>
+        <item>@string/year9</item>
+        <item>@string/year8</item>
+        <item>@string/year7</item>
+        <item>@string/year6</item>
+        <item>@string/year5</item>
+        <item>@string/year4</item>
+        <item>@string/year3</item>
+        <item>@string/year2</item>
+        <item>@string/year1</item>
+    </string-array>
+
+    <!--SquareFootageList-->
+    <string name="sqr1">250 </string>
+    <string name="sqr2">500 </string>
+    <string name="sqr3">750 </string>
+    <string name="sqr4">1,000 </string>
+    <string name="sqr5">1,250 </string>
+    <string name="sqr6">1,500 </string>
+    <string name="sqr7">1,750 </string>
+    <string name="sqr8">2,000 </string>
+    <string name="sqr9">2,250 </string>
+    <string name="sqr10">2,500 </string>
+    <string name="sqr11">2,750 </string>
+    <string name="sqr12">3,000 </string>
+    <string name="sqr13">3,250 </string>
+    <string name="sqr14">3,500 </string>
+    <string name="sqr15">3,750 </string>
+    <string name="sqr16">4,000 </string>
+    <string name="sqr17">4,250 </string>
+    <string name="sqr18">4,500 </string>
+    <string name="sqr19">4,750 </string>
+    <string name="sqr20">5,000 </string>
+    <string name="sqr21">5,250 </string>
+    <string name="sqr22">5,500 </string>
+    <string name="sqr23">5,750 </string>
+    <string name="sqr24">6,000 </string>
+    <string name="sqr25">6,250 </string>
+    <string name="sqr26">6,500 </string>
+    <string name="sqr27">6,750 </string>
+    <string name="sqr28">7,000 </string>
+    <string name="sqr29">7,250 </string>
+    <string name="sqr30">7,500 </string>
+    <string name="sqr31">7,750 </string>
+    <string name="sqr32">8,000 </string>
+    <string name="sqr33">8,250 </string>
+    <string name="sqr34">8,500 </string>
+    <string name="sqr35">8,750 </string>
+    <string name="sqr36">9,000 </string>
+    <string name="sqr37">9,250 </string>
+    <string name="sqr38">9,500 </string>
+    <string name="sqr39">9,750 </string>
+    <string name="sqr40">10,000 </string>
+
+    <string-array name="SquareFootageList">
+        <item>@string/no_min</item>
+        <item>@string/no_max</item>
+        <item>@string/sqr1</item>
+        <item>@string/sqr2</item>
+        <item>@string/sqr3</item>
+        <item>@string/sqr4</item>
+        <item>@string/sqr5</item>
+        <item>@string/sqr6</item>
+        <item>@string/sqr7</item>
+        <item>@string/sqr8</item>
+        <item>@string/sqr9</item>
+        <item>@string/sqr10</item>
+        <item>@string/sqr11</item>
+        <item>@string/sqr12</item>
+        <item>@string/sqr13</item>
+        <item>@string/sqr14</item>
+        <item>@string/sqr15</item>
+        <item>@string/sqr16</item>
+        <item>@string/sqr17</item>
+        <item>@string/sqr18</item>
+        <item>@string/sqr19</item>
+        <item>@string/sqr20</item>
+        <item>@string/sqr21</item>
+        <item>@string/sqr22</item>
+        <item>@string/sqr23</item>
+        <item>@string/sqr24</item>
+        <item>@string/sqr25</item>
+        <item>@string/sqr26</item>
+        <item>@string/sqr27</item>
+        <item>@string/sqr28</item>
+        <item>@string/sqr29</item>
+        <item>@string/sqr30</item>
+        <item>@string/sqr31</item>
+        <item>@string/sqr32</item>
+        <item>@string/sqr33</item>
+        <item>@string/sqr34</item>
+        <item>@string/sqr35</item>
+        <item>@string/sqr36</item>
+        <item>@string/sqr37</item>
+        <item>@string/sqr38</item>
+        <item>@string/sqr39</item>
+        <item>@string/sqr40</item>
+
+    </string-array>
+
+
+    <!--price  for sale filter list-->
+    <string name="price1">$10,000</string>
+    <string name="price2">$20,000</string>
+    <string name="price3">$30,000</string>
+    <string name="price4">$50,000</string>
+    <string name="price5">$1,00,000</string>
+    <string name="price6">$1,50,000</string>
+    <string name="price7">$2,00,000</string>
+    <string name="price8">$2,50,000</string>
+    <string name="price9">$3,00,000</string>
+    <string name="price10">$3,50,000</string>
+    <string name="price11">$4,00,000</string>
+    <string name="price12">$4,50,000</string>
+    <string name="price13">$5,00,000</string>
+    <string name="price14">$5,50,000</string>
+    <string name="price15">$6,00,000</string>
+    <string name="price16">$6,50,000</string>
+    <string name="price17">$7,00,000</string>
+    <string name="price18">$7,50,000</string>
+    <string name="price19">$8,00,000</string>
+    <string name="price20">$8,50,000</string>
+    <string name="price21">$9,00,000</string>
+    <string name="price22">$9,50,000</string>
+    <string name="price23">$10,00,000</string>
+    <string name="price24">$11,00,000</string>
+    <string name="price25">$12,00,000</string>
+    <string name="price26">$12,50,000</string>
+    <string name="price27">$14,00,000</string>
+    <string name="price28">$15,00,000</string>
+    <string name="price29">$16,00,000</string>
+    <string name="price30">$17,00,000</string>
+    <string name="price31">$18,00,000</string>
+    <string name="price32">$19,50,000</string>
+    <string name="price33">$20,00,000</string>
+    <string name="price34">$22,50,000</string>
+    <string name="price35">$25,00,000</string>
+    <string name="price36">$27,50,000</string>
+    <string name="price37">$30,00,000</string>
+    <string name="price38">$35,00,000</string>
+    <string name="price39">$40,00,000</string>
+    <string-array name="PriceSaleList">
+        <item>@string/no_min</item>
+        <item>@string/no_max</item>
+        <item>@string/price1</item>
+        <item>@string/price2</item>
+        <item>@string/price3</item>
+        <item>@string/price4</item>
+        <item>@string/price5</item>
+        <item>@string/price6</item>
+        <item>@string/price7</item>
+        <item>@string/price8</item>
+        <item>@string/price9</item>
+        <item>@string/price10</item>
+        <item>@string/price11</item>
+        <item>@string/price12</item>
+        <item>@string/price13</item>
+        <item>@string/price14</item>
+        <item>@string/price15</item>
+        <item>@string/price16</item>
+        <item>@string/price17</item>
+        <item>@string/price18</item>
+        <item>@string/price19</item>
+        <item>@string/price20</item>
+        <item>@string/price21</item>
+        <item>@string/price22</item>
+        <item>@string/price23</item>
+        <item>@string/price24</item>
+        <item>@string/price25</item>
+        <item>@string/price26</item>
+        <item>@string/price27</item>
+        <item>@string/price28</item>
+        <item>@string/price29</item>
+        <item>@string/price30</item>
+        <item>@string/price31</item>
+        <item>@string/price32</item>
+        <item>@string/price33</item>
+        <item>@string/price34</item>
+        <item>@string/price35</item>
+        <item>@string/price36</item>
+        <item>@string/price37</item>
+        <item>@string/price38</item>
+        <item>@string/price39</item>
+
+    </string-array>
+
+
+    <!--price list for rent filter-->
+    <string name="price_rent_1">$400</string>
+    <string name="price_rent_2">$500</string>
+    <string name="price_rent_3">$600</string>
+    <string name="price_rent_4">$700</string>
+    <string name="price_rent_5">$800</string>
+    <string name="price_rent_6">$900</string>
+    <string name="price_rent_7">$1,000</string>
+    <string name="price_rent_8">$1,100</string>
+    <string name="price_rent_9">$1,200</string>
+    <string name="price_rent_10">$1,300</string>
+    <string name="price_rent_11">$1,400</string>
+    <string name="price_rent_12">$1,500</string>
+    <string name="price_rent_13">$1,600</string>
+    <string name="price_rent_14">$1,700</string>
+    <string name="price_rent_15">$1,800</string>
+    <string name="price_rent_16">$1,900</string>
+    <string name="price_rent_17">$2,000</string>
+    <string name="price_rent_18">$2,100</string>
+    <string name="price_rent_19">$2,200</string>
+    <string name="price_rent_20">$2,300</string>
+    <string name="price_rent_21">$2,400</string>
+    <string name="price_rent_22">$2,500</string>
+    <string name="price_rent_23">$2,600</string>
+    <string name="price_rent_24">$2,700</string>
+    <string name="price_rent_25">$2,800</string>
+    <string name="price_rent_26">$2,900</string>
+    <string name="price_rent_27">$3,000</string>
+    <string name="price_rent_28">$3,100</string>
+    <string name="price_rent_29">$3,200</string>
+    <string name="price_rent_30">$3,300</string>
+    <string name="price_rent_31">$3,400</string>
+    <string name="price_rent_32">$3,500</string>
+    <string name="price_rent_33">$3,600</string>
+    <string name="price_rent_34">$3,700</string>
+    <string name="price_rent_35">$3,800</string>
+    <string name="price_rent_36">$3,900</string>
+    <string name="price_rent_37">$4,000</string>
+    <string name="price_rent_38">$4,100</string>
+    <string name="price_rent_39">$4,200</string>
+    <string name="price_rent_40">$4,300</string>
+    <string name="price_rent_41">$4,400</string>
+    <string name="price_rent_42">$4,500</string>
+    <string name="price_rent_43">$4,600</string>
+    <string name="price_rent_44">$4,700</string>
+    <string name="price_rent_45">$4,800</string>
+    <string name="price_rent_46">$4,900</string>
+    <string name="price_rent_47">$5,000</string>
+    <string name="price_rent_48">$5,100</string>
+    <string name="price_rent_49">$5,200</string>
+    <string name="price_rent_50">$5,300</string>
+    <string name="price_rent_51">$5,400</string>
+    <string name="price_rent_52">$5,500</string>
+    <string name="price_rent_53">$5,600</string>
+    <string name="price_rent_54">$5,700</string>
+    <string name="price_rent_55">$5,800</string>
+    <string name="price_rent_56">$5,900</string>
+    <string name="price_rent_57">$6,000</string>
+    <string name="price_rent_58">$6,100</string>
+    <string name="price_rent_59">$6,200</string>
+    <string name="price_rent_60">$6,300</string>
+    <string name="price_rent_61">$6,400</string>
+    <string name="price_rent_62">$6,500</string>
+    <string name="price_rent_63">$6,600</string>
+    <string name="price_rent_64">$6,700</string>
+    <string name="price_rent_65">$6,800</string>
+    <string name="price_rent_66">$6,900</string>
+    <string name="price_rent_67">$7,000</string>
+    <string name="price_rent_68">$7,100</string>
+    <string name="price_rent_69">$7,200</string>
+    <string name="price_rent_70">$7,300</string>
+    <string name="price_rent_71">$7,400</string>
+    <string name="price_rent_72">$7,500</string>
+    <string name="price_rent_73">$7,600</string>
+    <string name="price_rent_74">$7,700</string>
+    <string name="price_rent_75">$7,800</string>
+    <string name="price_rent_76">$7,900</string>
+    <string name="price_rent_77">$8,000</string>
+    <string name="price_rent_78">$8,100</string>
+    <string name="price_rent_79">$8,200</string>
+    <string name="price_rent_80">$8,300</string>
+    <string name="price_rent_81">$8,400</string>
+    <string name="price_rent_82">$8,500</string>
+    <string name="price_rent_83">$8,600</string>
+    <string name="price_rent_84">$8,700</string>
+    <string name="price_rent_85">$8,800</string>
+    <string name="price_rent_86">$8,900</string>
+    <string name="price_rent_87">$9,000</string>
+    <string name="price_rent_88">$9,100</string>
+    <string name="price_rent_89">$9,200</string>
+    <string name="price_rent_90">$9,300</string>
+    <string name="price_rent_91">$9,400</string>
+    <string name="price_rent_92">$9,500</string>
+    <string name="price_rent_93">$9,600</string>
+    <string name="price_rent_94">$9,700</string>
+    <string name="price_rent_95">$9,800</string>
+    <string name="price_rent_96">$9,900</string>
+    <string name="price_rent_97">$10,000</string>
+
+    <string-array name="PriceListRent">
+        <item>@string/no_min</item>
+        <item>@string/no_max</item>
+        <item>@string/price_rent_1</item>
+        <item>@string/price_rent_2</item>
+        <item>@string/price_rent_3</item>
+        <item>@string/price_rent_4</item>
+        <item>@string/price_rent_5</item>
+        <item>@string/price_rent_6</item>
+        <item>@string/price_rent_7</item>
+        <item>@string/price_rent_8</item>
+        <item>@string/price_rent_9</item>
+        <item>@string/price_rent_10</item>
+        <item>@string/price_rent_11</item>
+        <item>@string/price_rent_12</item>
+        <item>@string/price_rent_13</item>
+        <item>@string/price_rent_14</item>
+        <item>@string/price_rent_15</item>
+        <item>@string/price_rent_16</item>
+        <item>@string/price_rent_17</item>
+        <item>@string/price_rent_18</item>
+        <item>@string/price_rent_19</item>
+        <item>@string/price_rent_20</item>
+        <item>@string/price_rent_21</item>
+        <item>@string/price_rent_22</item>
+        <item>@string/price_rent_23</item>
+        <item>@string/price_rent_24</item>
+        <item>@string/price_rent_25</item>
+        <item>@string/price_rent_26</item>
+        <item>@string/price_rent_27</item>
+        <item>@string/price_rent_28</item>
+        <item>@string/price_rent_29</item>
+        <item>@string/price_rent_30</item>
+        <item>@string/price_rent_31</item>
+        <item>@string/price_rent_32</item>
+        <item>@string/price_rent_33</item>
+        <item>@string/price_rent_34</item>
+        <item>@string/price_rent_35</item>
+        <item>@string/price_rent_36</item>
+        <item>@string/price_rent_37</item>
+        <item>@string/price_rent_38</item>
+        <item>@string/price_rent_39</item>
+        <item>@string/price_rent_40</item>
+        <item>@string/price_rent_41</item>
+        <item>@string/price_rent_42</item>
+        <item>@string/price_rent_43</item>
+        <item>@string/price_rent_44</item>
+        <item>@string/price_rent_45</item>
+        <item>@string/price_rent_46</item>
+        <item>@string/price_rent_47</item>
+        <item>@string/price_rent_48</item>
+        <item>@string/price_rent_49</item>
+        <item>@string/price_rent_50</item>
+        <item>@string/price_rent_51</item>
+        <item>@string/price_rent_52</item>
+        <item>@string/price_rent_53</item>
+        <item>@string/price_rent_54</item>
+        <item>@string/price_rent_55</item>
+        <item>@string/price_rent_56</item>
+        <item>@string/price_rent_57</item>
+        <item>@string/price_rent_58</item>
+        <item>@string/price_rent_59</item>
+        <item>@string/price_rent_60</item>
+        <item>@string/price_rent_61</item>
+        <item>@string/price_rent_62</item>
+        <item>@string/price_rent_63</item>
+        <item>@string/price_rent_64</item>
+        <item>@string/price_rent_65</item>
+        <item>@string/price_rent_66</item>
+        <item>@string/price_rent_67</item>
+        <item>@string/price_rent_68</item>
+        <item>@string/price_rent_69</item>
+        <item>@string/price_rent_70</item>
+        <item>@string/price_rent_71</item>
+        <item>@string/price_rent_72</item>
+        <item>@string/price_rent_73</item>
+        <item>@string/price_rent_74</item>
+        <item>@string/price_rent_75</item>
+        <item>@string/price_rent_76</item>
+        <item>@string/price_rent_77</item>
+        <item>@string/price_rent_78</item>
+        <item>@string/price_rent_79</item>
+        <item>@string/price_rent_80</item>
+        <item>@string/price_rent_81</item>
+        <item>@string/price_rent_82</item>
+        <item>@string/price_rent_83</item>
+        <item>@string/price_rent_84</item>
+        <item>@string/price_rent_85</item>
+        <item>@string/price_rent_86</item>
+        <item>@string/price_rent_87</item>
+        <item>@string/price_rent_88</item>
+        <item>@string/price_rent_89</item>
+        <item>@string/price_rent_90</item>
+        <item>@string/price_rent_91</item>
+        <item>@string/price_rent_92</item>
+        <item>@string/price_rent_93</item>
+        <item>@string/price_rent_94</item>
+        <item>@string/price_rent_95</item>
+        <item>@string/price_rent_96</item>
+        <item>@string/price_rent_97</item>
+    </string-array>
+
+
+    <string-array name="property_types">
+        <item>Single-Family Home</item>
+        <item>Condo</item>
+        <item>Townhouse</item>
+        <item>Coop</item>
+        <item>Apartment</item>
+        <item>Loft</item>
+        <item>TIC</item>
+        <item>Apartment/Condo/Townhouse</item>
+        <item>Mobile/Manufactured</item>
+        <item>Farm/Ranch</item>
+        <item>Lot/land</item>
+        <item>Multi-Family</item>
+        <item>Income/Investment</item>
+        <item>Houseboat</item>
+    </string-array>
+
+    <!--Saved Search Fragment-->
+    <string name="delete">Delete</string>
+    <string name="rent_colon">Rent :</string>
+    <string name="bed_bath_count_show_format"> %1$s | %2$s</string>
+    <string name="price_range_show_format">%1$s : %2$s - %3$s</string>
+    <string name="any_beds">Any Beds</string>
+    <string name="any_baths">Any Baths</string>
+    <string name="name">Name</string>
+    <string name="email_notification">Email Notifications</string>
+    <string name="allow_agent_broker_inquiry">Allow Agent or Broker Inquiry</string>
+    <string name="error_msg_select_one_item_edit">Please select one item to edit</string>
+    <string name="error_msg_select_one_item_delete">Please select one item to delete</string>
+    <string name="alert_delete">Are you sure want to delete?</string>
+    <string name="alert_no_item">No items in your saves searches</string>
+
+
+    <!--My Favorites Screen-->
+    <string name="favourites">Favorites</string>
+    <string name="my_boards">My Boards</string>
+    <string name="you_not_having">You are not having any Favorite Property to edit</string>
+    <string name="property_added_board">You have just added this listing to your boards. See what other people have to say about this property.</string>
+    <string name="property_remove_board">Property removed from my boards</string>
+
+    <!--Property Details Screen-->
+    <string name="review">Review</string>
+    <string name="more_">…More</string>
+    <string name="less">Less</string>
+    <string name="photo_video">Photos and Videos</string>
+    <string name="add">Add</string>
+    <string name="see_more">See More</string>
+    <string name="add_this_property_to_your_boards">Add this property to your my boards</string>
+    <string name="property_details_agree_txt">By sending, you agree to Renters Block Terms of Use and Privacy Policy</string>
+    <string name="report_fraud">Report Fraud</string>
+    <string name="contact_info">Contact Detail</string>
+    <string name="not_applicable">N/A</string>
+    <string name="report_fraud_content">Are you sure, You want to report this property as fraudulent one</string>
+    <string name="report_fraud_cant">You cannot give report for your own property</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2849275245114223/8192060197</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-2849275245114223/2693987581</string>
+    <string name="per_month"> / mo</string>
+    <string name="one_per">1/</string>
+    <string name="property_for">For</string>
+    <string name="property_sqft">Sqft</string>
+    <string name="build_year">Build Year</string>
+    <string name="you_cannot_req">You cannot send Request Info for your own property.</string>
+    <string name="photo_popup_count">1 of 1</string>
+
+    <!-- Find Agent Activity -->
+    <string name="find_agent_header">Find An Agent</string>
+    <string name="sponsored">Sponsored</string>
+    <string name="agent_name">Noah Freedman</string>
+    <string name="agent_with_bond">Agent with BOND New York</string>
+    <string name="in_new_york">In New York</string>
+    <string name="one_six_nine">169</string>
+    <string name="sold_homes">Sold Homes</string>
+    <string name="agent_listings">Active Listings</string>
+    <string name="more_reviews">More Reviews</string>
+    <string name="agent_with">agent with</string>
+    <string name="with">with</string>
+    <string name="in">In</string>
+    <string name="result">Result</string>
+    <string name="send_agent_mail_msg">Hi, I saw your available listings on Renter\'s Block and would like to learn more about a specific listing.
+    Please <![CDATA[ <a href="goo.gl/DGDC1v">LOGIN!</a>]]>and feel free to message me through the app or website. Looking forward to connecting with you!</string>
+    <string name="send_agent_mail_sub">New Hot Lead from Renter\'s Block</string>
+    <string name="update_filter">Update Filters</string>
+    <string name="location">Location</string>
+    <string name="show_results_for">Show results for</string>
+    <string name="sells_in_price_range">Sells in price range</string>
+    <string name="property_expertise">Property Expertise</string>
+    <string name="name_or_keyword">Name or Keyword</string>
+    <string name="location_hint">Search location</string>
+    <string name="searchtype_hint">Search Type</string>
+    <string name="agents_txt">Agent</string>
+    <string name="brokers_txt">Broker</string>
+    <string name="sellers_txt">Seller</string>
+    <string name="apply_txt">Apply</string>
+    <string name="reset_txt">Reset</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="as">as</string>
+    <string name="ss">ss</string>
+    <string name="readmore">Read More</string>
+    <string name="buyers">53% Buyers</string>
+    <string name="sellers">47% Sellers</string>
+    <string name="past_sale">Past Sales</string>
+    <string name="about">About</string>
+    <string name="share_profile">Share this Profile</string>
+
+    <!--ProfileScreen-->
+    <string name="removal_competitor_ads">Removal of competitor ads</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_password">Change Password</string>
+    <string name="photos_and_videos">Photos and Videos</string>
+    <string name="more_about_me">More About Me</string>
+    <string name="things_to_try">Things to Try</string>
+    <string name="add_friends">Add Friends</string>
+    <string name="schedule_live_chat">Schedule a Live Video Chat</string>
+    <string name="add_photo_or_video">Add a Photo or Video</string>
+    <string name="my_feed">My Feed</string>
+    <string name="please_enter_your_user_name">Please enter your username</string>
+    <string name="current_password">Current password</string>
+    <string name="change_password_small">Change password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm new password</string>
+    <string name="upgrade_profile">Upgrade to Enhanced Profile</string>
+    <string name="username_updated">Username updated successfully</string>
+    <string name="new_conf_pwd_same">New password and Confirm password should same</string>
+    <string name="pwd_updated">Password updated successfully</string>
+
+
+    <!--AlertsScreen-->
+    <string name="dollar">$ </string>
+    <string name="comma">,</string>
+    <string name="hyphen">  -  </string>
+    <string name="slash">  |  </string>
+    <string name="plus"> + </string>
+    <string name="colon"> : </string>
+    <string name="open_parenthesis">(</string>
+    <string name="close_parenthesis">)</string>
+    <string name="property_not_select">Select atleast one property</string>
+    <string name="enter_your_alert">Please enter your alert Location</string>
+    <string name="please_enter_location">Please enter location</string>
+    <string name="location_alert_msg">Please enter a valid location</string>
+    <string name="name_alert">Name your alert</string>
+    <string name="save_alert">Save alert as</string>
+    <string name="alert_hint">Alert name</string>
+    <string name="alert_msg">Please enter your alert name</string>
+    <string name="no_item_alert">No items in your Alert</string>
+
+    <!--Create Schedule screen validation-->
+    <string name="enter_title">Please Enter Title</string>
+    <string name="enter_description">Please Enter Description</string>
+    <string name="enter_location">Please Enter Location</string>
+    <string name="enter_date">Please Enter Date</string>
+    <string name="enter_time">Please Enter Time</string>
+    <string name="enter_status">Please Choose Online or Offline</string>
+    <string name="enter_date_time">Please Select date and Time</string>
+
+    <string name="schedule_meeting">Schedule a Meeting </string>
+
+    <!--Find Agent Details-->
+    <string name="latest_review">Latest Review</string>
+    <string name="read_more">Read More</string>
+    <string name="no_listing_to_show">No Listing To Show</string>
+    <string name="no_review_to_show">No Review To Show</string>
+    <string name="find_an_agent_rev_hint">Did your broker make renting out a new home easy and hassle free? Or did your rage from missed appointments and inconsistent service bring you here to warn others? Let us know the good, bad or the ugly!</string>
+    <string name="update_review_alert">You are leaving another review for this business.Only the rating for your most recent review counts towards the business average rating.</string>
+    <string name="please_select_rating">Please select Rating</string>
+    <string name="please_give_comments">Please give comments</string>
+    <string name="send_message">Send Message</string>
+    <string name="contact_the_user">Contact the user</string>
+
+
+    <!--HotLeads Fragment-->
+    <string name="view_format">Views ( %1$s )</string>
+    <string name="hot_leads_format">Hot Leads( %1$s )</string>
+    <string name="requested_info">Requested Info</string>
+    <string name="hot_leads_alert">No items in your hot leads list</string>
+
+    <!-- Friends Screen -->
+
+    <string name="recents">Recents</string>
+    <string name="search_for_people">Search for people and groups</string>
+    <string name="friends_empty_count_txt">Friends (0) </string>
+    <string name="start_chat">Start Chat</string>
+    <string name="friends_list">Friends List</string>
+    <string name="voice_call">Voice Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="search_for_peoples">Search for People</string>
+    <string name="request_sent">Request Sent</string>
+    <string name="no_results_found">No Results Found</string>
+    <string name="friend_request">Friend Request</string>
+    <string name="send_request">Send Request</string>
+
+
+    <!-- Chat Screen -->
+
+    <string name="type_msg">Type a message...</string>
+    <string name="audio_record">Audio Record</string>
+    <string name="audio_recording">Audio Record...</string>
+    <string name="audio_playing">Audio Playing...</string>
+    <string name="audio_recorded">Audio Recorded</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="add_as_friend">Add as Friend</string>
+    <string name="block_user">Block User</string>
+    <string name="chat">Chat</string>
+
+    <!--Temp Strings-->
+    <string name="next_milestone">Will be integrated in next milestone</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sorry_failed_video">Sorry! Failed to capture video</string>
+
+    <!--InviteFriend-->
+    <string name="invite_friend">Invite Friend</string>
+
+    <!--BlockUser-->
+    <string name="block">Block</string>
+    <string name="report">Report</string>
+
+    <!--AboutMe-->
+    <string name="about_me">About Me</string>
+</resources>

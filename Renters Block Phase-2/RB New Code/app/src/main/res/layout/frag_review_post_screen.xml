@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@+id/bottom_share_lay"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/size30"
+        android:background="@drawable/border_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size20">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_alignEnd="@+id/rating_bar"
+                android:layout_alignStart="@+id/rating_bar">
+
+                <View
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size1"
+                    android:layout_marginTop="@dimen/size40"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/BlueBigRatingBar"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/review_txt"
+            style="@style/TextHelvetica"
+            android:layout_marginTop="@dimen/size10"
+            android:paddingStart="@dimen/size10"
+            android:paddingEnd="@dimen/size10"
+            android:gravity="start"
+            android:scrollbars="none"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_share_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size30">
+
+        <ToggleButton
+            android:id="@+id/twitter_share_toggle_btn"
+            android:layout_width="@dimen/size110"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/twit_share_disable"
+            android:clickable="true"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/fb_share_toggle_btn"
+            android:layout_width="@dimen/size110"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/fb_share_disable"
+            android:clickable="true"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+</RelativeLayout>

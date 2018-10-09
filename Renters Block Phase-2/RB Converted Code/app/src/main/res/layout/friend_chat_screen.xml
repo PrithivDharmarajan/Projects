@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/header_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/report_as_spam" >
+
+        <ListView
+            android:id="@+id/chat_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin5"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/message_field"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/send_btn"
+                android:background="@android:color/transparent"
+                android:hint="@string/type_msg"
+                android:paddingLeft="@dimen/margin5"
+                android:textColor="@color/dart_grey" />
+
+            <TextView
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin10"
+                android:clickable="true"
+                android:onClick="onSend"
+                android:text="Send"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:background="@drawable/view_bg" />
+
+        <LinearLayout
+            android:id="@+id/chat_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/chat_text"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_text"
+                android:onClick="onTextChat"
+                android:src="@drawable/chat_text" />
+
+            <ImageView
+                android:id="@+id/chat_camera"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="@dimen/margin25"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_camera"
+                android:onClick="onCameraChat"
+                android:src="@drawable/chat_camera" />
+
+            <ImageView
+                android:id="@+id/chat_gallery"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="@dimen/margin25"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_gallery"
+                android:onClick="onGalleryChat"
+                android:src="@drawable/chat_gallery" />
+
+            <ImageView
+                android:id="@+id/chat_voice"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="@dimen/margin25"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_voice"
+                android:onClick="onVoiceChat"
+                android:src="@drawable/chat_voice" />
+
+            <ImageView
+                android:id="@+id/chat_video"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_video"
+                android:onClick="onVideoChat"
+                android:src="@drawable/chat_video" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_as_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:gravity="center"
+        android:textSize="@dimen/text18"
+        android:text="Add as Friend"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:background="@drawable/key_box" />
+    
+    <Button
+        android:id="@+id/report_as_spam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_as_friend"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/text18"
+        android:text="Block User"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@drawable/key_box" />
+
+</RelativeLayout>

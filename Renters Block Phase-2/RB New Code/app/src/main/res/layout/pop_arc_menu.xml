@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_arc_parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/black_transparent"
+        android:layout_marginBottom="@dimen/size50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/size160"
+            android:layout_height="@dimen/size160"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/side_shape_icon" />
+
+        <ImageView
+            android:id="@+id/video_chat"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginStart="@dimen/size5"
+            android:layout_marginTop="@dimen/text15"
+            android:src="@drawable/video_chat_icon" />
+
+        <ImageView
+            android:id="@+id/reviews"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:layout_above="@+id/photo_video"
+            android:layout_toEndOf="@+id/video_chat"
+            android:src="@drawable/start_review_icon" />
+
+        <ImageView
+            android:id="@+id/photo_video"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/imageView1"
+            android:layout_marginEnd="@dimen/size17"
+            android:src="@drawable/bottom_camera" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/close_id_lay"
+        android:background="@color/white"
+        android:layout_width="@dimen/size70"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="@dimen/size25"
+        android:layout_height="@dimen/size20"
+        android:src="@drawable/close_dialog_icon"
+       />
+    </RelativeLayout>
+</RelativeLayout>

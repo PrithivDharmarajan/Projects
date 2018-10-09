@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bar"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/menu_icon"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/header_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/back_arrow_white"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_icon"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding5" >
+
+            <Button
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin30"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/add_button"
+                android:visibility="gone"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/edit_icon"
+            android:layout_toRightOf="@+id/menu_icon"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/my_reviews"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

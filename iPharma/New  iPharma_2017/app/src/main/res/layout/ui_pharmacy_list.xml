@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:clickable="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/greycolor">
+
+    <LinearLayout
+        android:id="@+id/edittext_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size25"
+        android:layout_marginTop="@dimen/size8"
+        android:layout_marginBottom="@dimen/size8"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/et_bg">
+       <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_icon"/>-->
+
+        <AutoCompleteTextView
+            android:id="@+id/pharmacy_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/search"
+            android:textSize="@dimen/size14"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/size5"
+            android:drawablePadding="@dimen/size2"
+            android:dropDownHeight="@dimen/size150"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/search_icon"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:imeOptions="actionSearch"/>
+
+        <ImageView
+            android:id="@+id/clear_btn"
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/size5"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/clear_text"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whitecolor" />
+            <ImageView
+                android:id="@+id/current_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginBottom="@dimen/size30"
+                android:src="@drawable/cur_loc"/>
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/pharmacy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/app_color"
+            android:visibility="visible"
+            android:dividerHeight="1dp">
+
+        </ListView>
+<RelativeLayout
+    android:id="@+id/internetconnection_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+    <ImageView
+        android:id="@+id/refresh_btn"
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:layout_above="@+id/internet_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size10"
+        android:src="@drawable/ip_refresh_button"/>
+    <TextView
+        android:id="@+id/internet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size18"
+        style="@style/TextRegular"
+        android:textColor="@color/greycolor"
+        android:layout_centerInParent="true"
+        android:text="@string/no_internet_connec"/>
+</RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

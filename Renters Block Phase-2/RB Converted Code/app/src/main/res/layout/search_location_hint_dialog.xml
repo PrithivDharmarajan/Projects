@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hint_dialog_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/map_overlay" >
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/margin25"
+            android:layout_height="@dimen/margin25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/close_icon" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height100"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin11"
+            android:layout_marginLeft="@dimen/margin50"
+            android:layout_toRightOf="@+id/close_btn"
+            android:background="@drawable/save_text_arrow" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bottom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-20dp"
+        android:background="@drawable/map_oval_shape" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transperent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin20"
+        android:background="@drawable/alert_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Select Photo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dart_grey"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/from_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/ok_btn"
+            android:text="Take Photo"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/from_galery"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/ok_btn"
+            android:text="Choose Existing Photo"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/ok_btn"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:text="@android:string/cancel"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

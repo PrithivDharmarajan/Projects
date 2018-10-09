@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="AppBaseTheme"></style>-->
+
+    <style parent="@android:style/Widget.TextView" name="SpinnerTextViewItem">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+
+    <style name="SmallBlueRating" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/small_blue_ratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin11</item>
+        <item name="android:maxHeight">@dimen/margin11</item>
+        <item name="android:minWidth">@dimen/margin11</item>
+        <item name="android:maxWidth">@dimen/margin11</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="MediumBlueRating" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/medium_blue_ratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin19</item>
+        <item name="android:maxHeight">@dimen/margin19</item>
+        <item name="android:minWidth">@dimen/margin19</item>
+        <item name="android:maxWidth">@dimen/margin19</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="BigBlueRating" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/big_blue_ratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin25</item>
+        <item name="android:maxHeight">@dimen/margin25</item>
+        <item name="android:minWidth">@dimen/margin25</item>
+        <item name="android:maxWidth">@dimen/margin25</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="SmallWhiteRating" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/small_white_ratingbar_bg</item>
+        <item name="android:minHeight">@dimen/margin11</item>
+        <item name="android:maxHeight">@dimen/margin11</item>
+        <item name="android:minWidth">@dimen/margin11</item>
+        <item name="android:maxWidth">@dimen/margin11</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

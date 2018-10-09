@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding5" >
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text16" />
+
+    <TextView
+        android:id="@+id/shopStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text15" />
+
+    <TextView
+        android:id="@+id/shopAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text15" />
+
+    <TextView
+        android:id="@+id/shopCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text14" />
+
+    <TextView
+        android:id="@+id/shopPincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text12" />
+
+</LinearLayout>

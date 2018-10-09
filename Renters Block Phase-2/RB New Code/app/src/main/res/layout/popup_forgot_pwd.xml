@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_margin="@dimen/size20"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextHelveticaBold"
+        android:layout_margin="@dimen/size10"
+        android:text="@string/please_enter_email_address"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email_edt"
+        style="@style/EditTextLight"
+        android:layout_margin="@dimen/size10"
+        android:background="@drawable/border_gray"
+        android:hint="@string/enter_email_address"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="0dip"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/size7"
+        android:textColorHint="@color/black" />
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:orientation="horizontal"
+        android:padding="@dimen/size10">
+
+        <Button
+            android:id="@+id/send_btn"
+            style="@style/LoginButtonBold"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btn"
+            android:text="@string/send"
+            android:textColor="@color/gray_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="@style/ButtonBold"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btn"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_dark"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

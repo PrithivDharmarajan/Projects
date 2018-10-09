@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+        <TextView
+            android:id="@id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/terms_conds"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text24" />
+
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:src="@drawable/back_butto" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_lay"
+        android:layout_marginBottom="@dimen/margin60"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/history_bg" >
+
+        <WebView
+            android:id="@+id/tems_condition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:layout_margin="@dimen/margin10"
+            android:gravity="left"
+            android:textColor="@color/gray_2"
+            android:textSize="@dimen/text16"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_toLeftOf="@+id/continue_btn"
+            android:layout_toRightOf="@+id/terms_check"
+            android:text="@string/agree_txt"
+            android:textSize="@dimen/text14" />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ipahrma_login_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/continue_text"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/terms_check"
+            android:layout_width="@dimen/margin30"
+            android:layout_height="@dimen/margin30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ipharma_tick_icon"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+</RelativeLayout>

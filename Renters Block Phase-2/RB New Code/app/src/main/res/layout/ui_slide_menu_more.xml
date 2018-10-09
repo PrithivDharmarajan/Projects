@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextHelveticaBold"
+        android:background="@color/black"
+        android:gravity="start"
+        android:paddingBottom="@dimen/size3"
+        android:paddingEnd="0dip"
+        android:paddingStart="@dimen/size10"
+        android:paddingTop="@dimen/size3"
+        android:textSize="@dimen/text14"
+        android:text="@string/more"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/feedback_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/size7"
+        android:paddingEnd="0dip"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_feedback_icon" />
+
+        <TextView
+            style="@style/TextHelveticaLight"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="start"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size37"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/rate_this_app_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/size7"
+        android:paddingEnd="0dip"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_rate_this_app_icon" />
+
+        <TextView
+            style="@style/TextHelveticaLight"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="start"
+            android:text="@string/rate_this_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size37"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/share_this_app_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/size7"
+        android:paddingEnd="0dip"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_share_this_app_icon" />
+
+        <TextView
+            style="@style/TextHelveticaLight"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="start"
+            android:text="@string/share_this_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size37"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/settings_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/size7"
+        android:paddingEnd="0dip"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_settings_icon" />
+
+        <TextView
+            style="@style/TextHelveticaLight"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="start"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+</LinearLayout>

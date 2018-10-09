@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_bar">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/filter_common_lay"
+                layout="@layout/frag_filter_common_view"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/filter_for_sale_lay"
+                layout="@layout/frag_filter_for_sale"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/keyword_parent_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/keywords_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:background="@drawable/filter_ash_bg">
+
+                    <TextView
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size50"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="center|start"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="@dimen/size10"
+                        android:text="@string/keywords"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text15" />
+
+                    <TextView
+                        android:id="@+id/clear_text"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size50"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/size5"
+                        android:clickable="true"
+                        android:gravity="center|start"
+                        android:paddingEnd="@dimen/size5"
+                        android:paddingStart="0dp"
+                        android:text="@string/clear_all"
+                        android:textColor="@color/app_blue"
+                        android:textSize="@dimen/text16"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/key_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <EditText
+                    android:id="@+id/keyword_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size40"
+                    android:layout_margin="@dimen/size10"
+                    android:background="@drawable/filter_key_box_without_corner"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:hint="@string/filter_key_hints"
+                    android:imeActionLabel="Enter"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size10"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text15" />
+
+
+                <com.nex3z.flowlayout.FlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/keywords_flow_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:visibility="gone"
+                    app:childSpacing="@dimen/size5"
+                    app:childSpacingForLastRow="align"
+                    app:rowSpacing="@dimen/size5" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mls_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mls_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_height="@dimen/size50"
+                    android:background="@drawable/filter_ash_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size10"
+                    android:text="@string/mls"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <EditText
+                    android:id="@+id/mls_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size40"
+                    android:layout_below="@+id/mls_txt"
+                    android:layout_margin="@dimen/size10"
+                    android:background="@drawable/filter_key_box_without_corner"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:hint="@string/id"
+                    android:inputType="text"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size10"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/show_more_txt"
+                style="@style/TextHelvetica"
+                android:layout_height="@dimen/size50"
+                android:maxLines="1"
+                android:text="@string/show_more"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text15"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/empty_back_sold_above"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@drawable/filter_ash_bg">
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@drawable/filter_ash_bg" />
+
+            <TextView
+                android:id="@+id/reset_filters_txt"
+                style="@style/TextHelvetica"
+                android:layout_height="@dimen/size50"
+                android:layout_gravity="bottom"
+                android:maxLines="1"
+                android:text="@string/reset_filters"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/text15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_blue"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:id="@+id/apply_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:text="@string/apply"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+
+</RelativeLayout>

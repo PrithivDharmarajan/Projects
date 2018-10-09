@@ -1,0 +1,671 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bar" >
+
+        <LinearLayout
+            android:id="@+id/back_icon"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow_white"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/msg_icon"
+            android:layout_toRightOf="@+id/back_icon"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/property_type"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/msg_icon"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <Button
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin20"
+                android:background="@drawable/message_icon"
+                android:clickable="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/property_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_bottom"
+        android:layout_below="@+id/top_lay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/all_types_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/all_types"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/all_types"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/all_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/single_family_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/single_family"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/single_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/condo_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/condo"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/condo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/town_house_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/town_house"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/town_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/coop_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/coop"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/coop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/apartment_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/apartment"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/loft_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/loft"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/loft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/tic_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/tic"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/tic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/apartment_condo_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/apartment_condo"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/apartment_condo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/mobile_manufactured_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/mobile_manufactured"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/mobile_manufactured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/farm_ranch_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/farm_ranch"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/farm_ranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/lot_land_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/lot_land"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/lot_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/multi_family_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/multi_family"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/multi_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/income_investment_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/income_investment"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/income_investment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:background="@drawable/view_bg" />
+
+            <RelativeLayout
+                android:id="@+id/houseboat_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="@string/houseboat"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <Button
+                    android:id="@+id/houseboat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/tick_off"
+                    android:clickable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_above="@+id/bottom_lay"
+        android:background="@drawable/view_bg" />
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/view_bg" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="@string/set"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

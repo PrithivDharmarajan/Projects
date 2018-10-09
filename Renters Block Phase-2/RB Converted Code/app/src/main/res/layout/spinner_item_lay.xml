@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/spinner_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding5"
+        android:clickable="true"
+        android:gravity="center|right"
+        android:text="@string/any"
+        android:textColor="@color/dart_grey"
+        android:textSize="@dimen/text18" />
+
+</RelativeLayout>

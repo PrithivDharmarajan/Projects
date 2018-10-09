@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <com.smaat.renterblock.ui.SlideHolder
+        android:id="@+id/slideHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin80"
+            android:background="@color/slide_grey" >
+
+            <include layout="@layout/slide_menu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/top_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_bar"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <LinearLayout
+                    android:id="@+id/menu_icon"
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick" >
+
+                    <Button
+                        android:id="@+id/menu_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slide_button"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/header_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin10"
+                    android:layout_toLeftOf="@+id/add_icon"
+                    android:layout_toRightOf="@+id/menu_icon"
+                    android:gravity="center"
+                    android:text="@string/alerts"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/edit_button"
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_toLeftOf="@+id/add_icon"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick" >
+
+                    <Button
+                        android:id="@+id/edit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_button"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_icon"
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_button"
+                        android:clickable="false" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_delete_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:background="@drawable/menu_bar" >
+
+                <TextView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="@dimen/margin60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/edit"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text16" />
+
+                <TextView
+                    android:id="@+id/delete_icon"
+                    android:layout_width="@dimen/margin60"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/delete"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text16" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/alerts_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edit_delete_view"
+                android:layout_below="@+id/top_lay"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/alerts_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </com.smaat.renterblock.ui.SlideHolder>
+
+</RelativeLayout>

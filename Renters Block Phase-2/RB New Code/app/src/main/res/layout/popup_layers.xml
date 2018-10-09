@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/type_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size40"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextHelveticaLight"
+            android:layout_height="@dimen/size50"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingStart="@dimen/size5"
+            android:text="@string/select_layers"
+            android:textColor="@color/app_blue"
+            android:textSize="@dimen/text16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/app_blue" />
+
+        <RelativeLayout
+            android:id="@+id/default_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size40"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toStartOf="@+id/default_img"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size5"
+                android:text="@string/default_1"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/default_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_enable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/satelite_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size40">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toStartOf="@+id/satellite_img"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size5"
+                android:text="@string/satellite"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/satellite_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/hybrid_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size40">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toStartOf="@+id/hybrid_img"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size5"
+                android:text="@string/hybrid"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/hybrid_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/done_txt"
+            style="@style/TextHelveticaLight"
+            android:layout_height="@dimen/size40"
+            android:text="@string/done"
+            android:textColor="@color/dart_gray" />
+    </LinearLayout>
+
+</RelativeLayout>

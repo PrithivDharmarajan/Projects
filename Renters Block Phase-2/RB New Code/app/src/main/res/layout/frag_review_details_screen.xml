@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size10">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size60"
+                    android:layout_height="@dimen/size60">
+
+                    <ProgressBar
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/app_blue"
+                        tools:targetApi="lollipop" />
+
+                    <ImageView
+                        android:id="@+id/user_img"
+                        style="@style/LayoutMatch"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_name_txt"
+                        style="@style/TextHelvetica"
+                        android:gravity="start"
+                        android:textSize="@dimen/text15" />
+
+                    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                        <ImageView
+                            android:layout_width="@dimen/size15"
+                            android:layout_height="@dimen/size15"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/friends_icon" />
+
+                        <TextView
+                            android:id="@+id/friends_count_txt"
+                            style="@style/TextHelvetica"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size3"
+                            android:textColor="@color/app_blue"
+                            android:textSize="@dimen/text10" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size5"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/review_star_icon" />
+
+                        <TextView
+                            android:id="@+id/reviews_count_txt"
+                            style="@style/TextHelvetica"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size3"
+                            android:textColor="@color/app_blue"
+                            android:textSize="@dimen/text10" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size13"
+                            android:layout_height="@dimen/size13"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size5"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/photo_icon" />
+
+                        <TextView
+                            android:id="@+id/photos_count_txt"
+                            style="@style/TextHelvetica"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/size3"
+                            android:textColor="@color/app_blue"
+                            android:textSize="@dimen/text10" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_margin="@dimen/size10">
+
+                <RatingBar
+                    android:id="@+id/user_rating_bar"
+                    style="@style/BigRatingBar" />
+
+                <TextView
+                    android:id="@+id/minutes_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_marginStart="@dimen/size3"
+                    android:layout_toEndOf="@+id/user_rating_bar"
+                    android:gravity="end"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text14" />
+            </RelativeLayout>
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/main_comment_txt"
+                style="@style/TextHelvetica"
+                android:layout_margin="@dimen/size20"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text15" />
+
+            <View
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comment_recycler_view"
+                style="@style/LayoutWidMatch_HeiWrap" />
+
+            <Button
+                android:id="@+id/edit_btn"
+                style="@style/TextHelveticaBold"
+                android:layout_margin="@dimen/size20"
+                android:text="@string/edit_review"
+                android:textColor="@color/grey"
+                android:layout_height="@dimen/size35"
+                android:background="@drawable/border_with_transparent_bg"/>
+
+            <Button
+                android:id="@+id/update_btn"
+                style="@style/TextHelveticaBold"
+                android:layout_margin="@dimen/size20"
+                android:text="@string/update_review"
+                android:textColor="@color/grey"
+                android:layout_height="@dimen/size35"
+                android:background="@drawable/border_with_transparent_bg"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,14,20,25,32,39,48",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,265,324,388,443,513,876,1151,1369,1744,2139,2611",
+                        "endLines": "2,3,4,5,6,13,19,24,31,38,47,54",
+                        "endColumns": "164,58,63,54,69,12,12,12,12,12,12,12",
+                        "endOffsets": "260,319,383,438,508,871,1146,1364,1739,2134,2606,2960"
+                    }
+                }
+            ]
+        }
+    ]
+}

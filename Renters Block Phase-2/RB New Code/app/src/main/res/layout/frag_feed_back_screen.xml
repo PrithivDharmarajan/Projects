@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:layout_marginEnd="@dimen/size5"
+    android:layout_marginStart="@dimen/size5"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/size20">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginStart="@dimen/size5">
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:text="@string/to_with_colon"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text16" />
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/support_email"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size5"
+            android:background="@drawable/feedback_edt_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginStart="@dimen/size5">
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:text="@string/sub_with_colon"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text16" />
+
+            <TextView
+                android:id="@+id/sub_email_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size5"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size5"
+            android:background="@drawable/feedback_edt_bg" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/message_edt"
+        style="@style/EditTextLight"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_weight="1.5"
+        android:background="@drawable/border_gray_without_corner"
+        android:gravity="start"
+        android:hint="@string/message"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="@dimen/size10"
+        android:textColor="@color/gray_txt"
+        android:textColorHint="@color/gray_txt"
+        android:textCursorDrawable="@drawable/edt_black_cursor"
+        android:textSize="@dimen/text15" />
+
+    <TextView
+        android:id="@+id/android_version_txt"
+        style="@style/TextHelveticaBold"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:gravity="start|center"
+        android:text="@string/android_version_with_colon"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/text16" />
+
+    <TextView
+        android:id="@+id/app_version_txt"
+        style="@style/TextHelveticaBold"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:gravity="start|center"
+        android:text="@string/app_version_with_colon"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/text16" />
+
+    <TextView
+        android:id="@+id/device_txt"
+        style="@style/TextHelveticaBold"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:gravity="start|center"
+        android:text="@string/device_with_colon"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/text16" />
+</LinearLayout>

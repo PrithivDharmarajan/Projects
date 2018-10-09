@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_card_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/size2"
+        android:elevation="@dimen/size3"
+        card_view:cardCornerRadius="@dimen/size5"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/row_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@color/light_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size33"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:ellipsize="end"
+               android:maxHeight="@dimen/size30"
+                android:maxLines="2"
+                android:padding="@dimen/size5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text10" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/building_image"
+                    android:layout_width="@dimen/size100"
+                    android:layout_height="@dimen/size100"
+                    android:layout_alignEnd="@dimen/size100"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@drawable/default_prop_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_prop_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rating_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/review_rating_bar"
+                    style="@style/MediumBlueRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/reviews_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

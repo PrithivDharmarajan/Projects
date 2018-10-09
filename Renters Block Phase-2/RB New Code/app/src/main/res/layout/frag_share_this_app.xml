@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@drawable/login_trans_bg">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/size13"
+        android:background="@color/gray_dark">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:layout_margin="@dimen/size1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/size5"
+            android:paddingEnd="@dimen/size5"
+            android:paddingBottom="@dimen/size30"
+            android:paddingTop="@dimen/size30">
+
+            <LinearLayout
+                android:id="@+id/message_lay"
+                style="@style/LayoutWidWei_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="@dimen/size6"
+                    android:paddingStart="@dimen/size6"
+                    android:src="@drawable/share_message_icon" />
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:text="@string/message"
+                    android:layout_marginTop="@dimen/size5"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mail_lay"
+                style="@style/LayoutWidWei_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="@dimen/size3"
+                    android:paddingEnd="@dimen/size3"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/share_mail_icon" />
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:text="@string/mail"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/twitter_lay"
+                style="@style/LayoutWidWei_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="@dimen/size6"
+                    android:paddingEnd="@dimen/size6"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/share_twitter_icon" />
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:text="@string/twitter"
+                    android:layout_marginTop="@dimen/size5"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fb_lay"
+                style="@style/LayoutWidWei_HeiWrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="@dimen/size6"
+                    android:paddingEnd="@dimen/size6"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/share_fb_icon" />
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:text="@string/facebook"
+                    android:layout_marginTop="@dimen/size4"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

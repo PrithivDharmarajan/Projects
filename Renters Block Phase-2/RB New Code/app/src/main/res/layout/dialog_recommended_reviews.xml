@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/recommended_reviews"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+
+        <LinearLayout
+            android:id="@+id/close_icon"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size5"
+                android:background="@drawable/close_icon"
+                android:clickable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reviews_list"
+        android:layout_below="@+id/top_lay"
+        android:background="@color/white"
+        style="@style/LayoutWidMatch_HeiWrap" />
+
+
+</RelativeLayout>

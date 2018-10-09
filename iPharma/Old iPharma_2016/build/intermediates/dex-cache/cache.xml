@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_e1a9de4119cced36dae460631af50c460c020ec3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\gson-2.4_5d860bc92f8edfa745d596f7286024adf56809ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.4.0_bfec648656a3a699a747f711c9f922466fa6df34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_520369d0aee81fcc5b2e2b58ccd8fdc965398c0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_001e3e3c0b9be22d814da0038b8ace036ad72622.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.1.1_57f8a880b218613b67f2a4a54d5d1d60dd7d2ee6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.1.1_a5347902f49c1b78d0bebad79d3b77d24e86f720.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b15f898c9047f9d612a63000126b485dd024eaac">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-9.4.0_52f462ce5451c566423b63fa90ecae3a447ad955.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.4.0_8cd251208c1a953d79790c6652d3004127f8a6e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidSDK\SDK\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_747d035a7f7c63c6a1795d1f3942e2d9e62070f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-9.4.0_296f4039a18d9bfce31ed7c61cad4d0e927de2fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_7d68fbecc58979cf0df0a17b6ca07d510d27a4ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.4.0_bdf4285ec9b6273df20c9c2b1641670554ce71c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.1.1_c88b6df01f637d1dcc0480398a93706838e78f9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-9.4.0_a19b46c19a48e550ae2ecb7666295b05e0fe2321.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="dd763e0269f2854f5828ae62dd968b80bff6a0db">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-9.4.0_35a875aa66ebd25563067ea2fdf869c98315e154.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.4.0_27320fedd12ecda0f0c6fa6d4797bfe4b97fe40f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_3d6be9586a0dc424df71f7715ad322190811a447.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0_221a020ff4a6923aa78794d48e1b92e9170ef994.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.4.0_194c6e16953d93e758b03f28b2ac5c4961e7ab9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-9.4.0_9dc5dfb5706e5b58aa2209cc46538b87d7060045.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_36c4d84e73404f8c5c8e124b54da3ea5df7048a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.4.0_fd4b32a2ac172c34fdc79eb1202438e7d71fb6f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-9.4.0_093bfe9907515a71b9e41626d1a961362c43e4f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-9.4.0_b90ad81aaabba72a22302c0bd9c6ee80c131ad40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\glide-3.7.0_dc2cedaf25df8c5e199ffaaa969663929f0fc4fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\libs\android-query-full.0.26.2-beta.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d2b1749a3e9ba9244daf6d123c88ff976429ccfb">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\android-query-full.0.26.2-beta_d6bde36bd6d9807042f38708470f4997be987ba7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="E:\Android_Studio_All_Project\IPharma\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.1.1_626a5afd13b53961ad7c870df6c389fa0fb5186d.jar" />
+    </item>
+
+</items>

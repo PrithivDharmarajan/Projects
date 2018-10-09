@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">Ipharma</string>
+    <string name="connect_time_out">Connection to Moos App Server Timeout, Please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+    <string name="no_internet_connec">No Internet Connection.</string>
+    <string name="powered"> Powered By Ipharma.</string>
+    <!--logins Screen-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone Number</string>
+    <string name="enteremail">Email or Phone number</string>
+    <string name="enterpassword">Password</string>
+    <string name="fgt_pwd">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">New User</string>
+    <string name="forgot_passs">Forgot Password ?</string>
+    <string name="forgot_pwd_failed">Forgot Password Failed</string>
+    <string name="email_not_registerd">Email id not registered with iPharma</string>
+    <string name="pwd_res">Resent Password Sucessfully</string>
+    <string name="add_fav">Added to favourites</string>
+    <string name="favourite">Favourite</string>
+    <string name="pic_format">.jpg</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="enter_note">Enter note here</string>
+    <string name="prescription_not">Prescription not Selected, Please try again.</string>
+    <string name="image_issue">Image could not acceessible, Please try different image.</string>
+    <string name="rem_fav">Removed from favourites</string>
+    <!--<string name="order_dialog_text">Your Order has been submitted successfully. \n We will contact you shortly.</string>-->
+    <string name="order_dialog_text"> Thanks for order.\nWe will contact you shortly</string>
+
+    <!--Tutorial Screen-->
+    <string name="about">About</string>
+    <string name="ty_here">Type here</string>
+    <string name="home">Home</string>
+    <string name="or_now">Order Now</string>
+    <string name="or_det">Order Detail</string>
+    <string name="wr_review">Write Review</string>
+    <string name="how_it_works">How it Works ?</string>
+    <string name="search">Search</string>
+    <string name="km_away">km away</string>
+    <string name="reviews">Reviews</string>
+    <string name="rate_us">Rate Us</string>
+
+    <string name="unable_to_create_maps">Sorry! unable to create maps</string>
+    <string name="cancel">Cancel</string>
+    <string name="rate_it">RATE IT</string>
+    <string name="one_touch_order">One touch to order</string>
+    <!--<string name="one_touch_updated">One touch Updated For</string>-->
+
+
+    <string name="poor">Poor</string>
+    <string name="bad">Bad</string>
+    <string name="average">Average</string>
+    <string name="good">Good</string>
+    <string name="excellent">Excellent</string>
+    <string name="sucess_rate">Rated Sucessfully</string>
+    <string name="no_shops">No Shops Found</string>
+    <string name="no_results">No results Found</string>
+    <string name="no_orders">No orders Found</string>
+    <string name="no_fav_results">No favourite shops found</string>
+    <string name="plce_order">Place Order</string>
+
+    <string name="ph_not_available">Phone Number is not available for this pharmacy</string>
+    <string name="email_not_available">Email ID is not available for this pharmacy</string>
+    <string name="website_not_available">Website is not available for this pharmacy</string>
+    <string-array name="tutorial">
+        <item>Scan your prescription and submit</item>
+        <item>Your nearby Pharmacy will get\n order from you automatically</item>
+        <item>We will deliver the medicine to your\n door step within sometime</item>
+    </string-array>
+
+    <string name="continue_text">Continue</string>
+    <string name="Skip_text">Skip</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+
+    <!--onetimepassword-->
+    <string name="enter_OTP">Please Enter Your OTP.</string>
+    <string name="Success">Success</string>
+
+    <!--registration screen-->
+    <string name="use_cur_address">Tap here to use your current location</string>
+    <string name="address">Address</string>
+    <string name="hsenumber">House number,street name,area,landmark</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="android">Android</string>
+    <string name="account_not_confirmed">Account not confirmed</string>
+    <string name="get_started">Register</string>
+    <string name="registration_failed">Registration Failed</string>
+    <string name="enter_name">Please enter a name</string>
+    <string name="enter_email_empty">Please enter a email id</string>
+    <string name="enter_email_phone">Please enter Email or Phone number</string>
+    <string name="enter_email">Please enter a valid email id</string>
+    <string name="enter_phone">Please enter a phone number</string>
+    <string name="enter_valid_phone">Please enter a valid phone number</string>
+    <string name="enter_city">Please enter a city</string>
+    <string name="enter_area">Please enter a area</string>
+    <string name="enter_pincode">Please enter a pincode</string>
+    <string name="enter_address">Please enter a address</string>
+    <string name="latlocation">latlocation</string>
+    <string name="enter_password">Please enter a password</string>
+    <string name="enter_password_valid">Password character can not be less than 8</string>
+    <string name="unable_to_find_location">Unable to find the location.</string>
+    <string name="addresslocation">addresslocation</string>
+
+    <!--loginscreen validation-->
+    <string name="error_empty_email">Please Enter Email ID</string>
+    <string name="error_valid_email">Please Enter Valid Email ID</string>
+    <string name="error_empty_password">Please enter password</string>
+
+    <!--OtpScreen Validation-->
+    <string name="otp">OTP</string>
+    <string name="otp_header">OTP has been sent to your email id</string>
+    <string name="otp_hint">Enter OTP here</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="submit">Submit</string>
+
+
+    <!--Popup Screen-->
+    <string name="ok">Ok</string>
+    
+    
+    <!--one touch-->
+    <!--<string name="enable_touch">Do you want to enable one touch?\nPlease select any shop to enable one touch option</string>-->
+    <string name="enable_touch">Do you want to enable one touch order?</string>
+    <string name="enable_touch2">Please select any shop to enable one touch order</string>
+    <!--<string name="enable_one_touch">Do you want to enable this shop as one touch?</string>-->
+    <string name="enable_one_touch">Do you want to make</string>
+    <string name="enable_one_touch2">as your one touch order.Please do remember one touch shop can not be modified</string>
+    <string name="history">History</string>
+    <string name="no_history">No History Found</string>
+    <string name="select_pre">Select Prescription</string>
+    <string name="do_u_want">Are you sure? \n Do you want to logout?</string>
+    <string name="disc">Disclaimer</string>
+    <string name="order_id">Order Id:</string>
+
+    <string name="comin_soon">Coming Soon</string>
+    <string name="order_now">Order Now</string>
+    <string name="in_progress">In Progress</string>
+    <string name="action_required">Action Required</string>
+    <string name="reject">Reject</string>
+    <string name="delivery_started">Delivery Started</string>
+    <string name="cancel_order">cancel order</string>
+
+    <string name="payment_over">payment over</string>
+    <string name="delivered">Delivered</string>
+
+    <string name="txt_terms_and_condition">Terms and Condition</string>
+    <string name="txt_notification">Notification</string>
+    <string name="txt_signout">Signout</string>
+    <string name="txt_settings">Settings</string>
+
+    <string name="profil_updated_successfully">Profile updated successfully</string>
+    <string name="profile">My Profile</string>
+    <string name="rec_orders">Recent Orders</string>
+    <!--Reminder-->
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="reminder_title_empty">Please enter title</string>
+    <string name="select_any_session">Please select time</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="edit_reminder">Edit Reminder</string>
+
+    <string name="save_reminder">Save Reminder</string>
+    <string name="update_reminder">Update Reminder</string>
+    <string name="del_confirmation">Do you want to delete this reminder?</string>
+    <string name="reminder_st">Reminder Settings</string>
+    <string name="set_sav_suc">Settings Saved Sucessfully</string>
+    <string name="pill_reminder">Pill Reminder</string>
+    <string name="enter_review">Please enter review </string>
+    <string name="enter_rating">Please give rating </string>
+
+
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="payment">Payment</string>
+    <string name="offers">Offers</string>
+    <string name="no_offers">No Offer</string>
+
+    <string name="guard_number">Guardian Number</string>
+    <string name="doc_number">Doctor Number</string>
+    <string name="save_btn">Save</string>
+    <string name="guest_user">Guest</string>
+
+    <string name="amnt_paid">Amount to be paid</string>
+    <string name="expected_status">Expected Delivery in </string>
+    <string name="status">Status :</string>
+    <string name="pay_rs">Pay Rs</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="money_ipharma">MediPlus Money</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="ipharma_money">Payment Options</string>
+    <string name="reminder_information">* The above numbers will get a reminder SMS if the medicine is Due</string>
+    
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Recent Orders</item>
+        <item>Favourite</item>
+        <!--<item>Offers</item>-->
+        <item>Disclaimer</item>
+        <item>Payment</item>
+        <item>Pill Reminder</item>
+        <item>Settings</item>
+    </string-array>
+
+    <integer-array name="navigation_drawer_images_array">
+        <item>@drawable/recent_order_icon</item>
+        <item>@drawable/favourite_icon</item>
+        <!--<item>@drawable/offer_icon</item>-->
+        <item>@drawable/disclaimer_icon</item>
+        <item>@drawable/payment_icon</item>
+        <item>@drawable/pill_reminder</item>
+        <item>@drawable/settings_icon</item>
+    </integer-array>
+
+
+</resources>

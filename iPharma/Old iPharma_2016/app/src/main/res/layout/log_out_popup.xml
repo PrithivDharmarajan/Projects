@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transperent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height200"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:background="@drawable/general_popup"
+        android:paddingLeft="@dimen/margin15"
+        android:paddingRight="@dimen/margin15" >
+
+        <TextView
+            android:id="@+id/alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin25"
+            android:gravity="center"
+            android:text="@string/signout"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin18"
+            android:background="@drawable/header"
+            android:text="@string/no_string"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin18"
+            android:background="@drawable/header"
+            android:text="@string/yes_string"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin15"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

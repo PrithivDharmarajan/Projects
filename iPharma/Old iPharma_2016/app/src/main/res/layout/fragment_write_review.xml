@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/review_heading_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin25"
+            android:background="@drawable/write_a_heading_bg"
+            android:hint="@string/heading"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="text"
+            android:paddingLeft="@dimen/margin10"
+            android:textColor="#8a8a8a"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/review_desc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height120"
+            android:layout_below="@+id/review_heading_edit"
+            android:layout_gravity="center|left|top"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin25"
+            android:background="@drawable/write_a_review_bg"
+            android:gravity="center|left|top"
+            android:hint="@string/review_hint"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin10"
+            android:textColor="#8a8a8a" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin25"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_below="@+id/review_desc_edit"
+            android:background="@drawable/ipahrma_login_button"
+            android:text="@string/post"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text20" />
+
+    </RelativeLayout>
+
+</LinearLayout>

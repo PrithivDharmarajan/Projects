@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/transperent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size20"
+        android:background="@drawable/alert_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertTitle"
+            style="@style/TextHelveticaBold"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/text12" />
+
+        <Button
+            android:id="@+id/btnName1"
+            style="@style/ButtonBold"
+            android:layout_height="@dimen/size35"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12" />
+
+        <Button
+            android:id="@+id/btnName2"
+            style="@style/ButtonBold"
+            android:layout_height="@dimen/size35"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/size5"
+            android:paddingEnd="@dimen/size5"
+            android:textSize="@dimen/text12" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/ButtonBold"
+            android:layout_height="@dimen/size35"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12" />
+    </LinearLayout>
+
+</LinearLayout>

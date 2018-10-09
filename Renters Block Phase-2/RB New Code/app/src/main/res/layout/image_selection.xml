@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size20"
+        android:background="@drawable/alert_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertTitles"
+            style="@style/LayoutWrap"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/choose"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dart_gray"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="@dimen/size150"
+            android:layout_height="@dimen/size40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:text="@string/picture"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text10"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="@dimen/size150"
+            android:layout_height="@dimen/size40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:text="@string/video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text10"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/size150"
+            android:layout_height="@dimen/size40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text10"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

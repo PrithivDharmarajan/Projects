@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_color_white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height120"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/left_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/back_arrow"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/right_arrow1"
+                android:layout_toRightOf="@+id/left_arrow1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/img_lay11"
+                    android:layout_width="@dimen/height105"
+                    android:layout_height="@dimen/height105" >
+
+                    <ImageView
+                        android:id="@+id/list_img11"
+                        android:layout_width="@dimen/margin90"
+                        android:layout_height="@dimen/margin90"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/padding4"
+                        android:contentDescription="@drawable/listing_add_photo_normal"
+                        android:onClick="onClick"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/listing_add_photo_normal" />
+
+                    <Button
+                        android:id="@+id/list_img_close11"
+                        android:layout_width="@dimen/margin20"
+                        android:layout_height="@dimen/margin20"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/padding3"
+                        android:background="@drawable/listing_image_close"
+                        android:onClick="onClick"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/right_arrow"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/address_edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin90"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="458 W 52ST, APT 2D NEW YORK, NY 10019"
+            android:imeActionLabel="Go"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:maxLines="5"
+            android:padding="@dimen/padding5"
+            android:paddingTop="@dimen/margin10"
+            android:scrollbars="vertical"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:clickable="false"
+            android:padding="@dimen/margin5"
+            android:text="@string/add_loc_map"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/map_bg"
+            android:gravity="center" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/description_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin90"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="@dimen/padding5"
+            android:paddingTop="@dimen/margin10"
+            android:scrollbars="vertical"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:id="@+id/save_bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/menu_bar"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/save"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

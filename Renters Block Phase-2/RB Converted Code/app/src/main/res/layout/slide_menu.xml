@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/slide_grey"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin30"
+            android:background="@color/slide_grey"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_gravity="center"
+                android:background="@color/slide_grey"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/rb_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@drawable/rb_header_icon" />
+
+                <TextView
+                    android:id="@+id/renters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/rb_icon"
+                    android:gravity="center|bottom"
+                    android:text="@string/renters_block"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/text24"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@color/slide_grey" >
+
+                <RelativeLayout
+                    android:id="@+id/user_name_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:layout_toLeftOf="@+id/notification_icon"
+                    android:background="@color/slide_grey"
+                    android:clickable="true"
+                    android:onClick="onUserClick" >
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:clickable="false"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="UserName"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/notification_icon"
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/slide_grey"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onUserClick"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/notification_bell"
+                        android:layout_width="@dimen/margin15"
+                        android:layout_height="@dimen/margin15"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:src="@drawable/notification_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/buyer_renter_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <include layout="@layout/buyer_renter_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seller_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <include layout="@layout/seller_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_broker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <include layout="@layout/agent_broker_view" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

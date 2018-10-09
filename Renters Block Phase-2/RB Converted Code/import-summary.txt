@@ -1,0 +1,275 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* CircularImageView.rar
+* FacebookSDK.rar
+* ParallaxScroll.rar
+* google-play-services_lib.rar
+* pull-to-refresh.zip
+* pull-to-refresh\
+* pull-to-refresh\.classpath
+* pull-to-refresh\.project
+* pull-to-refresh\.settings\
+* pull-to-refresh\.settings\org.eclipse.jdt.core.prefs
+* pull-to-refresh\AndroidManifest.xml
+* pull-to-refresh\LICENSE
+* pull-to-refresh\bin\
+* pull-to-refresh\bin\AndroidManifest.xml
+* pull-to-refresh\bin\R.txt
+* pull-to-refresh\bin\classes\
+* pull-to-refresh\bin\classes\com\
+* pull-to-refresh\bin\classes\com\handmark\
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\BuildConfig.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\ILoadingLayout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\IPullToRefresh.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\LoadingLayoutProxy.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\OverscrollHelper.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$1.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$2.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$3.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$AnimationStyle.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$Mode.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$OnLastItemVisibleListener.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$OnPullEventListener.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener2.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$Orientation.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$SmoothScrollRunnable.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase$State.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshBase.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshGridView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshListView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshScrollView$InternalScrollViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshScrollView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshWebView$1.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshWebView$2.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshWebView$InternalWebViewSDK9.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\PullToRefreshWebView.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$anim.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$attr.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$dimen.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$drawable.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$id.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$layout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$string.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R$styleable.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\R.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\extras\
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2$JsValueCallback.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\IndicatorLayout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\LoadingLayout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\Utils.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK11.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK16.class
+* pull-to-refresh\bin\classes\com\handmark\pulltorefresh\library\internal\ViewCompat.class
+* pull-to-refresh\bin\jarlist.cache
+* pull-to-refresh\bin\pull-to-refresh.jar
+* pull-to-refresh\bin\res\
+* pull-to-refresh\bin\res\drawable-hdpi\
+* pull-to-refresh\bin\res\drawable-hdpi\default_ptr_flip.png
+* pull-to-refresh\bin\res\drawable-hdpi\default_ptr_rotate.png
+* pull-to-refresh\bin\res\drawable-hdpi\indicator_arrow.png
+* pull-to-refresh\bin\res\drawable-mdpi\
+* pull-to-refresh\bin\res\drawable-mdpi\default_ptr_flip.png
+* pull-to-refresh\bin\res\drawable-mdpi\default_ptr_rotate.png
+* pull-to-refresh\bin\res\drawable-mdpi\indicator_arrow.png
+* pull-to-refresh\bin\res\drawable-xhdpi\
+* pull-to-refresh\bin\res\drawable-xhdpi\default_ptr_flip.png
+* pull-to-refresh\bin\res\drawable-xhdpi\default_ptr_rotate.png
+* pull-to-refresh\bin\res\drawable-xhdpi\indicator_arrow.png
+* pull-to-refresh\build.gradle
+* pull-to-refresh\gen\
+* pull-to-refresh\gen\com\
+* pull-to-refresh\gen\com\handmark\
+* pull-to-refresh\gen\com\handmark\pulltorefresh\
+* pull-to-refresh\gen\com\handmark\pulltorefresh\library\
+* pull-to-refresh\gen\com\handmark\pulltorefresh\library\BuildConfig.java
+* pull-to-refresh\gen\com\handmark\pulltorefresh\library\R.java
+* pull-to-refresh\pom.xml
+* pull-to-refresh\project.properties
+* pull-to-refresh\res\
+* pull-to-refresh\res\anim\
+* pull-to-refresh\res\anim\slide_in_from_bottom.xml
+* pull-to-refresh\res\anim\slide_in_from_top.xml
+* pull-to-refresh\res\anim\slide_out_to_bottom.xml
+* pull-to-refresh\res\anim\slide_out_to_top.xml
+* pull-to-refresh\res\drawable-hdpi\
+* pull-to-refresh\res\drawable-hdpi\default_ptr_flip.png
+* pull-to-refresh\res\drawable-hdpi\default_ptr_rotate.png
+* pull-to-refresh\res\drawable-hdpi\indicator_arrow.png
+* pull-to-refresh\res\drawable-mdpi\
+* pull-to-refresh\res\drawable-mdpi\default_ptr_flip.png
+* pull-to-refresh\res\drawable-mdpi\default_ptr_rotate.png
+* pull-to-refresh\res\drawable-mdpi\indicator_arrow.png
+* pull-to-refresh\res\drawable-xhdpi\
+* pull-to-refresh\res\drawable-xhdpi\default_ptr_flip.png
+* pull-to-refresh\res\drawable-xhdpi\default_ptr_rotate.png
+* pull-to-refresh\res\drawable-xhdpi\indicator_arrow.png
+* pull-to-refresh\res\drawable\
+* pull-to-refresh\res\drawable\indicator_bg_bottom.xml
+* pull-to-refresh\res\drawable\indicator_bg_top.xml
+* pull-to-refresh\res\layout\
+* pull-to-refresh\res\layout\pull_to_refresh_header_horizontal.xml
+* pull-to-refresh\res\layout\pull_to_refresh_header_vertical.xml
+* pull-to-refresh\res\values-ar\
+* pull-to-refresh\res\values-ar\pull_refresh_strings.xml
+* pull-to-refresh\res\values-cs\
+* pull-to-refresh\res\values-cs\pull_refresh_strings.xml
+* pull-to-refresh\res\values-de\
+* pull-to-refresh\res\values-de\pull_refresh_strings.xml
+* pull-to-refresh\res\values-es\
+* pull-to-refresh\res\values-es\pull_refresh_strings.xml
+* pull-to-refresh\res\values-fi\
+* pull-to-refresh\res\values-fi\pull_refresh_strings.xml
+* pull-to-refresh\res\values-fr\
+* pull-to-refresh\res\values-fr\pull_refresh_strings.xml
+* pull-to-refresh\res\values-he\
+* pull-to-refresh\res\values-he\pull_refresh_strings.xml
+* pull-to-refresh\res\values-it\
+* pull-to-refresh\res\values-it\pull_refresh_strings.xml
+* pull-to-refresh\res\values-iw\
+* pull-to-refresh\res\values-iw\pull_refresh_strings.xml
+* pull-to-refresh\res\values-ja\
+* pull-to-refresh\res\values-ja\pull_refresh_strings.xml
+* pull-to-refresh\res\values-ko\
+* pull-to-refresh\res\values-ko\pull_refresh_strings.xml
+* pull-to-refresh\res\values-nl\
+* pull-to-refresh\res\values-nl\pull_refresh_strings.xml
+* pull-to-refresh\res\values-pl\
+* pull-to-refresh\res\values-pl\pull_refresh_strings.xml
+* pull-to-refresh\res\values-pt-rBR\
+* pull-to-refresh\res\values-pt-rBR\pull_refresh_strings.xml
+* pull-to-refresh\res\values-pt\
+* pull-to-refresh\res\values-pt\pull_refresh_strings.xml
+* pull-to-refresh\res\values-ro\
+* pull-to-refresh\res\values-ro\pull_refresh_strings.xml
+* pull-to-refresh\res\values-ru\
+* pull-to-refresh\res\values-ru\pull_refresh_strings.xml
+* pull-to-refresh\res\values-zh\
+* pull-to-refresh\res\values-zh\pull_refresh_strings.xml
+* pull-to-refresh\res\values\
+* pull-to-refresh\res\values\attrs.xml
+* pull-to-refresh\res\values\dimens.xml
+* pull-to-refresh\res\values\ids.xml
+* pull-to-refresh\res\values\pull_refresh_strings.xml
+* pull-to-refresh\src\
+* pull-to-refresh\src\com\
+* pull-to-refresh\src\com\handmark\
+* pull-to-refresh\src\com\handmark\pulltorefresh\
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\ILoadingLayout.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\IPullToRefresh.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\LoadingLayoutProxy.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\OverscrollHelper.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshBase.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshGridView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshListView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshScrollView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\PullToRefreshWebView.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\extras\
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\IndicatorLayout.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\LoadingLayout.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\Utils.java
+* pull-to-refresh\src\com\handmark\pulltorefresh\library\internal\ViewCompat.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:25.3.1
+gcm.jar => com.google.android.gms:play-services:+
+gson-2.2.2.jar => com.google.code.gson:gson:2.2.2
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.2.jar => version 2.2.2 in com.google.code.gson:gson:2.2.2
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\achartengine-1.1.0.jar => app\libs\achartengine-1.1.0.jar
+* libs\android-query-full.0.26.2-beta.jar => app\libs\android-query-full.0.26.2-beta.jar
+* libs\armeabi-v7a\liboovoo-sdk.so => app\src\main\jniLibs\armeabi-v7a\liboovoo-sdk.so
+* libs\commons-codec-1.8.jar => app\libs\commons-codec-1.8.jar
+* libs\gcm-server.jar => app\libs\gcm-server.jar
+* libs\HockeySDK-3.0.2.jar => app\libs\HockeySDK-3.0.2.jar
+* libs\json-simple-1.1.jar => app\libs\json-simple-1.1.jar
+* libs\libGoogleAnalyticsServices.jar => app\libs\libGoogleAnalyticsServices.jar
+* libs\littlefluffylocationlibrary.jar => app\libs\littlefluffylocationlibrary.jar
+* libs\oovooSdk.jar => app\libs\oovooSdk.jar
+* libs\renderscript-v8.jar => app\libs\renderscript-v8.jar
+* libs\slider.jar => app\libs\slider.jar
+* libs\sun.misc.BASE64Decoder.jar => app\libs\sun.misc.BASE64Decoder.jar
+* libs\twitter4j-core-3.0.5.jar => app\libs\twitter4j-core-3.0.5.jar
+* libs\twitter_api_me-1.8.3.jar => app\libs\twitter_api_me-1.8.3.jar
+* libs\universal-image-loader-1.6.1-with-src.jar => app\libs\universal-image-loader-1.6.1-with-src.jar
+* libs\x86\liboovoo-sdk.so => app\src\main\jniLibs\x86\liboovoo-sdk.so
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

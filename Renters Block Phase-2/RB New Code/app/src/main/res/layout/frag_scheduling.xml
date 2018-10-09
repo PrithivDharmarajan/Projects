@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scheduling_recycler_view"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/delete_btn"
+        android:scrollbars="none" />
+
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:background="@color/app_blue"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_height="@dimen/size50"
+            android:layout_alignParentBottom="true"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+
+
+</RelativeLayout>

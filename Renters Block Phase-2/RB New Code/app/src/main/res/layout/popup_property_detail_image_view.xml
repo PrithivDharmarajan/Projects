@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_view"
+    style="@style/LayoutMatch"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/property_img"
+        android:layout_width="@dimen/size200"
+        android:layout_height="@dimen/size200"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_prop_icon" />
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_margin="@dimen/size15"
+            android:contentDescription="@drawable/close_icon"
+            android:src="@drawable/close_icon" />
+
+        <TextView
+            android:layout_width="@dimen/size50"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size5"
+            android:layout_toStartOf="@+id/request_info_details_btn"
+            android:text="@string/photo_popup_count"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+
+        <Button
+            android:id="@+id/request_info_details_btn"
+            style="@style/ButtonBold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size30"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size5"
+            android:layout_toStartOf="@+id/review_btn"
+            android:background="@drawable/cancel_btn"
+            android:paddingEnd="@dimen/size10"
+            android:paddingStart="@dimen/size10"
+            android:text="@string/request_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text11" />
+
+        <Button
+            android:id="@+id/review_btn"
+            style="@style/ButtonBold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size30"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size5"
+            android:background="@drawable/blue_bg"
+            android:padding="@dimen/size5"
+            android:text="@string/review"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text11" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10">
+
+        <TextView
+            android:id="@+id/last_updated_txt"
+            style="@style/TextHelveticaBold"
+            android:gravity="start"
+            android:padding="@dimen/size5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+
+        <TextView
+            android:id="@+id/amount_txt"
+            style="@style/TextHelveticaBold"
+            android:gravity="start"
+            android:padding="@dimen/size5"
+            android:layout_marginTop="@dimen/size20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="start"
+            android:padding="@dimen/size5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

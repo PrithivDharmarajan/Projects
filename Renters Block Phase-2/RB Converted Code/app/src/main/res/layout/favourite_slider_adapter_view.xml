@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <android.support.v4.view.DirectionalViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_toRightOf="@+id/property_radio" >
+    </android.support.v4.view.DirectionalViewPager>
+
+    <Button
+        android:id="@+id/property_radio"
+        android:layout_width="@dimen/margin25"
+        android:layout_height="@dimen/margin25"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:background="@drawable/minus_icon" />
+
+</RelativeLayout>

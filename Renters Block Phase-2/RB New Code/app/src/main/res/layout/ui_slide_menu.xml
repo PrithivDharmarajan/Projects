@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/slide_black_bg"
+    android:paddingTop="@dimen/size25">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:background="@color/slide_black_bg">
+
+        <LinearLayout
+            android:id="@+id/slide_menu_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

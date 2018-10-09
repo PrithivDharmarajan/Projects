@@ -1,0 +1,202 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.TextView">
+
+    </style>
+
+
+    <style name="TextBold" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-B.ttf</item>
+    </style>
+
+    <style name="TextLight" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-L.ttf</item>
+    </style>
+
+    <style name="TextLight2" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontPath">fonts/Ubuntu-L.ttf</item>
+    </style>
+
+    <style name="TextLightNopadding" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontPath">fonts/Ubuntu-L.ttf</item>
+    </style>
+
+    <style name="TextMedium" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-M.ttf</item>
+    </style>
+
+    <style name="TextRegular" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-R.ttf</item>
+    </style>
+
+    <style name="EditBold" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="android:textColorHint">@color/greycolor</item>
+        <item name="fontPath">fonts/Ubuntu-B.ttf</item>
+    </style>
+
+    <style name="EditLight" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/blackcolor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textColorHint">@color/blackcolor</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="fontPath">fonts/Ubuntu-L.ttf</item>
+    </style>
+
+    <style name="EditRegular" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/greycolor</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-R.ttf</item>
+    </style>
+
+    <style name="EditMedium" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/whitecolor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/greycolor</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-M.ttf</item>
+    </style>
+
+
+
+    <style name="ButtonBold" parent="android:Widget.Button">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/size2</item>
+        <item name="android:paddingRight">@dimen/size2</item>
+        <item name="android:paddingTop">@dimen/size2</item>
+        <item name="android:paddingBottom">@dimen/size2</item>
+        <item name="fontPath">fonts/Ubuntu-B.ttf</item>
+    </style>
+    <style name="ButtonLight" parent="android:Widget.Button">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-L.ttf</item>
+    </style>
+
+    <style name="ButtonRegular" parent="android:Widget.Button">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-R.ttf</item>
+    </style>
+    <style name="ButtonMedium" parent="android:Widget.Button">
+        <item name="android:textColor">@color/blackcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/Ubuntu-M.ttf</item>
+    </style>
+
+
+
+    <style name="Theme.AppCompat.Translucent">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+
+
+    <style name="AppTheme.Widget.EditText" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size50</item>
+        <item name="android:textColorHint">@color/app_color</item>
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">@dimen/text10</item>
+        <item name="android:paddingLeft">@dimen/size20</item>
+        <item name="android:paddingRight">@dimen/size20</item>
+        <!--<item name="android:background">@drawable/edittext_background</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="fontPath">fonts/OpenSans-Regular.otf</item>
+    </style>
+
+    <style name="StarRating">
+        <item name="android:progressDrawable">@drawable/custom_bar</item>
+        <item name="android:minHeight">20sp</item>
+        <item name="android:maxHeight">20sp</item>
+        <item name="android:minWidth">@dimen/size2</item>
+        <item name="android:maxWidth">@dimen/size2</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="StarRating_big">
+        <item name="android:progressDrawable">@drawable/custom_bar_big</item>
+        <item name="android:minHeight">28sp</item>
+        <item name="android:maxHeight">28sp</item>
+        <item name="android:minWidth">@dimen/size3</item>
+        <item name="android:maxWidth">@dimen/size3</item>
+        <item name="android:numStars">5</item>
+    </style>
+    <style name="StarRating_small">
+        <item name="android:progressDrawable">@drawable/custom_bar_small</item>
+        <item name="android:minHeight">16sp</item>
+        <item name="android:maxHeight">16sp</item>
+        <item name="android:minWidth">@dimen/size3</item>
+        <item name="android:maxWidth">@dimen/size3</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transperent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height200"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin30"
+        android:background="@color/text_color_white" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin10"
+                android:padding="@dimen/padding5"
+                android:text="@string/name_your_search"
+                android:textColor="@color/dart_grey"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin5"
+                android:padding="@dimen/padding5"
+                android:text="@string/save_search_as"
+                android:textColor="@color/dart_grey"
+                android:textSize="@dimen/text12" />
+
+            <EditText
+                android:id="@+id/enter_search_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_below="@+id/text2"
+                android:layout_margin="@dimen/margin10"
+                android:background="@drawable/key_box"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="Enter name"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/margin5"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:textColor="@color/dart_grey"
+                android:textColorHint="@color/dart_grey"
+                android:textSize="@dimen/text14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="@dimen/margin90"
+                android:layout_height="@dimen/margin40"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/apply_btn"
+                android:text="@string/save"
+                android:textColor="@color/dart_grey"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/margin90"
+                android:layout_height="@dimen/margin40"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/apply_btn"
+                android:text="@string/cancel"
+                android:textColor="@color/dart_grey"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/save_search_frame_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin40"
+        android:layout_marginRight="@dimen/margin40"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/saved_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height230"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/height150"
+            android:background="@color/text_color_white" >
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

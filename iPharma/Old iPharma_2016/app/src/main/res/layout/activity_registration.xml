@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin80"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+        <TextView
+            android:id="@id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/ipharma"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text30" />
+
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:contentDescription="@drawable/back_butto"
+                android:src="@drawable/back_butto" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/header_lay"
+        android:layout_marginLeft="@dimen/margin35"
+        android:layout_marginRight="@dimen/margin35"
+        android:layout_marginTop="@dimen/margin20"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40" >
+
+                <Button
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ipharma_username_icon" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10" >
+
+                <Button
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ipharma_mail_icon" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10" >
+
+                <Button
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ipharma_phone_icon" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/phone_num"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10" >
+
+                <Button
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ipharma_password_icon" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/pwd"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ipharma_current_location_icon" />
+
+                <EditText
+                    android:id="@+id/current_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/user_current_locaiton"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+
+                <Button
+                    android:id="@+id/location_check"
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/regsiter_tick_empty"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <RelativeLayout
+                android:id="@+id/city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="@string/city"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding3"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/register_drop_down"
+                    android:contentDescription="@string/about"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <RelativeLayout
+                android:id="@+id/area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="@string/area"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding3"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin30"
+                    android:layout_height="@dimen/margin30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/register_drop_down"
+                    android:contentDescription="@string/about"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin20"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/ic_launcher"
+                    android:contentDescription="@string/about"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/pincoe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/pincode"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/padding3"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin60"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/margin20"
+                    android:layout_height="@dimen/margin20"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/ic_launcher"
+                    android:contentDescription="@string/about"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom|left"
+                    android:hint="@string/adress"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding5"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/take_phot_divider" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="@dimen/height100"
+                android:layout_height="@dimen/margin35"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/ipahrma_login_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/register"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text18" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin80"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

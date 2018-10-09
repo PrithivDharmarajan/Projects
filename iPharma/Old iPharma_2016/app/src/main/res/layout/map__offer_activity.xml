@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PharmacyList" >
+
+    <LinearLayout
+        android:id="@+id/Searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size40"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="1.78"
+            android:background="@drawable/searchbackground" >
+
+            <EditText
+                android:id="@+id/phar_address_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Search"
+                android:imeOptions="actionDone|flagNoExtractUi"
+                android:paddingLeft="@dimen/margin5" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/searchicon" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="@dimen/size80"
+            android:layout_height="@dimen/size30"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:src="@drawable/location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_below="@+id/Searchlayout"
+        android:background="#737373" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/size30"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin5"
+            android:src="@drawable/slide" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="1.97"
+            android:gravity="center"
+            android:text="Advertisement...."
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textVfiew1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0.5Km"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_lay"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adLayout" >
+
+        <fragment
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/map_fragment_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/draw_button"
+                    android:layout_width="@dimen/size50"
+                    android:layout_height="@dimen/size50"
+                    android:layout_margin="@dimen/margin5"
+                    android:layout_marginBottom="@dimen/size100"
+                    android:background="@drawable/draw" />
+
+                <Button
+                    android:id="@+id/current_location_button"
+                    android:layout_width="@dimen/size50"
+                    android:layout_height="@dimen/size50"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/location" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/header"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/Preminum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.99"
+            android:gravity="center"
+            android:text="Preminum (15)" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Normal(10)" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="All (25)" />
+    </LinearLayout>
+
+</RelativeLayout>

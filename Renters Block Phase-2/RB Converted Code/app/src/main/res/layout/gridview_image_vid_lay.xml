@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1" >
+
+        <ImageView
+            android:id="@+id/adap_img1"
+            android:layout_width="@dimen/height120"
+            android:layout_height="@dimen/height120"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_pic" />
+
+        <ProgressBar
+            android:id="@+id/adap_progress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/adap_vidl1"
+            android:layout_width="@dimen/height120"
+            android:layout_height="@dimen/height120"
+            android:background="#000"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:visibility="gone" >
+
+            <VideoView
+                android:id="@+id/adap_video1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ProgressBar
+                android:id="@+id/adap_vid_progress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/adap_video_play_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/video_play_btn"
+                android:gravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

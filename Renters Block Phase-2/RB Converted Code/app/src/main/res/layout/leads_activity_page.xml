@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin10" >
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="@dimen/margin60"
+            android:layout_height="@dimen/margin60"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_img"
+            android:text="Mike"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_toRightOf="@+id/profile_img" >
+
+            <TextView
+                android:id="@+id/friends_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/friends_icon"
+                android:drawablePadding="5dp"
+                android:text="0 "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/reviews_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/friends_count"
+                android:drawableLeft="@drawable/review_star_icon"
+                android:drawablePadding="5dp"
+                android:text="3 "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/photos_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/reviews_count"
+                android:drawableLeft="@drawable/photo_icon"
+                android:drawablePadding="5dp"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/time_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/profile_img"
+            android:text="20 hours ago"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text14" />
+
+        <Button
+            android:id="@+id/send_request"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg"
+            android:text="Send Request"
+            android:textSize="@dimen/text12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/online_status"
+            android:layout_width="@dimen/margin10"
+            android:layout_height="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:background="@drawable/freind_screen_online_icon"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/margin60"
+            android:layout_height="@dimen/margin60"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <ProgressBar
+                android:id="@+id/progre"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/requset_nfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/client_review_ratingbar"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/client_review_ratingbar"
+            android:text="Request Info"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text16"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/add_friend_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/client_review_ratingbar"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/requset_nfo"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="@dimen/margin10" >
+
+            <Button
+                android:id="@+id/add_as_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/add_as_fr"
+                android:textColor="#000"
+                android:textSize="@dimen/text15"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/send_messag"
+                android:textColor="#000"
+                android:textSize="@dimen/text15"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/flame_icon"
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hot_lead_flame_icon"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/binocular_icon"
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/flame_icon"
+                android:visibility="gone"
+                android:background="@drawable/hot_lead_binocular_icon"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/fav_icon"
+                android:layout_width="@dimen/margin30"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/binocular_icon"
+                android:background="@drawable/favourites_icon"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/send_message_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/client_review_ratingbar"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/client_review_ratingbar"
+            android:layout_marginTop="@dimen/margin10"
+            android:visibility="gone"
+            android:weightSum="2" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColor="#000"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/send_message_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/button_bg"
+                android:text="@string/send_messag"
+                android:textColor="#000"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColor="#000"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/client_review_ratingbar"
+            style="@style/MediumBlueRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin5"
+            android:clickable="false"
+            android:visibility="gone"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true" />
+
+        <Button
+            android:id="@+id/send_message_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/chat_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

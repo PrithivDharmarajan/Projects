@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\sun.misc.BASE64Decoder_3a9cd88c18a594f14fde2c500a544d5b98063350\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\libraryproject\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="add160fd365abd1e0178b914818e875a07d735ba">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\4\classes_8531de1c1afe20a94be3401af860b88cc2d4cb37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\json-simple-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\json-simple-1.1_fe433b24788583839864f8c62957edd5c1f10c89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\twitter_api_me-1.8.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="73edcdf8f2ed43748b0aeb829c81d66998280d02">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\twitter_api_me-1.8.3_84c917765ef01abeefc9fb4112b224c0190e756f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\twitter4j-core-3.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5999e1915b61b30c9fc40d5d1971906bb68aca6c">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\twitter4j-core-3.0.5_c0a084c5e82caca7e0a8b10fb9396783c45a8b92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\universal-image-loader-1.6.1-with-src.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcefe15e2d56ea4abdaac9932d2a192d809ea1cf">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.6.1-with-src_0994c8f3d743307fca0c3b975aace6f82ed445b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\android-query-full.0.26.2-beta.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d2b1749a3e9ba9244daf6d123c88ff976429ccfb">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-query-full.0.26.2-beta_cf0e425f297fa9c757d493ee8baf4cfa5ce43039\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\gcm-server.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e4e541020887027b9b63c5a4ab821b846d1eb9d9">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\gcm-server_0afa099ba6ec8c8dfb0d8c89e772f3f84ab01a13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\libGoogleAnalyticsServices.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="db1e65d9e3ee616f871cb23120fbea8f18ad3e4c">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\libGoogleAnalyticsServices_65a434bba88017aa142f77ef7986d8cd56be85c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\renderscript-v8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="daa96940c1ddb41cb50c36c4fa113edc5f81f09e">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\renderscript-v8_2f8090036e73593bf02d9af7c0c39278f4b637ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\slider.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5c03f3a39e0eb9ba2f74681d63093341ca9f3e55">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\slider_10c805ee08d59a6b5fb2dba06bc65224b4c35a1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\HockeySDK-3.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5555e301018d384c571778367189402e78924888">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\HockeySDK-3.0.2_0af97cf762bc65f6ce5b45fc0376efc4e2a31a93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\commons-codec-1.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="af3be3f74d25fc5163b54f56a0d394b462dafafd">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-codec-1.8_324ff56f62e7e1f9367646b85509c35bcefe2dcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\achartengine-1.1.0_9171e5941b3dbcb19c80a74cbd6a608872074e26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Projects\RentersBlock\app\libs\littlefluffylocationlibrary.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="315e46bd00deff31f2ce0483f1914a34093d8f47">
+        <dex dex="F:\Projects\RentersBlock\app\build\intermediates\transforms\dex\debug\folders\1000\2\littlefluffylocationlibrary_c2f83df305d177244fb9a9518e391ca9a60bacbd\classes.dex" />
+    </item>
+
+</items>

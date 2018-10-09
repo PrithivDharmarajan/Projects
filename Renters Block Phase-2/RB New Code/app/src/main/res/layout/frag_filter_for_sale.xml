@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_filter_for_sale_lay"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        style="@style/TextHelvetica"
+        android:layout_height="@dimen/size50"
+        android:background="@drawable/filter_ash_bg"
+        android:gravity="center|start"
+        android:paddingEnd="0dp"
+        android:paddingStart="@dimen/size10"
+        android:text="@string/listing_caps"
+        android:textColor="@color/grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/filter_view_line_bg" />
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/resale_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50">
+
+            <TextView
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/resale_img"
+                android:gravity="center|start"
+                android:text="@string/resale"
+                android:textSize="@dimen/text15" />
+
+            <ImageView
+                android:id="@+id/resale_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tick_off" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/new_construction_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50">
+
+            <TextView
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/new_construction_img"
+                android:gravity="center|start"
+                android:text="@string/new_construction"
+                android:textSize="@dimen/text15" />
+
+            <ImageView
+                android:id="@+id/new_construction_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tick_off" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/for_closure_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50">
+
+            <TextView
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size50"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/fore_closure_img"
+                android:gravity="center|start"
+                android:text="@string/fore_closure"
+                android:textSize="@dimen/text15" />
+
+            <ImageView
+                android:id="@+id/fore_closure_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tick_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/filter_view_line_bg" />
+
+    <TextView
+        style="@style/TextHelvetica"
+        android:layout_height="@dimen/size50"
+        android:background="@drawable/filter_ash_bg"
+        android:gravity="center|start"
+        android:paddingEnd="0dp"
+        android:paddingStart="@dimen/size10"
+        android:text="@string/show_only"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/filter_view_line_bg" />
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/open_houses_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50">
+
+            <TextView
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size50"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/open_houses_img"
+                android:gravity="center|start"
+                android:text="@string/open_houses"
+                android:textSize="@dimen/text15" />
+
+            <ImageView
+                android:id="@+id/open_houses_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tick_off" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/reduced_prices_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50">
+
+            <TextView
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size50"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/reduced_prices_img"
+                android:gravity="center|start"
+                android:text="@string/reduced_prices"
+                android:textSize="@dimen/text15" />
+
+            <ImageView
+                android:id="@+id/reduced_prices_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/tick_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/filter_view_line_bg" />
+
+
+</LinearLayout>

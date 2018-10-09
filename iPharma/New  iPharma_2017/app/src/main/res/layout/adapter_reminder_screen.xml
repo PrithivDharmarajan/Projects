@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/click_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size70"
+    android:orientation="horizontal">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+<ImageView
+    android:id="@+id/reminder_day_image"
+    android:layout_width="@dimen/size35"
+    android:layout_height="@dimen/size35"
+    android:layout_above="@+id/dummy_view"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/size10"
+    android:adjustViewBounds="true"
+    android:src="@drawable/pill_reminder_morning"/>
+    <View
+        android:id="@+id/dummy_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/reminder_day_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/morning"
+        android:gravity="center"
+        android:textSize="@dimen/size14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_below="@+id/dummy_view"
+        android:textColor="@color/blackcolor"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/reminder_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="@color/blackcolor"
+            android:text="08:00 AM"
+            android:gravity="center"
+            android:textSize="@dimen/size14"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+<CheckBox
+    android:id="@+id/reminder_check"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@drawable/checkbox_drawable"
+    android:layout_centerInParent="true"
+
+    />
+    </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>

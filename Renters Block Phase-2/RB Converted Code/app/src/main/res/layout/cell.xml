@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height200"
+            android:layout_gravity="center"
+            android:background="@color/blue_normal"
+            android:contentDescription="@color/blue_normal"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_prop_icon" />
+
+        <ImageView
+            android:id="@+id/image_mask"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_gravity="center"
+            android:background="@drawable/image_overlay"
+            android:contentDescription="@color/blue_normal" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/image_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin80"
+            android:layout_marginRight="@dimen/margin80"
+            android:gravity="bottom|right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text20"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</RelativeLayout>

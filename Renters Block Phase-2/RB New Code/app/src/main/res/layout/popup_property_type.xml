@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size45"
+        android:background="@color/app_blue">
+
+        <RelativeLayout
+            android:id="@+id/header_left_first_img_lay"
+            android:layout_width="@dimen/size45"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/header_left_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/header_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:text="@string/property_type"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text16" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/type_recycler_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@+id/view_bottom"
+        android:layout_below="@+id/header_lay">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_above="@+id/bottom_lay"
+        android:background="@color/filter_view_line_bg" />
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/app_blue" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/filter_view_line_bg" />
+
+        <TextView
+            android:id="@+id/set_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/set"
+            android:textColor="@color/app_blue" />
+    </LinearLayout>
+
+
+</RelativeLayout>

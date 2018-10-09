@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/LayoutMatch"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/board_msg_recycler_view"
+        android:layout_above="@+id/edit_lay"
+        android:layout_alignParentTop="true"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/edit_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size10" >
+
+        <EditText
+            android:id="@+id/enter_chat_edt"
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:layout_height="@dimen/size50"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/size5"
+            android:background="@drawable/border_gray"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_toStartOf="@+id/post_btn"
+            android:layout_toEndOf="@+id/post_btn" >
+        </EditText>
+
+        <Button
+            android:id="@+id/post_btn"
+           style="@style/LayoutWrap"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/post"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

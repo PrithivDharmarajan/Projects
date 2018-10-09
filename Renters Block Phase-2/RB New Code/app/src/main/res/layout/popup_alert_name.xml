@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_par_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/black_transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size25"
+            android:layout_marginRight="@dimen/size25"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                style="@style/LayoutWidMatch_HeiWrap">
+
+                <TextView
+                    android:id="@+id/heading_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/size10"
+                    android:padding="@dimen/size5"
+                    android:text="@string/name_alert"
+                    android:textColor="@color/dart_gray"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/message_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading_alert"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/size5"
+                    android:padding="@dimen/size5"
+                    android:textColor="@color/dart_gray"
+                    android:textSize="@dimen/text12"
+                    android:textStyle="bold"
+                    android:text="@string/save_alert"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/alert_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size40"
+                    android:layout_below="@+id/message_alert"
+                    android:layout_margin="@dimen/size10"
+                    android:background="@drawable/gray_btn"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:hint="@string/alert_hint"
+                    android:inputType="textCapSentences"
+                    android:padding="@dimen/size5"
+                    android:paddingLeft="@dimen/size5"
+                    android:paddingRight="@dimen/size5"
+                    android:textColor="@color/dart_gray"
+                    android:textColorHint="@color/dart_gray"
+                    android:textSize="@dimen/text14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:layout_below="@+id/alert_name_edt"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/save_btn"
+                        style="@style/ButtonBold"
+                        android:layout_width="@dimen/size90"
+                        android:layout_height="@dimen/size40"
+                        android:layout_margin="@dimen/size5"
+                        android:text="@string/save"
+                        android:textSize="@dimen/text18" />
+
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        style="@style/ButtonBold"
+                        android:layout_width="@dimen/size90"
+                        android:layout_height="@dimen/size40"
+                        android:layout_margin="@dimen/size5"
+                        android:text="@string/cancel"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

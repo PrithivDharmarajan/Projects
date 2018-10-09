@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bar"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="close"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:id="@+id/how_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/post"
+            android:layout_toRightOf="@+id/close"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding5"
+            android:text="Post Review"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding5"
+            android:text="Post"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height350"
+        android:layout_above="@+id/bottomlay"
+        android:layout_below="@+id/top_lay"
+        android:layout_margin="@dimen/margin20"
+        android:background="@drawable/review_lay_bg" >
+
+        <RatingBar
+            android:id="@+id/review_ratingbar"
+            style="@style/BigBlueRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin10"
+            android:isIndicator="false"
+            android:stepSize="1" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/height130"
+            android:layout_height="2dp"
+            android:layout_below="@+id/review_ratingbar"
+            android:layout_centerInParent="true"
+            android:background="@drawable/view_bg" />
+
+        <TextView
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_margin="@dimen/margin10"
+            android:clickable="true"
+            android:gravity="top|left"
+            android:isScrollContainer="false"
+            android:padding="@dimen/padding5"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin30" >
+
+        <ToggleButton
+            android:id="@+id/twitter_share"
+            android:layout_width="@dimen/height110"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/twit_share_disable"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/fb_share"
+            android:layout_width="@dimen/height110"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fb_share_disable"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:textOff=""
+            android:textOn="" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

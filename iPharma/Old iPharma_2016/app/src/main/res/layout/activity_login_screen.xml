@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ipharma_green" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin20"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/email_layout"
+                    android:layout_width="@dimen/height140"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin30"
+                    android:layout_toLeftOf="@+id/or_Text"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding5" >
+
+                    <Button
+                        android:layout_width="@dimen/margin30"
+                        android:layout_height="@dimen/margin30"
+                        android:layout_gravity="center|left|bottom"
+                        android:background="@drawable/ipharma_mail_icon" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/padding3"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/email_layout"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_toLeftOf="@+id/or_Text"
+                    android:background="@drawable/take_phot_divider" />
+
+                <TextView
+                    android:id="@+id/or_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/phone_layout"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/phone_layout"
+                    android:text="@string/or_text"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text12" />
+
+                <LinearLayout
+                    android:id="@+id/phone_layout"
+                    android:layout_width="@dimen/height140"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding5" >
+
+                    <Button
+                        android:layout_width="@dimen/margin30"
+                        android:layout_height="@dimen/margin30"
+                        android:background="@drawable/ipharma_phone_icon"
+                        android:gravity="center|left|bottom" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="@string/phone_num"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="phone"
+                        android:paddingLeft="@dimen/padding3"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/height100"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/phone_layout"
+                    android:layout_toRightOf="@+id/or_Text"
+                    android:background="@drawable/take_phot_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin20"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/pass_layout"
+                    android:layout_width="@dimen/height140"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_toLeftOf="@+id/btnLogin"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding5" >
+
+                    <Button
+                        android:layout_width="@dimen/margin30"
+                        android:layout_height="@dimen/margin30"
+                        android:background="@drawable/ipharma_password_icon"
+                        android:contentDescription="@drawable/ipharma_password_icon"
+                        android:gravity="center|left|bottom" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="@string/pwd"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/padding3"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/pass_layout"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_toLeftOf="@+id/btnLogin"
+                    android:background="@drawable/take_phot_divider" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="@dimen/height120"
+                    android:layout_height="@dimen/margin40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:background="@drawable/ipahrma_login_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/login"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin30"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin30"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/height120"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/forgot_psd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="@string/forgot_passs"
+                        android:textColor="@color/ipharma_green"
+                        android:textSize="@dimen/text14" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/forgot_psd"
+                        android:background="@color/ipharma_green" >
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/margin80"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtNewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="@string/new_user"
+                        android:textColor="@color/new_user_or"
+                        android:textSize="@dimen/text14" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/txtNewUser"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:background="@color/new_user_or" >
+                    </View>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin60"
+        android:gravity="center"
+        android:text="@string/ipharma"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text35" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size15">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profile_img">
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                style="@style/TextSignikaBold"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:text="Andrew"
+                android:textSize="@dimen/text16"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/online_status"
+                android:layout_width="@dimen/size7"
+                android:layout_height="@dimen/size7"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="@dimen/size5"
+                android:background="@drawable/online_bg"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rat_review_photo_count_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/top_lay"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_toEndOf="@+id/profile_img">
+
+            <ImageView
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/friends_icon" />
+
+            <TextView
+                android:id="@+id/friends_count"
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size2"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text10" />
+
+            <ImageView
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/size5"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/review_star_icon" />
+
+            <TextView
+                android:id="@+id/reviews_count"
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size2"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text10" />
+
+            <ImageView
+                android:layout_width="@dimen/size13"
+                android:layout_height="@dimen/size13"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/size5"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/photo_icon" />
+
+            <TextView
+                android:id="@+id/photos_count"
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/size2"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send_request_btn"
+            android:layout_width="@dimen/size80"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/about_me_text_bg"
+            android:text="Send Request"
+            android:textSize="@dimen/text8"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/time_status_txt"
+            style="@style/TextSignikaBold"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rat_review_photo_count_lay"
+            android:text="20 hours ago"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text10"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size15"
+        android:background="@color/GrayLight" />
+
+    <RelativeLayout
+        android:id="@+id/property_location_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size15"
+        android:padding="@dimen/size5">
+
+
+        <TextView
+            android:id="@+id/property_name_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/right_arroow_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Wrote a review for BarBaconascascascascasasc"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/right_arroow_img"
+            android:layout_width="@dimen/size18"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/size15"
+            android:background="@drawable/right_arrow_icon"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@color/GrayLight" />
+
+
+    <RatingBar
+        android:id="@+id/user_review_rating_bar"
+        style="@style/BigRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size10"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:isIndicator="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/user_review_txt"
+        style="@style/TextHelvetica"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:gravity="start"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text14"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/profile_photo_view_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size200"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/list_image_view"
+            style="@style/LayoutMatch"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_prop_icon"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_video_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size200"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/profile_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size200"
+            android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/video_play_view"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_play_btn"
+                android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size1"
+        android:layout_marginStart="@dimen/size15"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@color/GrayLight" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/GrayLight" />
+
+</LinearLayout>

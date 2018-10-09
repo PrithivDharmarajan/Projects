@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@drawable/login_trans_bg"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/size25"
+    android:paddingStart="@dimen/size25">
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_height="0dip"
+        style="@style/TextHelveticaBold"
+        android:layout_weight="0.9"
+        android:gravity="end|center"
+        android:text="@string/cancel"
+        android:textColor="@color/white" />
+
+    <TextView
+        style="@style/TextHelveticaBold"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:text="@string/renters_block"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text30" />
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        style="@style/ButtonBold"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@drawable/light_blue_btn"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text16" />
+
+
+    <LinearLayout
+        android:id="@+id/fb_lay"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_marginTop="@dimen/size15"
+        android:background="@drawable/fb_btn"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:scaleType="fitXY"
+            android:src="@drawable/fb_img" />
+
+
+        <TextView
+            style="@style/TextHelveticaBold"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size16"
+            android:text="@string/login_with_facebook"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/google_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@drawable/google_btn"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:scaleType="fitXY"
+            android:src="@drawable/google_img" />
+
+        <TextView
+            style="@style/TextHelveticaBold"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size16"
+            android:text="@string/login_with_google"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextHelveticaBold"
+        android:text="@string/or"
+        android:layout_height="0dip"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_weight="0.8"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="2">
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:background="@drawable/border_with_white_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_edt"
+            style="@style/EditTextLight"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_txt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/pwd_edt"
+            style="@style/EditTextLight"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/password"
+            android:imeActionId="100"
+            android:imeActionLabel="@string/ok"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingEnd="0dip"
+            android:paddingStart="@dimen/size10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_txt" />
+    </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/forgot_pwd_txt"
+        android:layout_height="0dip"
+        android:layout_weight="0.8"
+        android:layout_marginTop="@dimen/size5"
+        style="@style/TextHelveticaBold"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        style="@style/ButtonBold"
+        android:layout_height="0dip"
+        android:layout_weight="0.9"
+        android:layout_width="@dimen/size100"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size10"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/agree_terms_txt"
+        style="@style/TextHelveticaLight"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_marginBottom="@dimen/size5"
+        android:text=""
+        android:textColor="@color/white" />
+</LinearLayout>

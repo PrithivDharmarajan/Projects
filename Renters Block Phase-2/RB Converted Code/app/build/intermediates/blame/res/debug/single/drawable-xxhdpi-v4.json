@@ -1,0 +1,1054 @@
+[
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\right_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\right_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bottom_menu_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\bottom_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\add_photo_video_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\add_photo_video_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rate_this_app_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\rate_this_app_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\up_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\up_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_oval_shape.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\map_oval_shape.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\location_icon_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\location_icon_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\big_blue_rating_filled.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\big_blue_rating_filled.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\exclusives_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\exclusives_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\toggle_on.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\toggle_on.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a2a35242740af784a94e41fa3360500c803a4634\\output\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\start_review_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\start_review_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ok_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\ok_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\check_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\check_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\send_message_box.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\send_message_box.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_gallery.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_gallery.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\radio_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\radio_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\property_img_overlay.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\property_img_overlay.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_dialog_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\close_dialog_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_search_screen.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\map_search_screen.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\edit_black_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\edit_black_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\google_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\google_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\favourites_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\favourites_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\favourite_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\favourite_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\photo_vid_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\photo_vid_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_desc_txt_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_desc_txt_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_video.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_video.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\view_all.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\view_all.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\send_msg_btn_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\send_msg_btn_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\c1bca70e2e84646706e84dabc2796eaa3182cb1b\\output\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_white.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\filter_text_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\filter_text_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\finger_draw_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\finger_draw_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sponsor_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sponsor_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\page_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\page_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\more_about_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\more_about_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\pro_btn_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\pro_btn_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\profile_pic.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\profile_pic.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\notifi_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\notifi_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\feedback_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\feedback_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_overlay.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\map_overlay.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\friends_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\friends_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\properties_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\properties_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\like_icon_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\like_icon_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\email_address.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\email_address.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\find_an_agent_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\find_an_agent_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\filter_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\filter_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\notification_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\notification_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_add_photo_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_add_photo_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\default_prop_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\default_prop_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_voice.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_voice.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\right_arrow_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\right_arrow_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\add_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\add_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\photos_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\photos_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sign_up_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sign_up_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sharinglogo.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sharinglogo.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\slide_menu_mouse_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\slide_menu_mouse_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a2a35242740af784a94e41fa3360500c803a4634\\output\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\finger_draw_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\finger_draw_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_send_icon_white.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\32d78167ea74e43dd6a5bbfb0b4cee2ccd0d450b\\output\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon_white.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\finger_draw_disable1.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\finger_draw_disable1.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\show_more_right.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\show_more_right.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\agent_edit_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\agent_edit_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a7d5bae7c03f5b3ddf7b71726c8d93a59b9d9f22\\output\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\view_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\view_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\big_blue_rating_empty.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\big_blue_rating_empty.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\search_text_bar.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\search_text_bar.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facebook_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\facebook_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\side_shape_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\side_shape_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a7d5bae7c03f5b3ddf7b71726c8d93a59b9d9f22\\output\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\twit_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\twit_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\medium_blue_rating_filled.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\medium_blue_rating_filled.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\button_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\button_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\register_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\register_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\button_on.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\button_on.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\underline.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\underline.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\location_icon_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\location_icon_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\pic_count_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\pic_count_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tick_on.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\tick_on.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\app_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\mail_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\mail_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\create_acc_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\create_acc_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\go_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\go_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\radio_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\radio_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\apply_btn_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\apply_btn_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\open_houses_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\open_houses_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\white_rating_filled.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\white_rating_filled.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_radio_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_radio_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cancel_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\cancel_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\down_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\down_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\alerts_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\alerts_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\notification_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\notification_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_date_time_bg_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_date_time_bg_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_fb_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_fb_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_popup_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_popup_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\home_for_rent_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\home_for_rent_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\menu_bar.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\menu_bar.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\single_textbox.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\single_textbox.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_cal_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_cal_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_date_time_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_date_time_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\edit_button.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\edit_button.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tick_off.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\tick_off.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\slide_friends_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\slide_friends_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\message_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\message_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tutorial_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\tutorial_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\live_video_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\live_video_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\report_fraud.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\report_fraud.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_friends_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_friends_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_bg_right.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\btn_bg_right.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\enable_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\enable_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\send_msg_btn_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\send_msg_btn_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_edit_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_edit_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\image_overlay.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\image_overlay.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon_blue.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\c1bca70e2e84646706e84dabc2796eaa3182cb1b\\output\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon_blue.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\white_rating_empty.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\white_rating_empty.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\call_blue_color_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\call_blue_color_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\register_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\register_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\add_button.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\add_button.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\call_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\call_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_add_photo_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_add_photo_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\eee3a8360ae2aaefedacd41feaeb72518b4d4a99\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\delete_button.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\delete_button.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\slide_menu_manager_background.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\slide_menu_manager_background.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\settings_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\settings_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\small_blue_rating_filled.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\small_blue_rating_filled.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\close_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\close_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_map_marker.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_map_marker.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_add_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_add_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_twit_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_twit_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\top_bar_unserline.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\top_bar_unserline.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\gcm_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\gcm_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_camera.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_camera.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_message_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_message_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\review_star_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\review_star_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_image_close.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_image_close.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a2a35242740af784a94e41fa3360500c803a4634\\output\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\location_marker.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\location_marker.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_bg_center.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\btn_bg_center.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\favourite_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\favourite_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\search_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\search_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\page_enable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\page_enable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\fb_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\fb_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\home_for_sale_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\home_for_sale_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sign_up_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sign_up_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\map_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\map_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\disable_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\disable_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\my_favorites_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\my_favorites_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\write_a_review_btn.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\write_a_review_btn.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_text.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_text.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_shadow_back.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\arrow_shadow_back.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\hot_leads_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\hot_leads_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\delete_button_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\delete_button_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\more_about_me_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\more_about_me_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\c1bca70e2e84646706e84dabc2796eaa3182cb1b\\output\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ok_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\ok_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\profile_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\profile_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\headers_line.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\headers_line.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\check_disable.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\check_disable.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_venue_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_venue_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a2a35242740af784a94e41fa3360500c803a4634\\output\\res\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\apply_btn_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\apply_btn_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\toggle_off.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\toggle_off.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_clock_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_clock_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\notification_blue_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\notification_blue_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_this_app_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_this_app_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\reviews_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\reviews_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\login_trans.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\login_trans.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\post_review_rating_filled.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\post_review_rating_filled.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\video_chat_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\video_chat_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chat_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\chat_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\page_image.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\page_image.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_radio_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_radio_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\photo_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\photo_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\a2a35242740af784a94e41fa3360500c803a4634\\output\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\vip_btn_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\vip_btn_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\favorites_icon_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\favorites_icon_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rb_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\rb_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\small_blue_rating_empty.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\small_blue_rating_empty.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\home_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\home_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\back_arrow_white.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\back_arrow_white.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\save_text_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\save_text_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cancel_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\cancel_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\key_box.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\key_box.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listing_image_over_lay.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\listing_image_over_lay.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\get_start_btn.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\get_start_btn.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\sche_meeting_text_box.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\sche_meeting_text_box.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\half_line.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\half_line.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\like_icon_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\like_icon_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\scheduling_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\scheduling_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\back_arrow.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\back_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\view_all_btn.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\view_all_btn.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\friend_request_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\friend_request_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\friend_request_over.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\friend_request_over.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\post_review_rating_empty.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\post_review_rating_empty.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\buliding_photo_overlay.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\buliding_photo_overlay.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\button_off.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\button_off.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_bg_left.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\btn_bg_left.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\location_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\location_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\google_normal.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\google_normal.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\saved_searches_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\saved_searches_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\share_mail_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\share_mail_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\address_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\address_bg.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\slide_menu_icon.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\slide_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\live_video_chat_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\live_video_chat_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\add_friend_profile.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\add_friend_profile.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facebook_hover.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\facebook_hover.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\medium_blue_rating_empty.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\medium_blue_rating_empty.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\sys\\.android\\build-cache\\3c3cc05299ff1b7844dfae1157c365c717fa5b6a\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\request_info.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\request_info.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\filter_text_grey_bg.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-xxhdpi\\filter_text_grey_bg.png"
+    }
+]

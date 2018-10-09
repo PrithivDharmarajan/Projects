@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height300"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin15"
+    android:layout_marginRight="@dimen/margin15"
+    android:background="@drawable/general_popup"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/rate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin20"
+        android:gravity="center"
+        android:text="@string/rate_us"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text20" />
+
+    <LinearLayout
+        android:id="@+id/rate_it_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin15"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin35"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_weight="1"
+            android:background="@drawable/header"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/rate_it"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin35"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_weight="1"
+            android:background="@drawable/header"
+            android:gravity="center"
+            android:text="@string/rate_it"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/fav_ratingbar"
+        style="@style/CustomRatingBarBig"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin40"
+        android:layout_above="@+id/rate_it_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin15"
+        android:isIndicator="false"
+        android:rating="5"
+        android:stepSize="1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/rating_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/excellent" />
+
+    <TextView
+        android:id="@+id/rating_avg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_icons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="@string/excellent"
+        android:textSize="@dimen/text20"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size120"
+    android:background="@color/bgcolor"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<TextView
+    android:id="@+id/user_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="left|bottom"
+    style="@style/TextBold"
+    android:text="akugdsckuagdscjkasdasd"
+    android:layout_marginLeft="@dimen/size20"
+    android:textSize="@dimen/size20"
+    android:textColor="@color/blackcolor"
+
+    />
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:layout_marginLeft="@dimen/size20"
+            style="@style/TextLight"
+            android:textSize="@dimen/size12"
+            android:textColor="@color/blackcolor"
+            android:text="View and edit profile"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1.9">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/staff_img"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:src="@drawable/add_photo"
+            android:visibility="gone"
+            app:civ_border_color="@color/blackcolor"
+            app:civ_border_width="1dp" />
+    </LinearLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/greycolor"></View>
+</LinearLayout>

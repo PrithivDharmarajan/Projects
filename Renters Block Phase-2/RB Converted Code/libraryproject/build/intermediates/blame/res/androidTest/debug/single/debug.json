@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4_ptr_pulltorefresh_arrow.png.flat",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\ptr_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ptr_pulltorefresh_arrow.png.flat",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ptr_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ptr_pulltorefresh_arrow.png.flat",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ptr_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_ptr_header.xml.flat",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\libraryproject\\build\\intermediates\\bundles\\debug\\res\\layout\\ptr_header.xml"
+    }
+]

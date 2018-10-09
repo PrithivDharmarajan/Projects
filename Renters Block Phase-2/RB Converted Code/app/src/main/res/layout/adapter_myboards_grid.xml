@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/grid_main_lay"
+        android:layout_width="@dimen/height150"
+        android:layout_height="@dimen/height150"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@drawable/buliding_photo_overlay"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="Jefferson Cliton Buiding North(WJC North) 1200 Pennylvania Avenue N.W.Washington,DC 200004"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text10" />
+
+        <LinearLayout
+            android:id="@+id/rev_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/review_ratingbar"
+                style="@style/MediumBlueRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin5"
+                android:isIndicator="false"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text=" (0)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layout1"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/height100"
+            android:layout_above="@+id/rev_lay"
+            android:layout_below="@+id/address" >
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/margin10"
+                android:layout_height="@dimen/margin10"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/building_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:contentDescription="@drawable/default_prop_icon"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_prop_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

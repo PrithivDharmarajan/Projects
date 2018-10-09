@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tutorial_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@drawable/tutorial_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_lay"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            style="@style/LayoutMatch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/get_started_btn"
+            style="@style/ButtonBold"
+            android:layout_width="@dimen/size120"
+            android:layout_height="@dimen/size30"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@drawable/gray_btn"
+            android:text="@string/get_started"
+            android:textColor="@color/ash"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/slide_pointer_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginTop="@dimen/size10"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/slide_pointer_one_img"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:contentDescription="@color/back_color"
+                android:src="@drawable/circle_bg_indicator_on" />
+
+            <ImageView
+                android:id="@+id/slide_pointer_two_img"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+
+                android:contentDescription="@color/back_color"
+                android:src="@drawable/circle_bg_indicator_off" />
+
+            <ImageView
+                android:id="@+id/slide_pointer_three_img"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+                android:contentDescription="@color/back_color"
+                android:src="@drawable/circle_bg_indicator_off" />
+
+            <ImageView
+                android:id="@+id/slide_pointer_four_img"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+                android:contentDescription="@color/back_color"
+                android:src="@drawable/circle_bg_indicator_off" />
+
+            <ImageView
+                android:id="@+id/slide_pointer_five_img"
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size10"
+                android:layout_marginStart="@dimen/size10"
+                android:contentDescription="@color/back_color"
+                android:src="@drawable/circle_bg_indicator_off" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

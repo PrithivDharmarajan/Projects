@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_bar" >
+
+        <LinearLayout
+            android:id="@+id/bac_btn"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow_white"
+                android:clickable="false"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/search_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_toRightOf="@+id/bac_btn" >
+
+            <EditText
+                android:id="@+id/search_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin60"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="Search for people"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:textColorHint="@color/text_color_white" >
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/search_icon"
+            android:layout_width="@dimen/margin20"
+            android:layout_height="@dimen/margin20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin50"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@drawable/chat_screen_search" />
+
+        <Button
+            android:id="@+id/clear_text"
+            android:layout_width="@dimen/margin20"
+            android:layout_height="@dimen/margin20"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin15"
+            android:layout_toLeftOf="@+id/search_icon"
+            android:background="@drawable/search_screen_close"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin65"
+            android:layout_marginRight="@dimen/margin50"
+            android:background="#fff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/recents_frag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingTop="@dimen/padding5"
+            android:text="@string/recents"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/friends_frag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/headers_line"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingTop="@dimen/padding5"
+            android:text="@string/friends"
+            android:textColor="#007afc"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="#6e6e6e"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/sync_contact"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ToggleButton
+                    android:id="@+id/sync_contact"
+                    android:layout_width="@dimen/size35"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:background="@drawable/toggle_off"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_height="@dimen/size40"
+                android:background="@drawable/filter_text_grey_bg"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size10"
+                android:text="@string/mobile_alerts"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text13" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/new_saved_search_matches"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ToggleButton
+                    android:id="@+id/tog_new_saved_search"
+                    android:layout_width="@dimen/size35"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:background="@drawable/toggle_off"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_height="@dimen/size40"
+                android:background="@drawable/filter_text_grey_bg"
+                android:clickable="true"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size10"
+                android:text="@string/search_results"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text13" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/search_result_per_screen"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <EditText
+                    android:id="@+id/search_count_edit"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@drawable/border_gray"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="@dimen/size3"
+                    android:textColor="@color/gray_txt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView2"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_marginStart="@dimen/size15"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:text="@string/from_ten_fivty"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text11" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/update_results_as_map_moves"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ToggleButton
+                    android:id="@+id/tog_update_results"
+                    android:layout_width="@dimen/size35"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:background="@drawable/toggle_off"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:background="@drawable/filter_text_grey_bg" />
+
+            <RelativeLayout
+                android:id="@+id/about_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/about_renters_blocks"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/right_arrow_icon" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/terms_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/terms_of_service"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/right_arrow_icon" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/privacy_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size40"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/size5"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/text13" />
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/right_arrow_icon" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/gray" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

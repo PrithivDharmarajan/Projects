@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <RelativeLayout
+            android:id="@+id/builder_lay"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size5">
+
+            <ImageView
+                android:id="@+id/builder_img"
+                style="@style/LayoutMatch"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_toEndOf="@+id/builder_lay"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_toStartOf="@+id/right_arrow_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/property_address_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_marginTop="@dimen/size5"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+
+            <RatingBar
+                android:id="@+id/review_rating_bar"
+                style="@style/BigRatingBar"
+                android:layout_marginTop="@dimen/size5" />
+
+            <TextView
+                android:id="@+id/comments_txt"
+                style="@style/TextHelvetica"
+                android:layout_marginTop="@dimen/size5"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_arrow_img"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size10"
+            android:src="@drawable/right_arrow_icon" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size0.25"
+        android:background="@color/gray_txt" />
+</LinearLayout>

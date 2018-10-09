@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/size30"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/size20">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_marginTop="@dimen/size10"
+                android:padding="@dimen/size5"
+                android:text="@string/please_enter_your_user_name"
+                android:textSize="@dimen/text12" />
+
+
+            <EditText
+                android:id="@+id/user_name_edt"
+                style="@style/TextHelvetica"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size30"
+                android:layout_margin="@dimen/size10"
+                android:background="@drawable/border_gray_without_corner"
+                android:gravity="start|center"
+                android:inputType="textCapSentences"
+                android:paddingEnd="@dimen/size5"
+                android:paddingStart="@dimen/size5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/update_txt"
+                    style="@style/TextHelveticaBold"
+                    android:layout_width="@dimen/size70"
+                    android:layout_height="@dimen/size30"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:background="@drawable/border_gray"
+                    android:text="@string/save"
+                    android:textSize="@dimen/text12" />
+
+                <TextView
+                    android:id="@+id/cancel_txt"
+                    style="@style/TextHelveticaBold"
+                    android:layout_width="@dimen/size70"
+                    android:layout_height="@dimen/size30"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@drawable/border_gray"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/text12" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

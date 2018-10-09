@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IPharma</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="could_not_find_add">Couldn\'t find address for you selected location</string>
+
+    <string name="data_issue">Problem with result data, Please check the inputs.</string>
+    <string name="server_unreachable">There has been a problem connecting to the AYSA server. Please try again.</string>
+    <string name="submit">Submit</string>
+    <string name="agree_txt">I Agree all terms and conditions.</string>
+    <string name="logout_alert"> Do you really want to Sigout?</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5639579184035331/1022906607</string>
+    <string name="image_issue">Image could not acceessible, Please try different image.</string>
+    <string name="prescription_not">Prescription not Selected, Please try again.</string>
+    <!-- Login Screen -->
+    <string name="user_name">User Name</string>
+    <string name="pwd">Password</string>
+    <string name="ipharma">iPharma</string>
+    <string name="enter_user">Enter UserName</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="terms_conds">Terms &amp; Conditions</string>
+    <string name="otp">OTP</string>
+    <string name="otp_header">OTP has been sent to your email id and mobile number</string>
+    <string name="otp_hint">Enter OTP here</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="android">android</string>
+    <string name="account_not_confirmed">Account not confirmed</string>
+    <string name="enter_email_or_phone">Please enter a valid email or phone number</string>
+    <string name="enter_password">Please enter a valid password</string>
+    <string name="device_doest_not_support_google_services">Your device doest not support Google Services, So you will not receive any Push message from this application</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="no_user">no_user</string>
+    <string name="user_not_exit">User does not exit</string>
+
+    <!-- Details screen -->
+    <string name="enter_data">Enter Data</string>
+    <string name="phar_name">Pharmacy Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="adress">Address</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="open_time">Opening Time - </string>
+    <string name="close_time">Close Time - </string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="min_pruchase">Min Puchase</string>
+    <string name="is_delivery">Is Home Delivery</string>
+    <string name="within">Within</string>
+    <string name="enter_phar_name">Enter Pharmacy Name</string>
+    <string name="enter_owner_name">Enter Owner Name</string>
+    <string name="enter_phar_address">Enter Address</string>
+    <string name="enter_website">Enter Website</string>
+    <string name="enter_phone_num">Enter Phone Num</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+    <string name="mi_pur">Min Purchase</string>
+
+    <!-- Tutorial Screen -->
+    <string name="how_it_works">How it Works ?</string>
+
+    <string-array name="tutorial">
+        <item>Scan your prescription and submit</item>
+        <item>Your nearby Pharmacy will get\n order from you automatically</item>
+        <item>We will deliver the medicine to your\n door step within sometime</item>
+    </string-array>
+
+    <string name="continue_text">Continue</string>
+    <string name="Skip_text">Skip</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+
+    <!-- Login Screen -->
+    <string name="or_text">or</string>
+    <string name="forgot_passs">Forgot Password ?</string>
+    <string name="new_user">New User ?</string>
+    <string name="forgot_pwd_failed">Forgot Password Failed</string>
+    <string name="mail_sucess">Your request has been successfully submitted please check your mail</string>
+
+    <!-- Register Screen -->
+    <string name="name">Name</string>
+    <string name="user_current_locaiton">Use my current location</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="pincode">Pincode</string>
+    <string name="register">Register</string>
+    <string name="registration_failed">Registration Failed</string>
+
+    <!-- OneTimePassword Screen -->
+    <string name="Success">Success</string>
+    <string name="enter_OTP">Please Enter Your OTP.</string>
+
+    <!-- Map Screen -->
+    <string name="location">location</string>
+    <string name="locationCount">locationCount</string>
+    <string name="zoom">zoom</string>
+    <string name="lat">lat</string>
+    <string name="lng">lng</string>
+    <string name="km_away">km Away</string>
+    <string name="min_order_rs">Min Order - Rs</string>
+    <string name="saved_successfully">Saved Successfully.</string>
+    <string name="unable_to_create_maps">Sorry! unable to create maps</string>
+    <string name="point_A">point A</string>
+    <string name="point_B">point B</string>
+    <string name="geometry">geometry</string>
+    <string name="results">results</string>
+    <string name="search_hint">Pharmacy Name,Area,City,Pin</string>
+
+    <!-- Map List -->
+    <string name="addresslocation">addresslocation</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="Distance">Distance</string>
+    <string name="SearchText">SearchText</string>
+    <string name="UserID">UserID</string>
+    <string name="rating_added">Rating Added Successfully.</string>
+    <string name="Km">Km</string>
+    <string name="All_zero">All (0)</string>
+    <string name="Premium_zero">Premium (0)</string>
+    <string name="Normal_zero">Normal (0)</string>
+    <string name="All">All</string>
+    <string name="Premium">Premium</string>
+    <string name="Normal">Normal</string>
+
+
+    <!-- Favorite Screen -->
+    <string name="favorite">Favorite</string>
+    <string name="deliver_time">Delivery Time - </string>
+    <string name="reviews">Reviews</string>
+    <string name="min_order">Min Order - </string>
+    <string name="no_favourite_shop">No Favourite Shops Available.</string>
+
+    <!-- History Screen -->
+    <string name="no_history_available">No History Available.</string>
+    <string name="no_offers_found">No Offers Found.</string>
+    <string name="Rs">Rs</string>
+    <string name="prescription">Select Prescription</string>
+
+    <!-- Reviews Screen -->
+    <string name="write_review">Write a Review</string>
+    <string name="heading">Heading</string>
+    <string name="review">Review</string>
+    <string name="review_hint">Enter Your Review Here</string>
+    <string name="typw_here">type here</string>
+    <string name="post">Post</string>
+    <string name="enter_reviews">Please enter reviews</string>
+
+    <!-- More Screen -->
+    <string name="notification">Notification</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share_this_app">Share this App</string>
+    <string name="rate_it">Rate it</string>
+    <string name="poor">Poor</string>
+    <string name="bad">Bad</string>
+    <string name="average">Average</string>
+    <string name="good">Good</string>
+    <string name="excellent">Excellent</string>
+    <string name="Sub">mSub</string>
+    <string name="MsgTxt">mMsgTxt</string>
+
+    <!-- Share Option -->
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="gm">android.gm</string>
+    <string name="mms">mms</string>
+    <string name="install_app">Plz Install The App</string>
+    <string name="share_subject">Share Subject</string>
+    <string name="share_text">Share Text</string>
+
+    <!-- Scan PopUp -->
+    <string name="from_cam">From Camera</string>
+    <string name="from_gal">From Gallery</string>
+    <string name="from_his">From History</string>
+    <string name="history">History</string>
+    <string name="select_pres">Select Prescription</string>
+
+    <!-- Order Now Screen -->
+    <string name="place_order">Place Order</string>
+    <string name="mini_order">Min Order</string>
+    <string name="review_i">Reviews - </string>
+    <string name="order_now">Order Now</string>
+    <string name="in_progress">In Progress</string>
+    <string name="action_required">Action Required</string>
+    <string name="reject">Reject</string>
+    <string name="delivery_started">Delivery Started</string>
+    <string name="cancel_order">cancel order</string>
+    <string name="cancel">Cancel</string>
+    <string name="payment_over">payment over</string>
+    <string name="pay_rs">Pay RS</string>
+    <string name="two">2</string>
+    <string name="one_touch_order_message">Please select any pharmacy and upload your Prescription to Place a Order! </string>
+    <string name="one_touch_order_select_message">Please select any pharmacy to add to your One Touch Order List! </string>
+
+    <!-- Order Details -->
+    <string name="delivery_address">Delivery Address</string>
+    <string name="address_hint">Type here for new Address</string>
+    <string name="save">Save</string>
+    <string name="order_details">Order Details</string>
+    <string name="status">Status :</string>
+    <string name="delivered">Delivered</string>
+    <string name="order_dialog_text">Your Order has been successfully Submitted.We will contact you shortly.</string>
+    <string name="about_us">About Us</string>
+    <string name="enter_note">Enter Note Here</string>
+    <string name="ordered_at">Ordered at :</string>
+    <string name="current_status">Current Status :</string>
+    <string name="expected_status">Expected Delivery in </string>
+    <string name="amnt_paid">Amount to be Paid :RS</string>
+    <string name="min">min</string>
+    <string name="unable_to_find_location">Unable to find the location.</string>
+    <string name="please_enter_address">Please Enter Your Address.</string>
+
+    <!-- iPharma Money -->
+    <string name="money_txt">Cashless medicine purchase\nwith iPharma Money</string>
+    <string name="curr_bal">Current Balance</string>
+    <string name="recharge_money">Recharge iPharma Money</string>
+    <string name="money1">599</string>
+    <string name="money2">999</string>
+    <string name="money3">1999</string>
+    <string name="enter_amount">Enter an amount</string>
+    <string name="enter_promo_code">Enter a promo code (optional)</string>
+    <string name="apply">Apply</string>
+    <string name="add_money">Add iPharma Money</string>
+    <string name="rupee_sym">\u20B9</string>
+    <string name="add_money_title">Add Money</string>
+    <string name="enter_valid_money">Please enter a valid money</string>
+
+    <!-- Payment Options -->
+    <string name="payment_options">Payment Options</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="imoney_refund">iPharma Money once recharged, is not refundable</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="money_ipharma">iPharma Money</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+
+    <!-- Payment Options cards -->
+    <string name="card_number">Card Number</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="cvv">CVV</string>
+    <string name="name_on_the_card">Name on the Card</string>
+    <string name="save_card">Save Card Details</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="enter_card_number">Please enter a valid card number</string>
+    <string name="enter_month">Please enter a valid month</string>
+    <string name="enter_year">Please enter a valid year</string>
+    <string name="enter_cvv">Please enter a valid cvv number</string>
+    <string name="enter_card_name">Please enter a valid card name</string>
+    <string name="payment_failed">Payment Failed</string>
+
+    <!-- Profile Screen -->
+    <string name="enter_name">Please enter a valid name</string>
+    <string name="enter_email">Please enter a valid email</string>
+    <string name="enter_phone">Please enter a valid phone number</string>
+    <string name="enter_city">Please enter a valid city</string>
+    <string name="enter_area">Please enter a valid area</string>
+    <string name="enter_pincode">Please enter a valid pincode</string>
+    <string name="enter_address">Please enter a valid address</string>
+    <string name="latlocation">latlocation</string>
+
+    <!-- Message Screen -->
+    <string name="message_hint">Enter your message here</string>
+    <string name="send">Send</string>
+    <string name="at">at</string>
+    <string name="pic_format">.jpg</string>
+    <!-- Web View -->
+    <string name="apirequestsuccess">apirequestsuccess</string>
+    <string name="error_code">error_code</string>
+    <string name="message">message</string>
+    <string name="result">result</string>
+    <!-- <string name="connection_timeout"> Server not responding, Please try again.</string> -->
+    <string name="http">http://</string>
+    <string name="tel">tel:</string>
+    <string name="ph_not_available">Phone Number Is Not Available in This Pharmacy</string>
+    <string name="email_not_available">Email Id Is Not Available in This Pharmacy</string>
+    <string name="website_not_available">Website Is Not Available in This Pharmacy</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!--....................New String.....................-->
+
+    <!--Splash Screen-->
+    <string name="device_not_support">This device is not supported.</string>
+    <string name="req_per_not_granted">Required permission not granted</string>
+    <string name="req_permission">Required permission not granted, Go to settings and enable all permissions</string>
+
+
+    <!-- Slide Menu -->
+    <string name="order_medicine">Order Medicine</string>
+    <string name="one_touch_order">One Touch Order</string>
+    <string name="one_touch_order_list">Select One Touch Order Pharmacy</string>
+    <string name="my_order">My Order</string>
+    <string name="my_fav_phar">My Favourite Pharmacies</string>
+    <string name="offers">Offers</string>
+    <string name="ipharma_money">iPharma Money</string>
+    <string name="messages">Messages</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="more">More</string>
+    <string name="pill_rem">Pill Reminder</string>
+    <string name="signout">Signout</string>
+    <string name="profile">Profile</string>
+
+    <!--Server Error Message-->
+    <string name="no_network">No internet connetion available.</string>
+    <string name="conn_time_out"> Server is not responding properly. Please try again.</string>
+    <string name="serv_not_res"> Server is not responding properly. Please try again.</string>
+    <string name="serv_con_exce">ConversionException. Please try again.</string>
+
+
+    <!--Pill Reminder Screen-->
+    <string name="set_dur">Set Duration</string>
+    <string name="add_pill_time">Add New Pill Timing</string>
+    <string name="edit">Edit</string>
+    <string name="delete">delete</string>
+    <string name="tab_hint">Type name of medicine here</string>
+    <string name="done">Done</string>
+    <string name="update_successfully">Update Successfully.</string>
+    <string name="delete_successfully">Delete Successfully.</string>
+
+
+    <string-array name="string_duration">
+        <item>Lifetime</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+
+    </string-array>
+
+</resources>
+
+    <!-- Account details:
+          Google app Account : android.smaatapps@gmail.com
+
+           -->

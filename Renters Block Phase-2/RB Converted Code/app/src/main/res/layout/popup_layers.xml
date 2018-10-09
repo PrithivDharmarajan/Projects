@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transperent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin20"
+        android:background="@color/text_color_white" >
+
+        <LinearLayout
+            android:id="@+id/type_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="Map Layers"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/text_blue_color" />
+
+            <RelativeLayout
+                android:id="@+id/default_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="Default"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <ToggleButton
+                    android:id="@+id/tog_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/radio_disable"
+                    android:clickable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/satelite_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="Satelite"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <ToggleButton
+                    android:id="@+id/tog_satelite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/radio_disable"
+                    android:clickable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/hybrid_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding5"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/padding5"
+                    android:text="Hybrid"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text18" />
+
+                <ToggleButton
+                    android:id="@+id/tog_hybrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding10"
+                    android:background="@drawable/radio_disable"
+                    android:clickable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/type_lay"
+            android:layout_margin="@dimen/padding5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="@dimen/height100"
+                android:layout_height="match_parent"
+                android:background="@drawable/apply_btn"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/dart_grey"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

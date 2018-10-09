@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical" >
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favourite_list"
+        android:divider="@color/app_color"
+        android:dividerHeight="@dimen/size1"
+        android:listSelector="@android:color/transparent"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/internetconnection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/refresh_btn"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_above="@+id/internet_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:src="@drawable/ip_refresh_button"/>
+        <TextView
+            android:id="@+id/internet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size18"
+            style="@style/TextRegular"
+            android:textColor="@color/greycolor"
+            android:layout_centerInParent="true"
+            android:text="@string/no_internet_connec"/>
+    </RelativeLayout>
+
+</LinearLayout>

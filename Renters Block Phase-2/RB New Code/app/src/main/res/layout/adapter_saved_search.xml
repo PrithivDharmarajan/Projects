@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <LinearLayout
+        android:id="@+id/parent_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tick_lay"
+            android:layout_width="@dimen/size50"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/selection_img"
+                android:layout_width="@dimen/size25"
+                android:layout_height="@dimen/size30"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/location_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_marginBottom="@dimen/size5"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="start|center"
+                android:text="@string/address_1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/filter_details_txt"
+                style="@style/TextHelvetica"
+                android:layout_marginBottom="@dimen/size5"
+                android:gravity="start|center"
+                android:text="@string/rent_colon" />
+
+            <TextView
+                android:id="@+id/bed_bath_txt"
+                style="@style/TextHelvetica"
+                android:layout_marginBottom="@dimen/size5"
+                android:gravity="start|center"
+                android:text="@string/address_1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/parent_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/slide_black_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\notification_box_al.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\notification_box_al.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\key_value_bg.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\key_value_bg.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\key_value_bg1.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\key_value_bg1.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\marker_textbox_selected.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\marker_textbox_selected.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\sender_bg.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\sender_bg.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\marker_textboxchange.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\marker_textboxchange.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\receiver_bg.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\receiver_bg.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\marker_textbox.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\marker_textbox.9.png"
+    },
+    {
+        "merged": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\notification_box.9.png",
+        "source": "D:\\Android_Studio_All_Project\\RentersBlock\\RB Converted Code\\app\\src\\main\\res\\drawable-mdpi\\notification_box.9.png"
+    }
+]

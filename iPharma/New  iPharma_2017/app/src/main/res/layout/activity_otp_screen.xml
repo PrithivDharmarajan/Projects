@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    android:layout_gravity="center"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="@color/app_color">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/size10"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_button"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/whitecolor"
+            android:textSize="@dimen/size16"
+            style="@style/TextRegular"
+            android:text="@string/otp"/>
+
+
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size10"
+    android:background="@color/whitecolor"/>
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/TextRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size15"
+        android:text="@string/otp_header"
+        android:gravity="center"
+        android:textColor="@color/blackcolor"
+        android:textSize="@dimen/size16" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_text"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/otp_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/etx_bg"
+            android:hint="@string/otp_hint"
+            android:gravity="center"
+            android:textSize="@dimen/size14"
+            style="@style/EditLight"
+            android:inputType="number"
+            android:textColor="@color/blackcolor"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/greycolor"
+            android:layout_marginLeft="@dimen/size18"
+            android:layout_marginRight="@dimen/size18"
+            android:layout_marginTop="@dimen/size40"
+            android:layout_marginBottom="@dimen/size5"
+             >
+        </EditText>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:layout_marginLeft="@dimen/size18"
+        android:layout_marginRight="@dimen/size18"
+        android:layout_marginTop="@dimen/size25"
+        style="@style/ButtonRegular"
+        android:text="@string/submit"
+        android:textSize="@dimen/size14"
+        android:stateListAnimator="@null"
+        android:textColor="@color/blackcolor"
+        android:background="@drawable/green_rounded_bg" >
+    </Button>
+    <Button
+        android:id="@+id/resend_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:layout_marginLeft="@dimen/size18"
+        android:layout_marginRight="@dimen/size18"
+        android:layout_marginTop="@dimen/size25"
+        style="@style/ButtonRegular"
+        android:text="@string/resend_otp"
+        android:textSize="@dimen/size14"
+        android:stateListAnimator="@null"
+        android:textColor="@color/blackcolor"
+        android:background="@drawable/green_rounded_bg" />
+
+</LinearLayout>

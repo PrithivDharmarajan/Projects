@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin35"
+            android:layout_gravity="center|left"
+            android:background="@color/slide_black"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/search"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/buy_exclusives_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_exclusives"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/exclusives_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/exclusives_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_homes_for_rent_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_homes_for_rent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/home_for_rent_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/homes_for_rent"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_homes_for_sale_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_homes_for_sale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/home_for_sale_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/homes_for_sale"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_saved_searches_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_saved_searches"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/saved_searches_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/saved_searches"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_my_favourites_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_my_favourites"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/my_favorites_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/slide_my_fav"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_alerts_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/alerts_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/alerts_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_open_house_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_open_house"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/open_houses_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/open_houses_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_find_agent_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_find_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/find_an_agent_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/find_an_agent"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_block_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_lay"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_block"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin35"
+            android:layout_gravity="center|left"
+            android:background="@color/slide_black"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/my_block"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/buy_reviews_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/reviews_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/reviews_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_friends_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/slide_friends_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/friends_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_scheduling_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_scheduling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/scheduling_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/scheduling_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_profile_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/profile_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/profile"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_block_lay"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin35"
+            android:layout_gravity="center|left"
+            android:background="@color/slide_black"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/more"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/buy_feedback_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/feedback_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/feedback_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_rate_app_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_rate_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/rate_this_app_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/rate_this_app"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_share_app_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_share_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/share_this_app_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/share_this_app"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin50"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/buy_settings_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <Button
+                android:id="@+id/buy_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@null"
+                android:drawableLeft="@drawable/settings_icon"
+                android:drawablePadding="@dimen/margin20"
+                android:gravity="center|left"
+                android:onClick="onbuyMenuClick"
+                android:text="@string/settings_menu"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

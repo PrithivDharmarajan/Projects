@@ -88,13 +88,13 @@ public class AppConstants {
     /*Strip*/
 
     /*Live Key*/
-    public static final String STRIP_SECRET_KEY = "sk_live_OYcK5SGmpbkYkQLQt3JJvQza";
+    public static final String STRIP_SECRET_KEY = "";
     /*Test Key*/
-//    public static final String STRIP_SECRET_KEY = "sk_test_Jw06FV8ARQ3pUb3PrIELoiNe";
+//    public static final String STRIP_SECRET_KEY = "";
     /*Live Key*/
-    public static final String STRIP_PUBLISH_KEY = "pk_live_YAGKoWKqrkQ1uFAE0uB5fmY7";
+    public static final String STRIP_PUBLISH_KEY = "";
     /*Test key*/
-//    public static final String STRIP_PUBLISH_KEY = "pk_test_fUL8psmuJYhSZPGYIKXCEstt";
+//    public static final String STRIP_PUBLISH_KEY = "";
     public static final String STRIP_COUNTRY_CODE = "US";
     public static final String STRIP_CURRENCY_CODE = "usd";
     public static final String API_STRIP_CARD = "https://api.stripe.com/v1/customers/%1$s";

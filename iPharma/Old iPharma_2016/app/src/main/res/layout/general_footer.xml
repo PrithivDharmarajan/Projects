@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/footer_lay"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/margin60"
+              android:background="@drawable/header"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/footer_middle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18"/>
+    </FrameLayout>
+
+</LinearLayout>

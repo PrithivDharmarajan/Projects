@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    style="@style/LayoutMatch"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:layout_marginStart="@dimen/size10"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/name_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size70">
+
+            <TextView
+                android:id="@+id/name_title"
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/name"
+                android:layout_centerInParent="true"
+                android:textColor="@color/app_blue" />
+
+            <TextView
+                android:id="@+id/location_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_width="wrap_content"
+                android:gravity="end|center_vertical"
+               android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_toEndOf="@+id/name_title"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/right_arrow_img" />
+
+            <ImageView
+                android:id="@+id/right_arrow_img"
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:layout_centerInParent="true"
+                android:src="@drawable/right_arrow_icon" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_name_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/email_notification_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size70"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/email_toggle_img"
+                android:gravity="start|center"
+                android:text="@string/email_notification"
+                android:textColor="@color/app_blue" />
+
+            <ImageView
+                android:id="@+id/email_toggle_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/toggle_on" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_email_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/inquiry_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size70"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/inquiry_toggle_img"
+                android:gravity="start|center"
+                android:text="@string/allow_agent_broker_inquiry"
+                android:textColor="@color/app_blue" />
+
+            <ImageView
+                android:id="@+id/inquiry_toggle_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/toggle_on" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line_inquiry_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/filter_view_line_bg" />
+
+        <Button
+            android:id="@+id/update_btn"
+            style="@style/ButtonBold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/size40"
+            android:background="@drawable/border_gray"
+            android:paddingEnd="@dimen/size30"
+            android:paddingStart="@dimen/size30"
+            android:text="@string/update"
+            android:layout_gravity="center"
+            android:textColor="@color/grey" />
+    </LinearLayout>
+
+</RelativeLayout>

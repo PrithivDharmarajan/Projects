@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginBottom="@dimen/size30"
+    android:layout_marginEnd="@dimen/size40"
+    android:layout_marginStart="@dimen/size40"
+    android:layout_marginTop="@dimen/size30"
+    android:gravity="center">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10"
+            android:text="@string/sort_options"
+            android:textColor="@color/app_blue"
+            android:textSize="@dimen/text16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:layout_below="@+id/textView1"
+            android:background="@color/app_blue" />
+
+        <RelativeLayout
+            android:id="@+id/best_match_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/textView1"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center|start"
+                android:text="@string/best_match" />
+
+            <ImageView
+                android:id="@+id/best_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_enable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/best_match_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/latest_updates_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/best_match_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toEndOf="@+id/latest_img"
+                android:gravity="center|start"
+                android:text="@string/latest_update" />
+
+            <ImageView
+                android:id="@+id/latest_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/latest_updates_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/rating_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/latest_updates_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toEndOf="@+id/rating_img"
+                android:gravity="center|start"
+                android:text="@string/rating" />
+
+            <ImageView
+                android:id="@+id/rating_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/rating_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/low_to_high_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/rating_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toEndOf="@+id/low_to_high_img"
+                android:gravity="center|start"
+                android:text="@string/price_ltoh" />
+
+            <ImageView
+                android:id="@+id/low_to_high_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/low_to_high_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/high_to_low_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/low_to_high_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center|start"
+                android:text="@string/price_htol" />
+
+            <ImageView
+                android:id="@+id/high_to_low_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/high_to_low_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/bedrooms_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/high_to_low_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center|start"
+                android:text="@string/bed_rooms" />
+
+            <ImageView
+                android:id="@+id/bed_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/bedrooms_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/bathroom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/bedrooms_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center|start"
+                android:text="@string/baths" />
+
+            <ImageView
+                android:id="@+id/bath_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/bathroom_lay"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/sqft_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/bathroom_lay"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:gravity="center|start">
+
+            <TextView
+                style="@style/TextHelveticaLight"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center|start"
+                android:text="@string/sqft" />
+
+            <ImageView
+                android:id="@+id/sqft_img"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/radio_disable" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@+id/sqft_lay"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/done_btn"
+            style="@style/ButtonLight"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size40"
+            android:layout_below="@+id/sqft_lay"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/done" />
+    </RelativeLayout>
+</LinearLayout>

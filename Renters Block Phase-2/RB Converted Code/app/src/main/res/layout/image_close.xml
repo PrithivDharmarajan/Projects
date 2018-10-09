@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/img_lay1"
+            android:layout_width="@dimen/height110"
+            android:layout_height="@dimen/height110" >
+
+            <ImageView
+                android:id="@+id/list_img1"
+                android:layout_width="@dimen/margin90"
+                android:layout_height="@dimen/margin90"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/padding4"
+                android:contentDescription="@drawable/listing_add_photo_normal"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/listing_add_photo_normal" />
+
+            <Button
+                android:id="@+id/list_img_close1"
+                android:layout_width="@dimen/margin15"
+                android:layout_height="@dimen/margin15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margin5"
+                android:background="@drawable/listing_image_close"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitecolor"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/shop_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size180"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_photo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/adresslayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/size20"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/shop_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/size18"
+                            android:textColor="@color/blackcolor"
+
+                            style="@style/TextMedium"
+                            android:maxLines="1"
+                            android:text="adasdasd"/>
+                        <TextView
+                            android:id="@+id/shop_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/size14"
+                            style="@style/TextLight"
+                            android:textColor="@color/blackcolor"
+                            android:maxLines="2"
+                            android:text="adasdasd"/>
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/app_color"
+                    android:layout_marginTop="@dimen/size5"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/size20"
+                        >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginRight="@dimen/size10"
+                    android:layout_gravity="bottom">
+                    <ImageView
+                        android:id="@+id/openmail"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_mail"/>
+
+                    <ImageView
+                        android:id="@+id/callbtn"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/call_btn"/>
+
+                    <ImageView
+                        android:id="@+id/clickwebsite"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_website"/>
+
+                    <ImageView
+                        android:id="@+id/clicklocation"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_location"/>
+
+                </LinearLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginLeft="@dimen/size20"
+                    android:layout_marginRight="@dimen/size20">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Address"
+                        style="@style/TextRegular"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/list_color"
+                        android:textSize="@dimen/size16"/>
+
+                    <TextView
+                        android:id="@+id/change_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Address"
+                        style="@style/TextRegular"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/size12"/>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/del_address"
+                    android:gravity="left|bottom"
+                    android:background="@drawable/txtunderline"
+                    android:layout_marginLeft="@dimen/size20"
+                    android:layout_marginRight="@dimen/size20"
+                    android:layout_marginTop="@dimen/size10"
+                    style="@style/TextLight"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="@dimen/size14"
+                    android:hint="@string/delivery_address"/>
+                <TextView
+                    android:id="@+id/note_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    style="@style/TextRegular"
+                    android:textColor="@color/list_color"
+                    android:textSize="@dimen/size16"
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginLeft="@dimen/size20"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/note"
+                    android:gravity="left|bottom"
+                    android:background="@drawable/txtunderline"
+                    android:layout_marginLeft="@dimen/size20"
+                    android:layout_marginRight="@dimen/size20"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:layout_marginTop="@dimen/size10"
+                    style="@style/TextLight"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="@dimen/size14"
+                    android:hint="@string/enter_note"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

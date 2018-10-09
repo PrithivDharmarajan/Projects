@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/one_touch_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        android:drawablePadding="@dimen/padding5"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="@dimen/margin10"
+        android:text="@string/one_touch_order_message"
+        android:textColor="@color/slide_menu_txt_color"
+        android:textSize="@dimen/text17" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@color/slide_menu_divider_color" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favourite_list"
+        android:listSelector="@android:color/transparent"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

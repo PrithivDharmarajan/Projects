@@ -1,0 +1,1147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_color_white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height120"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <Button
+                    android:id="@+id/left_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/back_arrow"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/right_arrow"
+                android:layout_toRightOf="@+id/left_arrow"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/img_lay1"
+                        android:layout_width="@dimen/height105"
+                        android:layout_height="@dimen/height105" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <ImageView
+                                android:id="@+id/list_img1"
+                                android:layout_width="@dimen/margin90"
+                                android:layout_height="@dimen/margin90"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/padding4"
+                                android:contentDescription="@drawable/listing_add_photo_normal"
+                                android:onClick="onClick"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/listing_add_photo_normal" />
+
+                            <Button
+                                android:id="@+id/play_btn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/video_play_btn"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/img_progress_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/list_img_close1"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding3"
+                            android:background="@drawable/listing_image_close"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_lay2"
+                        android:layout_width="@dimen/height105"
+                        android:layout_height="@dimen/height105" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <ImageView
+                                android:id="@+id/list_img2"
+                                android:layout_width="@dimen/margin90"
+                                android:layout_height="@dimen/margin90"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/padding4"
+                                android:contentDescription="@drawable/listing_add_photo_normal"
+                                android:onClick="onClick"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/listing_add_photo_normal" />
+
+                            <Button
+                                android:id="@+id/play_btn2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/video_play_btn"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/img_progress_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/list_img_close2"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding3"
+                            android:background="@drawable/listing_image_close"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_lay3"
+                        android:layout_width="@dimen/height105"
+                        android:layout_height="@dimen/height105" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <ImageView
+                                android:id="@+id/list_img3"
+                                android:layout_width="@dimen/margin90"
+                                android:layout_height="@dimen/margin90"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/padding4"
+                                android:contentDescription="@drawable/listing_add_photo_normal"
+                                android:onClick="onClick"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/listing_add_photo_normal" />
+
+                            <Button
+                                android:id="@+id/play_btn3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/video_play_btn"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/img_progress_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/list_img_close3"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding3"
+                            android:background="@drawable/listing_image_close"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_lay4"
+                        android:layout_width="@dimen/height105"
+                        android:layout_height="@dimen/height105" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <ImageView
+                                android:id="@+id/list_img4"
+                                android:layout_width="@dimen/margin90"
+                                android:layout_height="@dimen/margin90"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/padding4"
+                                android:contentDescription="@drawable/listing_add_photo_normal"
+                                android:onClick="onClick"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/listing_add_photo_normal" />
+
+                            <Button
+                                android:id="@+id/play_btn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/video_play_btn"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/img_progress_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/list_img_close4"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding3"
+                            android:background="@drawable/listing_image_close"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_lay5"
+                        android:layout_width="@dimen/height105"
+                        android:layout_height="@dimen/height105" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <ImageView
+                                android:id="@+id/list_img5"
+                                android:layout_width="@dimen/margin90"
+                                android:layout_height="@dimen/margin90"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/padding4"
+                                android:contentDescription="@drawable/listing_add_photo_normal"
+                                android:onClick="onClick"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/listing_add_photo_normal" />
+
+                            <Button
+                                android:id="@+id/play_btn5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/video_play_btn"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/img_progress_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/list_img_close5"
+                            android:layout_width="@dimen/margin20"
+                            android:layout_height="@dimen/margin20"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding3"
+                            android:background="@drawable/listing_image_close"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <Button
+                    android:id="@+id/right_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/right_arrow"
+                    android:clickable="false"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.smaat.renterblock.util.ActionEditText
+            android:id="@+id/address_edits"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin90"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="458 W 52ST, APT 2D NEW YORK, NY 10019"
+            android:imeActionLabel="Go"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:maxLines="5"
+            android:padding="@dimen/padding5"
+            android:paddingTop="@dimen/margin10"
+            android:scrollbars="vertical"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+        
+        <LinearLayout
+            android:id="@+id/locate_my_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/menu_bar"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="Locate My Address in the Map"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:clickable="false"
+            android:padding="@dimen/margin5"
+            android:text="@string/add_loc_map"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:id="@+id/map_linear_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/map_bg"
+            android:gravity="center" >
+
+            <fragment
+                android:id="@+id/map1"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/profile_radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/filter_text_grey_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/for_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin5"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/margin10"
+                android:drawableRight="@drawable/listing_radio_over"
+                android:onClick="onClick"
+                android:padding="@dimen/padding5"
+                android:text="@string/for_rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <Button
+                android:id="@+id/for_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin5"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/margin10"
+                android:drawableRight="@drawable/listing_radio_normal"
+                android:onClick="onClick"
+                android:padding="@dimen/padding5"
+                android:text="@string/for_sale"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/description_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin90"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="@dimen/padding5"
+            android:paddingTop="@dimen/margin10"
+            android:scrollbars="vertical"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin20"
+            android:background="@drawable/filter_text_grey_bg" />
+
+        <EditText
+            android:id="@+id/price_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:hint="@string/price_range"
+            android:inputType="number"
+            android:padding="@dimen/padding5"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/property_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/property_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/property_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/property_type_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_marginRight="@dimen/padding5"
+                android:layout_toLeftOf="@+id/property_type_btn"
+                android:layout_toRightOf="@+id/property_txt"
+                android:gravity="center|right"
+                android:paddingLeft="@dimen/padding5"
+                android:singleLine="true"
+                android:text="@string/all_types"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text18" />
+
+            <Button
+                android:id="@+id/property_type_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding5"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding5"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:padding="@dimen/padding5"
+            android:text="@string/beds"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:id="@+id/beds_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bed_num0"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/padding5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n0"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num1"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num2"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num3"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n3"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num4"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n4"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num5"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/bed_num6"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/num5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding5"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:padding="@dimen/padding5"
+            android:text="@string/baths"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:id="@+id/baths_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/baths_num0"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/padding5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n0"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num1"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num2"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num3"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n3"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num4"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n4"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num5"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/n5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/baths_num6"
+                android:layout_width="@dimen/margin50"
+                android:layout_height="@dimen/margin40"
+                android:background="@drawable/btn_bg_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/num5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <EditText
+            android:id="@+id/square_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:hint="@string/square_footage"
+            android:inputType="number"
+            android:padding="@dimen/padding5"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/no_fee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/no_fee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_no_fee"
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/margin40"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/toggle_off"
+                android:onClick="onClick"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <EditText
+            android:id="@+id/year_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/listing_edit_bg"
+            android:hint="@string/year_built"
+            android:inputType="number"
+            android:padding="@dimen/padding5"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/listing_edit_bg"
+        android:weightSum="2">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/lot_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin50"
+            android:layout_margin="@dimen/margin10"
+            android:hint="@string/lot_size"
+            android:inputType="number"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text18" />
+        <Spinner
+            android:id="@+id/sqft_spinner"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:dropDownWidth="wrap_content"
+            android:layout_height="@dimen/margin50"/>
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/filter_text_grey_bg"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding10"
+            android:text="@string/listing_caps"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/resale"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:onClick="onClick"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/resale"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_resale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/tick_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/new_construction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:onClick="onClick"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/new_construction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_new_construction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/tick_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/for_closure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:onClick="onClick"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/fore_closure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_fore_closure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/tick_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@drawable/view_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/filter_text_grey_bg"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding10"
+            android:text="@string/show_only"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/open_houses"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:onClick="onClick"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/open_houses"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_open_houses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/tick_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/reduced_prices"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:onClick="onClick"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/padding5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/reduced_prices"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18" />
+
+            <ToggleButton
+                android:id="@+id/tog_reduced_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/tick_off"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@drawable/view_bg" />
+
+        <RelativeLayout
+            android:id="@+id/mls_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/mls_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50"
+                android:background="@drawable/filter_text_grey_bg"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding10"
+                android:text="@string/mls"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_below="@+id/mls_txt"
+                android:background="@drawable/view_bg" />
+
+            <EditText
+                android:id="@+id/mls_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin40"
+                android:layout_below="@+id/view6"
+                android:layout_margin="@dimen/margin10"
+                android:background="@drawable/key_box"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:hint="ID"
+                android:inputType="textCapSentences|text"
+                android:paddingLeft="@dimen/padding10"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text18" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1"
+                android:layout_below="@+id/mls_edit"
+                android:background="@drawable/view_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/save_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:background="@drawable/menu_bar"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/save"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

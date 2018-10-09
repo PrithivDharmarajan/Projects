@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/home_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/home_screen_main_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_bar"
+                android:layout_below="@+id/top_bar"
+                android:background="@color/white_color">
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin60"
+                android:layout_alignParentTop="true">
+
+                <include layout="@layout/general_header"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin60"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <include layout="@layout/general_footer"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/slide_menu_bar"
+            android:layout_width="@dimen/height230"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:animateLayoutChanges="true"
+            android:background="#e7e7e7"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/slide_view"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

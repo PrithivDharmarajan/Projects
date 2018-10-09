@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    style="@style/LayoutMatch"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/chat_container_lay"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_layout"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_as_friend"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginTop="@dimen/size15"
+            android:background="@drawable/border_with_transparent_bg"
+            android:text="@string/add_as_friend"
+            android:textSize="@dimen/text12"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/report_as_spam"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_height="@dimen/size35"
+            android:layout_margin="@dimen/size15"
+            android:background="@drawable/border_with_transparent_bg"
+            android:text="@string/block_user"
+            android:textSize="@dimen/text12"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/test_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/add_button" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/conversation_recycler_view"
+            style="@style/LayoutMatch"
+            android:background="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@drawable/gray_bg" />
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <EditText
+                android:id="@+id/message_field_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/send_txt"
+                android:background="@color/transperent"
+                android:hint="@string/type_msg"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size5"
+                android:textColor="@color/dart_gray" />
+
+            <TextView
+                android:id="@+id/send_txt"
+                style="@style/TextHelvetica"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/size10"
+                android:text="@string/send"
+                android:textColor="@color/dart_gray"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_bg"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/chat_type_layout"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size15"
+            android:layout_marginTop="@dimen/size15"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chat_text_img"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/size23"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_text" />
+
+            <ImageView
+                android:id="@+id/chat_camera"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/size25"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_camera" />
+
+            <ImageView
+                android:id="@+id/chat_gallery"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/size25"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_gallery" />
+
+            <ImageView
+                android:id="@+id/chat_voice"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/size25"
+                android:layout_weight="1"
+                android:contentDescription="@drawable/chat_voice"
+                android:src="@drawable/chat_voice" />
+
+            <ImageView
+                android:id="@+id/chat_video"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/size25"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/chat_video" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

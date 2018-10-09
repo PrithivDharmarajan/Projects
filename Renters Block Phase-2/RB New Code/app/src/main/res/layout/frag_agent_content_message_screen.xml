@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_marginTop="@dimen/size40">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            style="@style/LayoutWrap"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/size10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/agent_contact_user_image"
+                android:layout_width="@dimen/size80"
+                android:layout_height="@dimen/size80"
+                android:adjustViewBounds="true"
+                android:src="@color/black"
+                android:contentDescription="@drawable/house_four"
+                android:scaleType="centerCrop" />
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_toEndOf="@+id/lay1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/agent_contact_user_name_txt"
+                    style="@style/LayoutWrap"
+                    android:layout_margin="@dimen/size1"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:text=""
+                    android:textColor="@color/dart_gray"
+                    android:textSize="@dimen/text12"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutWrap"
+                android:layout_gravity="start|center"
+                android:layout_marginTop="@dimen/size5"
+                android:paddingStart="@dimen/size5"
+                android:paddingEnd="0dp">
+
+                <ImageView
+                    android:layout_width="@dimen/size13"
+                    android:layout_height="@dimen/size13"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/friends_icon" />
+
+                <TextView
+                    android:id="@+id/agent_contact_friends_count_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/size2"
+                    android:textColor="@color/blue_normal"
+                    android:textSize="@dimen/text10" />
+
+                <ImageView
+                    android:layout_width="@dimen/size13"
+                    android:layout_height="@dimen/size13"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/review_star_icon" />
+
+                <TextView
+                    android:id="@+id/agent_contact_reviews_count_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/size2"
+                    android:textColor="@color/blue_normal"
+                    android:textSize="@dimen/text10" />
+
+                <ImageView
+                    android:layout_width="@dimen/size13"
+                    android:layout_height="@dimen/size13"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/photo_icon" />
+
+                <TextView
+                    android:id="@+id/agent_contact_photos_count_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/size2"
+                    android:textColor="@color/blue_normal"
+                    android:textSize="@dimen/text10" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/agent_contact_user_rating_bar"
+                style="@style/MediumBlueRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                android:layout_marginStart="@dimen/size5"
+                android:transformPivotY="0dip"
+                android:transformPivotX="0dp" />
+
+            <TextView
+                android:id="@+id/agent_contact_agent_with_txt"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginStart="@dimen/size1"
+                android:layout_marginTop="@dimen/size5"
+                android:gravity="center|start"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/size5"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/text11" />
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/agent_contact_license"
+                    style="@style/LayoutWrap"
+                    android:layout_margin="@dimen/size1"
+                    android:gravity="center|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size5"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/text11"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/agent_contact_license_txt"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_margin="@dimen/size1"
+                    android:gravity="center|start"
+                    android:text=""
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/agent_contact_message_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size80"
+        android:layout_below="@+id/main_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/size30"
+        android:background="@drawable/send_message_box"
+        android:gravity="center|top|start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:isScrollContainer="false"
+        android:padding="@dimen/size10"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="none"
+        android:textColor="@color/gray_dark" >
+    </EditText>
+
+    <Button
+        android:id="@+id/agent_contact_send_btn"
+        style="@style/ButtonBold"
+        android:layout_height="@dimen/size50"
+        android:layout_below="@+id/agent_contact_message_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/send_msg_btn_normal"
+        android:onClick="onClick"
+        android:layout_marginStart="@dimen/size70"
+        android:layout_marginEnd="@dimen/size70"
+        android:text="@string/send_message"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text12"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/agent_contact_chat_img"
+        android:layout_width="@dimen/size37"
+        android:layout_height="@dimen/size37"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size5"
+        android:layout_alignTop="@+id/main_lay"
+        android:layout_marginEnd="@dimen/size20"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size30"
+        android:src="@drawable/chat_icon"
+      />
+</RelativeLayout>
+

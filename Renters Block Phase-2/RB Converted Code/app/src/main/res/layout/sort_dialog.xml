@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin30"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:text="@string/sort_options"
+            android:textColor="@color/blue_normal"
+            android:textSize="@dimen/text16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView1"
+            android:background="@color/blue_normal" />
+
+        <LinearLayout
+            android:id="@+id/best_match"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/best_match"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/best_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/best_match"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/latest_updates"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/best_match"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/latest_update"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/latest_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/latest_updates"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/latest_updates"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/rating_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rating"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/low_to_high"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/rating"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/price_ltoh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/ltoh_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/low_to_high"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/high_to_low"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/low_to_high"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/price_htol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/htol_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/high_to_low"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/bedrooms"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/high_to_low"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/bed_rooms"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/bed_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/bedrooms"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/bathroom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/bedrooms"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/baths"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/bath_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/bathroom"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/sqft"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/bathroom"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:text="@string/sqft"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <RadioButton
+                android:id="@+id/sqft_radio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding4"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

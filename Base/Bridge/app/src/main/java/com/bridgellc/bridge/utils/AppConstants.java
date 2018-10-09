@@ -94,10 +94,9 @@ public class AppConstants {
 //    public static final String DROPBOX_APP_KEY = "uioa51rmo9d9y8u";
 
     //
-    public static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX;
-//            public static final String CONFIG_CLIENT_ID = "AagkxzhK0DsPkFNlnC5I20KOMReSgxyayIahjzbPpuGamFa0Zru57NNZKMI-C2swi8LqUwMasApwRdUs";
+    public static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX; 
     //Test Acc
-    public static final String CONFIG_CLIENT_ID = "AUeHrasNLeNBkkK5Edo3A7w1J_EvDSc3r2yMBwagCONw9ZnB3hO-nkcAia6wSj40o0xsAFBMxKwPtBXJ";
+    public static final String CONFIG_CLIENT_ID = "";
     public static final int REQUEST_PAYPAL_PAYMENT = 1;
     public static final PayPalConfiguration CONFIG = new PayPalConfiguration()
             .environment(CONFIG_ENVIRONMENT).acceptCreditCards(false)

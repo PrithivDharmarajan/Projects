@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin20"
+        android:background="@drawable/alert_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alertTitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Choose"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dart_grey"
+            android:textSize="@dimen/text18" />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/ok_btn"
+            android:text="Picture"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ok_btn"
+            android:text="Video"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/height150"
+            android:layout_height="@dimen/margin40"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ok_btn"
+            android:text="@string/cancel"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

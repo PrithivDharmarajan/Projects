@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_filter_for_sale_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:background="@drawable/filter_text_grey_bg"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding10"
+        android:text="@string/listing_caps"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/resale"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/resale"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <ToggleButton
+            android:id="@+id/tog_resale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:background="@drawable/tick_off"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:background="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/new_construction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/new_construction"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <ToggleButton
+            android:id="@+id/tog_new_construction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:background="@drawable/tick_off"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:background="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/for_closure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/fore_closure"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <ToggleButton
+            android:id="@+id/tog_fore_closure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:background="@drawable/tick_off"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/view_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50"
+        android:background="@drawable/filter_text_grey_bg"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding10"
+        android:text="@string/show_only"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/open_houses"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/open_houses"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <ToggleButton
+            android:id="@+id/tog_open_houses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:background="@drawable/tick_off"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:background="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/reduced_prices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin50" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding5"
+            android:text="@string/reduced_prices"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text18" />
+
+        <ToggleButton
+            android:id="@+id/tog_reduced_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:background="@drawable/tick_off"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:background="@drawable/view_bg" />
+
+</LinearLayout>

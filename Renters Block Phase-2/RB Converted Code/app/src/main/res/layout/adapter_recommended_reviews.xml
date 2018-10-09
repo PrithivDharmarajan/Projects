@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/recommand_review_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="3 months ago"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin5"
+        android:textSize="@dimen/text16" />
+
+    <RelativeLayout
+        android:id="@+id/recommend_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recommand_review_time"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10" >
+
+        <RelativeLayout
+            android:id="@+id/recommend_img_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/recommand_review_image"
+                android:layout_width="@dimen/margin70"
+                android:layout_height="@dimen/margin70"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/profile_pic" />
+
+            <ProgressBar
+                android:id="@+id/review_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/review_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/recommend_img_lay"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/recommend_img_lay"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Denver"
+            android:textColor="#000"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/recommand_revie_rating"
+            style="@style/MediumBlueRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/review_user_name"
+            android:layout_below="@+id/review_user_name"
+            android:layout_marginTop="@dimen/margin5"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/recommand_review_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recommand_revie_rating"
+            android:layout_below="@+id/recommand_revie_rating"
+            android:layout_marginTop="@dimen/margin10"
+            android:maxLines="3"
+    />
+        <!--android:text="A good locality"-->
+        <Button
+            android:id="@+id/chat_icon_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/recommand_revie_rating"
+            android:layout_marginRight="@dimen/margin25"
+            android:background="@drawable/chat_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/recommend_lay1"
+        android:background="#6e6e6e" />
+
+</RelativeLayout>

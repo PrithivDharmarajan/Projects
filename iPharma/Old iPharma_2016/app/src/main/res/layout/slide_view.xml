@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/height230"
+    android:background="@color/slide_menu_bg"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin60"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginTop="@dimen/margin15"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="@dimen/margin60"
+                android:layout_height="@dimen/margin60"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginStart="@dimen/margin10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@drawable/profile_menu_slide"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_menu_slide" />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_email"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_toRightOf="@+id/button1"
+                android:gravity="bottom"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_toRightOf="@+id/button1"
+                android:gravity="left|top"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/text12" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+        <TextView
+            android:id="@+id/one_touch_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/slide_one_touch"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/one_touch_order"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/pill_reminder_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/slide_one_touch"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/pill_rem"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+
+        <TextView
+            android:id="@+id/order_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/order_medicine_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/order_medicine"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/my_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/my_order_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/my_order"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/my_fav_phar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/my_favorite_pharmacies_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/my_fav_phar"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/offers"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/offers_menu_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/offers"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/ipharma_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ipharma_money_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/ipharma_money"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/messgaes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ipharma_money_messages"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/messages"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/disclaimer_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/disclaimer"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/more_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/more"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin55"
+            android:clickable="true"
+            android:drawableLeft="@drawable/signout_slide_menu"
+            android:drawablePadding="@dimen/padding5"
+            android:gravity="left|center"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/margin10"
+            android:text="@string/signout"
+            android:textColor="@color/slide_menu_txt_color"
+            android:textSize="@dimen/text17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:background="@color/slide_menu_divider_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/slide_menu_divider_color" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/margin1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/slide_menu_divider_color" />
+
+</RelativeLayout>

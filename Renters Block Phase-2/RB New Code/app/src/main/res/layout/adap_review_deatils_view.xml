@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_margin="@dimen/size10">
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="@style/BigRatingBar" />
+
+        <TextView
+            android:id="@+id/minutes_txt"
+            style="@style/TextHelvetica"
+            android:layout_marginStart="@dimen/size3"
+            android:layout_toEndOf="@+id/rating_bar"
+            android:gravity="end"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text14" />
+    </RelativeLayout>
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/main_comment_txt"
+        style="@style/TextHelvetica"
+        android:layout_margin="@dimen/size20"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text15" />
+
+    <View
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:background="@color/gray" />
+</LinearLayout>

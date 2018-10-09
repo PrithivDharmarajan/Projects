@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height200"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin15"
+    android:layout_marginRight="@dimen/margin15"
+    android:background="@drawable/general_popup"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin25"
+        android:gravity="center"
+        android:text="@string/forgot_passs"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/text18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin40"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin20" >
+
+        <ImageView
+            android:layout_width="@dimen/margin30"
+            android:layout_height="@dimen/margin30"
+            android:layout_gravity="center|left"
+            android:background="@drawable/ipharma_mail_icon"
+            android:contentDescription="@drawable/ipharma_mail_icon"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding5"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/gray_2"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:background="@drawable/take_phot_divider" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/height120"
+        android:layout_height="@dimen/margin40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin25"
+        android:background="@drawable/header"
+        android:text="@string/submit"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text18" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/size40"
+    android:popupBackground="@color/app_color"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:contentInsetStart="0dp"
+    local:contentInsetEnd="0dp">
+
+<!--<RelativeLayout
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">-->
+
+    <RelativeLayout
+        android:id="@+id/llContainer"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/app_color"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="@dimen/size8"
+                android:src="@drawable/back_button"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity = "center"
+            style="@style/TextRegular"
+            android:textSize="@dimen/size16"
+            android:layout_centerInParent="true"
+            android:text="df;lmsdfpjodfjidf"
+            android:layout_toRightOf="@+id/back_button"
+            android:layout_toLeftOf="@+id/right_side_menu"
+            android:textColor="@color/whitecolor"
+            android:id="@+id/toolbar_title" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity = "center"
+            style="@style/TextRegular"
+            android:textSize="@dimen/size12"
+            android:layout_centerInParent="true"
+            android:text="address"
+            android:layout_toRightOf="@+id/back_button"
+            android:layout_toLeftOf="@+id/right_side_menu"
+            android:visibility="gone"
+            android:maxLines="2"
+            android:textColor="@color/whitecolor"
+            android:id="@+id/address_title" />
+
+        <ImageView
+            android:id="@+id/right_side_menu"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size10"
+            android:src="@drawable/map_view"/>
+
+    </RelativeLayout>
+<!--
+</RelativeLayout>-->
+
+
+</android.support.v7.widget.Toolbar>

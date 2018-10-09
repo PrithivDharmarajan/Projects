@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" >
+
+        <include layout="@layout/header_with_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/property_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_lay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/prop_list_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/recommand_review_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 months ago"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/size5"
+                android:layout_marginEnd="@dimen/size5"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16" />
+
+            <RelativeLayout
+                android:id="@+id/recommend_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginEnd="@dimen/size10" >
+
+                <RelativeLayout
+                    android:id="@+id/recommend_img_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/recommand_review_image"
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:src="@drawable/profile_pic" />
+
+                    <ProgressBar
+                        android:id="@+id/review_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/review_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/recommend_img_lay"
+                    android:layout_marginStart="@dimen/size20"
+                    android:layout_toEndOf="@+id/recommend_img_lay"
+                    android:text="Denver"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/recommand_revie_rating"
+                    style="@style/MediumBlueRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/review_user_name"
+                    android:layout_below="@+id/review_user_name"
+                    android:layout_marginTop="@dimen/size5"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@+id/recommand_review_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/recommand_revie_rating"
+                    android:layout_below="@+id/recommand_revie_rating"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="A good locality"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/chat_icon_adapter"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/recommand_revie_rating"
+                    android:layout_marginEnd="@dimen/size25"
+                    android:background="@drawable/chat_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

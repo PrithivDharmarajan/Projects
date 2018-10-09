@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_color_blue">#121b44</color>
+    <color name="text_color_dark_blue">#121b94</color>
+    <color name="text_color_brown">#5B4A45</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_color_orange">#E9521C</color>
+    <color name="black">#000000</color>
+    <color name="screen_bg">#D8D8D8</color>
+    <color name="back_color">#E8E8E8</color>
+    <color name="gray">#555555</color>
+    <color name="blue_normal">#2cf</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="grey">#808080</color>
+    <color name="lime">#00FF00</color>
+    <color name="black_transperent">#B3000000</color>
+    <color name="blue_color">#79b8ff</color>
+    <color name="slide_black">#0c0c0c</color>
+    <color name="blue">#0077fd</color>
+    <color name="GrayLight">#BDBDBD</color>
+    <color name="dart_grey">#6E6E6E</color>
+    <color name="slide_grey">#1d2120</color>
+    <color name="text_blue_color"> #0077fd</color>
+    
+    <color name="black_overlay">#66000000</color>
+	<color name="controller_grey">#EAEAEA</color>	
+	<color name="image_holder_bg">#EAEAEA</color>
+	
+	<color name="text_color">#FFF</color>
+	<color name="text_field_color">#000</color>
+	<color name="text_shadow">#FFF</color>
+	<color name="list_view_bg">#DADFEE</color>
+
+	<color name="send_light_color">#8897BF</color>
+	<color name="send_meduim_color">#5D6CA5</color>
+	<color name="send_dark_color">#515F9F</color>
+
+	<color name="bar_dark_color">#CECECE</color>
+	<color name="bar_meduim_color">#DFDEE0</color>
+	<color name="bar_light_color">#F2F2F2</color>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guard_number"
+            android:textSize="@dimen/size16"
+            android:layout_marginLeft="@dimen/size18"
+            android:layout_marginRight="@dimen/size18"
+            android:layout_marginTop="@dimen/size40"
+            />
+        <EditText
+            android:id="@+id/guardian_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/etx_bg"
+            android:gravity="left|center"
+            android:textSize="@dimen/size14"
+            style="@style/EditLight"
+            android:inputType="phone"
+            android:maxLength="18"
+            android:layout_marginLeft="@dimen/size18"
+            android:textColor="@color/blackcolor"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/greycolor"
+
+            android:layout_marginBottom="@dimen/size5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doc_number"
+            android:textSize="@dimen/size16"
+            android:layout_marginLeft="@dimen/size18"
+            android:layout_marginRight="@dimen/size18"
+            android:layout_marginTop="@dimen/size40"
+            />
+
+        <EditText
+            android:id="@+id/doctor_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:background="@drawable/etx_bg"
+            android:gravity="left|center"
+            android:textSize="@dimen/size14"
+            style="@style/EditLight"
+            android:maxLength="18"
+            android:inputType="phone"
+            android:textColor="@color/blackcolor"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/greycolor"
+            android:layout_marginLeft="@dimen/size18"
+            android:layout_marginRight="@dimen/size18"
+            android:layout_marginBottom="@dimen/size5" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn"
+            android:textSize="@dimen/size15"
+            android:paddingLeft="@dimen/size20"
+            android:paddingRight="@dimen/size20"
+            style="@style/TextMedium"
+            android:textColor="@color/blackcolor"
+            android:layout_below="@+id/settings_layout"
+            android:paddingTop="@dimen/size5"
+            android:layout_marginTop="@dimen/size20"
+            android:paddingBottom="@dimen/size5"
+            android:layout_margin="@dimen/size20"
+            android:background="@drawable/green_rounded_bg"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_btn"
+            android:gravity="center"
+            style="@style/TextRegular"
+            android:padding="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/size14"
+            android:text="@string/reminder_information"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

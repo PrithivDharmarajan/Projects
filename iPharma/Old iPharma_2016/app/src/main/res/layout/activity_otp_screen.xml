@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin60"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" >
+
+        <TextView
+            android:id="@id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/otp"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text24" />
+
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:contentDescription="@drawable/back_butto"
+                android:src="@drawable/back_butto" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin35"
+        android:text="@string/otp_header"
+        android:gravity="center"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/text14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="@dimen/margin15"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/otp_text"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/margin50"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin25"
+            android:layout_weight="0.8"
+            android:background="@drawable/ipharma_money_text_box"
+            android:hint="@string/otp_hint"
+            android:inputType="number"
+            android:paddingLeft="@dimen/padding10" >
+        </EditText>
+
+        <Button
+            android:id="@+id/submit_otp"
+            android:layout_width="@dimen/margin100"
+            android:layout_height="@dimen/margin50"
+            android:layout_marginTop="@dimen/margin25"
+            android:background="@drawable/ipahrma_login_button"
+            android:padding="@dimen/padding10"
+            android:text="@string/submit"
+            android:onClick="onClick"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resend_otp"
+        android:layout_width="@dimen/size150"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ipahrma_login_button"
+        android:layout_marginTop="@dimen/margin25"
+        android:textSize="@dimen/text18"
+        android:onClick="onClick"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:text="@string/resend_otp" />
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_window"
+            android:layout_margin="@dimen/size10"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/popuplogo"
+                    android:layout_width="@dimen/size80"
+                    android:layout_height="@dimen/size40"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size10"
+                    android:src="@drawable/popup_logo"/>
+                <TextView
+                    android:id="@+id/alert_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size40"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="@dimen/size5"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_below="@+id/popuplogo"
+                    android:layout_marginRight="@dimen/size10"
+                    android:gravity="center"
+                    android:text="@string/forgot_passs"
+                    android:textColor="@color/blackcolor"
+                    style="@style/TextLight"
+                    android:textSize="@dimen/size14" />
+
+            </RelativeLayout>
+
+
+
+            <EditText
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@color/whitecolor"
+                android:hint="@string/email"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/size5"
+                android:layout_gravity="center"
+                android:textColor="@color/blackcolor"
+                android:textColorHint="@color/greycolor"
+                android:textSize="@dimen/text16" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size1"
+    android:layout_marginLeft="@dimen/size10"
+    android:layout_marginRight="@dimen/size10"
+    android:background="@color/border_color"/>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size1"
+                android:gravity="center">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_margin="@dimen/size10"
+                    android:src="@drawable/ok_btn"/>
+                <ImageView
+                    android:id="@+id/close_button"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:layout_margin="@dimen/size10"
+                    android:src="@drawable/cancel_btn"/>
+            </LinearLayout>
+
+            <!--<ImageView
+                android:id="@+id/close_button"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/size5"
+                android:src="@drawable/close_btn"/>
+            <ImageView
+                android:id="@+id/submit"
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/size5"
+                android:src="@drawable/close_btn"/>-->
+
+                <!--<Button
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/size120"
+                    android:layout_height="@dimen/size40"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/size10"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:stateListAnimator="@null"
+                    style="@style/ButtonRegular"
+                    android:background="@drawable/green_rounded_bg"
+                    android:text="@string/submit"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="@dimen/size14" />-->
+            <!--
+            </LinearLayout>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+   <!-- <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/whitecolor"
+        android:text="@string/forgot_passs"
+        android:textColor="@color/blackcolor"
+        android:textSize="@dimen/text18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:background="@color/whitecolor"
+        android:layout_marginLeft="@dimen/size30"
+        android:layout_marginRight="@dimen/size30"
+        android:layout_marginTop="@dimen/size20" >
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/size5"
+            android:textColor="@color/greycolor"
+            android:textColorHint="@color/greycolor"
+            android:textSize="@dimen/text16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_marginBottom="@dimen/size10"
+        android:background="@color/greycolor" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/size120"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center"
+        android:background="@color/whitecolor"
+        android:text="@string/submit"
+        android:textColor="@color/blackcolor"
+        android:textSize="@dimen/text18" />-->
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transperent" >
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin5" >
+
+        <com.smaat.renterblock.util.TouchImageView
+            android:id="@+id/adap_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/default_prop_icon" />
+
+        <ProgressBar
+            android:id="@+id/adap_progress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/adap_vidl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <VideoView
+                android:id="@+id/adap_video1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="#000" />
+
+            <ProgressBar
+                android:id="@+id/adap_vid_progress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/adap_video_play_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/video_play_btn"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/adap_video_pause_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pause"
+                android:gravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_gravity="bottom" >
+
+            <TextView
+                android:id="@+id/desc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:paddingLeft="@dimen/margin15"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="@dimen/text16" />
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/desc_text"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin15"
+                android:layout_marginBottom="@dimen/margin20"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="@dimen/text16" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/close_dia"
+        android:layout_width="@dimen/margin50"
+        android:layout_height="@dimen/margin50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin5"
+            android:background="@drawable/close_icon"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toLeftOf="@+id/close_dia" >
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="@dimen/margin60"
+            android:layout_height="@dimen/margin60" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_img"
+            android:text="Andrew"
+            android:textColor="#fff"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_toRightOf="@+id/profile_img" >
+
+            <TextView
+                android:id="@+id/friends_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/friends_icon"
+                android:drawablePadding="5dp"
+                android:text="0 "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/reviews_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/friends_count"
+                android:drawableLeft="@drawable/review_star_icon"
+                android:drawablePadding="5dp"
+                android:text="3 "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+
+            <TextView
+                android:id="@+id/photos_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/reviews_count"
+                android:drawableLeft="@drawable/photo_icon"
+                android:drawablePadding="5dp"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text10" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/send_request"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg"
+            android:text="Send Request"
+            android:textSize="@dimen/text12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/online_status"
+            android:layout_width="@dimen/margin10"
+            android:layout_height="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:background="@drawable/freind_screen_online_icon"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/margin60"
+            android:layout_height="@dimen/margin60"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <ProgressBar
+                android:id="@+id/progre"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

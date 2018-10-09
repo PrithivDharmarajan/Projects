@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PharmacyList" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="#1ABC9C" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/size100"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:src="@drawable/slide" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="No 3 &amp; 4, ChandraSekarLayout, Chennai"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/size100"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:src="@drawable/map_view_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size30"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="1.78"
+            android:background="@drawable/searchbackground"
+            android:drawableRight="@drawable/searchicon"
+            android:ems="10"
+            android:hint="Search"
+            android:paddingLeft="@dimen/margin5" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageViewx1"
+            android:layout_width="@dimen/size80"
+            android:layout_height="@dimen/size30"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:src="@drawable/location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="#737373" >
+
+        <ImageView
+            android:id="@+id/imagedView2"
+            android:layout_width="@dimen/size30"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin5"
+            android:src="@drawable/slide" />
+
+        <TextView
+            android:id="@+id/textxView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="1.97"
+            android:gravity="center"
+            android:text="Advertisement...."
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0.5Km"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:fillViewport="true"
+        android:gravity="top" >
+
+        <LinearLayout
+            android:id="@+id/foodItemActvity_linearLayout_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:background="#1ABC9C"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/Premium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.98"
+            android:gravity="center"
+            android:text="Premium(15)" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.98"
+            android:gravity="center"
+            android:text="Normal(10)" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/All"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="All(25)" />
+    </LinearLayout>
+
+</LinearLayout>

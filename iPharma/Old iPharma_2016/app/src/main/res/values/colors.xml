@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="status_color">#00614e</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="darkBlue">#0000FF</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white_color">#ffffff</color>
+    <color name="gray_color">#777777</color>
+    <color name="slide_menu_bg">#E7E7E7</color>
+    <color name="slide_menu_txt_color">#5c5c5c</color>
+    <color name="slide_menu_divider_color">#1abc9c</color>
+    <color name="gray_2">#797979</color>
+    <color name="gray_1">#d9d9d9</color>
+    <color name="blue_color">#1fbad6</color>
+    <color name="grey_light">#D8D8D8</color>
+    <color name="view_grey">#919191</color>
+    <color name="black_transperent">#B3000000</color>
+    <color name="black_color">#000000</color>
+    <color name="dark_grey">#58595b</color>
+    <color name="ipharma_green">#04B486</color>
+    <color name="new_user_or">#FF8000</color>
+    <color name="red">#9C2A25</color>
+    <color name="green">#3BA000</color>
+    <color name="list_bg_color">#F4F4F4</color>
+    <color name="black_transperent_75">#40000000</color>
+</resources>

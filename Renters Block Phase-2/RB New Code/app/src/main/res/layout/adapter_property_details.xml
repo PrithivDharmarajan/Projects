@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_height="@dimen/size180"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/delete_img"
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/size8"
+        android:src="@drawable/minus_icon"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/details_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <android.support.v4.view.ViewPager
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:id="@+id/property_image_pager" />
+
+        <RelativeLayout
+            android:id="@+id/property_img_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginBottom="@dimen/size15">
+
+            <LinearLayout
+                android:id="@+id/favourite_time_lay"
+                style="@style/LayoutWrap"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size10"
+                android:gravity="end|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/favourite_img"
+                    android:layout_width="@dimen/size25"
+                    android:layout_height="@dimen/size25"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@color/blue_normal" />
+
+                <TextView
+                    android:id="@+id/time_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text12"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/property_location_txt"
+                style="@style/TextHelvetica"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_toStartOf="@+id/favourite_time_lay"
+                android:gravity="start"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:id="@+id/left_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/property_location_txt"
+                android:layout_alignEnd="@+id/favourite_time_lay"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/size15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/property_cost_txt"
+                        style="@style/TextHelveticaBold"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/property_details_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/size5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text12" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginBottom="@dimen/size5">
+
+                    <RatingBar
+                        android:id="@+id/review_rating_bar"
+                        style="@style/BigRatingBar"
+                        android:focusable="false"
+                        android:isIndicator="true" />
+
+                    <TextView
+                        android:id="@+id/property_reviews_count_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/size10"
+                        android:layout_toEndOf="@+id/review_rating_bar"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_remove_board_img"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size10"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size8"
+                android:src="@drawable/minus_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

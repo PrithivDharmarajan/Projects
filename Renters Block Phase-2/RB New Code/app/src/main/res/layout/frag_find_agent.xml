@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/header_txt_lay"
+        android:layout_marginTop="@dimen/size5"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/place_txt"
+            style="@style/TextHelvetica"
+            android:gravity="center|start"
+            android:maxLines="2"
+            android:layout_margin="@dimen/size5"
+            android:textColor="@color/dart_gray"
+            android:textSize="@dimen/text13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_count_txt"
+            style="@style/TextHelvetica"
+            android:layout_marginStart="@dimen/size5"
+            android:layout_marginEnd="@dimen/size5"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/text13" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size2"
+            android:background="@drawable/view_bg" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/LayoutWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/progressbar_bg"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbar_bg"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@+id/progress_bar"
+        android:layout_below="@+id/header_txt_lay"
+        android:backgroundTint="@color/app_blue"
+        android:foregroundTint="@color/app_blue"
+        tools:targetApi="lollipop">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/find_an_agent_recycler_view"
+            style="@style/LayoutMatch"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

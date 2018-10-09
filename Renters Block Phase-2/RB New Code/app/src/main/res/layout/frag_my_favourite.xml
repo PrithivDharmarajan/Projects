@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            android:id="@+id/favourite_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/favourite_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_height="@dimen/size45"
+                android:text="@string/favourites"
+                android:textColor="@color/app_blue" />
+
+            <View
+                android:id="@+id/favourites_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size2"
+                android:background="@color/app_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/boards_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/boards_txt"
+                style="@style/TextHelveticaBold"
+                android:layout_height="@dimen/size45"
+                android:text="@string/my_boards"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/boards_view"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size2"
+                android:background="@color/app_blue"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favourites_list"
+        style="@style/LayoutWidMatch_HeiWrap" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/board_list"
+        android:visibility="gone"
+        style="@style/LayoutWidMatch_HeiWrap" />
+</LinearLayout>

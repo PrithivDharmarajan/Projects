@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height175"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin25"
+    android:layout_marginRight="@dimen/margin25"
+    android:background="@drawable/general_popup"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/share_this_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin15"
+        android:gravity="center"
+        android:text="@string/share_this_app"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text18" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_this_app"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin20"
+        android:paddingRight="@dimen/margin20" >
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:contentDescription="@string/about"
+            android:scaleType="fitXY"
+            android:src="@drawable/facebook_share" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/facebook"
+            android:contentDescription="@string/about"
+            android:scaleType="fitXY"
+            android:src="@drawable/twitter_share" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/twitter"
+            android:contentDescription="@string/about"
+            android:scaleType="fitXY"
+            android:src="@drawable/mail_share" />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/email"
+            android:contentDescription="@string/about"
+            android:scaleType="fitXY"
+            android:src="@drawable/message_share" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/invite_recycler_view"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/invite_update_btn" />
+
+    <Button
+        android:id="@+id/invite_update_btn"
+        style="@style/LoginButtonBold"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_blue"
+        android:text="@string/update"
+        android:textColor="@color/white" />
+</RelativeLayout>

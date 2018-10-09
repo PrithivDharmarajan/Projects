@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitecolor"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/shop_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size180"
+                android:scaleType="centerCrop"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_color"/>
+            <LinearLayout
+                android:id="@+id/click_item"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/whitecolor"
+                android:layout_marginTop="@dimen/size8"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/distance_km"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        style="@style/TextLight"
+                        android:textSize="@dimen/size14"
+                        android:textColor="@color/list_color"
+                        android:paddingTop="@dimen/size5"
+                        android:layout_marginRight="@dimen/size5"
+                        android:paddingRight="@dimen/size5"
+                        android:text="adasdasdasd"/>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size5"
+                    android:layout_marginRight="@dimen/size10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <ImageView
+                            android:id="@+id/pharmacy_image"
+                            android:layout_width="@dimen/size70"
+                            android:layout_height="@dimen/size70"
+                            android:src="@drawable/popup_logo"
+                            android:padding="@dimen/size10"
+                            android:scaleType="centerInside"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/pharmacy_bg"
+                            android:layout_margin="@dimen/size5"
+                            />
+
+                        <!--<LinearLayout
+                            android:id="@+id/pharmacy_rat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true" >
+                            <RatingBar
+                                android:id="@+id/review_rating_bar"
+                                style="@style/StarRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:rating="3"
+                                android:stepSize="0.5"
+                                android:layout_marginLeft="@dimen/size3"
+                                android:layout_marginBottom="@dimen/size3"
+                                android:layout_below="@+id/name_txt"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/pharmacy_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="asdasdasds"
+                                android:layout_margin="@dimen/size3"
+                                android:textSize="@dimen/size16"
+                                android:layout_alignParentLeft="true"
+                                style="@style/TextMedium"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_toLeftOf="@+id/img_fav"
+                                android:textColor="@color/list_color"/>
+                            <ImageView
+                                android:id="@+id/img_fav"
+                                android:layout_width="@dimen/size25"
+                                android:layout_height="@dimen/size25"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/favourite_icon"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/review_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/address_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/size6"
+                                    style="@style/TextLight2"
+                                    android:textColor="@color/list_color"
+                                    android:maxLines="3"
+                                    android:textSize="@dimen/size12"
+                                    android:text="sasasassasasa"/>
+
+                            </LinearLayout>
+                            <!--<LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_below="@+id/review_layout"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="right|bottom">
+                                <ImageView
+                                    android:id="@+id/fav_added"
+                                    android:layout_width="@dimen/size25"
+                                    android:layout_height="@dimen/size25"
+                                    android:visibility="gone"
+                                    android:src="@drawable/thumps_down"/>
+                                <TextView
+                                    android:id="@+id/review_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/size14"
+                                    style="@style/TextRegular"
+                                    android:paddingRight="@dimen/size1"
+                                    android:textColor="@color/list_color"
+                                    android:text="@string/about"/>
+
+                            </LinearLayout>-->
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size8"
+                    android:layout_marginRight="@dimen/size5">
+                    <LinearLayout
+                        android:id="@+id/pharmacy_rat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:clickable="true" >
+                        <RatingBar
+                            android:id="@+id/review_rating_bar"
+                            style="@style/StarRating_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="3"
+                            android:stepSize="0.5"
+                            android:layout_marginLeft="@dimen/size3"
+                            android:layout_marginBottom="@dimen/size3" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/review_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size14"
+                        style="@style/TextLight"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="@dimen/size1"
+                        android:textColor="@color/list_color"
+                        android:text="@string/about"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/size20"
+                        >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/app_color"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginRight="@dimen/size10"
+                    android:layout_gravity="bottom">
+                    <ImageView
+                        android:id="@+id/openmail"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_mail"/>
+
+                    <ImageView
+                        android:id="@+id/callbtn"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/call_btn"/>
+
+                    <ImageView
+                        android:id="@+id/clickwebsite"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_website"/>
+
+                    <ImageView
+                        android:id="@+id/clicklocation"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_weight="1"
+                        android:src="@drawable/click_location"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

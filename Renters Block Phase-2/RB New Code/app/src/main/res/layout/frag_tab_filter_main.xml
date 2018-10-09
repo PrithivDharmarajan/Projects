@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LayoutMatch"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_bar"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_lay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:textAllCaps="false"
+            app:elevation="@dimen/size5"
+            app:tabIndicatorColor="@color/app_blue"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/app_blue"
+            app:tabTextColor="@color/black" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            style="@style/LayoutMatch"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+
+</RelativeLayout>

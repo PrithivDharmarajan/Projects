@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+       style="@style/LayoutMatch"
+        android:id="@+id/notification_screen_recycler_view"
+        android:scrollbars="none"/>
+
+</RelativeLayout>

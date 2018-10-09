@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view_lay"
+        style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="@dimen/size90"
+                    android:layout_height="@dimen/size100"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/profile_pic" />
+
+                <RelativeLayout
+                    android:id="@+id/user_name_update_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginTop="@dimen/size20">
+
+                    <TextView
+                        android:id="@+id/user_profile_name_txt"
+                        style="@style/TextSignikaBold"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/profile_edt_img"
+                        android:layout_width="@dimen/size15"
+                        android:layout_height="@dimen/size15"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/user_profile_name_txt"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/edit_black_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/chat_option"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/settings_icon"
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_margin="@dimen/size10"
+                        android:src="@drawable/settings_blue_icon"
+                        tools:ignore="ContentDescription"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/chat_icon"
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_margin="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/chat_icon"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/profile_add_friends_btn"
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_margin="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/friend_request"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/address_txt"
+                    style="@style/TextSignikaBold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size40"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/enhance_profile_lay"
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size1"
+                        android:background="@color/filter_view_line_bg" />
+
+                    <TextView
+                        style="@style/TextSignikaBold"
+                        android:padding="@dimen/size10"
+
+                        android:text="@string/upgrade_profile"
+                        android:textSize="@dimen/text14" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/remove_ads_toggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:layout_marginStart="@dimen/size40">
+
+                    <TextView
+                        android:id="@+id/removal_ads_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/removal_competitor_ads"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:id="@+id/ads_toggle"
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/toggle_off" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <TextView
+                    android:id="@+id/change_pwd_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:layout_marginStart="@dimen/size40"
+                    android:gravity="center_vertical"
+                    android:text="@string/change_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/notification_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/notification_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/notification_profile" />
+
+                    <TextView
+                        android:id="@+id/notify_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/notification_img"
+                        android:text="@string/notifications"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size25"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/reviews_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/review_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/review_star_icon" />
+
+                    <TextView
+                        android:id="@+id/reviews_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/review_img"
+                        android:text="@string/reviews"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/photos_videos_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/photo_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/photo_vid_profile" />
+
+                    <TextView
+                        android:id="@+id/photos_videos_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/photo_img"
+                        android:text="@string/photos_and_videos"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/more_about_me_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/more_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/more_about_me_icon" />
+
+                    <TextView
+                        android:id="@+id/more_about_me_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/more_img"
+                        android:text="@string/more_about_me"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <TextView
+                    style="@style/TextHelvetica"
+                    android:layout_height="@dimen/size50"
+                    android:background="@color/filter_view_line_bg"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size40"
+                    android:text="@string/things_to_try"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text17" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/add_friends_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/sche_friends_icon" />
+
+                    <TextView
+                        android:id="@+id/add_friends_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/add_friends_img"
+                        android:text="@string/add_friends"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/video_chat_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/live_video_chat_profile" />
+
+                    <TextView
+                        android:id="@+id/schedule_live_video_chat_txt"
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/video_chat_img"
+                        android:text="@string/schedule_live_chat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size50">
+
+                    <ImageView
+                        android:id="@+id/add_photo_video_img"
+                        android:layout_width="@dimen/size25"
+                        android:layout_height="@dimen/size30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size8"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/add_photo_video_profile" />
+
+                    <TextView
+                        style="@style/TextHelvetica"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/size7"
+                        android:layout_toEndOf="@+id/add_photo_video_img"
+                        android:text="@string/schedule_live_chat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="@dimen/size20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/size10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_arrow_icon" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:background="@color/filter_view_line_bg" />
+
+                <TextView
+                    android:id="@+id/my_feed_txt"
+                    style="@style/TextHelvetica"
+                    android:layout_height="@dimen/size50"
+                    android:background="@color/filter_view_line_bg"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/size40"
+                    android:text="@string/my_feed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text17" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/feeds_recycler_view"
+                    style="@style/LayoutWidMatch_HeiWrap" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

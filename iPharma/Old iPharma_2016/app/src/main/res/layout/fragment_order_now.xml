@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:scrollbars="none"
+    android:scrollingCache="false" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/image_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/pharmacy_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height250"
+                android:background="@drawable/deafult_pharmacy_image"
+                android:contentDescription="@drawable/deafult_pharmacy_image"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/pharmacy_distance"
+                android:layout_width="@dimen/height130"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:ellipsize="end"
+                android:padding="@dimen/margin1"
+                android:singleLine="true"
+                android:text="No.5,Velachery Main Road,Lakshmi Puram,Velachery"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin70"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/transparent_blocak_color"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding5" >
+
+                <TextView
+                    android:id="@+id/pharmacy_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:ellipsize="end"
+                    android:padding="@dimen/margin1"
+                    android:singleLine="true"
+                    android:text="Apollo Pharmacy"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pharmacy_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pharmacy_name"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:ellipsize="end"
+                    android:padding="@dimen/margin1"
+                    android:singleLine="true"
+                    android:text="No.5,Velachery Main Road,Lakshmi Puram,Velachery"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/fav_button"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="@dimen/margin25"
+                android:layout_gravity="right|top|center"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/fav_unselect" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/place_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/image_frame"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/header"
+            android:gravity="center"
+            android:text="@string/place_order"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text18" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/place_order"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:background="@color/ipharma_green" />
+
+        <LinearLayout
+            android:id="@+id/cont_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height100"
+            android:layout_below="@+id/view1" >
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="@dimen/height175"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_weight="0.99"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/margin10" >
+
+                <LinearLayout
+                    android:id="@+id/mcall_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:gravity="left|center"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@drawable/order_now_phone_icon"
+                        android:src="@drawable/order_now_phone_icon" />
+
+                    <TextView
+                        android:id="@+id/phone_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mEmail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin7"
+                    android:gravity="left|center"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@drawable/order_now_mail"
+                        android:src="@drawable/order_now_mail" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="apollo@gmail.com"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin7"
+                    android:gravity="left|center"
+                    android:onClick="onClick"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@drawable/order_now_website"
+                        android:src="@drawable/order_now_website" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:ellipsize="end"
+                        android:paddingRight="@dimen/padding3"
+                        android:singleLine="true"
+                        android:text="apollo.pharmacy.com"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_weight="0.01"
+                android:background="#5e5e5e" />
+
+            <LinearLayout
+                android:id="@+id/review_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/rate_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RatingBar
+                        android:id="@+id/fav_ratingbar"
+                        style="@style/CustomRatingBarSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/ratebr"
+                        android:isIndicator="true"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reviews_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_i"
+                        android:textColor="@color/gray_2"
+                        android:textSize="@dimen/text16" />
+
+                    <TextView
+                        android:id="@+id/reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin2"
+                        android:text="236"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/cont_details"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@color/ipharma_green" />
+
+        <LinearLayout
+            android:id="@+id/timing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/open_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_time"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/open_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin2"
+                    android:text="9.00 am"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/close_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/close_time"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/close_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin2"
+                    android:text="2.00 am"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deliver_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timing_layout"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/deliver_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deliver_time"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/deliver_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin2"
+                    android:text="20 min"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/min_order_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_order"
+                    android:textColor="@color/gray_2"
+                    android:textSize="@dimen/text14" />
+
+                <TextView
+                    android:id="@+id/min_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin2"
+                    android:text="Rs.200"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin2"
+            android:layout_below="@+id/deliver_layout"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@color/ipharma_green" />
+
+
+        <FrameLayout
+            android:id="@+id/map_view"
+            android:name="com.smaat.ipharma.util.CustomMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_below="@+id/view4"
+            android:layout_margin="@dimen/margin10" />
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:src="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_below="@+id/view4"
+            android:layout_margin="@dimen/margin10"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@drawable/map_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_border" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin10"
+            android:layout_below="@+id/map_view"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5" />
+    </RelativeLayout>
+
+</ScrollView>

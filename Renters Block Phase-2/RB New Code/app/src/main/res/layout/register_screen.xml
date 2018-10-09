@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@drawable/login_trans_bg">
+
+    <ScrollView
+        android:id="@+id/register_parent_scroll"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/broker_bottom_layout"
+        android:layout_marginEnd="@dimen/size10"
+        android:layout_marginStart="@dimen/size10"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buyer_layout"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/business_name_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/business_name"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingEnd="0dip"
+                    android:textSize="@dimen/text16"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/first_name_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/first_name"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingEnd="0dip"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/last_name_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/last_name"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingEnd="0dip"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/user_name_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/user_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="25"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/email_text"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/password_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:clickable="true"
+                    android:hint="@string/pass_text"
+                    android:inputType="textPassword"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/zip_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/zip_text"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingEnd="0dip"
+                    android:textSize="@dimen/text16" />
+
+                <EditText
+                    android:id="@+id/phone_num_edt"
+                    style="@style/EditTextLight"
+                    android:layout_marginBottom="@dimen/size5"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/border_with_white_bg"
+                    android:hint="@string/phone_text"
+                    android:inputType="phone"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size130"
+                android:layout_below="@+id/buyer_layout"
+                android:layout_marginTop="@dimen/size10"
+                android:background="@drawable/border_with_white_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/address_one_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:layout_marginTop="@dimen/size2"
+                    android:background="@null"
+                    android:hint="@string/address_1"
+                    android:paddingEnd="0dip"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/address_two_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:layout_marginTop="@dimen/size2"
+                    android:background="@null"
+                    android:hint="@string/address_2"
+                    android:inputType="text"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/city_state_zip_edt"
+                    style="@style/EditTextLight"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:layout_marginTop="@dimen/size2"
+                    android:background="@null"
+                    android:hint="@string/city_state_zip"
+                    android:inputType="text"
+                    android:paddingEnd="0dip"
+                    android:paddingStart="@dimen/size5"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buyer_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/buyer_btn_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size20"
+            android:layout_marginStart="@dimen/size20"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/buyer_cancel_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size35"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_weight="0.8"
+                android:background="@drawable/cancel_btn"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Buyer_register_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size35"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_weight="0.8"
+                android:background="@drawable/blue_btn"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agree_terms_buy_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_below="@+id/buyer_btn_lay"
+            android:layout_marginBottom="@dimen/size2"
+            android:layout_marginTop="@dimen/size10"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/broker_bottom_layout"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size10"
+        android:layout_marginBottom="@dimen/size10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/option_layout"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginBottom="@dimen/size10"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/profile_option"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/enhanced_lay"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size40"
+                    android:layout_weight="1"
+                    android:background="@drawable/disable_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/enhanced_img"
+                        android:layout_width="@dimen/size30"
+                        android:contentDescription="@string/app_name"
+                        android:layout_height="@dimen/size30"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/size5"
+                        android:background="@drawable/check_enable" />
+
+                    <TextView
+                        style="@style/TextHelveticaBold"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="start"
+                        android:text="@string/enhanced_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/standard_lay"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_weight="1"
+                    android:background="@drawable/disable_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/standard_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginStart="@dimen/size5"
+                        android:background="@drawable/check_disable" />
+
+                    <TextView
+                        style="@style/TextHelveticaBold"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="center_vertical"
+                        android:text="@string/standard_profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_option_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size5"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/home_lay"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size40"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:background="@drawable/disable_bg"
+                    android:clickable="true"
+                    android:gravity="start"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/home_img"
+                        android:layout_width="@dimen/size30"
+                        android:layout_height="@dimen/size30"
+                        android:contentDescription="@string/app_name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/size5"
+                        android:background="@drawable/check_enable" />
+
+                    <TextView
+                        style="@style/TextHelveticaBold"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="start"
+                        android:text="@string/home_owner"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/broker_lay"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size40"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_weight="1"
+                    android:background="@drawable/disable_bg"
+                    android:clickable="true"
+                    android:gravity="start"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/broker_img"
+                        android:layout_width="@dimen/size30"
+                        android:contentDescription="@string/app_name"
+                        android:layout_height="@dimen/size30"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/size5"
+                        android:background="@drawable/check_disable" />
+
+                    <TextView
+                        style="@style/TextHelveticaBold"
+                        android:layout_marginStart="@dimen/size5"
+                        android:gravity="start"
+                        android:text="@string/broker"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_option_lay"
+                android:layout_width="@dimen/size165"
+                android:layout_height="@dimen/size40"
+                android:layout_marginTop="@dimen/size5"
+                android:background="@drawable/disable_bg"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/account_img"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size5"
+                    android:background="@drawable/check_enable"
+                    android:clickable="false" />
+
+                <TextView
+                    style="@style/TextHelveticaBold"
+                    android:layout_marginStart="@dimen/size5"
+                    android:text="@string/acc_manager"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/broker_bottom_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/option_layout"
+            android:layout_marginEnd="@dimen/size20"
+            android:layout_marginStart="@dimen/size20"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/broker_cancel_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size35"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_weight="0.8"
+                android:background="@drawable/cancel_btn"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text15"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/TextHelveticaBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="" />
+
+            <Button
+                android:id="@+id/broker_register_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size35"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_weight="0.8"
+                android:background="@drawable/blue_btn"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/broker_agree_terms"
+            style="@style/TextHelveticaBold"
+            android:layout_below="@+id/broker_bottom_lay"
+            android:layout_marginBottom="@dimen/size2"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

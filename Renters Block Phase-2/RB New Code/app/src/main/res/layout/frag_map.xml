@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    style="@style/LayoutMatch">
+
+    <RelativeLayout
+        android:id="@+id/map_view_layout"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:visibility="visible">
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/draggable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/map_lay"
+            style="@style/LayoutMatch">
+
+            <Button
+                android:id="@+id/show_current_location_btn"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size50"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginTop="@dimen/size20"
+                android:background="@drawable/location_icon_disable" />
+
+            <Button
+                android:id="@+id/draw_btn"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size40"
+                android:layout_above="@+id/show_current_location_btn"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@drawable/finger_draw_disable1" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/property_detail_recycle_view"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_lay"
+        android:background="@color/white"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/ad_view_agent_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/size5"
+        android:paddingTop="@dimen/size5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/agent_profile_img"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size5"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_prop_icon" />
+
+        <ImageView
+            android:id="@+id/forward_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/size5"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:src="@drawable/right_arrow_icon" />
+
+        <TextView
+            android:id="@+id/agent_des_txt"
+            style="@style/TextHelveticaBold"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/forward_img"
+            android:layout_marginStart="@dimen/size7"
+            android:layout_toEndOf="@+id/agent_profile_img"
+            android:text="@string/agent_des"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text13" />
+
+        <TextView
+            android:id="@+id/agent_first_name_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/forward_img"
+            android:layout_alignStart="@+id/agent_des_txt"
+            android:layout_marginBottom="@dimen/size5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text13" />
+
+        <TextView
+            android:id="@+id/agent_user_name_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@+id/agent_first_name_txt"
+            android:layout_below="@+id/agent_first_name_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text13" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_search_list"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size150"
+        android:layout_marginEnd="@dimen/size70"
+        android:layout_marginStart="@dimen/size70"
+        android:background="@color/white"
+        android:paddingTop="@dimen/size5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/arc_slide_image_lay"
+            style="@style/LayoutWidWei_HeiWrap"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/arc_slide_image"
+                android:layout_width="@dimen/size40"
+                android:layout_height="@dimen/size25"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/bottom_menu_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/save_search_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/save_search"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/layers_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layers"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/list_txt"
+            style="@style/TextHelvetica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/list"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/property_detail_single_list_view"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size180"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:clickable="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitecolor"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/offers_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comin_soon"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/size10"
+            android:textSize="@dimen/size18"
+            android:textColor="@color/blackcolor"
+            android:layout_above="@+id/paymentscreen"/>
+        <ImageView
+            android:id="@+id/paymentscreen"
+            android:layout_width="@dimen/size150"
+            android:layout_height="@dimen/size150"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            android:src="@drawable/paymentscreen"/>
+
+        <ImageView
+            android:id="@+id/offerscreen"
+            android:layout_width="@dimen/size120"
+            android:layout_height="@dimen/size120"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:src="@drawable/offers_screen"/>
+    </LinearLayout>
+
+</LinearLayout>

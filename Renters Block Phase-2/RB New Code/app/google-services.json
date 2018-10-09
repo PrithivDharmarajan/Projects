@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "649780524066",
+    "firebase_url": "https://renters-block-177215.firebaseio.com",
+    "project_id": "renters-block-177215",
+    "storage_bucket": "renters-block-177215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649780524066:android:252a6376e58620d5",
+        "android_client_info": {
+          "package_name": "com.smaat.renterblock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649780524066-7bj9k8vsfkjqf7elf89k0i6le1k7ef1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.renterblock",
+            "certificate_hash": "0a914de749d1bc4766668fc6060d73aae275f3d0"
+          }
+        },
+        {
+          "client_id": "649780524066-ol9f6tpp7o4lsoma9ep9fut2mrg9258d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.renterblock",
+            "certificate_hash": "e4481cd408d1f181057b136972dfdfc11f827459"
+          }
+        },
+        {
+          "client_id": "649780524066-epsnpqsog30rll20hucr724rdmg0ld7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.renterblock",
+            "certificate_hash": "a1b85bfe43e4aa21d1ba40e9f315002ed78ffecd"
+          }
+        },
+        {
+          "client_id": "649780524066-vn6se1sh3tut1mqlfercvr2all2svilu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.renterblock",
+            "certificate_hash": "c5621acf7f995e54251e70a1ed7dd54556dbf950"
+          }
+        },
+        {
+          "client_id": "649780524066-ann7h7c6uqsaagv0r4qtb1ni9q0hqtii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBS9owmjeiWT0wNh4mjpI3jW2ro8E-S5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649780524066-ann7h7c6uqsaagv0r4qtb1ni9q0hqtii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/sch_main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin5" >
+
+        <LinearLayout
+            android:id="@+id/alerts_check_lay"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="@dimen/margin20"
+                android:layout_height="@dimen/margin20"
+                android:background="@drawable/tick_off"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_vi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/alerts_check_lay" >
+
+            <LinearLayout
+                android:id="@+id/my_schedule_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include layout="@layout/adapter_my_schedule" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/friends_schedule_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <include layout="@layout/adapter_friends_schedule" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accepted_schedule_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include layout="@layout/adapter_accepted_schedule" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

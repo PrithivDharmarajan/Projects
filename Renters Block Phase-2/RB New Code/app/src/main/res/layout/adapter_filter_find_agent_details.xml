@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+style="@style/LayoutWrap">
+
+    <LinearLayout
+     style="@style/LayoutWidMatch_HeiWrap"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_marginBottom="@dimen/size5">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:src="@drawable/like_icon_over"/>
+        <LinearLayout
+            android:layout_marginStart="@dimen/size10"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/filter_agent_name_txt"
+                style="@style/TextHelvetica"
+                android:textSize="@dimen/size11"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/filter_agent_type_txt"
+                style="@style/TextHelvetica"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size11"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

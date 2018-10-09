@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/margin100"
+            android:layout_height="@dimen/margin80"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin35"
+            android:background="@drawable/wallet_green_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin35"
+            android:gravity="center"
+            android:text="@string/money_txt"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text20" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin3"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="#1aba9a" />
+
+        <RelativeLayout
+            android:id="@+id/curr_bal_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin55"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view1"
+            android:background="@color/white_color" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="@dimen/margin45"
+                android:layout_height="@dimen/margin35"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/wallet_black_icon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_toRightOf="@+id/button2"
+                android:text="@string/curr_bal"
+                android:textColor="#9c9c9c"
+                android:textSize="@dimen/text20" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="@dimen/margin15"
+                android:layout_height="@dimen/margin25"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin15"
+                android:background="@drawable/green_arrow" />
+
+            <TextView
+                android:id="@+id/current_balance"
+                android:layout_width="@dimen/margin65"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button3"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text20" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin3"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/curr_bal_lay"
+            android:background="#1aba9a" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin20"
+            android:gravity="center"
+            android:text="@string/recharge_money"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text20" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin3"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin35"
+            android:layout_toRightOf="@+id/textView4"
+            android:background="#1aba9a" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin3"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin35"
+            android:layout_toLeftOf="@+id/textView4"
+            android:background="#1aba9a" />
+
+        <LinearLayout
+            android:id="@+id/money_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin25" >
+
+            <Button
+                android:id="@+id/ipharma_money_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_weight="1"
+                android:background="@drawable/ipahrma_login_button"
+                android:text="@string/money1"
+                android:textColor="#e7e7e7"
+                android:textSize="@dimen/text16" />
+
+            <Button
+                android:id="@+id/ipharma_money_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_weight="1"
+                android:background="@drawable/ipahrma_login_button"
+                android:text="@string/money2"
+                android:textColor="#e7e7e7"
+                android:textSize="@dimen/text16" />
+
+            <Button
+                android:id="@+id/ipharma_money_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin40"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_weight="1"
+                android:background="@drawable/ipahrma_login_button"
+                android:text="@string/money3"
+                android:textColor="#e7e7e7"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/enter_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignLeft="@+id/money_lay"
+            android:layout_alignRight="@+id/money_lay"
+            android:layout_below="@+id/money_lay"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@drawable/ipharma_money_text_box"
+            android:hint="@string/enter_amount"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin10"
+            android:textSize="@dimen/text16" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/lay_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_amount"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@drawable/ipharma_money_text_box" >
+
+            <EditText
+                android:id="@+id/enter_promo_code"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/margin50"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:hint="@string/enter_promo_code"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/margin100"
+                android:textSize="@dimen/text16" >
+            </EditText>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/margin3"
+                android:layout_height="@dimen/margin30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin100"
+                android:background="#1aba9a" />
+
+            <Button
+                android:id="@+id/apply_promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:text="@string/apply"
+                android:textColor="#1aba9a"
+                android:textSize="@dimen/text20"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add_ipharma_money"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin40"
+            android:layout_below="@+id/lay_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@drawable/header"
+            android:onClick="onClick"
+            android:text="@string/add_money"
+            android:textColor="#e7e7e7"
+            android:textSize="@dimen/text16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin30"
+            android:layout_below="@+id/add_ipharma_money"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</ScrollView>

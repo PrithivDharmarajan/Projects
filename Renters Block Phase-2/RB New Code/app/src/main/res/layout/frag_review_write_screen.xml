@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView style="@style/LayoutMatch">
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_review_txt"
+                style="@style/TextHelvetica"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="@dimen/size5"
+                android:visibility="gone"
+                android:text="@string/post_review_hint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text12" />
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginTop="@dimen/size10">
+
+                <RelativeLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_alignEnd="@+id/rating_bar"
+                    android:layout_alignStart="@+id/rating_bar">
+
+                    <View
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size1"
+                        android:layout_marginTop="@dimen/size40"
+                        android:background="@color/gray" />
+                </RelativeLayout>
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="@style/BlueBigRatingBar"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/review_edt"
+                style="@style/EditTextLight"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10"
+                android:background="@null"
+                android:gravity="start|top"
+                android:hint="@string/write_review_hint"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/size10"
+                android:scrollbars="none"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text17" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

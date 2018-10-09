@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transperent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height300"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin30"
+        android:background="@color/text_color_white" >
+
+        <TextView
+            android:id="@+id/header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_bar"
+            android:gravity="center"
+            android:text="Renter&apos;s Block"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin25"
+            android:background="@drawable/apply_btn"
+            android:text="@string/ok"
+            android:textColor="@color/dart_grey"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/height100"
+            android:layout_height="@dimen/margin40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin25"
+            android:background="@drawable/apply_btn"
+            android:text="@string/ok"
+            android:textColor="@color/dart_grey"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ok"
+            android:layout_below="@+id/header_txt"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin20"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/dart_grey"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

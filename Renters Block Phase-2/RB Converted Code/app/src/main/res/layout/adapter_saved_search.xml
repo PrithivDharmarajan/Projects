@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/saved_search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/alerts_check_lay"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="@dimen/margin20"
+                android:layout_height="@dimen/margin20"
+                android:background="@drawable/tick_off"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin5"
+            android:layout_toRightOf="@+id/alerts_check_lay" >
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margin5"
+                android:text="Rent near New York"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/other_info_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_txt"
+                android:layout_margin="@dimen/margin5"
+                android:maxLines="2"
+                android:text="Rent, MIN - 3.0K, 2+ Beds, \nAny, Any, Built: Any, Any"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text14" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/saved_view"
+            android:background="#000" />
+    </RelativeLayout>
+
+</RelativeLayout>
