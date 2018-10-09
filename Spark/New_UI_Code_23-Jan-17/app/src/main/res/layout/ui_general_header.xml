@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size50"
+    android:background="@color/gray">
+
+
+    <RelativeLayout
+        android:id="@+id/header_left_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/header_left_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size2"
+            android:src="@drawable/notification_btn" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/size27"
+            android:layout_height="@dimen/size30"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/notification_count_txt"
+                style="@style/TextBold"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circle_white_bg"
+                android:gravity="center"
+                android:textColor="@color/sky_blue"
+                android:textSize="@dimen/text10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/TextBold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_toEndOf="@+id/header_left_btn_lay"
+        android:layout_toStartOf="@+id/header_right_btn_lay"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/sky_blue" />
+
+
+    <RelativeLayout
+        android:id="@+id/header_right_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/header_right_img"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/blue_back_img" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

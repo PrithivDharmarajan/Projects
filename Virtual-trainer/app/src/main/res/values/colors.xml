@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="black_transparent">#40000000</color>
+
+
+    <color name="btn_blue">#009CFF</color>
+    <color name="btn_light_blue">#2FE0D6</color>
+    <color name="btn_green">#5EE130</color>
+    <color name="btn_yellow">#FFFF47</color>
+    <color name="btn_fb_ligt">#88A9F2</color>
+    <color name="btn_fb_dark">#23407E</color>
+    <color name="btn_google_ligt">#FB7445</color>
+    <color name="btn_google_dark">#D43E09</color>
+    <color name="btn_linkedin_ligt">#04A3F7</color>
+    <color name="btn_linkedin_dark">#005481</color>
+    <color name="btn_orange">#E15130</color>
+    <color name="btn_dark_yellow">#FFE201</color>
+    <color name="btn_gray">#606060</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="screen_bg">#141414</color>
+    <color name="txt_black">#1e1e1e</color>
+    <color name="gray">#848484</color>
+    <color name="light_black">#4a4a4a</color>
+
+    <color name="header_gray">#3F3F3F</color>
+    <color name="header_div_blue">#13B8EF</color>
+    <color name="adapter_bg">#202020</color>
+    
+    <color name="red_dark">#b51f1a</color>
+    <color name="red_light">#e83908</color>
+    <color name="orange">#f76e07</color>
+
+    
+</resources>

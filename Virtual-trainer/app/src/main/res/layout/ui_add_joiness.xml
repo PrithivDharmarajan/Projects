@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_marginTop="@dimen/size80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size33"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/email_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size35"
+                android:layout_marginLeft="@dimen/size35"
+                android:layout_marginRight="@dimen/size35"
+                android:layout_marginStart="@dimen/size35">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email_id_autotxt"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/email_id"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:maxLength="40" />
+
+                <ImageView
+                    android:id="@+id/email_id_add_img"
+                    android:layout_width="@dimen/size37"
+                    android:layout_height="@dimen/size37"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/add_sym_bg"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size10"
+                    android:src="@drawable/add_img" />
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="@dimen/size37"
+                    android:layout_toLeftOf="@id/email_id_add_img"
+                    android:layout_toStartOf="@id/email_id_add_img"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/recent_list_txt"
+                style="@style/TextLightStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/size25"
+                android:layout_marginRight="@dimen/size25"
+                android:layout_marginTop="@dimen/size10"
+                android:padding="@dimen/size10"
+                android:text="@string/recent_list"
+                android:textSize="@dimen/text15" />
+
+            <TextView
+                android:id="@+id/joinies_txt"
+                style="@style/TextRegularStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/size20"
+                android:layout_marginStart="@dimen/size20"
+                android:text="@string/joinies" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/invite_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size20"
+                android:background="@color/black"
+                android:paddingBottom="@dimen/size5"
+                android:paddingTop="@dimen/size5"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/invite_btn"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/size140"
+            android:layout_height="@dimen/size40"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size20"
+            android:background="@drawable/green_with_yellow_rounded_btn"
+            android:text="@string/invite" />
+
+        <RelativeLayout
+            android:id="@+id/adv_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invite_btn"
+            android:visibility="gone">
+
+            <include layout="@layout/ui_general_footer_google_ads" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include layout="@layout/ui_general_header_with_bg" />
+    </RelativeLayout>
+</RelativeLayout>

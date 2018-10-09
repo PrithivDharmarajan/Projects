@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adv_lay"
+        android:layout_marginTop="@dimen/size50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size35"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mail_id_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size10"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/cmd_edt"
+                style="@style/EditTextStyle"
+                android:layout_height="@dimen/size90"
+                android:layout_margin="@dimen/size10"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/type_here"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:paddingTop="@dimen/size10" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/ButtonStyle"
+                android:layout_height="@dimen/size45"
+                android:layout_marginBottom="@dimen/size20"
+                android:layout_marginEnd="@dimen/size50"
+                android:layout_marginLeft="@dimen/size50"
+                android:layout_marginRight="@dimen/size50"
+                android:layout_marginStart="@dimen/size50"
+                android:layout_marginTop="@dimen/size23"
+                android:background="@drawable/green_with_yello_btn"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/adv_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_footer_google_ads" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+</RelativeLayout>

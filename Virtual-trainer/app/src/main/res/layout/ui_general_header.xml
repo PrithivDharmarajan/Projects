@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@color/header_gray">
+
+
+    <RelativeLayout
+        android:id="@+id/header_left_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:background="@drawable/header_circle_btn"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/header_left_img"
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size4"
+            android:src="@drawable/back_img"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/TextBoldStyle"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/header_left_btn_lay"
+        android:layout_toLeftOf="@+id/header_right_btn_lay"
+        android:layout_toRightOf="@+id/header_left_btn_lay"
+        android:layout_toStartOf="@+id/header_right_btn_lay"/>
+
+
+    <RelativeLayout
+        android:id="@+id/header_right_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/header_circle_btn"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/header_right_img"
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size4"
+            android:src="@drawable/edit_img"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

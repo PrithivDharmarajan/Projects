@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorial_img_pager"
+        style="@style/LayoutMatch" />
+
+    <LinearLayout
+        android:id="@+id/indicator_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_above="@+id/skip_txt"
+        android:layout_marginBottom="@dimen/size10"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/indicator_one_img"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginEnd="@dimen/size2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_sky_blue_bg" />
+
+        <ImageView
+            android:id="@+id/indicator_two_img"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginEnd="@dimen/size2"
+            android:layout_marginStart="@dimen/size2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_gray_bg" />
+
+        <ImageView
+            android:id="@+id/indicator_three_img"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginEnd="@dimen/size2"
+            android:layout_marginStart="@dimen/size2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_gray_bg" />
+        <ImageView
+            android:id="@+id/indicator_four_img"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginStart="@dimen/size2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_gray_bg" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/skip_txt"
+        style="@style/TextBold"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/size15"
+        android:text="@string/skip"
+        android:textColor="@color/sky_blue"
+        android:textSize="@dimen/text13" />
+
+</RelativeLayout>
+

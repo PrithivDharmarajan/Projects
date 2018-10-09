@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:scrollbars="none">
+
+        <WebView
+            android:id="@+id/web_view"
+            style="@style/LayoutWidMatch_HeiWrap" />
+    </ScrollView>
+
+</LinearLayout>

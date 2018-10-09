@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adv_lay"
+        android:layout_marginTop="@dimen/size40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size20"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size25"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/mail_id_edt"
+                style="@style/EditTextStyle"
+                android:layout_marginEnd="@dimen/size25"
+                android:layout_marginLeft="@dimen/size25"
+                android:layout_marginRight="@dimen/size25"
+                android:layout_marginStart="@dimen/size25"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/pwd_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size25"
+                android:hint="@string/pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Button
+                android:id="@+id/update_btn"
+                style="@style/ButtonStyle"
+                android:layout_height="@dimen/size45"
+                android:layout_marginBottom="@dimen/size20"
+                android:layout_marginEnd="@dimen/size50"
+                android:layout_marginLeft="@dimen/size50"
+                android:layout_marginRight="@dimen/size50"
+                android:layout_marginStart="@dimen/size50"
+                android:layout_marginTop="@dimen/size10"
+                android:background="@drawable/blue_with_dark_rounded_bg"
+                android:text="@string/update"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:layout_margin="@dimen/size20"
+                android:background="@drawable/sharpwhite" />
+
+            <TextView
+                android:id="@+id/subscription_expire_txt"
+                style="@style/TextRegularStyle"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:text="@string/subscription_expire"
+                android:textSize="@dimen/text13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:layout_margin="@dimen/size20"
+                android:background="@drawable/sharpwhite" />
+
+            <TextView
+                android:id="@+id/your_subscription_date_txt"
+                style="@style/TextRegularStyle"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginTop="@dimen/size10"
+                android:text="@string/your_subscription_date"
+                android:textSize="@dimen/text13" />
+
+            <Button
+                android:id="@+id/subscribe_btn"
+                style="@style/ButtonStyle"
+                android:layout_height="@dimen/size45"
+                android:layout_marginBottom="@dimen/size20"
+                android:layout_marginEnd="@dimen/size50"
+                android:layout_marginLeft="@dimen/size50"
+                android:layout_marginRight="@dimen/size50"
+                android:layout_marginStart="@dimen/size50"
+                android:layout_marginTop="@dimen/size23"
+                android:background="@drawable/green_with_yello_btn"
+                android:text="@string/subscribe" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/adv_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_footer_google_ads" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+</RelativeLayout>

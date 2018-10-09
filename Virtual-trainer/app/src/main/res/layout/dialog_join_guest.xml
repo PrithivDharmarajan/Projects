@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size30"
+        android:layout_marginTop="@dimen/size30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size20"
+            android:background="@drawable/dialog_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/size20">
+
+            <EditText
+                android:id="@+id/name_edt"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="@dimen/size50"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/meeting_id_edt"
+                style="@style/EditTextStyle"
+                android:layout_marginBottom="@dimen/size20"
+                android:layout_marginTop="@dimen/size20"
+                android:hint="@string/meeting_id"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="40" />
+
+
+            <Button
+                android:id="@+id/join_as_btn"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:layout_marginEnd="@dimen/size30"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_marginRight="@dimen/size30"
+                android:layout_marginStart="@dimen/size30"
+                android:background="@drawable/blue_with_dark_btn"
+                android:text="@string/join_gust" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:scaleType="fitXY"
+            android:src="@drawable/close_btn" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/guest_img"
+        android:layout_width="@dimen/size100"
+        android:layout_height="@dimen/size100"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dialog_guest_img" />
+</RelativeLayout>

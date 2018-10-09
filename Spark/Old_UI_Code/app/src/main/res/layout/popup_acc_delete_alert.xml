@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:layout_marginEnd="@dimen/size30"
+    android:layout_marginStart="@dimen/size30"
+    android:layout_marginBottom="@dimen/size10"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@drawable/delete_popup_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextRegular"
+            android:layout_margin="@dimen/size15"
+            android:text="@string/delete_hint"
+            android:textColor="@color/screen_bg"
+            android:textSize="@dimen/text11" />
+
+        <Button
+            android:id="@+id/delete_acc_btn"
+            style="@style/ButtonBold"
+            android:background="@drawable/popup_delete_bg_btn"
+            android:text="@string/delete_acc"
+            android:textColor="@color/screen_bg"
+            android:textSize="@dimen/text13" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        style="@style/ButtonBold"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@drawable/sky_blue_btn"
+        android:text="@android:string/cancel"
+        android:textColor="@color/screen_bg"
+        android:textSize="@dimen/text13" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smaat.virtualtrainer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--Camera and Storage Permission-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--Video Call Permission-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".main.VirtualTrainerApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.WelcomeScreen" />
+        <activity android:name=".ui.EntryScreen" />
+        <activity android:name=".ui.LoginScreen" />
+        <activity android:name=".ui.SignupScreen" />
+        <activity android:name=".ui.UserTypeScreen" />
+        <activity android:name=".ui.HomeScreen" />
+        <activity android:name=".ui.StartStreamingScreen" />
+        <activity android:name=".ui.AddJoinessScreen" />
+        <activity android:name=".ui.ProfileScreen" />
+        <activity android:name=".ui.HelpandTermsScreen" />
+        <activity android:name=".ui.ProVersionScreen" />
+        <activity android:name=".ui.SupportScreen" />
+        <activity android:name=".wowza.StartVideoStreaming"/>
+        <activity android:name=".wowza.JoinVideoStreaming"/>
+        <!--Fb Default Activity-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+
+        <!--Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <!--Fb Default Metadata-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".main.FirebasePushMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".main.FirebaseInstanceIDService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

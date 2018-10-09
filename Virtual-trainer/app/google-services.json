@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "629320869964",
+    "firebase_url": "https://smartvt-9b44c.firebaseio.com",
+    "project_id": "smartvt-9b44c",
+    "storage_bucket": "smartvt-9b44c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629320869964:android:ae8e6e65a06c18bf",
+        "android_client_info": {
+          "package_name": "com.smaat.virtualtrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629320869964-sa1qjcqg7fg625r0kgfqh7v8948lrat8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smaat.virtualtrainer",
+            "certificate_hash": "48893DD51B1273B2B96D5A3AC7781F12F8430BAA"
+          }
+        },
+        {
+          "client_id": "629320869964-5m6ipf004bqvossvg1v4q1u2iorbgaf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_g7bTQpNP6zecqAkaIbz7Hi_Bxf1QcIU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629320869964-5m6ipf004bqvossvg1v4q1u2iorbgaf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

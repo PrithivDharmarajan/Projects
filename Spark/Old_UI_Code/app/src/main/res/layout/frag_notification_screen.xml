@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/screen_bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notification_list"
+        style="@style/LayoutMatch" />
+</RelativeLayout>

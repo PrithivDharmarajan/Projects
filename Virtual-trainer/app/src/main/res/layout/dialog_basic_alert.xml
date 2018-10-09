@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size20"
+            android:background="@drawable/dialog_white_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/size20">
+
+
+            <TextView
+                android:id="@+id/msg_txt"
+                style="@style/TextBoldStyle"
+                android:layout_marginTop="@dimen/size16"
+                android:padding="@dimen/size5"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size6"
+                android:layout_marginRight="@dimen/size6"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size16"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/first_btn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginEnd="@dimen/size5"
+                    android:layout_marginRight="@dimen/size5"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_with_yello_btn" />
+
+                <Button
+                    android:id="@+id/second_btn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size40"
+                    android:layout_marginLeft="@dimen/size5"
+                    android:layout_marginStart="@dimen/size5"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_with_yellow_btn" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:scaleType="fitXY"
+            android:src="@drawable/close_btn" />
+    </RelativeLayout>

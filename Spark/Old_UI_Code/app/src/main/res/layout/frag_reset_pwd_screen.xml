@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/screen_bg"
+    android:padding="@dimen/size15">
+    <ScrollView
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/change_pwd_btn">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:layout_marginTop="@dimen/size5"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginTop="@dimen/size20"
+                android:text="@string/enter_pwd_field"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                style="@style/TextBold"
+                android:layout_marginTop="@dimen/size2"
+                android:text="@string/pwd_eight_char"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text12" />
+
+            <RelativeLayout
+                style="@style/LayoutMatch"
+                android:layout_height="@dimen/size50"
+                android:layout_marginTop="@dimen/size20"
+                android:background="@drawable/rounded_black_border_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size10">
+
+                <ImageView
+                    android:id="@+id/pwd_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pwd_img" />
+
+                <EditText
+                    android:id="@+id/pwd_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/pwd_img"
+                    android:layout_toStartOf="@+id/pwd_valid_img"
+                    android:background="@null"
+                    android:hint="@string/pwd"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword|textNoSuggestions" />
+
+                <ImageView
+                    android:id="@+id/pwd_valid_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tick_mark_img"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/LayoutMatch"
+                android:layout_height="@dimen/size50"
+                android:layout_marginTop="@dimen/size10"
+                android:background="@drawable/rounded_black_border_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size10">
+
+                <ImageView
+                    android:id="@+id/confirm_pwd_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pwd_img" />
+
+                <EditText
+                    android:id="@+id/confirm_pwd_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size10"
+                    android:layout_toEndOf="@+id/confirm_pwd_img"
+                    android:layout_toStartOf="@+id/confirm_pwd_valid_img"
+                    android:background="@null"
+                    android:hint="@string/confirm_pwd"
+                    android:imeActionId="100"
+                    android:imeActionLabel="@string/reset_pwd"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword|textNoSuggestions" />
+
+                <ImageView
+                    android:id="@+id/confirm_pwd_valid_img"
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tick_mark_img"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/change_pwd_btn"
+        style="@style/ButtonBold"
+        android:layout_height="@dimen/size50"
+        android:layout_marginBottom="@dimen/size30"
+        android:layout_alignParentBottom="true"
+        android:text="@string/change_pwd" />
+
+</RelativeLayout>

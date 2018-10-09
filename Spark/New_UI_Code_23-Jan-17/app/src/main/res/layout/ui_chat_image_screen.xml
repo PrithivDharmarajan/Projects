@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:id="@+id/parent_lay"
+    android:background="@color/white">
+
+
+        <RelativeLayout
+            style="@style/LayoutMatch"
+            android:layout_above="@+id/bottom_lay">
+
+
+            <ImageView
+                android:id="@+id/preview_img"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_height="@dimen/size400"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size5"
+            android:paddingTop="@dimen/size5"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/chat_edt"
+                style="@style/EditTextRegular"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_weight="7"
+                android:background="@drawable/black_with_trans_bg"
+                android:hint="@string/new_message"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxHeight="@dimen/size80"
+                android:minHeight="@dimen/size40"
+                android:paddingLeft="@dimen/size10"
+                android:paddingRight="@dimen/size10" />
+
+            <Button
+                android:id="@+id/send_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dip"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_weight="3"
+                android:text="@string/send"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_marginTop="@dimen/size60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/start_stream_txt"
+                    style="@style/TextRegularStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size45"
+                    android:layout_margin="@dimen/size15"
+                    android:background="@drawable/green_with_yellow_rounded_btn"
+                    android:text="@string/start_stream"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text20" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size1"
+                    android:layout_margin="@dimen/size15"
+                    android:background="@drawable/sharpwhite" />
+
+                <TextView
+                    android:id="@+id/join_stream_txt"
+                    style="@style/TextRegularStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size45"
+                    android:layout_margin="@dimen/size15"
+                    android:background="@drawable/orange_with_yellow_rounded_btn"
+                    android:text="@string/join_stream"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@drawable/sharpwhite" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/invite_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/view_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@drawable/sharpwhite" />
+
+        <RelativeLayout
+            android:id="@+id/adv_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_lay"
+            android:layout_marginTop="@dimen/size1"
+            android:visibility="gone">
+
+            <include layout="@layout/ui_general_footer_google_ads" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ui_general_header_with_bg" />
+    </RelativeLayout>
+</RelativeLayout>

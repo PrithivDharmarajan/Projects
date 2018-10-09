@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWei">
+
+        <RelativeLayout
+            style="@style/LayoutMatch"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:layout_marginEnd="@dimen/size50"
+                android:layout_marginStart="@dimen/size50"
+                android:layout_marginTop="@dimen/size27"
+                android:background="@drawable/popup_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size15">
+
+                <TextView
+                    android:id="@+id/msg_txt"
+                    style="@style/TextBold"
+                    android:layout_margin="@dimen/size25"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.25"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size35"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/first_btn"
+                        style="@style/ButtonBold"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/size0.5"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@drawable/popup_bg_btn"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/text14" />
+
+                    <View
+                        android:id="@+id/divider_view"
+                        android:layout_width="@dimen/size0.25"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_gray"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/second_btn"
+                        style="@style/ButtonBold"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size0.5"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@drawable/popup_bg_btn"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text14"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/info_img"
+                android:layout_width="@dimen/size55"
+                android:layout_height="@dimen/size55"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pop_up_flash_img" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/LayoutWidMatch_HeiWei"/>
+</LinearLayout>
+

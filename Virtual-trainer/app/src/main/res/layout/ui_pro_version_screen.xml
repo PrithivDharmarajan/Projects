@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adv_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_footer_google_ads" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adv_lay"
+        android:layout_below="@+id/header_lay"
+        android:layout_marginBottom="@dimen/size20"
+        android:layout_marginTop="@dimen/size20"
+        android:orientation="vertical"
+        android:padding="@dimen/size5"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/silver_lay"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginEnd="@dimen/size50"
+            android:layout_marginLeft="@dimen/size50"
+            android:layout_marginRight="@dimen/size50"
+            android:layout_marginStart="@dimen/size50"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextRegularStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@drawable/blue_with_dark_rounded_btn"
+                android:text="@string/silver"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text20" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextBoldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size23"
+                android:layout_marginLeft="@dimen/size55"
+                android:layout_marginRight="@dimen/size55"
+                android:background="@color/btn_blue"
+                android:gravity="top|center"
+                android:text="@string/silver_user_cost"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gold_lay"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="@dimen/size50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextRegularStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@drawable/green_with_yellow_rounded_btn"
+                android:text="@string/gold"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text22" />
+
+            <TextView
+                style="@style/TextBoldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size23"
+                android:layout_marginLeft="@dimen/size55"
+                android:layout_marginRight="@dimen/size55"
+                android:background="@color/btn_green"
+                android:gravity="top|center"
+                android:text="@string/gold_user_cost"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diamond_lay"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginEnd="@dimen/size50"
+            android:layout_marginLeft="@dimen/size50"
+            android:layout_marginRight="@dimen/size50"
+            android:layout_marginStart="@dimen/size50"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextRegularStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size50"
+                android:background="@drawable/orange_with_yellow_rounded_btn"
+                android:text="@string/diamond"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text20" />
+
+            <TextView
+                style="@style/TextBoldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size23"
+                android:layout_marginLeft="@dimen/size55"
+                android:layout_marginRight="@dimen/size55"
+                android:background="@color/btn_orange"
+                android:gravity="top|center"
+                android:text="@string/diamond_user_cost"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

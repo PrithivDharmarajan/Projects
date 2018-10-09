@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <!-- <item name="android:background">@color/screen_bg</item>-->
+    </style>
+
+    <style name="AppSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/gray</item>
+    </style>
+
+    <style name="LayoutMatch" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutWrap" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutWidMatch_HeiWrap" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutWidMatch_HeiWei" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LayoutWidWei_HeiWrap" parent="AppTheme">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <!--Text Filed Bold Font Style-->
+    <style name="TextBold" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/screen_bg</item>
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="fontPath">fonts/Montserrat-Bold.otf</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Text Filed Regular Font Style-->
+    <style name="TextRegular" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="fontPath">fonts/Montserrat-Regular.otf</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--Edit Filed Regular FontStyle-->
+    <style name="EditTextRegular" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size37</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">@dimen/text13</item>
+        <item name="fontPath">fonts/Montserrat-Regular.otf</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <!--Button Bold FontStyle-->
+    <style name="ButtonBold" parent="android:Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_height">@dimen/size37</item>
+        <item name="android:textSize">@dimen/text15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/sky_blue_btn</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontPath">fonts/Montserrat-Bold.otf</item>
+    </style>
+
+
+    <style name="PopupTopAnimation">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_up</item>
+    </style>
+
+    <style name="PopupBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_in_top</item>
+    </style>
+
+</resources>

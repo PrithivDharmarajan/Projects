@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/screen_bg">
+
+    <com.smaat.spark.swipemenu.SwipeMenuListView
+        android:id="@+id/notification_list"
+        style="@style/LayoutMatch"
+        android:divider="@color/light_gray"
+        android:dividerHeight="@dimen/size0.5" />
+</RelativeLayout>

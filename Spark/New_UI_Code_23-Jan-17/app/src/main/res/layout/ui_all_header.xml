@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWidMatch_HeiWrap">
+
+    <RelativeLayout
+
+        android:id="@+id/msg_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_msg_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/chat_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_chat_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/genera_lay"
+        style="@style/LayoutWidMatch_HeiWrap">
+
+        <include layout="@layout/ui_general_header" />
+    </RelativeLayout>
+</RelativeLayout>

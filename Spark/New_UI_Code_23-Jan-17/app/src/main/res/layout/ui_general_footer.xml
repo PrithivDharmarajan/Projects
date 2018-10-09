@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatch"
+    android:layout_height="@dimen/size50"
+    android:background="@color/white"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/connect_lay"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            tools:ignore="UseCompoundDrawables">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/connect_img"
+                    android:layout_width="@dimen/size33"
+                    android:layout_height="@dimen/size33"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/connect_enable_btn" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size45"
+                    android:padding="@dimen/size1"
+                    android:layout_height="@dimen/size35"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/connect_count_txt"
+                        style="@style/TextBold"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/circle_sky_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/screen_bg"
+                        android:textSize="@dimen/text8"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginTop="@dimen/size30"
+                android:paddingTop="@dimen/size1"
+                android:text="@string/connect"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/discover_lay"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/discover_img"
+                android:layout_width="@dimen/size33"
+                android:layout_height="@dimen/size33"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/discover_disable_btn" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginTop="@dimen/size30"
+                android:paddingTop="@dimen/size1"
+                android:text="@string/discover"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messages_lay"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            tools:ignore="UseCompoundDrawables">
+
+            <RelativeLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/messages_img"
+                    android:layout_width="@dimen/size33"
+                    android:layout_height="@dimen/size33"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/chat_disable_btn" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size33"
+                    android:layout_height="@dimen/size25"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/msg_count_txt"
+                        style="@style/TextBold"
+                        android:layout_width="@dimen/size13"
+                        android:layout_height="@dimen/size13"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/circle_sky_blue_bg"
+                        android:gravity="center"
+                        android:textColor="@color/screen_bg"
+                        android:textSize="@dimen/text8"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginTop="@dimen/size30"
+                android:paddingTop="@dimen/size1"
+                android:text="@string/messages"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_lay"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/update_profile_img"
+                android:layout_width="@dimen/size33"
+                android:layout_height="@dimen/size33"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/profile_disable_btn" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_marginTop="@dimen/size30"
+                android:paddingTop="@dimen/size1"
+                android:text="@string/profile"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/text9" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

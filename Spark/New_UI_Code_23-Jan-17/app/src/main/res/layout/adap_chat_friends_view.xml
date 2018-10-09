@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:id="@+id/friend_parent_lay"
+    android:background="@color/screen_bg"
+    android:padding="@dimen/size10">
+
+    <RelativeLayout
+        android:id="@+id/friend_profile_lay"
+        android:layout_width="@dimen/size80"
+        android:layout_height="@dimen/size80"
+        android:layout_marginStart="@dimen/size5">
+
+        <ProgressBar
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/sky_blue"
+            tools:targetApi="lollipop" />
+
+        <com.smaat.spark.utils.RoundedImageView
+            android:id="@+id/friend_profile_img"
+            style="@style/LayoutMatch"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/friend_name_txt"
+        style="@style/TextRegular"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/size15"
+        android:ellipsize="end"
+        android:maxLines="2" />
+</LinearLayout>

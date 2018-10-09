@@ -1,0 +1,248 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Spark</string>
+
+
+    <!--Splash Screen-->
+    <string name="storage_req">Camera,Storage and Location Permission required for this app</string>
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+
+    <!--Tutorial Screen-->
+    <string name="skip">Skip</string>
+
+    <!--Login Screen-->
+    <string name="login">Log In</string>
+    <string name="register">REGISTER</string>
+    <string name="email_username">Email or Username</string>
+    <string name="pwd">Password</string>
+    <string name="forgot_pwd">Forgot your password?</string>
+
+    <!--Forgot Password Screen-->
+    <string name="forgot_pwd_hint">We will send you an email containing a reset link for your password</string>
+    <string name="email">Email</string>
+    <string name="use_username">Use Your Username Instead</string>
+    <string name="use_email">Use Your EmailID Instead</string>
+    <string name="reset_pwd">Reset Password</string>
+
+    <!--SignUp Screen-->
+    <string name="username">Username</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="create_acc">Create Account</string>
+    <string name="create">By creating an account you agree to our </string>
+    <string name="terms_cond">Terms &amp; Conditions</string>
+
+    <!--Home Screen-->
+    <string name="connect">Connect</string>
+    <string name="trending">Trending</string>
+    <string name="topic">Topic</string>
+    <string name="search_dist">Search by Distance</string>
+    <string name="anonymous_mode">Anonymous Mode</string>
+    <string name="miles">Miles</string>
+    <string name="write_to">Write to:</string>
+    <string name="x">x</string>
+    <string name="new_message">New Message</string>
+    <string name="user_not_valid">User id is not valid</string>
+
+    <!--Slide Menu-->
+    <string name="profile">Profile</string>
+    <string name="friends">Friends</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="logout">Log Out</string>
+
+    <!--Chat Scree-->
+    <string name="send">Send</string>
+    <string name="search_user">Searching for User&#8230;</string>
+    <string name="search_random_user">Searching for Random User&#8230;</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="user_disconnect">User has disconnected this chat.</string>
+    <string name="end">End</string>
+    <string name="next">Next</string>
+    <string name="youtube_link">https://www.youtube.com</string>
+    <string name="youtube">http://www.youtube.com</string>
+    <string name="vimeo_link">https://player.vimeo.com/video</string>
+    <string name="vimeo">https://vimeo.com</string>
+    <string name="ph_youtube_format">https://youtu.be</string>
+    <string name="connect_hint_msg">you have been connected with <b>%1$s</b> </string>
+    <string name="interest_hint_msg">Both of you are interested in <b>%1$s</b> .</string>
+    <string name="random_hint_msg">a random match based on your common interests.</string>
+    <string name="conversion_moved">We moved the conversation to Messages :)</string>
+    <string name="say_hi">Say Hi</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <!--Discover Screen-->
+    <string name="video_err">Video Error</string>
+    <string name="video_comp">video play completed</string>
+    <string name="discover">Discover</string>
+    <string name="video_link">Video Link : </string>
+    <string name="chat">Chat</string>
+    <string name="share">Share</string>
+
+
+    <!--Message Screen-->
+    <string name="messages">Messages</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="hour_ago">hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="min_ago">min ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="sec_ago">sec ago</string>
+    <string name="just_now">just now</string>
+    <string name="no_msg">it looks like you don\'t have any messages yet</string>
+
+    <!--Friends Screen-->
+    <string name="search">Search</string>
+    <string name="find_by_username">Find by Username</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="invite">Invite</string>
+    <string name="find_contacts">Find Contacts</string>
+    <string name="share_name">Share Username</string>
+    <string name="no_friends">Looks like you have not added any friends yet.</string>
+    <string name="share_txt">Join Spark!</string>
+    <string name="android_app">Android :</string>
+    <string name="ios_app">IOS :</string>
+
+    <!--Invite and Accept Friend Screen-->
+    <string name="invite_friend">Invite Friends</string>
+    <string name="add">Add</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <!--Profile Screen-->
+    <string name="my_profile">My Profile</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="del_friend">Delete Friend</string>
+    <string name="req_sent">Request Sent</string>
+    <string name="accept_req">Accept Request</string>
+    <string name="message">Message</string>
+    <string name="ignore">Ignore</string>
+    <string name="ignored">Ignored</string>
+    <string name="location">Location</string>
+    <string name="interests">Interests</string>
+    <string name="change">Change</string>
+    <string name="edit">Edit</string>
+    <string name="private_inf">Private Information</string>
+    <string name="gender">Gender</string>
+    <string name="change_pic">Change Profile Picture</string>
+    <string name="add_pic">Add Profile Picture</string>
+    <string name="update">Update</string>
+    <string name="not_ava">N/A</string>
+
+    <!--Reset Password Screen-->
+    <string name="enter_pwd_field">Please enter a new password in the field below </string>
+    <string name="pwd_eight_char">Make sure the password contains at least 8 characters</string>
+    <string name="pwd_reset">Password Reset</string>
+    <string name="change_pwd">Change Password</string>
+
+    <!--Notification Screen-->
+    <string name="friend_req">FriendRequest</string>
+    <string name="friend_req_acc">RequestAccepted</string>
+    <string name="req_rejected">RequestRejected</string>
+    <string name="no_notification_msg">You don\'t have any notifications</string>
+
+    <!--Settings Screen-->
+    <string name="allow_anonymous">Allow Anonymous Matching</string>
+    <string name="push_notify">Push Notifications</string>
+    <string name="hide_loc">Hide Location</string>
+    <string name="version">Version</string>
+    <string name="support">Support</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="licenses">Licenses</string>
+    <string name="delete_acc">Delete Account</string>
+    <string name="copied">Copied!!</string>
+
+
+    <!--Dialog-->
+    <string name="err_create_frag">Error in creating fragment</string>
+    <string name="ok" tools:ignore="ButtonCase,Typos">Ok</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="delete">Delete</string>
+    <string name="end_chat">End Chat</string>
+    <string name="cancel">Cancel</string>
+    <string name="go_back">Go Back</string>
+    <string name="try_again">Try Again</string>
+    <string name="camera">Camera</string>
+    <string name="share_via_msg">Share Via Message</string>
+    <string name="share_via_mail">Share Via Mail</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="gallery">Gallery</string>
+    <string name="remove_pic">Remove Picture</string>
+    <string name="choose_type">Choose Type</string>
+
+    <!--Dialog Alert-->
+    <string name="enter_email_name">Please enter an email address or Username</string>
+    <string name="enter_email">Please enter an email address</string>
+    <string name="enter_pwd">Please enter a password</string>
+    <string name="enter_name">Please enter a valid name</string>
+    <string name="enter_loc">Please enter a valid location</string>
+    <string name="enter_interest">Please enter a valid interest</string>
+    <string name="enter_confirm_pwd">Please enter a confirm password</string>
+    <string name="enter_diff_pwd_confirm">Password and confirm password must be same</string>
+    <string name="pwd_length_valid">Password must have 8 characters</string>
+    <string name="old_pwd_same">You used this password recently.Please choose a different one</string>
+    <string name="logged_success">Logged in successfully.</string>
+
+    <string name="friend_req_sent">Friend Request Sent Successfully.</string>
+    <string name="friend_removed">Friend Removed Successfully.</string>
+
+    <string name="logout_msg">Are you sure want to Logout?</string>
+    <string name="delete_acc_msg">Are you sure you want to delete your account?</string>
+    <string name="exit_msg">Are you sure want to Exit?</string>
+
+    <string name="select_topic">Please select the Topic</string>
+    <string name="no_users_avail">No User available. Do you want to try again?</string>
+    <string name="delete_friend">Are you sure you want to Delete this friend?</string>
+    <string name="block_friend">Are you sure you want to Flag this user for negative behavior?</string>
+    <string name="add_this_friend">Are you sure you want Add this friend?</string>
+
+    <string name="ignore_friend">Do you want to ignore this user?</string>
+    <string name="profile_updated">Profile updated successfully.</string>
+    <string name="block_msg">You are blocked for objectionable content so you can\'t you use this app</string>
+    <string name="acc_del_msg">Your account has been deleted so you can\'t you use this app</string>
+
+    <string name="connect_time_out">Connection to Spark App Server timeout, please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+
+    <string name="delete_hint">You will permanently lose your profile, including any messages shared with friends, photos, and friend list.\n\nAre you sure you want to delete your account?</string>
+    <string name="device_not_support">Sorry your device is not support the crop action!</string>
+
+    <string name="do_you_want_del">Do you want to delete the message?</string>
+    <string name="you_have_no_friends">You don\'t have any friends in your list!</string>
+
+    <string name="no_contacts">You don\'t have any contacts</string>
+    <string name="max_topic">Max Topic 4 only</string>
+
+    <string name="user_del_msg">You are no longer friend with this user.</string>
+    <string name="already_connected">You\'re in another session, do you want to end and start a new one?</string>
+
+    <string name="deleted_friend">You deleted %1$s from your friends</string>
+    <string name="you_revealed">You have revealed yourself</string>
+
+    <!--Number String-->
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="nag_val">-1</string>
+    <string name="v">v</string>
+
+
+    <!--Terms and Conditions Web page!-->
+    <string name="api_request_success">apirequestsuccess</string>
+    <string name="error_code">error_code</string>
+    <string name="result">result</string>
+
+
+    <!--Temp String-->
+    <string name="temp_txt">The welcome wishes for a friend shows the cordial nature of the sender and makes the friend feel he is cared for and loved. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends One can also create a welcome wishes video clip for the friend and send it on a DVD. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends </string>
+    <string name="not_yet">Will be integrated in next milestone</string>
+    <string name="giraffe_player_url_empty">Please specify the address of the video playback</string>
+    <string name="small_problem">Player encountered a small problem</string>
+    <string name="can_not_play">can not play this video</string>
+    <string name="not_support">player not support this device</string>
+    <string name="fifty_per">50%</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

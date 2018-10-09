@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <TextView
+        android:id="@+id/header_txt"
+        style="@style/TextBoldStyle"
+        android:layout_marginTop="@dimen/size40"
+        android:text="@string/signup_screen" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adv_lay"
+        android:layout_below="@+id/header_txt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size30">
+
+            <EditText
+                android:id="@+id/user_name_edt"
+                style="@style/EditTextStyle"
+                android:layout_marginBottom="@dimen/size15"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginLeft="@dimen/size15"
+                android:layout_marginRight="@dimen/size15"
+                android:layout_marginStart="@dimen/size15"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/mail_id_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size15"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:maxLength="40" />
+
+            <EditText
+                android:id="@+id/pwd_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size15"
+                android:hint="@string/pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Button
+                android:id="@+id/signup_btn"
+                style="@style/ButtonStyle"
+                android:layout_height="@dimen/size40"
+                android:layout_marginBottom="@dimen/size23"
+                android:layout_marginLeft="@dimen/size45"
+                android:layout_marginRight="@dimen/size45"
+                android:layout_marginTop="@dimen/size23"
+                android:background="@drawable/green_with_yello_btn"
+                android:text="@string/signup" />
+
+            <LinearLayout
+                android:id="@+id/fb_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:layout_margin="@dimen/size15"
+                android:background="@drawable/fb_btn"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fb_img" />
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size1"
+                    android:layout_marginStart="@dimen/size1"
+                    android:background="@color/black" />
+
+                <TextView
+                    style="@style/TextBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/size16"
+                    android:layout_marginStart="@dimen/size16"
+                    android:text="@string/signup_fb"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/google_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:layout_marginLeft="@dimen/size15"
+                android:layout_marginRight="@dimen/size15"
+                android:background="@drawable/google_btn"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/google_img" />
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size1"
+                    android:layout_marginStart="@dimen/size1"
+                    android:background="@color/black" />
+
+                <TextView
+                    style="@style/TextBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/size16"
+                    android:layout_marginStart="@dimen/size16"
+                    android:text="@string/signup_google"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linkedin_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size40"
+                android:layout_margin="@dimen/size15"
+                android:background="@drawable/linkedin_btn"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/size5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/linkedin_img" />
+
+                <View
+                    android:layout_width="@dimen/size1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size1"
+                    android:layout_marginStart="@dimen/size1"
+                    android:background="@color/black" />
+
+                <TextView
+                    style="@style/TextBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/size16"
+                    android:layout_marginStart="@dimen/size16"
+                    android:text="@string/signup_linkedin"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/adv_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_footer_google_ads" />
+    </RelativeLayout>
+</RelativeLayout>

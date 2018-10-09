@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/screen_bg">
+
+    <TextView
+        android:id="@+id/wel_txt"
+        style="@style/TextBoldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size50"
+        android:text="@string/wel_come"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_marginBottom="@dimen/size20"
+        android:layout_marginTop="@dimen/size80"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size15"
+                android:gravity="center"
+                android:text="@string/temp_wel_txt"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text11"/>
+
+            <WebView
+                android:id="@+id/about_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cont_btn"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size30"
+            android:layout_marginEnd="@dimen/size70"
+            android:layout_marginLeft="@dimen/size70"
+            android:layout_marginRight="@dimen/size70"
+            android:layout_marginStart="@dimen/size70"
+            android:background="@drawable/blue_btn"
+            android:padding="@dimen/size6"
+            android:text="@string/conti"/>
+
+        <RelativeLayout
+            android:id="@+id/adv_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cont_btn"
+            android:visibility="gone">
+
+            <include layout="@layout/ui_general_footer_google_ads"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_header"/>
+    </RelativeLayout>
+
+</RelativeLayout>

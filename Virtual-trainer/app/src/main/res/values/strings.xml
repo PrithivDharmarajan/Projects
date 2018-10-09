@@ -1,0 +1,133 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">Smart VT</string>
+
+    <!--Splash Screen-->
+    <string name="camera_storage_req">Camera and Storage Permission required for this app</string>
+    <string name="go_settings_per">Go to settings and enable permissions</string>
+
+    <!--Welcome Screen-->
+    <string name="wel_come">Welcome screen</string>
+    <string name="conti">Continue</string>
+
+    <!--Entry Screen-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="join_gust">Join as Guest</string>
+
+    <!--Login Screen-->
+    <string name="login_screen">Login screen</string>
+    <string name="email_id">Email id</string>
+    <string name="user_name">User name</string>
+    <string name="pwd">Password</string>
+    <string name="forgot_pwd"><u>Forgot Password?</u></string>
+    <string name="signin_fb">Signin with Facebook</string>
+    <string name="signin_google">Signin with Google</string>
+    <string name="signin_linkedin">Signin with Linkedin</string>
+    <string name="facebook_app_id">1681770348805931</string>
+
+    <!--Signup Screen-->
+    <string name="signup">Signup</string>
+    <string name="signup_screen">Signup screen</string>
+    <string name="signup_fb">Signup with Facebook</string>
+    <string name="signup_google">Signup with Google</string>
+    <string name="signup_linkedin">Signup with Linkedin</string>
+
+    <!--User Status Screen-->
+    <string name="cont_free_user">Continue as Free User</string>
+    <string name="free_user_cost">(1 month Free)</string>
+    <string name="buy_pro_user">Buy for Pro User</string>
+    <string name="pro_user_cost">($ 10)</string>
+
+    <!--Slide Menu-->
+    <string name="profile">Profile</string>
+    <string name="help">Help</string>
+    <string name="buy_full_version">Buy Full Version</string>
+    <string name="terms_cond">Terms and Condition</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+
+    <!--Home Screen-->
+    <string name="home">Home</string>
+    <string name="start_stream">Start Streaming</string>
+    <string name="join_stream">Join Streaming</string>
+    <string name="join">Join</string>
+    <string name="live">Live</string>
+
+
+    <!--Profile Screen-->
+    <string name="subscription_expire">Your Subscription plan is going to expire in 20 Days.</string>
+    <string name="your_subscription_date">Your last Subscription pack Diamond</string>
+    <string name="update">Update</string>
+    <string name="subscribe">Subscribe</string>
+
+    <!--Pro Version Screen-->
+    <string name="pro_versions">Pro Versions</string>
+    <string name="silver">Silver</string>
+    <string name="silver_user_cost">(3 months)</string>
+    <string name="gold">Gold</string>
+    <string name="gold_user_cost">(6 months)</string>
+    <string name="diamond">Diamond</string>
+    <string name="diamond_user_cost">(12 months)</string>
+
+    <!--Support screen -->
+    <string name="email">email id</string>
+    <string name="type_here">type here</string>
+    <string name="submit">Submit</string>
+
+    <!--Add Joiness Screen-->
+    <string name="add_joiness">Add Joiness</string>
+    <string name="recent_list"><u>Recent List</u></string>
+    <string name="joinies">Joinies :</string>
+    <string name="invite">Invite</string>
+
+    <!--Start Streaming-->
+    <string name="title">Title</string>
+    <string name="start">Start</string>
+    <string name="add">Add</string>
+    <string name="share_stream_id">Share Streaming ID</string>
+    <string name="captioninfo">Who ever have streaming id can join the stream</string>
+    <string name="streaming_id">Streaming ID  :</string>
+
+    <!--Common Strings-->
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="succ_login">Successfully loggedin</string>
+    <string name="trial_version">Trial Version 11 days More</string>
+    <string name="smaat_vt">SmaatVT_</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5639579184035331/4392746604</string>
+    <string name="flash_nt_support">Sorry, your device doesn\'t support flash light\!</string>
+
+    <!--Server Alert-->
+    <string name="connect_time_out">Connection to SmartVT App Server Timeout, Please try again.</string>
+    <string name="no_internet"> Please verify your internet connection.</string>
+
+    <!--Dialog -->
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="name">Name</string>
+    <string name="meeting_id">Meeting Id</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <!--Dialog Alert-->
+    <string name="enter_email">Please enter an email address</string>
+    <string name="enter_name">Please enter a valid Name</string>
+    <string name="enter_pwd">Please enter a password</string>
+    <string name="logout_msg">Are you sure want to Logout?</string>
+    <string name="exit_msg">Are you sure want to Exit?</string>
+    <string name="enter_meeting_id">Please enter a valid Meeting Id</string>
+    <string name="enter_cmd">Please enter a command</string>
+    <string name="enter_title">Please enter a title</string>
+    <string name="google_unathu">unauthenticated</string>
+
+
+    <!--temp Text-->
+    <string name="temp_wel_txt">The welcome wishes for a friend shows the cordial nature of the sender and makes the friend feel he is cared for and loved. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends One can also create a welcome wishes video clip for the friend and send it on a DVD. The welcome wishes for the friend can be sent to welcome him or her on any occasion or for welcoming the friend to the home. Sending text messages or beautiful cards with welcome wishes and also sending gifts to the friend along with it are a good way of sending welcome wishes to he friends </string>
+    <string name="future_release">This will be part of future releases</string>
+
+    <!--Google and Facbook Signin Acc
+    Email Id: smaatvt@gmail.com
+    Password: android@smaatapps-->
+</resources>

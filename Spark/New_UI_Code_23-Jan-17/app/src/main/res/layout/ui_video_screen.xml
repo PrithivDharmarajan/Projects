@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:background="@color/black">
+
+
+    <RelativeLayout
+        android:id="@+id/video_header_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size40"
+        android:layout_marginTop="@dimen/size10">
+
+        <TextView
+            android:id="@+id/video_header_txt"
+            style="@style/TextBold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size20"
+            android:layout_toStartOf="@+id/close_btn"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/text10" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/size40"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/x"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/text15" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_content_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_height="@dimen/size35"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/chat_lay"
+            style="@style/LayoutMatch"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@+id/share_lay"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/video_chat_img" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_gravity="center"
+                android:text="@string/chat"
+                android:textColor="@color/gray_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_lay"
+            style="@style/LayoutMatch"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/size5"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/size30"
+                android:layout_height="@dimen/size30"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:src="@drawable/video_share_img" />
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/gray_txt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/focus_view"
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/bottom_content_lay"
+        android:layout_below="@+id/video_header_lay" />
+
+    <RelativeLayout
+        android:id="@+id/youtube_player_lay"
+        android:layout_marginTop="@dimen/size40"
+        android:layout_marginBottom="@dimen/size35"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_centerInParent="true">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:clickable="true" />
+
+        <SeekBar
+            android:id="@+id/youtube_video_seek_bar"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_below="@+id/youtube_player_view"
+            android:layout_margin="@dimen/size7"
+            android:progressDrawable="@drawable/seek_bar_video_bg"
+            android:thumb="@drawable/circle_sky_blue_bg"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

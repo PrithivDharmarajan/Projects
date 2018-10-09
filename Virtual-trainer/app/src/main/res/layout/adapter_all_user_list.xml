@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size2"
+        android:layout_marginTop="@dimen/size2"
+        android:background="@color/adapter_bg"
+        android:paddingBottom="@dimen/size10"
+        android:paddingTop="@dimen/size10">
+
+        <TextView
+            android:id="@+id/msg_txt"
+            style="@style/TextRegularStyle"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size20"
+            android:layout_marginStart="@dimen/size20"
+            android:layout_toLeftOf="@+id/stream_join_btn"
+            android:layout_toStartOf="@+id/stream_join_btn"
+            android:gravity="start"
+            android:textSize="@dimen/text14" />
+
+        <Button
+            android:id="@+id/stream_join_btn"
+            android:layout_width="@dimen/size40"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/size7"
+            android:layout_marginRight="@dimen/size7"
+            android:background="@drawable/orange_with_yellow_rounded_bg"
+            android:text="@string/join"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text11" />
+    </RelativeLayout>
+
+</LinearLayout>

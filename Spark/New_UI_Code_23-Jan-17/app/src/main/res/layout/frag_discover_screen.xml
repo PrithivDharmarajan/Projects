@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:clickable="true"
+    android:background="@color/screen_bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/discover_recycler_view"
+        style="@style/LayoutWidMatch_HeiWrap" />
+</RelativeLayout>

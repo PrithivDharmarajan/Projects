@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adv_lay"
+        android:layout_marginTop="@dimen/size60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/size20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size5">
+
+                <TextView
+                    style="@style/TextLightStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/streaming_id"
+                    android:textSize="@dimen/size12" />
+
+                <TextView
+                    android:id="@+id/streaming_id_txt"
+                    style="@style/TextBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="@dimen/size12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginEnd="@dimen/size60"
+                android:layout_marginLeft="@dimen/size60"
+                android:layout_marginRight="@dimen/size60"
+                android:layout_marginStart="@dimen/size60"
+                android:background="@color/white" />
+
+
+            <EditText
+                android:id="@+id/title_edt"
+                style="@style/EditTextStyle"
+                android:layout_margin="@dimen/size20"
+                android:hint="@string/title"
+                android:inputType="textCapSentences" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:padding="@dimen/size5">
+
+                <TextView
+                    style="@style/TextRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/joinies"
+                    android:textSize="@dimen/size17" />
+
+                <Button
+                    android:id="@+id/add_btn"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size37"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_with_yellow_rounded_btn"
+                    android:text="@string/add"
+                    android:textSize="@dimen/size17" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/start_btn"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/size150"
+                android:layout_height="@dimen/size45"
+                android:layout_marginTop="@dimen/size30"
+                android:background="@drawable/green_with_yellow_rounded_btn"
+                android:text="@string/start"
+                android:textAllCaps="false"
+                android:textSize="@dimen/size16" />
+
+            <View
+                android:layout_width="@dimen/size250"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginTop="@dimen/size30"
+                android:background="@drawable/sharpwhite" />
+
+
+            <TextView
+                style="@style/TextLightStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size30"
+                android:text="@string/captioninfo"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size12" />
+
+            <Button
+                android:id="@+id/share_stream_id_btn"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size20"
+                android:background="@drawable/blue_rounded_bg"
+                android:text="@string/share_stream_id"
+                android:textSize="@dimen/size18" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/adv_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/ui_general_footer_google_ads" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/ui_general_header_with_bg" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

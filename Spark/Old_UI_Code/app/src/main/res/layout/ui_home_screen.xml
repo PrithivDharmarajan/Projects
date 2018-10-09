@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_lay"
+    style="@style/LayoutMatch"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+        <RelativeLayout
+            style="@style/LayoutMatch"
+            android:layout_above="@+id/bottom_footer_lay"
+            android:background="@color/screen_bg">
+            <LinearLayout
+                android:id="@+id/connect_lay"
+                style="@style/LayoutMatch"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <include layout="@layout/ui_connect_all_header" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/connect_frame_lay"
+                    style="@style/LayoutMatch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discover_lay"
+                style="@style/LayoutMatch"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <include layout="@layout/ui_discover_all_header" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/discover_frame_lay"
+                    style="@style/LayoutMatch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messages_lay"
+                style="@style/LayoutMatch"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <include layout="@layout/ui_messages_all_header" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/messages_frame_lay"
+                    style="@style/LayoutMatch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_lay"
+                style="@style/LayoutMatch"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                    <include layout="@layout/ui_profile_all_header" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_frame_lay"
+                    style="@style/LayoutMatch" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_footer_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/ui_general_footer" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

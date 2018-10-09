@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/screen_bg"
+        android:padding="@dimen/size10">
+
+        <RelativeLayout
+            android:id="@+id/friend_profile_lay"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60">
+
+            <ProgressBar
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/sky_blue"
+                tools:targetApi="lollipop" />
+
+            <com.smaat.spark.utils.RoundedImageView
+                android:id="@+id/friend_profile_img"
+                style="@style/LayoutMatch"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_toEndOf="@+id/friend_profile_lay"
+            android:layout_toStartOf="@+id/btn_lay"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_name_txt"
+                style="@style/TextBold"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_lay"
+            style="@style/LayoutWrap"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/accept_btn"
+                android:layout_width="@dimen/size35"
+                android:layout_height="@dimen/size35"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size5"
+                android:visibility="gone"
+                android:src="@drawable/tick_mark_img" />
+
+            <ImageView
+                android:id="@+id/reject_btn"
+                android:layout_width="@dimen/size35"
+                android:layout_height="@dimen/size35"
+                android:padding="@dimen/size5"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/cancel_mark_img" />
+
+            <ImageView
+                android:id="@+id/chat_btn"
+                android:layout_width="@dimen/size35"
+                android:layout_height="@dimen/size35"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size2"
+                android:visibility="gone"
+                android:src="@drawable/chat_enable_btn" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray" />
+</LinearLayout>

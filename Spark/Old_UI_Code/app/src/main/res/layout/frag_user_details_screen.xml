@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutMatch"
+    android:background="@color/screen_bg"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:id="@+id/block_btn_lay"
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/size5"
+        android:layout_weight="0.8">
+
+
+        <ImageView
+            android:id="@+id/header_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:maxHeight="@dimen/size50"
+            android:padding="@dimen/size6"
+            android:src="@drawable/block_img" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="4.8"
+        android:padding="@dimen/size10">
+
+        <com.smaat.spark.utils.RoundedImageView
+            android:id="@+id/default_profile_img"
+            style="@style/LayoutMatch"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_user_img"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/user_img_pager"
+            style="@style/LayoutMatch"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size20"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/indicator_one_img"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size5"
+                android:layout_marginEnd="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_sky_blue_bg" />
+
+            <ImageView
+                android:id="@+id/indicator_two_img"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size5"
+                android:layout_marginEnd="@dimen/size3"
+                android:layout_marginStart="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_gray_bg" />
+
+            <ImageView
+                android:id="@+id/indicator_three_img"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size5"
+                android:layout_marginEnd="@dimen/size3"
+                android:layout_marginStart="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_gray_bg" />
+
+
+            <ImageView
+                android:id="@+id/indicator_four_img"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size5"
+                android:layout_marginEnd="@dimen/size3"
+                android:layout_marginStart="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_gray_bg" />
+
+
+            <ImageView
+                android:id="@+id/indicator_five_img"
+                android:layout_width="@dimen/size5"
+                android:layout_height="@dimen/size5"
+                android:layout_marginStart="@dimen/size3"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/circle_gray_bg" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_weight="1.4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name_txt"
+            style="@style/TextBold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:id="@+id/address_txt"
+            style="@style/TextRegular"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_interest_txt"
+        style="@style/TextRegular"
+        android:layout_weight="1"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_margin="@dimen/size10"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/bottom_btn_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/size15"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/add_msg_req_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dip"
+                android:layout_marginEnd="@dimen/size5"
+                android:layout_weight="1"
+                android:textColor="@color/screen_bg"
+                android:textSize="@dimen/text14" />
+
+            <Button
+                android:id="@+id/ignore_del_btn"
+                style="@style/ButtonBold"
+                android:layout_width="0dip"
+                android:layout_marginStart="@dimen/size5"
+                android:layout_weight="1"
+                android:background="@drawable/unselect_grey_btn"
+                android:textColor="@color/screen_bg"
+                android:textSize="@dimen/text14" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

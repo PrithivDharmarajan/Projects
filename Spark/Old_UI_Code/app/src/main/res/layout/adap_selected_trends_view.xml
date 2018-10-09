@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutWrap"
+    android:layout_marginEnd="@dimen/size5"
+    android:layout_marginStart="@dimen/size5">
+
+    <LinearLayout
+        style="@style/LayoutWrap"
+        android:layout_marginEnd="@dimen/size5"
+        android:layout_marginStart="@dimen/size5"
+        android:background="@drawable/rounded_grey_bg"
+        android:paddingEnd="@dimen/size3"
+        android:paddingStart="@dimen/size3">
+
+        <TextView
+            android:id="@+id/trends_txt"
+            style="@style/TextRegular"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/size5"
+            android:textSize="@dimen/text10"
+            android:text="@string/del_friend"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="@dimen/size0.5"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/size5"
+            android:layout_marginStart="@dimen/size5"
+            android:background="@color/screen_bg" />
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            style="@style/TextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size5"
+            android:text="@string/x"
+            android:textColor="@color/screen_bg" />
+    </LinearLayout>
+</RelativeLayout>

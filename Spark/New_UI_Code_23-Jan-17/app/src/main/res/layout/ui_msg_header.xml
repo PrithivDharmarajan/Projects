@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size50"
+    android:background="@color/gray">
+
+
+    <RelativeLayout
+        android:id="@+id/msg_left_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:layout_marginBottom="@dimen/size10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/friends_img" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/msg_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/msg_left_btn_lay"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size6"
+            android:src="@drawable/app_logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg_header_txt"
+        style="@style/TextBold"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/msg_btn_lay"
+        android:layout_toStartOf="@+id/invite_right_btn_lay"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginBottom="@dimen/size10"
+        android:text="@string/messages"
+        android:textColor="@color/sky_blue" />
+
+    <RelativeLayout
+        android:id="@+id/invite_right_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/msg_right_btn_lay"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/size35"
+            android:layout_height="@dimen/size35"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size8"
+            android:src="@drawable/friend_add_img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msg_right_btn_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/size27"
+            android:layout_height="@dimen/size27"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:layout_marginBottom="@dimen/size8"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/size3"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_img" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

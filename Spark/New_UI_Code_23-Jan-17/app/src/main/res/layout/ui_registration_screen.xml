@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_weight="1.3">
+
+        <RelativeLayout
+            android:id="@+id/header_left_btn_lay"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/header_left_img"
+                android:layout_width="@dimen/size35"
+                android:layout_height="@dimen/size35"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/size6"
+                android:src="@drawable/black_back_img" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_margin="@dimen/size15"
+        android:layout_weight="2.2">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:background="@drawable/black_with_trans_bg"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_height="0dip"
+                android:layout_marginBottom="@dimen/size0.5"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/email_img" />
+
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@null"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:background="@color/black" />
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_height="0dip"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginTop="@dimen/size0.5"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_img" />
+
+                <EditText
+                    android:id="@+id/user_name_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@null"
+                    android:hint="@string/username"
+                    android:maxLength="15"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textNoSuggestions" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:background="@color/black" />
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_height="0dip"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginTop="@dimen/size0.5"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pwd_img" />
+
+                <EditText
+                    android:id="@+id/pwd_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@null"
+                    android:hint="@string/pwd"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword|textNoSuggestions" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:background="@color/black" />
+
+            <LinearLayout
+                style="@style/LayoutMatch"
+                android:layout_height="0dip"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginTop="@dimen/size0.5"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pwd_img" />
+
+                <EditText
+                    android:id="@+id/confirm_pwd_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size10"
+                    android:layout_marginStart="@dimen/size10"
+                    android:background="@null"
+                    android:hint="@string/confirm_pwd"
+                    android:imeActionId="100"
+                    android:imeActionLabel="@string/create_acc"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword|textNoSuggestions" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutWidMatch_HeiWei"
+        android:layout_margin="@dimen/size15"
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            style="@style/LayoutMatch"
+            android:layout_marginBottom="@dimen/size5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1.3" />
+
+            <Button
+                android:id="@+id/create_acc_btn"
+                style="@style/ButtonBold"
+                android:layout_height="0dip"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_weight="2"
+                android:text="@string/create_acc" />
+
+            <LinearLayout
+                android:id="@+id/term_cond_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.7"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextRegular"
+                    android:layout_width="wrap_content"
+                    android:text="@string/create" />
+
+                <TextView
+                    style="@style/TextBold"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/terms_cond"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text13" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

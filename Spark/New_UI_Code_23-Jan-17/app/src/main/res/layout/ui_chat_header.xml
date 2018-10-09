@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size50"
+    android:background="@color/gray">
+
+
+    <RelativeLayout
+        android:id="@+id/header_end_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/end_txt"
+            style="@style/TextBold"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:text="@string/end"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_visible_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/size3"
+        android:layout_toEndOf="@+id/header_end_lay"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size9"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/eye_img" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chat_header_txt"
+        style="@style/TextBold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_toEndOf="@+id/header_visible_lay"
+        android:layout_toStartOf="@+id/header_invite_lay"
+        android:background="?android:attr/selectableItemBackground"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/sky_blue" />
+
+    <RelativeLayout
+        android:id="@+id/header_invite_lay"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/size3"
+        android:layout_toStartOf="@+id/header_next_lay"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/friend_add_img"
+            android:layout_width="@dimen/size23"
+            android:layout_height="@dimen/size23"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/friend_add_img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_next_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/next_txt"
+            style="@style/TextBold"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginEnd="@dimen/size10"
+            android:layout_marginStart="@dimen/size10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/next"
+            android:textColor="@color/screen_bg"
+            android:textSize="@dimen/text14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

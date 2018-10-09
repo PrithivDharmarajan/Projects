@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_lay"
+    style="@style/LayoutMatch"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout style="@style/LayoutMatch">
+
+        <RelativeLayout
+            android:id="@+id/top_header_lay"
+            style="@style/LayoutWidMatch_HeiWrap">
+
+            <include layout="@layout/ui_all_header" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame_lay"
+            style="@style/LayoutMatch"
+            android:layout_above="@+id/bottom_footer_lay"
+            android:layout_below="@+id/top_header_lay"
+            android:background="@color/screen_bg" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_footer_lay"
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/ui_general_footer" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

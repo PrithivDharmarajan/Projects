@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_date_txt"
+        style="@style/TextRegular"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="@dimen/size5"
+        android:textColor="@color/sky_blue"
+        android:textSize="@dimen/text14"
+        android:visibility="gone" />
+
+    <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+        <LinearLayout
+            android:id="@+id/left_lay"
+            style="@style/LayoutWrap"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/size15"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/left_profile_lay"
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:layout_gravity="bottom">
+
+                <ProgressBar
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/light_gray"
+                    tools:targetApi="lollipop" />
+
+                <com.smaat.spark.utils.RoundedImageView
+                    android:id="@+id/left_profile_img"
+                    style="@style/LayoutMatch"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LayoutWrap"
+                android:layout_marginBottom="@dimen/size10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/left_date_txt"
+                    style="@style/TextRegular"
+                    android:layout_marginStart="@dimen/size30"
+                    android:layout_marginTop="@dimen/size10"
+                    android:gravity="start"
+                    android:textSize="@dimen/text10" />
+
+                <RelativeLayout style="@style/LayoutWrap">
+
+                    <ImageView
+                        android:id="@+id/left_side_curve_img"
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/left_msg_lay"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/left_side_img" />
+
+                    <LinearLayout
+                        android:id="@+id/left_msg_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_marginStart="@dimen/size7"
+                        android:background="@drawable/chat_rounded_white_bg"
+                        android:minWidth="@dimen/size100"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/left_normal_video_img_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size150"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/discover_load_img" />
+
+                            <com.smaat.spark.utils.RoundEdgeTopImageView
+                                android:id="@+id/left_normal_top_video_img"
+                                style="@style/LayoutWidMatch_HeiWrap"
+                                android:visibility="gone"
+                                android:contentDescription="@string/app_name" />
+
+                            <com.smaat.spark.utils.RoundEdgeFullImageView
+                                android:id="@+id/left_normal_full_video_img"
+                                style="@style/LayoutWidMatch_HeiWrap"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/left_normal_video_txt"
+                            style="@style/TextRegular"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_margin="@dimen/size15"
+                            android:gravity="start"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/left_msg_txt"
+                            style="@style/TextRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="@dimen/size15"
+                            android:gravity="start" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_lay"
+            style="@style/LayoutWrap"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/size15"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/msg_parent_lay"
+                style="@style/LayoutWrap"
+                android:layout_marginEnd="@dimen/size50"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/size10">
+
+                <TextView
+                    android:id="@+id/right_date_txt"
+                    style="@style/TextRegular"
+                    android:layout_marginEnd="@dimen/size30"
+                    android:layout_marginTop="@dimen/size10"
+                    android:gravity="end"
+                    android:textSize="@dimen/text10" />
+
+                <RelativeLayout style="@style/LayoutWrap">
+
+                    <ImageView
+                        android:id="@+id/right_side_curve_img"
+                        android:layout_width="@dimen/size20"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/right_msg_lay"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/right_side_img" />
+
+
+                    <LinearLayout
+                        android:id="@+id/right_msg_lay"
+                        style="@style/LayoutWrap"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/size7"
+                        android:background="@drawable/chat_rounded_sky_blue_bg"
+                        android:minWidth="@dimen/size100"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/right_normal_video_img_lay"
+                            style="@style/LayoutWidMatch_HeiWrap"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size150"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/discover_load_img" />
+
+                            <com.smaat.spark.utils.RoundEdgeTopImageView
+                                android:id="@+id/right_normal_top_video_img"
+                                style="@style/LayoutWidMatch_HeiWrap"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+
+                            <com.smaat.spark.utils.RoundEdgeFullImageView
+                                android:id="@+id/right_normal_full_video_img"
+                                style="@style/LayoutWidMatch_HeiWrap"
+                                android:contentDescription="@string/app_name"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/right_normal_video_txt"
+                            style="@style/TextRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="@dimen/size15"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/right_msg_txt"
+                            style="@style/TextRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="@dimen/size15" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/right_profile_lay"
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:layout_alignBottom="@+id/msg_parent_lay"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/size5">
+
+                <ProgressBar
+                    android:layout_width="@dimen/size20"
+                    android:layout_height="@dimen/size20"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/sky_blue"
+                    tools:targetApi="lollipop" />
+
+                <com.smaat.spark.utils.RoundedImageView
+                    android:id="@+id/right_profile_img"
+                    style="@style/LayoutMatch"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

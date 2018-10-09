@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_view"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:layout_marginTop="@dimen/size120"
+    android:alpha="0.9"
+    android:background="@android:color/transparent">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/sky_blue"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/original_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size20"
+            android:layout_marginStart="@dimen/size20"
+            android:layout_marginTop="@dimen/size20"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:focusableInTouchMode="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size5"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_up_caution_img" />
+    </RelativeLayout>
+</RelativeLayout>
+

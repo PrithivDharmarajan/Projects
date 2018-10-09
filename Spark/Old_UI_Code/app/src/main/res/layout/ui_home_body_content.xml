@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_ay"
+    style="@style/LayoutMatch"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout style="@style/LayoutWidMatch_HeiWrap">
+
+
+        <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+            <RelativeLayout
+
+                android:id="@+id/msg_header_lay"
+                style="@style/LayoutWidMatch_HeiWrap">
+
+                <include layout="@layout/ui_msg_header" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/chat_header_lay"
+                style="@style/LayoutWidMatch_HeiWrap">
+
+                <include layout="@layout/ui_chat_header" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LayoutWidMatch_HeiWrap">
+
+                <include
+                    android:id="@+id/genera_lay"
+                    layout="@layout/ui_general_header" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame_lay"
+        style="@style/LayoutMatch"
+        android:background="@color/screen_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

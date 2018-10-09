@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/gray">
+    <item android:drawable="@drawable/rounded_grey_border_bg" android:state_pressed="true" />
+    <item android:drawable="@drawable/rounded_grey_border_bg" android:state_enabled="false" />
+    <item android:drawable="@drawable/rounded_black_border_bg" />
+</selector>

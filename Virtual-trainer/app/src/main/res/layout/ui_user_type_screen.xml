@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/size40"
+    android:layout_marginLeft="@dimen/size40"
+    android:layout_marginRight="@dimen/size40"
+    android:layout_marginStart="@dimen/size40"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/free_user_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextRegularStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size45"
+            android:background="@drawable/green_with_yellow_rounded_btn"
+            android:text="@string/cont_free_user"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text20" />
+
+        <TextView
+            style="@style/TextBoldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size23"
+            android:layout_marginLeft="@dimen/size55"
+            android:layout_marginRight="@dimen/size55"
+            android:background="@color/btn_green"
+            android:gravity="top|center"
+            android:text="@string/free_user_cost"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text14" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/ok_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_type_app_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pro_user_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextBoldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size23"
+            android:layout_marginLeft="@dimen/size50"
+            android:layout_marginRight="@dimen/size50"
+            android:background="@color/btn_dark_yellow"
+            android:gravity="bottom|center"
+            android:text="@string/pro_user_cost"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text15" />
+
+        <TextView
+            style="@style/TextRegularStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size45"
+            android:background="@drawable/orange_with_yellow_rounded_btn"
+            android:text="@string/buy_pro_user"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text20" />
+
+    </LinearLayout>
+
+</LinearLayout>

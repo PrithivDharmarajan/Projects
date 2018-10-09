@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
+    style="@style/LayoutMatch">
+
+
+    <RelativeLayout
+        style="@style/LayoutMatch"
+        android:layout_above="@+id/footer_lay">
+
+        <ScrollView
+            android:id="@+id/chat_parent_lay"
+            style="@style/LayoutMatch"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+            <LinearLayout
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size15">
+
+                    <TextView
+                        style="@style/TextRegular"
+                        android:layout_marginTop="@dimen/size5"
+                        android:text="@string/trending"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text13" />
+
+                    <org.apmem.tools.layouts.FlowLayout
+                        android:id="@+id/trending_flow_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_marginTop="@dimen/size10"
+                        android:gravity="start"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:layout_height="@dimen/size50"
+                        android:layout_marginTop="@dimen/size10"
+                        android:background="@drawable/black_with_trans_bg">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/size25"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/size5"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/size2"
+                            android:src="@drawable/search_img" />
+
+                        <RelativeLayout
+                            style="@style/LayoutMatch"
+                            android:layout_marginStart="@dimen/size5">
+
+                            <EditText
+                                android:id="@+id/topic_edt"
+                                style="@style/EditTextRegular"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@null"
+                                android:hint="@string/topic"
+                                android:imeOptions="actionSearch"
+                                android:inputType="textCapSentences" />
+
+                            <HorizontalScrollView
+                                android:id="@+id/scroll_view"
+                                style="@style/LayoutMatch"
+                                android:clickable="true"
+                                android:scrollbars="none"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:id="@+id/topic_lay"
+                                    style="@style/LayoutMatch"
+                                    android:gravity="start|center"
+                                    android:orientation="horizontal" />
+                            </HorizontalScrollView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size15"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        style="@style/TextRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/anonymous_mode" />
+
+                    <ImageView
+                        android:id="@+id/anonymous_mode_img"
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size45"
+                        android:layout_marginStart="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/distance_disable_img" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:layout_marginBottom="@dimen/size2"
+                    android:layout_marginTop="@dimen/size2"
+                    android:background="@color/light_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:layout_marginStart="@dimen/size15"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        style="@style/TextRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/search_dist" />
+
+                    <ImageView
+                        android:id="@+id/search_dis_img"
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size45"
+                        android:layout_marginStart="@dimen/size10"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/distance_disable_img" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LayoutWidMatch_HeiWrap"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size15">
+
+                    <LinearLayout
+                        android:id="@+id/seek_lay"
+                        style="@style/LayoutWidMatch_HeiWrap"
+                        android:visibility="invisible"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seek_bar_txt"
+                        style="@style/TextRegular"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/text15"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/size20" />
+
+                    <SeekBar
+                        android:id="@+id/seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size20"
+                        android:layout_marginTop="@dimen/size10"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/trends_line"
+                        android:thumb="@drawable/trends_select_bg" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/connect_btn"
+                        style="@style/ButtonBold"
+                        android:layout_marginEnd="@dimen/size25"
+                        android:layout_marginStart="@dimen/size25"
+                        android:text="@string/connect" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/message_parent_lay"
+            style="@style/LayoutMatch"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.smaat.spark.swipemenu.SwipeMenuListView
+                android:id="@+id/message_swipe_list"
+                style="@style/LayoutMatch"
+                android:divider="@color/light_gray"
+                android:dividerHeight="@dimen/size0.5" />
+
+            <LinearLayout
+                android:id="@+id/friends_lay"
+                style="@style/LayoutMatch"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/friends_search_edt"
+                    style="@style/EditTextRegular"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/size7"
+                    android:background="@null"
+                    android:hint="@string/write_to"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapSentences" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size0.5"
+                    android:background="@color/light_gray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/friend_list"
+                    style="@style/LayoutMatch"
+                    android:padding="@dimen/size2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discover_parent_lay"
+            style="@style/LayoutMatch"
+            android:layout_centerInParent="true"
+            android:background="@color/screen_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/discover_list"
+                style="@style/LayoutMatch"
+                android:padding="@dimen/size0.5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_lay"
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/ui_general_footer" />
+    </RelativeLayout>
+
+</RelativeLayout>

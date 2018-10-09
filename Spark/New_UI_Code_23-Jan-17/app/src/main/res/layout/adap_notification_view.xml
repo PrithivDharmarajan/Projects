@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutWidMatch_HeiWrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        style="@style/LayoutWidMatch_HeiWrap"
+        android:background="@color/screen_bg"
+        android:padding="@dimen/size10">
+
+        <RelativeLayout
+            android:id="@+id/friend_profile_lay"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size60">
+
+            <ProgressBar
+                android:layout_width="@dimen/size20"
+                android:layout_height="@dimen/size20"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/sky_blue"
+                tools:targetApi="lollipop" />
+
+            <com.smaat.spark.utils.RoundedImageView
+                android:id="@+id/friend_profile_img"
+                style="@style/LayoutMatch"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutWidMatch_HeiWrap"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_toEndOf="@+id/friend_profile_lay"
+            android:layout_toStartOf="@+id/accept_decline_chat_lay"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_name_txt"
+                style="@style/TextBold"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text13" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                style="@style/TextRegular"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/accept_decline_chat_lay"
+            style="@style/LayoutWrap"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/chat_lay"
+                android:layout_width="@dimen/size75"
+                android:layout_height="@dimen/size30"
+                android:background="@drawable/sky_blue_btn"
+                android:orientation="horizontal"
+                android:padding="@dimen/size5"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/size11"
+                    android:layout_height="@dimen/size11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/notification_chat_img" />
+
+                <TextView
+                    style="@style/TextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:text="@string/chat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accept_lay"
+                android:layout_width="@dimen/size75"
+                android:layout_height="@dimen/size30"
+                android:background="@drawable/sky_blue_btn"
+                android:orientation="horizontal"
+                android:padding="@dimen/size5"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/size11"
+                    android:layout_height="@dimen/size11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/notification_accept_img" />
+
+                <TextView
+                    style="@style/TextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:text="@string/accept"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/decline_lay"
+                android:layout_width="@dimen/size75"
+                android:layout_height="@dimen/size30"
+                android:layout_marginStart="@dimen/size10"
+                android:background="@drawable/notify_delete_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size5"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/size11"
+                    android:layout_height="@dimen/size11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/notification_cancel_img" />
+
+                <TextView
+                    style="@style/TextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/size3"
+                    android:text="@string/decline"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text11" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="@color/gray" />
+</LinearLayout>
