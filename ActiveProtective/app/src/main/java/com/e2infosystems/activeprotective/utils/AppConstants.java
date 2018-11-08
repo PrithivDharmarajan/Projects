@@ -30,7 +30,9 @@ public class AppConstants {
 
     /*BASE URL*/
     public static final String BASE_URL = "https://18.222.253.58:3009/api/";
-//    public static final String BASE_URL = "https://13.58.210.186:3009/api/";
+    //    public static final String BASE_URL = "https://13.58.210.186:3009/api/";
+    public static final String DEVICE_BELT_SETTINGS_URL = "https://18.222.253.58:3009/#!/deviceBeltSetting";
+    public static final String DEVICE_BELT_ALERT_URL = "https://18.222.253.58:3009/#!/deviceAlertSetting";
 
     /*Temp*/
     public static String TEMP_SCREEN = "TEMP_SCREEN";
@@ -39,7 +41,7 @@ public class AppConstants {
     public static AddBeltEntity BELT_DETAILS = new AddBeltEntity();
     public static String BELT_DEVICE_ID = "";
     public static boolean IS_FROM_BELT_LIST_BOOL = false;
-    public static boolean IS_FROM_USER_FlOW_BOOL = false;
+    public static boolean IS_FROM_BELT_SETTINGS_BOOL = false;
 
 }
 

@@ -25,7 +25,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "Dev 15-10-18"
+        versionName "Dev 08-11-18"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -60,7 +60,7 @@ dependencies {
     }
 
     /*Google vision for QR code and Bar code scanner*/
-    implementation 'com.google.android.gms:play-services-vision:15.0.2'
+    implementation 'com.google.android.gms:play-services-vision:17.0.2'
 
     /*Retrofit for API call*/
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'

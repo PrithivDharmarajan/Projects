@@ -63,8 +63,11 @@ public class AddUser extends BaseActivity {
     @BindView(R.id.last_name_edt)
     EditText mLastNameEdt;
 
-    @BindView(R.id.address_edt)
-    EditText mAddressEdt;
+    @BindView(R.id.address_line_one_edt)
+    EditText mAddressLineOneEdt;
+
+    @BindView(R.id.address_line_two_edt)
+    EditText mAddressLineTwoEdt;
 
     @BindView(R.id.zip_code_edt)
     EditText mZipCodeEdt;
@@ -173,7 +176,8 @@ public class AddUser extends BaseActivity {
         String firstNameStr = mFirstNameEdt.getText().toString().trim();
         String middleNameStr = mMiddleNameEdt.getText().toString().trim();
         String lastNameStr = mLastNameEdt.getText().toString().trim();
-        String addressStr = mAddressEdt.getText().toString().trim();
+        String addressLineOneStr = mAddressLineOneEdt.getText().toString().trim();
+        String addressLineTwoStr = mAddressLineTwoEdt.getText().toString().trim();
         String zipCodeStr = mZipCodeEdt.getText().toString().trim();
         String countryCodeStr = mCountryCodeEdt.getText().toString().trim();
         String primaryMobileNumberStr = mPrimaryMobileNumberEdt.getText().toString().trim();
@@ -187,8 +191,8 @@ public class AddUser extends BaseActivity {
         } else if (firstNameStr.isEmpty()) {
             mFirstNameEdt.requestFocus();
             DialogManager.getInstance().showAlertPopup(this, getString(R.string.plz_enter_first_name), this);
-        } else if (addressStr.isEmpty()) {
-            mAddressEdt.requestFocus();
+        } else if (addressLineOneStr.isEmpty()&&addressLineTwoStr.isEmpty()) {
+            mAddressLineOneEdt.requestFocus();
             DialogManager.getInstance().showAlertPopup(this, getString(R.string.plz_enter_address), this);
         } else if (zipCodeStr.isEmpty()) {
             mZipCodeEdt.requestFocus();
@@ -218,7 +222,8 @@ public class AddUser extends BaseActivity {
             addUserEntity.setFirstName(firstNameStr);
             addUserEntity.setMiddleName(middleNameStr);
             addUserEntity.setLastName(lastNameStr);
-            addUserEntity.setAddress(addressStr);
+            addUserEntity.setAddress1(addressLineOneStr);
+            addUserEntity.setAddress2(addressLineTwoStr);
             addUserEntity.setZipCode(zipCodeStr);
             addUserEntity.setCountryCode(countryCodeStr);
             addUserEntity.setPrimNumber(primaryMobileNumberStr);
@@ -235,7 +240,13 @@ public class AddUser extends BaseActivity {
     public void onRequestSuccess(Object resObj) {
         super.onRequestSuccess(resObj);
         if (resObj instanceof CommonResponse) {
-            backScreen();
+            final CommonResponse addUserResponse = (CommonResponse) resObj;
+            DialogManager.getInstance().showAlertPopup(this, addUserResponse.getMessage(), new InterfaceBtnCallback() {
+                @Override
+                public void onPositiveClick() {
+                    backScreen();
+                }
+            });
         }
     }
 

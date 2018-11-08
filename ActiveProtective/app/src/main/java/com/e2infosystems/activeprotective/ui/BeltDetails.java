@@ -10,13 +10,14 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.e2infosystems.activeprotective.R;
 import com.e2infosystems.activeprotective.input.model.AddBeltEntity;
-import com.e2infosystems.activeprotective.input.model.FetchDeviceEntity;
 import com.e2infosystems.activeprotective.input.model.AssignUnAssignBeltEntity;
+import com.e2infosystems.activeprotective.input.model.FetchDeviceEntity;
 import com.e2infosystems.activeprotective.main.BaseActivity;
 import com.e2infosystems.activeprotective.output.model.BeltItemListEntityRes;
 import com.e2infosystems.activeprotective.output.model.BeltListResponse;
@@ -72,6 +73,12 @@ public class BeltDetails extends BaseActivity {
     @BindView(R.id.model_edt)
     EditText mModelEdt;
 
+    @BindView(R.id.assigned_user_lay)
+    LinearLayout mAssignedUserLay;
+
+    @BindView(R.id.assigned_user_edt)
+    EditText mAssignedUserEdt;
+
     @BindView(R.id.belt_status_btn)
     Button mBeltStatusBtn;
 
@@ -86,6 +93,9 @@ public class BeltDetails extends BaseActivity {
 
     @BindView(R.id.footer_third_img)
     ImageView mFooterThirdImg;
+
+    @BindView(R.id.footer_fourth_img)
+    ImageView mFooterFourthImg;
 
     private BeltItemListEntityRes mBeltDetailsEntity = new BeltItemListEntityRes();
 
@@ -139,6 +149,9 @@ public class BeltDetails extends BaseActivity {
 
         mModelEdt.setSelected(false);
         mModelEdt.setFocusableInTouchMode(false);
+
+        mAssignedUserEdt.setSelected(false);
+        mAssignedUserEdt.setFocusableInTouchMode(false);
 
         mBeltStatusBtn.setVisibility(AppConstants.IS_FROM_BELT_LIST_BOOL ? View.GONE : View.VISIBLE);
 
@@ -196,8 +209,13 @@ public class BeltDetails extends BaseActivity {
         mModelEdt.setSelected(beltDetailsEntity.getDevModal().isEmpty());
         mModelEdt.setFocusableInTouchMode(beltDetailsEntity.getDevModal().isEmpty());
 
+        mAssignedUserEdt.setText(beltDetailsEntity.getUserName());
+        mAssignedUserEdt.setSelected(beltDetailsEntity.getUserName().isEmpty());
+        mAssignedUserEdt.setFocusableInTouchMode(beltDetailsEntity.getUserName().isEmpty());
+
         if (AppConstants.IS_FROM_BELT_LIST_BOOL) {
-            mBeltStatusBtn.setText(getString(beltDetailsEntity.getAssignStatus() == 1 ? R.string.un_assign : R.string.assign));
+            mAssignedUserLay.setVisibility(beltDetailsEntity.getAssignStatus() == AppConstants.SUCCESS_CODE ? View.VISIBLE : View.GONE);
+            mBeltStatusBtn.setText(getString(beltDetailsEntity.getAssignStatus() == AppConstants.SUCCESS_CODE ? R.string.un_assign : R.string.assign));
             mConfigureStatusBtn.setText(getString(beltDetailsEntity.getWiFiConfiguredStatus() == 1 ? R.string.reconfigure : R.string.configure));
             mBeltStatusBtn.setVisibility(View.VISIBLE);
         }
@@ -235,16 +253,19 @@ public class BeltDetails extends BaseActivity {
         mFooterFirstImg.setImageResource(R.drawable.settings);
         mFooterFirstImg.setVisibility(View.VISIBLE);
 
-        mFooterSecondImg.setImageResource(R.drawable.alert);
+        mFooterSecondImg.setImageResource(R.drawable.belt_settings);
         mFooterSecondImg.setVisibility(View.VISIBLE);
 
-        mFooterThirdImg.setImageResource(R.drawable.logout);
+        mFooterThirdImg.setImageResource(R.drawable.alert);
         mFooterThirdImg.setVisibility(View.VISIBLE);
+
+        mFooterFourthImg.setImageResource(R.drawable.logout);
+        mFooterFourthImg.setVisibility(View.VISIBLE);
     }
 
     /*View onClick*/
     @OnClick({R.id.header_start_img_lay, R.id.header_end_img_lay, R.id.belt_status_btn, R.id.configure_status_btn,
-            R.id.footer_first_img, R.id.footer_second_img, R.id.footer_third_img})
+            R.id.footer_first_img, R.id.footer_second_img, R.id.footer_third_img, R.id.footer_fourth_img})
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.header_start_img_lay:
@@ -258,7 +279,17 @@ public class BeltDetails extends BaseActivity {
                 if (beltStatusStr.equalsIgnoreCase(getString(R.string.assign))) {
                     nextScreen(AllUserList.class);
                 } else if (beltStatusStr.equalsIgnoreCase(getString(R.string.un_assign))) {
-                    UnAssignAPICall();
+                    DialogManager.getInstance().showOptionPopup(this, String.format(getString(R.string.un_assign_msg), mSerialNumberEdt.getText().toString().trim(), mBeltDetailsEntity.getUserName()), getString(R.string.un_assign), getString(R.string.cancel), new InterfaceTwoBtnCallback() {
+                        @Override
+                        public void onNegativeClick() {
+
+                        }
+
+                        @Override
+                        public void onPositiveClick() {
+                            UnAssignAPICall();
+                        }
+                    });
                 } else {
                     previousScreen(BeltList.class);
                 }
@@ -271,10 +302,14 @@ public class BeltDetails extends BaseActivity {
                 nextScreen(Temp.class);
                 break;
             case R.id.footer_second_img:
-                AppConstants.TEMP_SCREEN = getString(R.string.alert);
-                nextScreen(Temp.class);
+                AppConstants.IS_FROM_BELT_SETTINGS_BOOL = true;
+                nextScreen(WebURL.class);
                 break;
             case R.id.footer_third_img:
+                AppConstants.IS_FROM_BELT_SETTINGS_BOOL = false;
+                nextScreen(WebURL.class);
+                break;
+            case R.id.footer_fourth_img:
                 DialogManager.getInstance().showOptionPopup(this, getString(R.string.logout_msg), getString(R.string.yes), getString(R.string.no), new InterfaceTwoBtnCallback() {
                     @Override
                     public void onNegativeClick() {
@@ -347,8 +382,15 @@ public class BeltDetails extends BaseActivity {
             }
             setData(mBeltDetailsEntity);
         } else if (resObj instanceof CommonResponse) {
-            CommonResponse beltUnAssignResponse = (CommonResponse) resObj;
-            mBeltStatusBtn.setText(getString(R.string.assign));
+            final CommonResponse beltUnAssignResponse = (CommonResponse) resObj;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mBeltStatusBtn.setText(getString(R.string.assign));
+                    mAssignedUserLay.setVisibility(View.GONE);
+                    DialogManager.getInstance().showAlertPopup(BeltDetails.this, beltUnAssignResponse.getMessage(), BeltDetails.this);
+                }
+            });
         }
     }
 

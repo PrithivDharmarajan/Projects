@@ -50,7 +50,7 @@ public class BeltListAdapter extends RecyclerView.Adapter<BeltListAdapter.Holder
         BeltItemListEntityRes beltItemListEntityRes = mBeltItemArrListRes.get(position);
 
         holder.mDeleteImg.setVisibility(mIsDeleteBool ? View.VISIBLE : View.GONE);
-        holder.mUserNameTxt.setText(beltItemListEntityRes.getDeviceId());
+        holder.mUserNameTxt.setText(beltItemListEntityRes.getAssignStatus() == AppConstants.SUCCESS_CODE ? beltItemListEntityRes.getUserName() : beltItemListEntityRes.getDeviceId());
         holder.mUserNameTxt.setTextColor(ContextCompat.getColor(mContext, beltItemListEntityRes.getAssignStatus() == AppConstants.SUCCESS_CODE ? R.color.blue : R.color.red));
 
         holder.mUserStatusTxt.setText(mContext.getString(beltItemListEntityRes.getWiFiConfiguredStatus() == AppConstants.SUCCESS_CODE ? R.string.wifi_configured : R.string.not_configured));

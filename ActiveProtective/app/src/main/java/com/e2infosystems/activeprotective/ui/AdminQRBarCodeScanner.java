@@ -153,8 +153,6 @@ public class AdminQRBarCodeScanner extends BaseActivity {
 
     private void initialiseDetectorsAndSources() {
 
-        Toast.makeText(getApplicationContext(), "Scanner started", Toast.LENGTH_SHORT).show();
-
         BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this)
                 .setBarcodeFormats(Barcode.ALL_FORMATS)
                 .build();
@@ -207,27 +205,25 @@ public class AdminQRBarCodeScanner extends BaseActivity {
                         public void run() {
                             String scannedFullDataStrArr[] = (barcode.valueAt(0).displayValue).split("!");
 
-                                if (scannedFullDataStrArr[0] != null) {
-                                    String scannedDataStrArr[] = scannedFullDataStrArr[0].split(";");
+                            if (scannedFullDataStrArr[0] != null) {
+                                String scannedDataStrArr[] = scannedFullDataStrArr[0].split(";");
 
-                                    if (scannedDataStrArr.length == 6) {
-                                        mIsScannedBool = true;
-                                        AppConstants.BELT_DETAILS = new AddBeltEntity();
-                                        AppConstants.BELT_DETAILS.setDeviceId(scannedDataStrArr[0] != null ? scannedDataStrArr[0] : "");
-                                        AppConstants.BELT_DETAILS.setDevMAC(scannedDataStrArr[1] != null ? scannedDataStrArr[1] : "");
-                                        AppConstants.BELT_DETAILS.setDevSSID(scannedDataStrArr[2] != null ? scannedDataStrArr[2] : "");
-                                        AppConstants.BELT_DETAILS.setDevPasswd(scannedDataStrArr[3] != null ? scannedDataStrArr[3] : "");
-                                        AppConstants.BELT_DETAILS.setDevSize(scannedDataStrArr[4] != null ? scannedDataStrArr[4] : "");
-                                        AppConstants.BELT_DETAILS.setDevModal(scannedDataStrArr[5] != null ? scannedDataStrArr[5] : "");
-                                        addDeviceAPICall();
-                                    } else {
-                                        mIsScannedBool = false;
-                                        changeQRColor();
-                                    }
+                                if (scannedDataStrArr.length == 6) {
+                                    mIsScannedBool = true;
+                                    AppConstants.BELT_DETAILS = new AddBeltEntity();
+                                    AppConstants.BELT_DETAILS.setDeviceId(scannedDataStrArr[0] != null ? scannedDataStrArr[0] : "");
+                                    AppConstants.BELT_DETAILS.setDevMAC(scannedDataStrArr[1] != null ? scannedDataStrArr[1] : "");
+                                    AppConstants.BELT_DETAILS.setDevSSID(scannedDataStrArr[2] != null ? scannedDataStrArr[2] : "");
+                                    AppConstants.BELT_DETAILS.setDevPasswd(scannedDataStrArr[3] != null ? scannedDataStrArr[3] : "");
+                                    AppConstants.BELT_DETAILS.setDevSize(scannedDataStrArr[4] != null ? scannedDataStrArr[4] : "");
+                                    AppConstants.BELT_DETAILS.setDevModal(scannedDataStrArr[5] != null ? scannedDataStrArr[5] : "");
+                                    addDeviceAPICall();
                                 } else {
-                                    mIsScannedBool = false;
-                                    changeQRColor();
+                                    QRErrorColor();
                                 }
+                            } else {
+                                QRErrorColor();
+                            }
 
 
                         }
@@ -239,22 +235,22 @@ public class AdminQRBarCodeScanner extends BaseActivity {
         });
     }
 
-    private void changeQRColor() {
+    private void QRErrorColor() {
 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-
                 mQRImg.setColorFilter(getResources().getColor(R.color.red));
                 mRunnable = new Runnable() {
                     @Override
                     public void run() {
+                        mIsScannedBool = false;
                         mQRImg.setColorFilter(getResources().getColor(R.color.blue));
                     }
                 };
 
                 mHandler = new Handler();
-                mHandler.postDelayed(mRunnable, 1000);
+                mHandler.postDelayed(mRunnable, 1500);
             }
         });
 
@@ -377,23 +373,28 @@ public class AdminQRBarCodeScanner extends BaseActivity {
 
     @Override
     public void onRequestFailure(final Object resObj, Throwable t) {
-        super.onRequestFailure(resObj, t);
-        if (t instanceof IOException) {
+        if (t.getMessage() != null && !t.getMessage().isEmpty() && !(t instanceof IOException)) {
+            DialogManager.getInstance().showAlertPopup(this, t.getMessage(), new InterfaceBtnCallback() {
+                @Override
+                public void onPositiveClick() {
+                    QRErrorColor();
+                }
+            });
+        } else if (t instanceof IOException) {
             DialogManager.getInstance().showAlertPopup(this,
                     (t instanceof java.net.ConnectException || t instanceof java.net.UnknownHostException ? getString(R.string.no_internet) : getString(R.string
                             .connect_time_out)), new InterfaceBtnCallback() {
                         @Override
                         public void onPositiveClick() {
-                            mIsScannedBool = false;
+                            QRErrorColor();
                         }
                     });
 
 
-        }else{
-            mIsScannedBool = true;
+        } else {
+            QRErrorColor();
         }
 
-        changeQRColor();
     }
 
     private void removeHandler() {

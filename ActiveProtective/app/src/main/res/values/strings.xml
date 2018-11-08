@@ -44,9 +44,13 @@
     <string name="reconfigure">Reconfigure</string>
     <string name="enter_size">Enter Size</string>
     <string name="assign">Assign</string>
+    <string name="assigned_user">Assigned User</string>
+    <string name="enter_assigned_user">Enter Assigned User</string>
     <string name="un_assign">UnAssign</string>
 
     <string name="plz_enter_size">Please Enter Size</string>
+    <string name="plz_enter_assigned_user">Please Enter Assigned User</string>
+    <string name="un_assign_msg">Are you sure want to unassign the BELT %1$s with the USER %2$s?</string>
 
 
     <!--Add Belt-->
@@ -86,7 +90,8 @@
     <string name="last_name">Last Name</string>
     <string name="enter_last_name">Enter Last Name</string>
     <string name="address">Address</string>
-    <string name="enter_address">Enter Address</string>
+    <string name="enter_address_line_one">Enter Address Line 1</string>
+    <string name="enter_address_line_two">Enter Address Line 2</string>
     <string name="zip_code">Zip Code</string>
     <string name="enter_zip_code">Enter Zip Code</string>
     <string name="country_code">Country Code</string>
@@ -124,6 +129,10 @@
 
     <!--AdminDashboard-->
     <string name="dashboard">Dashboard</string>
+
+    <!--Web URL-->
+    <string name="belt_settings">Belt Settings</string>
+    <string name="alert_settings">Alert Settings</string>
 
     <!--General-->
     <string name="go_settings_per">You have denied the app permissions. Go to Settings and Enable the Permissions.</string>

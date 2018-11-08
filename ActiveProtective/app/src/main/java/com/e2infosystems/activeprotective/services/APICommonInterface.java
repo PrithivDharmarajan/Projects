@@ -54,7 +54,7 @@ public interface APICommonInterface {
 
     /*Fetch All User List API*/
     @FormUrlEncoded
-    @POST("userDetails/fetchAllUser")
+    @POST("deviceMap/fetchAllAvailableUser")
     Call<AllUserListResponse> fetchAllUserListAPI(@Header("Authorization") String authorizationStr, @Header("username") String usernameStr, @Field("communityId") String communityIdStr);
 
     /*Add userAPI*/

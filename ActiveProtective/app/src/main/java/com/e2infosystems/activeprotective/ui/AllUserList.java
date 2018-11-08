@@ -118,7 +118,15 @@ public class AllUserList extends BaseActivity {
             AllUserListResponse allUserListResponse = (AllUserListResponse) resObj;
             setAllUserListAdapter(allUserListResponse.getData().getItems());
         } else if (resObj instanceof CommonResponse) {
-            backScreen();
+            CommonResponse assignedResponse = (CommonResponse) resObj;
+
+
+            DialogManager.getInstance().showAlertPopup(this, assignedResponse.getMessage(), new InterfaceBtnCallback() {
+                @Override
+                public void onPositiveClick() {
+                    backScreen();
+                }
+            });
         }
 
     }

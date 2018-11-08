@@ -171,6 +171,39 @@
                 android:textColorHint="@color/gray"
                 tools:ignore="Autofill" />
 
+            <LinearLayout
+                android:id="@+id/assigned_user_lay"
+                style="@style/LayoutWidMatch_HeiWrap"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TextOpenSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="@string/assigned_user"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text12" />
+
+                <EditText
+                    android:id="@+id/assigned_user_edt"
+                    style="@style/EditTextOpenSansRegular"
+                    android:layout_marginTop="@dimen/size3"
+                    android:background="@drawable/blue_white_bg"
+                    android:gravity="end|center"
+                    android:hint="@string/enter_assigned_user"
+                    android:imeActionId="100"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="25"
+                    android:paddingStart="@dimen/size5"
+                    android:paddingEnd="@dimen/size15"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

@@ -95,7 +95,7 @@ public class BeltList extends BaseActivity {
         mHeaderEndTxt.setText(getString(R.string.edit));
         setHeaderAdjustmentView();
         setFooterView();
-        belListAPI();
+        beltListAPI();
     }
 
 
@@ -136,7 +136,7 @@ public class BeltList extends BaseActivity {
         mFooterThirdImg.setVisibility(View.VISIBLE);
     }
 
-    private void belListAPI() {
+    private void beltListAPI() {
         APIRequestHandler.getInstance().beltListAPICall(this);
     }
 
@@ -189,7 +189,13 @@ public class BeltList extends BaseActivity {
             mBeltItemArrListRes = beltListResponse.getData().getItems();
             setBeltListAdapter(mBeltItemArrListRes);
         } else if (resObj instanceof DeleteDeviceResponse) {
-            belListAPI();
+            DeleteDeviceResponse deleteDeviceResponse = (DeleteDeviceResponse) resObj;
+            DialogManager.getInstance().showAlertPopup(this, deleteDeviceResponse.getMessage(), new InterfaceBtnCallback() {
+                @Override
+                public void onPositiveClick() {
+                    beltListAPI();
+                }
+            });
         }
 
 

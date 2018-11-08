@@ -16,7 +16,8 @@
             android:layout_marginStart="@dimen/size5"
             android:layout_toStartOf="@+id/right_arrow_img"
             android:ellipsize="end"
-            android:gravity="start"
+            android:layout_centerVertical="true"
+            android:gravity="start|center"
             android:textColor="@color/blue"
             android:textSize="@dimen/text12" />
 
@@ -27,6 +28,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
+            android:gravity="start|center"
             android:adjustViewBounds="true"
             android:contentDescription="@string/app_name"
             android:padding="@dimen/size5"

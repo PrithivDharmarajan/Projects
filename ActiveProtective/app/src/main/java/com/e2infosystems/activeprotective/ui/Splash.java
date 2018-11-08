@@ -60,6 +60,8 @@ public class Splash extends BaseActivity {
                     nextScreenClass = PreferenceUtil.getBoolPreferenceValue(Splash.this, AppConstants.CURRENT_USER_ADMIN) ? BeltList.class : UserDashboard.class;
                 }
                 nextScreen(nextScreenClass);
+
+//                nextScreen(WebURL.class);
             }
         };
         mHandler = new Handler();
